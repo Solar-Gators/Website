@@ -19,11 +19,13 @@ import NotFound from './pages/NotFound'
 
 import './App.css';
 
+const routerBaseName = process.env.PUBLIC_URL;
+
 function App() {
   return (
     <React.Fragment>
       <Navbar />
-      <Router>
+      <Router basename={routerBaseName}>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
