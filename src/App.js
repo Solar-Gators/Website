@@ -24,8 +24,8 @@ const routerBaseName = process.env.PUBLIC_URL;
 function App() {
   return (
     <React.Fragment>
-      <Navbar />
       <Router basename={routerBaseName}>
+        <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
@@ -38,8 +38,8 @@ function App() {
           {/* 404 page */}
           <Route path="*" component={NotFound} /> 
         </Switch>
+        <Footer />
       </Router>
-      <Footer />
     </React.Fragment>
   );
 }

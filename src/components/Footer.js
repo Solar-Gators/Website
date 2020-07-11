@@ -1,6 +1,8 @@
 import React from 'react'
 import sponsorsImage from '../content/assets/images/sponsors.png'
-
+import {
+  Link
+} from "react-router-dom";
 export default function Footer() {
 
     return (
@@ -40,16 +42,16 @@ export default function Footer() {
               <div className="two wide column" />
               <div className="four wide column" style={{marginTop: '-3vh'}}>
                 <h5 className="ui header left" style={{color: 'white', opacity: '0.8'}}>
-                  <a href="/contact" style={{color:  'white'}}>Contact us</a>
+                  <Link to="/contact" style={{color:  'white'}}>Contact us</Link>
                   <br />
-                  <a href="https://www.facebook.com/UFSolarGators/" style={{color: 'white'}}>Join Us</a>
+                  <Link to="https://www.facebook.com/UFSolarGators/" style={{color: 'white'}}>Join Us</Link>
                 </h5>
               </div>
               <div className="four wide column" style={{marginTop: '-3vh'}}>
                 <h5 className="ui header left" style={{color: 'white', opacity: '0.8'}}>
-                  <a href="/donate" style={{color:  'white'}}>Donate</a>
+                  <Link to="/donate" style={{color:  'white'}}>Donate</Link>
                   <br />
-                  <a href="/sponsors" style={{color:  'white'}}>Sponsor Us</a>
+                  <Link to="/sponsors" style={{color:  'white'}}>Sponsor Us</Link>
                 </h5>
               </div>
             </div>

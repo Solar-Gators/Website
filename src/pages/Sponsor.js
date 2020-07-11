@@ -1,4 +1,9 @@
 import React from 'react'
+
+import {
+  Link
+} from "react-router-dom";
+
 import sponsorsBanner from '../content/assets/images/sponsor_banner.jpg'
 
 import premiumSoldworks from '../content/assets/images/premium_solidworks.png'
@@ -85,14 +90,14 @@ export default function Sponsor() {
 
         <div className="ui grid">
           <div className="ui row centered">
-            <a href="/donate">
+            <Link to="/donate">
               <div className="ui animated basic blue circular massive button" tabIndex={0}>
                 <div className="visible content">Sponsorship Opportunities</div>
                 <div className="hidden content">
                   <i className="right arrow icon" />
                 </div>
               </div>
-            </a></div>
+            </Link></div>
           <div className="ui row centered" style={{marginTop: '5vh'}}>
             <div className="sixteen wide column">
               <div className="ui horizontal divider header dash_header">

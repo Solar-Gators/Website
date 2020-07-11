@@ -1,4 +1,8 @@
 import React from 'react'
+import {
+  Link
+} from "react-router-dom";
+
 import aboutUs1 from '../content/assets/images/about_us_1.JPG'
 import aboutUs2 from '../content/assets/images/about_us_2.jpg'
 
@@ -34,10 +38,10 @@ export default function Home() {
           <div className="ui row" style={{marginTop: '-13vh'}}>
             <div className="two wide column" />
             <div className="ui row six wide">
-              <a className="ui small inverted button" style={{fontFamily: '"radnika"', color: 'white'}} href="/about">about us</a>
-              <a className="ui small inverted button" style={{fontFamily: '"radnika"', color: 'white'}} href="/sponsors">sponsors</a>
-              <a className="ui small inverted button" style={{fontFamily: '"radnika"', color: 'white'}} href="/team">our team</a>
-              <a className="ui small inverted button" style={{fontFamily: '"radnika"', color: 'white'}} href="/contact">contact us</a>
+              <Link className="ui small inverted button" style={{fontFamily: '"radnika"', color: 'white'}} to="/about">about us</Link>
+              <Link className="ui small inverted button" style={{fontFamily: '"radnika"', color: 'white'}} to="/sponsors">sponsors</Link>
+              <Link className="ui small inverted button" style={{fontFamily: '"radnika"', color: 'white'}} to="/team">our team</Link>
+              <Link className="ui small inverted button" style={{fontFamily: '"radnika"', color: 'white'}} to="/contact">contact us</Link>
             </div>
           </div>
         </div>
@@ -168,12 +172,12 @@ export default function Home() {
                   All of this is possible because of our sponsors. Check them out.
                 </div>
               </div>
-              <a href="/sponsors">
+              <Link to="/sponsors">
                 <div className="ui bottom attached blue basic button">
                   <i className="info icon" />
                   Sponsors
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

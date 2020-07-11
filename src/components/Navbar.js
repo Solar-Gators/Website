@@ -1,5 +1,8 @@
 import React from 'react'
 import logoImage from '../content/assets/images/logo.png'
+import {
+  Link
+} from "react-router-dom";
 
 export default function Navbar() {
 
@@ -8,17 +11,17 @@ export default function Navbar() {
         <div className="item">
           <img src={logoImage} />
         </div>
-        <a className="item" href="/">Solar Gators</a>
-        <a className="item" href="/about">About Us</a>
-        <a className="item" href="/events">Events</a>
-        <a className="item" href="/sponsors">Sponsors</a>
-        <a className="item" href="/team">The Team</a>
+        <Link className="item" to="/">Solar Gators</Link>
+        <Link className="item" to="/about">About Us</Link>
+        <Link className="item" to="/events">Events</Link>
+        <Link className="item" to="/sponsors">Sponsors</Link>
+        <Link className="item" to="/team">The Team</Link>
         <div className="right menu">
           <div className="item">
-            <a className="ui orange button" href="/contact">
+            <Link className="ui orange button" to="/contact">
               <i className="envelope open icon" />
               Contact
-            </a>
+            </Link>
           </div>
           <div className="item">
             <a href="https://www.facebook.com/UFSolarGators/">
