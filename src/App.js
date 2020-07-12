@@ -18,6 +18,7 @@ import Contact from './pages/Contact'
 import NotFound from './pages/NotFound'
 
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.css'
 
 const routerBaseName = process.env.PUBLIC_URL;
 
