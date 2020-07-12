@@ -1,0 +1,88 @@
+@import "~bootstrap/scss/bootstrap";
+
+@font-face
+  font-family: 'radnika'
+  src: url('./content/assets/fonts/radnika-medium-webfont.woff2') format("woff2"), url('./content/assets/fonts/radnika-medium-webfont.woff') format("woff")
+  font-weight: normal
+  font-style: normal
+
+.first-section
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./content/assets/images/img2.jpg), no-repeat center center fixed
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+  background-position: center
+
+body
+  background: #ECE9E6
+
+  /* fallback for old browsers
+  background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6)
+
+  /* Chrome 10-25, Safari 5.1-6
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6)
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
+
+.sponsor-container
+  display: flex
+  position: relative
+  align-items: center
+
+/* Centered text
+
+.sponsor-centered
+  color: #fff
+  text-align: center
+  width: 100vw
+  opacity: 0.9
+  text-shadow: 2px 2px grey
+  font-size: 5em
+  margin: 0px auto
+  position: absolute
+  left: 0
+  right: 0
+
+.regular-text
+  font-size: 1.2em
+  line-height: 28px
+
+/* 
+ *Orange Button
+
+.btn-orange
+  color: #fff
+  background-color: #f2711c
+  border-color: #f2711c
+
+  &:hover
+    color: #fff
+    background-color: #f26202
+    border-color: #f26202
+
+  &:focus, &.focus
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5)
+
+  &.disabled, &:disabled
+    color: #fff
+    background-color: #f2711c
+    border-color: #f2711c
+
+  &:not(:disabled):not(.disabled)
+    &:active, &.active
+      color: #fff
+      background-color: #f2711c
+      border-color: #f2711c
+
+.show > .btn-orange.dropdown-toggle
+  color: #fff
+  background-color: #f2711c
+  border-color: #f2711c
+
+.btn-orange:not(:disabled):not(.disabled)
+  &:active:focus, &.active:focus
+    box-shadow: 0 0 0 0.2rem rgba(242, 113, 28, 0.5)
+
+.show > .btn-orange.dropdown-toggle:focus
+  box-shadow: 0 0 0 0.2rem rgba(242, 113, 28, 0.5)

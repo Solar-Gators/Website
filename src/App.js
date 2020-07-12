@@ -17,8 +17,7 @@ import Donate from './pages/Donate'
 import Contact from './pages/Contact'
 import NotFound from './pages/NotFound'
 
-import 'bootstrap/dist/css/bootstrap.css'
-import './App.css'
+import './App.sass'
 
 const routerBaseName = process.env.PUBLIC_URL;
 
