@@ -1,37 +1,60 @@
-import React from 'react'
+import React, {useState} from 'react'
 import logoImage from '../content/assets/images/logo.png'
 import {
   Link
 } from "react-router-dom";
 
-export default function Navbar() {
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  Button
+} from 'reactstrap';
 
-    return (
-        <div className="ui menu borderless" style={{WebkitTransitionDuration: '0.1s', margin: 0}}>
-        <div className="item">
-          <img src={logoImage} />
-        </div>
-        <Link className="item" to="/">Solar Gators</Link>
-        <Link className="item" to="/about">About Us</Link>
-        <Link className="item" to="/events">Events</Link>
-        <Link className="item" to="/sponsors">Sponsors</Link>
-        <Link className="item" to="/team">The Team</Link>
-        <div className="right menu">
-          <div className="item">
-            <Link className="ui orange button" to="/contact">
-              <i className="envelope open icon" />
-              Contact
-            </Link>
-          </div>
-          <div className="item">
-            <a href="https://www.facebook.com/UFSolarGators/">
-              <div className="ui blue button">
-                <i className="flag checkered icon" />
-                Join
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    )
+export default function WebsiteNavbar() {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => setIsOpen(!isOpen);
+  return (
+    <Navbar color="light" light expand="md">
+        <NavbarBrand tag={Link} to="/">
+          <img width={35} height={35} src={logoImage} />
+        </NavbarBrand>
+        <NavbarToggler onClick={toggle} />
+        <Collapse isOpen={isOpen} navbar>
+          <Nav className="mr-auto" navbar>
+            <NavItem>
+              <NavLink tag={Link} to="/">Solar Gators</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink tag={Link} to="/about">About Us</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink tag={Link} to="/events">Events</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink tag={Link} to="/sponsors">Sponsors</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink tag={Link} to="/team">The Team</NavLink>
+            </NavItem>
+          </Nav>
+
+          <Button color="" className="btn-orange" tag={Link} to="/contact">
+            <i class="fas fa-envelope-open mr-3"></i>
+            Contact
+          </Button>
+
+          <Button color="primary" className="ml-4" onClick={() => { window.location.href = "https://www.facebook.com/UFSolarGators/" }}>
+            <i class="fas fa-flag-checkered mr-3"></i>
+            Join
+          </Button>
+        </Collapse>
+      </Navbar>
+  )
 }

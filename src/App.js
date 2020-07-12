@@ -1,9 +1,9 @@
-import React from 'react';
+import React from 'react'
 import {
   BrowserRouter as Router,
   Switch,
   Route
-} from "react-router-dom";
+} from "react-router-dom"
 
 
 import Footer from './components/Footer'
@@ -17,8 +17,8 @@ import Donate from './pages/Donate'
 import Contact from './pages/Contact'
 import NotFound from './pages/NotFound'
 
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.css'
+import './App.css'
 
 const routerBaseName = process.env.PUBLIC_URL;
 
