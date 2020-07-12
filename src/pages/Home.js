@@ -110,10 +110,12 @@ export default function Home() {
                   Our organization goes way back. Learn more about our history.
                 </div>
               </div>
-              <div className="ui bottom attached blue basic button">
-                <i className="info icon" />
-                About Us
-              </div>
+              <Link to="/about">
+                <div className="ui bottom attached blue basic button">
+                  <i className="info icon" />
+                  About Us
+                </div>
+              </Link>
             </div>
             <div className="card">
               <div className="ui slide masked reveal image">
@@ -125,10 +127,12 @@ export default function Home() {
                   We have such a diverse group of members, ranging from all kinds of engineers.
                 </div>
               </div>
-              <div className="ui bottom attached blue basic button">
-                <i className="info icon" />
-                The Team
-              </div>
+              <Link to="/team">
+                <div className="ui bottom attached blue basic button">
+                  <i className="info icon" />
+                  The Team
+                </div>
+              </Link>
             </div>
             <div className="card">
               <div className="ui slide masked reveal image">
@@ -140,10 +144,12 @@ export default function Home() {
                   Solar Gators provides many opportunities and activities. Find out when and where.
                 </div>
               </div>
-              <div className="ui bottom attached blue basic button">
-                <i className="info icon" />
-                Events
-              </div>
+              <Link to="/events">
+                <div className="ui bottom attached blue basic button">
+                  <i className="info icon" />
+                  Events
+                </div>
+              </Link>
             </div>
           </div>
           <div className="ui raised cards">
@@ -157,10 +163,12 @@ export default function Home() {
                   Shoot as an email with any inquiry or question you have about us.
                 </div>
               </div>
-              <div className="ui bottom attached blue basic button">
-                <i className="info icon" />
-                Contact Us
-              </div>
+              <Link to="/contact">
+                <div className="ui bottom attached blue basic button">
+                  <i className="info icon" />
+                  Contact Us
+                </div>
+              </Link>
             </div>
             <div className="card">
               <div className="ui slide masked reveal image">
