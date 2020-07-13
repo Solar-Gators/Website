@@ -4,48 +4,41 @@ import {
   Link
 } from "react-router-dom";
 
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  Button
-} from 'reactstrap';
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
+import Button from 'react-bootstrap/Button'
 
 export default function WebsiteNavbar() {
 
   const [isOpen, setIsOpen] = useState(false);
-
+  
   const toggle = () => setIsOpen(!isOpen);
   return (
     <Navbar color="light" light expand="md">
-        <NavbarBrand tag={Link} to="/">
+        <Navbar.Brand as={Link} to="/">
           <img width={35} height={35} src={logoImage} />
-        </NavbarBrand>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
+        </Navbar.Brand>
+        <Navbar.Toggle onClick={toggle} />
+        <Navbar.Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
-            <NavItem>
-              <NavLink tag={Link} to="/">Solar Gators</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink tag={Link} to="/about">About Us</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink tag={Link} to="/events">Events</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink tag={Link} to="/sponsors">Sponsors</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink tag={Link} to="/team">The Team</NavLink>
-            </NavItem>
+            <Nav.Item>
+              <Nav.Link as={Link} to="/">Solar Gators</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link as={Link} to="/about">About Us</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link as={Link} to="/events">Events</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link as={Link} to="/sponsors">Sponsors</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link as={Link} to="/team">The Team</Nav.Link>
+            </Nav.Item>
           </Nav>
 
-          <Button color="" className="btn-orange" tag={Link} to="/contact">
+          <Button color="" className="btn-orange" as={Link} to="/contact">
             <i class="fas fa-envelope-open mr-3"></i>
             Contact
           </Button>
@@ -54,7 +47,7 @@ export default function WebsiteNavbar() {
             <i class="fas fa-flag-checkered mr-3"></i>
             Join
           </Button>
-        </Collapse>
+        </Navbar.Collapse>
       </Navbar>
   )
 }
