@@ -38,7 +38,7 @@ function HomeIcon({icon, children}) {
 
 function HomeCard({im1, im2, linkTitle, link, children, index}) {
   return (
-    <Col xl={{ span: 3, offset: 0 }} lg={{ span: 4, offset: index == 3 ? 4 : 0 }} md={6} className={`${index == 3 ? "mt-lg-4" : ""} ${index == 2 || index == 3 ? "mt-md-4" : ""}`}>
+    <Col xl={{ span: 3, offset: 0 }} lg={{ span: 4, offset: index == 3 ? 4 : 0 }} md={6} className={`mt-xl-0 ${index == 3 ? "mt-lg-4" : "mt-lg-0"} ${index == 2 || index == 3 ? "mt-md-4" : "mt-md-0"}`}>
       <Card className="home-card m-auto h-100">
         <Card.Title className="home-card-title">
           <img className="img-fluid home-card-visible" src={im1} />
