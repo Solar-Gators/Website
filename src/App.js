@@ -17,7 +17,7 @@ import Donate from './pages/Donate'
 import Contact from './pages/Contact'
 import NotFound from './pages/NotFound'
 
-import './App.sass'
+import './App.scss'
 
 const routerBaseName = process.env.PUBLIC_URL;
 
