@@ -3,65 +3,56 @@ import sponsorsImage from '../content/assets/images/sponsors.png'
 import {
   Link
 } from "react-router-dom";
+
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+
 export default function Footer() {
 
     return (
-<div className="ui grid" style={{marginTop: '10vh'}}>
-        <div className="ui container fluid" style={{background: '#202121', paddingTop: '8vh', paddingLeft: '20vh', paddingRight: '20vh'}}>
-          <div className="ui grid">
-            <div className="ui row">
-              <div className="four wide column" style={{marginLeft: '0vw'}}>
-                <h1 className="ui left header" style={{color: 'white'}}>UF Solar Gators</h1>
-              </div>
-              <div className="four wide column" />
-              <div className="four wide column">
-                <h3 className="ui left header" style={{color: 'white'}}>Connect</h3>
-              </div>
-              <div className="four wide column">
-                <h3 className="ui left header" style={{color: 'white'}}>Support us</h3>
-              </div>
+      <div style={{marginTop: '10vh', background: '#202121', paddingTop: '8vh', paddingLeft: '20vh', paddingRight: '20vh'}}>
+        <Row>
+            <Col md={6}>
+              <h2 className="text-white" >UF Solar Gators</h2>
+              <a target="_blank" href="https://www.facebook.com/UFSolarGators/">
+                <button className="btn btn-social-icon btn-facebook btn-rounded">
+                  <i class="fab fa-facebook-f"></i>
+                </button>
+              </a>
+              <a target="_blank" href="https://twitter.com/solargators?lang=en">
+                <button className="btn btn-social-icon btn-twitter btn-rounded ml-2">
+                  <i class="fab fa-twitter" />
+                </button>
+              </a>
+              <a target="_blank" href="https://www.instagram.com/ufsolargators/">
+                <button className="btn btn-social-icon btn-instagram btn-rounded ml-2">
+                  <i class="fab fa-instagram"></i>
+                </button>
+              </a>
+            </Col>
+            <Col md={3}>
+              <h5 className="text-white mt-sm-3 mt-3">Connect</h5>
+              <Link to="/contact" style={{color:  'white'}}>Contact us</Link>
+              <br />
+              <Link to="https://www.facebook.com/UFSolarGators/" style={{color: 'white'}}>Join Us</Link>
+            </Col>
+
+            <Col md={3}>
+              <h5 className="text-white mt-sm-3 mt-3">Support us</h5>
+              <Link to="/donate" style={{color:  'white'}}>Donate</Link>
+              <br />
+              <Link to="/sponsors" style={{color:  'white'}}>Sponsor Us</Link>
+            </Col>
+        </Row>
+        <Row className="mt-5">
+          <Col>
+            <div className="separator">
+              <i className="fas fa-certificate home-icon separator-icon ml-2" aria-hidden="true" />
+              <strong className="mr-2">Our Sponsors</strong>
             </div>
-            <div className="ui row">
-              <div className="six wide column">
-                <a href="https://www.facebook.com/UFSolarGators/">
-                  <button className="ui big circular facebook icon button">
-                    <i className="facebook icon" />
-                  </button>
-                </a>
-                <a href="https://twitter.com/solargators?lang=en">
-                  <button className="ui big circular twitter icon button">
-                    <i className="twitter icon" />
-                  </button>
-                </a>
-                <a href="https://www.facebook.com/UFSolarGators/">
-                  <button className="ui big circular instagram icon button">
-                    <i className="instagram icon" />
-                  </button>
-                </a>
-              </div>
-              <div className="two wide column" />
-              <div className="four wide column" style={{marginTop: '-3vh'}}>
-                <h5 className="ui header left" style={{color: 'white', opacity: '0.8'}}>
-                  <Link to="/contact" style={{color:  'white'}}>Contact us</Link>
-                  <br />
-                  <Link to="https://www.facebook.com/UFSolarGators/" style={{color: 'white'}}>Join Us</Link>
-                </h5>
-              </div>
-              <div className="four wide column" style={{marginTop: '-3vh'}}>
-                <h5 className="ui header left" style={{color: 'white', opacity: '0.8'}}>
-                  <Link to="/donate" style={{color:  'white'}}>Donate</Link>
-                  <br />
-                  <Link to="/sponsors" style={{color:  'white'}}>Sponsor Us</Link>
-                </h5>
-              </div>
-            </div>
-          </div>
-          <h4 className="ui horizontal inverted divider header" style={{marginTop: '5vh'}}>
-            <i className="certificate icon" />
-            Our Sponsors
-          </h4>
-          <img style={{width: '100%'}} src={sponsorsImage} />
-        </div>
+            <img style={{width: '100%'}} src={sponsorsImage} />
+          </Col>
+        </Row>
       </div>
     );
 }
