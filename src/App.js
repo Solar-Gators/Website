@@ -23,7 +23,7 @@ const routerBaseName = process.env.PUBLIC_URL;
 
 function App() {
   return (
-    <React.Fragment>
+    <div className="overflow-hidden">
       <Router basename={routerBaseName}>
         <Navbar />
         <Switch>
@@ -40,7 +40,7 @@ function App() {
         </Switch>
         <Footer />
       </Router>
-    </React.Fragment>
+    </div>
   );
 }
 
