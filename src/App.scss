@@ -1,8 +1,7 @@
 @import "~bootstrap/scss/bootstrap";
-
 @import "./content/styles/Home.scss";
-
 @import "./content/styles/Footer.scss";
+@import "./content/styles/About.scss";
 
 @font-face {
   font-family: 'radnika';
@@ -25,26 +24,6 @@ body {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.sponsor-container {
-  display: flex;
-  position: relative;
-  align-items: center;
-}
-
-/* Centered text */
-
-.sponsor-centered {
-  color: #fff;
-  text-align: center;
-  width: 100vw;
-  opacity: 0.9;
-  text-shadow: 2px 2px grey;
-  font-size: 5em;
-  margin: 0px auto;
-  position: absolute;
-  left: 0;
-  right: 0;
-}
 
 .regular-text {
   font-size: 1.2em;

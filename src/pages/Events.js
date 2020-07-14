@@ -1,11 +1,14 @@
 import React from 'react'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
 export default function Events() {
     return (
-        <div className="ui container" style={{margin: '25vh'}}>
-            <div className="ui header">
+        <Container style={{margin: '25vh'}}>
+            <h2>
                 Event page coming soon...
-            </div>
-        </div>
+            </h2>
+        </Container>
     )
 }
