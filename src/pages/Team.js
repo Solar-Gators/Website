@@ -44,77 +44,65 @@ export default function Team() {
               </h1>
             </Col>
           </Row>
-          <Row className="home-break-line">
-            <Col md={{ span: 5, offset: 1 }}>
-              <hr />
-            </Col>
-          </Row>
         </Container>
       </div>
-
-      <div className="ui container" style={{ marginTop: "5vh" }}>
-        <div className="ui centered grid">
-          <ui className="row">
-            <div className="ui two wide column" />
-            <div className="ui twelve wide column">
-              <h1 className="ui dividing header" style={{ opacity: "0.8" }}>
-                Officers
-              </h1>
-            </div>
-          </ui>
-          <Container>
-            <Row>
-              <Col>
-                <Card>
-                  <Card.Img top src={president} alt="President" />
-                  <Card.Body>
-                    <Card.Title>Stephen Thomas</Card.Title>
-                    <Card.Subtitle>President</Card.Subtitle>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col>
-                <Card>
-                  <Card.Img top src={vicepresident} alt="Vice President" />
-                  <Card.Body>
-                    <Card.Title>Mariana Casas</Card.Title>
-                    <Card.Subtitle>Vice President</Card.Subtitle>
-                  </Card.Body>
-                </Card>
-              </Col>
-            </Row>
-            <Row style={{ marginTop: "4vh" }}>
-              <Col>
-                <Card>
-                  <Card.Img top src={secretary} alt="Secretary" />
-                  <Card.Body>
-                    <Card.Title>Katie Preiser</Card.Title>
-                    <Card.Subtitle>Secretary</Card.Subtitle>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col>
-                <Card>
-                  <Card.Img top src={treasurer} alt="Treasurer" />
-                  <Card.Body>
-                    <Card.Title>Nathan Andreo</Card.Title>
-                    <Card.Subtitle>Treasurer</Card.Subtitle>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col>
-                <Card>
-                  <Card.Img top src={business} alt="Business Coordinator" />
-                  <Card.Body>
-                    <Card.Title>Kaitlyn Lyons</Card.Title>
-                    <Card.Subtitle>Business Coordinator</Card.Subtitle>
-                  </Card.Body>
-                </Card>
-              </Col>
-            </Row>
-          </Container>
-        </div>
-      </div>
+      <Container>
+        <h1
+          className="ui dividing header"
+          style={{ opacity: "0.8", margin: "4vh" }}
+        >
+          Officers
+        </h1>
+        <Row>
+          <Col>
+            <Card>
+              <Card.Img top src={president} alt="President" />
+              <Card.Body>
+                <Card.Title>Stephen Thomas</Card.Title>
+                <Card.Subtitle>President</Card.Subtitle>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col>
+            <Card>
+              <Card.Img top src={vicepresident} alt="Vice President" />
+              <Card.Body>
+                <Card.Title>Mariana Casas</Card.Title>
+                <Card.Subtitle>Vice President</Card.Subtitle>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+        <Row style={{ marginTop: "4vh" }}>
+          <Col>
+            <Card>
+              <Card.Img top src={secretary} alt="Secretary" />
+              <Card.Body>
+                <Card.Title>Katie Preiser</Card.Title>
+                <Card.Subtitle>Secretary</Card.Subtitle>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col>
+            <Card>
+              <Card.Img top src={treasurer} alt="Treasurer" />
+              <Card.Body>
+                <Card.Title>Nathan Andreo</Card.Title>
+                <Card.Subtitle>Treasurer</Card.Subtitle>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col>
+            <Card>
+              <Card.Img top src={business} alt="Business Coordinator" />
+              <Card.Body>
+                <Card.Title>Kaitlyn Lyons</Card.Title>
+                <Card.Subtitle>Business Coordinator</Card.Subtitle>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
     </React.Fragment>
   );
 }
