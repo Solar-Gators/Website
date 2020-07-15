@@ -63,7 +63,6 @@ function HomeCard({im1, im2, linkTitle, link, children, index}) {
 export default function Home() {
 
   let getHeight = () => {
-    console.log(window.innerHeight)
     return window.innerHeight - 62
   }
 
