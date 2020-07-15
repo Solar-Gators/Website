@@ -46,7 +46,7 @@ export default function Footer() {
         </Row>
         <Row className="mt-5">
           <Col>
-            <div className="separator">
+            <div className="separator text-white">
               <i className="fas fa-certificate home-icon separator-icon ml-2" aria-hidden="true" />
               <strong className="mr-2">Our Sponsors</strong>
             </div>
