@@ -1,215 +1,108 @@
-import React from 'react'
-import img3 from '../content/assets/images/img3.jpg'
+import React, { useState } from "react";
 
-import president from '../content/assets/images/president.JPG'
-import vicepresident from '../content/assets/images/vicepresident.JPG'
-import treasurer from '../content/assets/images/treasurer.JPG'
-import secretary from '../content/assets/images/secretary.JPG'
-import business from '../content/assets/images/business.JPG'
+import president from "../content/assets/images/president.JPG";
+import vicepresident from "../content/assets/images/vicepresident.JPG";
+import treasurer from "../content/assets/images/treasurer.JPG";
+import secretary from "../content/assets/images/secretary.JPG";
+import business from "../content/assets/images/business.JPG";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Card from "react-bootstrap/Card";
+import Container from "react-bootstrap/Container";
 
 export default function Team() {
+  let getHeight = () => {
+    console.log(window.innerHeight);
+    return window.innerHeight - 62;
+  };
 
-    return (
-        <React.Fragment>
-            <div className="sponsor-container">
-                <img style={{width: '100%', opacity: 1}} src={img3} />
-                <h1 className="sponsor-centered">The Team</h1>
-            </div>
+  const [homeImageHeight, setHomeImageHeight] = useState(getHeight());
 
-            <div className="ui container" style={{marginTop: '5vh'}}>
-          <div className="ui centered grid">
-            <ui className="row">
-              <div className="ui two wide column" />
-              <div className="ui twelve wide column">
-                <h1 className="ui dividing header" style={{opacity: '0.8'}}>
-                  Officers
-                </h1></div>
-            </ui>
-            <div className="ui row">
-              <div className="ui three wide column">
-                <div className="ui fluid card">
-                  <div className="image">
-                    <img src={president} />
-                  </div>
-                  <div className="content">
-                    <a className="header">Stephen Thomas</a>
-                    <div className="meta">
-                      <span className="date">Member since 2016</span>
-                    </div>
-                    {/* <div class="description">
-                Vrushank is an engineering student
-              </div> */}
-                  </div>
-                  <div className="extra content">
-                    <div className="center aligned author">
-                      <strong>President</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="ui three wide column">
-                <div className="ui fluid card">
-                  <div className="image">
-                    <img src={vicepresident} />
-                  </div>
-                  <div className="content">
-                    <a className="header">Mariana Casas</a>
-                    <div className="meta">
-                      <span className="date">Member since 2016</span>
-                    </div>
-                    {/* <div class="description">
-                Vrushank is an engineering student
-              </div> */}
-                  </div>
-                  <div className="extra content">
-                    <div className="center aligned author">
-                      <strong>Vice president</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="ui three wide column">
-                <div className="ui fluid card">
-                  <div className="image">
-                    <img src={treasurer} />
-                  </div>
-                  <div className="content">
-                    <a className="header">Nathan Andreo</a>
-                    <div className="meta">
-                      <span className="date">Member since 2016</span>
-                    </div>
-                    {/* <div class="description">
-                Vrushank is an engineering student
-              </div> */}
-                  </div>
-                  <div className="extra content">
-                    <div className="center aligned author">
-                      <strong>Treasurer</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="ui row">
-              <div className="ui three wide column">
-                <div className="ui fluid card">
-                  <div className="image">
-                    <img src={secretary} />
-                  </div>
-                  <div className="content">
-                    <a className="header">Katie Preiser</a>
-                    <div className="meta">
-                      <span className="date">Member since 2016</span>
-                    </div>
-                    {/* <div class="description">
-                Vrushank is an engineering student
-              </div> */}
-                  </div>
-                  <div className="extra content">
-                    <div className="center aligned author">
-                      <strong>Secretary</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="ui three wide column">
-                <div className="ui fluid card">
-                  <div className="image">
-                    <img src={business} />
-                  </div>
-                  <div className="content">
-                    <a className="header">Kaitlyn Lyons</a>
-                    <div className="meta">
-                      <span className="date">Member since 2016</span>
-                    </div>
-                    {/* <div class="description">
-                Vrushank is an engineering student
-              </div> */}
-                  </div>
-                  <div className="extra content">
-                    <div className="center aligned author">
-                      <strong>Business Coordinator</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* <ui class="row">
-        <div class="ui two wide column"></div>
-        <div class="ui twelve wide column">
-          <h1 class="ui dividing header" style='opacity: 0.8'>
-            Power Supply Leads
-          </hq>
-        </div>
-      </ui>
-      <div class="ui row">
-        <div class="ui three wide column">
-          <div class="ui fluid card">
-            <div class="image">
-              <img src="https://semantic-ui.com/images/avatar/large/elliot.jpg">
-            </div>
-            <div class="content">
-              <a class="header">Vrushank Desai</a>
-              <div class="meta">
-                <span class="date">Member since 2016</span>
-              </div>
-              <div class="description">
-                Vrushank is an engineering student
-              </div>
-            </div>
-            <div class="extra content">
-              <div class="center aligned author">
-                <strong>President</strong>
-              </div>
-            </div>
-        </div>
-        </div>
-        <div class="ui three wide column">
-          <div class="ui fluid card">
-            <div class="image">
-              <img src="https://semantic-ui.com/images/avatar/large/elliot.jpg">
-            </div>
-            <div class="content">
-              <a class="header">Vrushank Desai</a>
-              <div class="meta">
-                <span class="date">Member since 2016</span>
-              </div>
-              <div class="description">
-                Vrushank is an engineering student
-              </div>
-            </div>
-            <div class="extra content">
-              <div class="center aligned author">
-                <strong>President</strong>
-              </div>
-            </div>
-        </div>
-        </div>
-        <div class="ui three wide column">
-          <div class="ui fluid card">
-            <div class="image">
-              <img src="https://semantic-ui.com/images/avatar/large/elliot.jpg">
-            </div>
-            <div class="content">
-              <a class="header">Vrushank Desai</a>
-              <div class="meta">
-                <span class="date">Member since 2016</span>
-              </div>
-              <div class="description">
-                Vrushank is an engineering student
-              </div>
-            </div>
-            <div class="extra content">
-              <div class="center aligned author">
-                <strong>President</strong>
-              </div>
-            </div>
-        </div>
-        </div>
-      </div> */}
-          </div>
-        </div>
-        </React.Fragment>
-    )
-
+  window.onresize = () => {
+    setHomeImageHeight(getHeight());
+  };
+  return (
+    <React.Fragment>
+      <div
+        className="team-first-section"
+        style={{ height: `${homeImageHeight}px`, margin: 0 }}
+      >
+        <Container fluid={true}>
+          <Row>
+            <Col md={{ offset: 1 }}>
+              <h1
+                className="ui left aligned header"
+                style={{
+                  fontFamily: '"radnika"',
+                  marginTop: "25vh",
+                  fontSize: "9em",
+                  color: "white",
+                  opacity: "0.8",
+                }}
+              >
+                The Team
+              </h1>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+      <Container>
+        <h1
+          className="ui dividing header"
+          style={{ opacity: "0.8", margin: "4vh" }}
+        >
+          Officers
+        </h1>
+        <Row>
+          <Col>
+            <Card>
+              <Card.Img top src={president} alt="President" />
+              <Card.Body>
+                <Card.Title>Stephen Thomas</Card.Title>
+                <Card.Subtitle>President</Card.Subtitle>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col>
+            <Card>
+              <Card.Img top src={vicepresident} alt="Vice President" />
+              <Card.Body>
+                <Card.Title>Mariana Casas</Card.Title>
+                <Card.Subtitle>Vice President</Card.Subtitle>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+        <Row style={{ marginTop: "4vh" }}>
+          <Col>
+            <Card>
+              <Card.Img top src={secretary} alt="Secretary" />
+              <Card.Body>
+                <Card.Title>Katie Preiser</Card.Title>
+                <Card.Subtitle>Secretary</Card.Subtitle>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col>
+            <Card>
+              <Card.Img top src={treasurer} alt="Treasurer" />
+              <Card.Body>
+                <Card.Title>Nathan Andreo</Card.Title>
+                <Card.Subtitle>Treasurer</Card.Subtitle>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col>
+            <Card>
+              <Card.Img top src={business} alt="Business Coordinator" />
+              <Card.Body>
+                <Card.Title>Kaitlyn Lyons</Card.Title>
+                <Card.Subtitle>Business Coordinator</Card.Subtitle>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
+    </React.Fragment>
+  );
 }
