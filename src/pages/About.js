@@ -4,27 +4,17 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
-
+import Header from '../components/Header'
 import aboutUs1 from '../content/assets/images/about_us_1.JPG'
 import aboutUs2 from '../content/assets/images/about_us_2.jpg'
 import event1 from '../content/assets/images/event_1.jpg'
 
 export default function About() {
-  let getHeight = () => {
-    return window.innerHeight - 62
-  }
-
-  const [imageHeight, setImageHeight] = useState(getHeight());
-
-  window.onresize = () => {
-    setImageHeight(getHeight())
-  }
-
     return (
         <React.Fragment>
-        <div className="about-section" style={{height: `${imageHeight}px`, margin: 0}}>
+        <Header className="about-section">
           <h1 className="about-centered ">About Us</h1>
-        </div>
+        </Header>
         <Container>
           <Row className="align-items-center about-row">
             <Col md={6}>

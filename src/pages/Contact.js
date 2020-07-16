@@ -5,7 +5,6 @@ import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form'
 import Header from '../components/Header'
 
-import sponsorBanner from '../content/assets/images/sponsor_banner.jpg'
 
 export default function Contact() {
     return (

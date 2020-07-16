@@ -1,14 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Card from "react-bootstrap/Card";
+import Container from "react-bootstrap/Container";
+import Header from '../components/Header'
 
 import president from "../content/assets/images/president.JPG";
 import vicepresident from "../content/assets/images/vicepresident.JPG";
 import treasurer from "../content/assets/images/treasurer.JPG";
 import secretary from "../content/assets/images/secretary.JPG";
 import business from "../content/assets/images/business.JPG";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Card from "react-bootstrap/Card";
-import Container from "react-bootstrap/Container";
+
 
 
 function TeamCard({name, title, img, className}) {
@@ -26,23 +28,13 @@ function TeamCard({name, title, img, className}) {
 }
 
 export default function Team() {
-  let getHeight = () => {
-    return window.innerHeight - 62;
-  };
-
-  const [homeImageHeight, setHomeImageHeight] = useState(getHeight());
-
-  window.onresize = () => {
-    setHomeImageHeight(getHeight());
-  };
   return (
     <React.Fragment>
-      <div
+      <Header
         className="team-section"
-        style={{ height: `${homeImageHeight}px`, margin: 0 }}
       >
         <h1 className="about-centered ">The Team</h1>
-      </div>
+      </Header>
       <Container>
         <h1
           className="line-divider"

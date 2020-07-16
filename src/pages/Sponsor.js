@@ -8,6 +8,7 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
+import Header from '../components/Header'
 
 import premiumSoldworks from '../content/assets/images/premium_solidworks.png'
 import premiumEaton from '../content/assets/images/premium_eaton.png'
@@ -57,21 +58,11 @@ function SponsorRow({ img1, img2, img3 }) {
 }
 
 export default function Sponsor() {
-  let getHeight = () => {
-    return window.innerHeight - 62
-  }
-
-  const [imageHeight, setImageHeight] = useState(getHeight());
-
-  window.onresize = () => {
-    setImageHeight(getHeight())
-  }
-
     return (
         <React.Fragment>
-          <div className="sponsor-section" style={{height: `${imageHeight}px`, margin: 0}}>
+          <Header className="sponsor-section">
             <h1 className="sponsor-centered">Sponsors</h1>
-          </div>
+          </Header>
           <Container>
             <Row className="mt-5">
               <Col lg={{span: 10, offset: 1}}>

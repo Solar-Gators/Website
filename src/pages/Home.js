@@ -8,6 +8,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
+import Header from '../components/Header'
 
 import aboutUs1 from '../content/assets/images/about_us_1.JPG'
 import aboutUs2 from '../content/assets/images/about_us_2.jpg'
@@ -61,20 +62,9 @@ function HomeCard({im1, im2, linkTitle, link, children, index}) {
 }
 
 export default function Home() {
-
-  let getHeight = () => {
-    return window.innerHeight - 62
-  }
-
-  const [homeImageHeight, setHomeImageHeight] = useState(getHeight());
-
-  window.onresize = () => {
-    setHomeImageHeight(getHeight())
-  }
-
     return (
       <React.Fragment>
-        <div className="first-section" style={{height: `${homeImageHeight}px`, margin: 0}}>
+        <Header className="first-section">
           <Container fluid={true}>
             <Row>
               <Col md={{ offset: 1 }}>
@@ -95,7 +85,7 @@ export default function Home() {
               </Col>
             </Row>
           </Container>
-        </div>
+        </Header>
         <Container>
           <Row className="section">
             <Col md={{span: 8, offset: 2}}>
