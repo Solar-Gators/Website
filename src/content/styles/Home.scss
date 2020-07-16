@@ -67,23 +67,18 @@ hr {
 */
 .home-card {
     overflow: hidden;
-    width: $card-width;
+    max-width: $card-width;
 }
 
-.home-card-title {
-    width: $card-width;
-    height: $card-height;
-}
-.home-card-title img {
-    width: $card-width;
-    height: $card-height;
+.home-card-images {
+    max-width: $card-width;
 }
 
-.home-card-title:hover {
+.home-card-images:hover {
     transition: 0.5s;
-    transform: translateX(-$card-width);
+    transform: translateX(-100%);
 }
-.home-card-title:not( :hover ) {
+.home-card-images:not( :hover ) {
     transition: 0.5s;
     transform: translateX(0px);
 }
@@ -94,7 +89,7 @@ hr {
 
 .home-card-hidden {
     position: absolute;
-    left: $card-width;
+    left: 100%;
 }
 .home-card-visible {
     position: absolute;
@@ -106,6 +101,6 @@ hr {
 
 @media (min-width: 1200px) {
     .container-home-cards {
-        max-width: 1300px !important;
+        max-width: 2500px !important;
     }
 }

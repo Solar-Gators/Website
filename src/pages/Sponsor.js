@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import {
   Link
-} from "react-router-dom";
+} from "react-router-dom"
 
-import sponsorsBanner from '../content/assets/images/sponsor_banner.jpg'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Button from 'react-bootstrap/Button'
 
 import premiumSoldworks from '../content/assets/images/premium_solidworks.png'
 import premiumEaton from '../content/assets/images/premium_eaton.png'
@@ -39,212 +42,88 @@ import bronzeMoss from '../content/assets/images/bronze_moss.jpg'
 import bronzeBmrs from '../content/assets/images/bronze_bmrs.jpg'
 import bronzeBeadbuster from '../content/assets/images/bronze_beadbuster.jpg'
 
+
+function SponsorRow({ img1, img2, img3 }) {
+  let CustomImage = ({src}) => {
+    return <Col><img src={src} className="img-fluid" /></Col>
+  }
+  return (
+    <Row className="align-items-center mb-3">
+      { img1 ? <CustomImage src={img1} /> : <Col /> }
+      { img2 ? <CustomImage src={img2} /> : <Col /> }
+      { img3 ? <CustomImage src={img3} /> : <Col /> }
+    </Row>
+  )
+}
+
 export default function Sponsor() {
+  let getHeight = () => {
+    return window.innerHeight - 62
+  }
+
+  const [imageHeight, setImageHeight] = useState(getHeight());
+
+  window.onresize = () => {
+    setImageHeight(getHeight())
+  }
+
     return (
         <React.Fragment>
-          <div className="sponsor-container">
-            <img style={{width: '100%', opacity: 1}} src={sponsorsBanner} />
+          <div className="sponsor-section" style={{height: `${imageHeight}px`, margin: 0}}>
             <h1 className="sponsor-centered">Sponsors</h1>
           </div>
-          <div className="ui grid">
-            <div className="ui row" style={{marginTop: '5vh'}}>
-              <div className="two wide column" />
-              <div className="twelve wide column">
-                <div className="ui grid">
-                  <ui className="row">
-                    <div className="ui four wide column" />
-                    <div className="ui eight wide column">
-                      <h1 className="ui dividing header" style={{opacity: '0.8'}}>
-                        OUR SPONSORS
-                      </h1></div>
-                  </ui>
-                  <div className="ui row">
-                    <div className="ui four wide column" />
-                    <div className="ui eight wide column">Building, designing, prototyping, and organizing the build of a solar-powered vehicle is a very resource-intensive feat. All of this is possible due to the generosity and support of our beloved sponsors.</div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <Container>
+            <Row className="mt-5">
+              <Col lg={{span: 10, offset: 1}}>
+                <h2 className="line-divider">OUR SPONSORS</h2>
+                <p>Building, designing, prototyping, and organizing the build of a solar-powered vehicle is a very resource-intensive feat. All of this is possible due to the generosity and support of our beloved sponsors.</p>
+              </Col>
+              <Button className="btn-lg sponsor-button mt-3 mb-5 ml-auto mr-auto" as={Link} to="/donate">Sponsorship Opportunities</Button>
+            </Row>
+          </Container>
+
+          <div className="separator">
+            <h2 className="ml-4 mr-4">Cielo Car Sponsors (2019)</h2>
           </div>
 
-          <div className="ui grid">
-          <div className="ui row" style={{marginTop: '5vh'}}>
-            <div className="two wide column" />
-            <div className="twelve wide column">
-              <div className="ui grid">
-                <ui className="row">
-                  <div className="ui four wide column" />
-                  <div className="ui eight wide column">
-                    <h1 className="ui dividing header" style={{opacity: '0.8'}}>
-                      OUR SPONSORS
-                    </h1></div>
-                </ui>
-                <div className="ui row">
-                  <div className="ui four wide column" />
-                  <div className="ui eight wide column">Building, designing, prototyping, and organizing the build of a solar-powered vehicle is a very resource-intensive feat. All of this is possible due to the generosity and support of our beloved sponsors.</div>
-                </div>
-              </div>
+          <Container className="mt-5">
+            <div className="separator">
+              <h2 className="ml-4 mr-4">
+                <i class="fas fa-gift mr-3" />
+                Platinum Sponsors
+              </h2>
             </div>
-          </div>
-        </div>
 
-        <div className="ui grid">
-          <div className="ui row centered">
-            <Link to="/donate">
-              <div className="ui animated basic blue circular massive button" tabIndex={0}>
-                <div className="visible content">Sponsorship Opportunities</div>
-                <div className="hidden content">
-                  <i className="right arrow icon" />
-                </div>
-              </div>
-            </Link></div>
-          <div className="ui row centered" style={{marginTop: '5vh'}}>
-            <div className="sixteen wide column">
-              <div className="ui horizontal divider header dash_header">
-                <h1>Cielo Car Sponsors (2019)</h1>
-              </div>
-            </div>
-          </div>
-          <div className="ui row centered" style={{marginTop: '5vh'}}>
-            <div className="thirteen wide column">
-              <div className="ui horizontal divider header dash_header">
-                <i className="gift icon" />
-                Platnium Sponsors
-              </div>
-              <div className="ui middle aligned three column divided grid" style={{marginTop: '1vh'}}>
-                <div className="ui column">
-                  <img style={{width: '100%'}} src={premiumSoldworks} />
-                </div>
-                <div className="ui column">
-                  <img style={{width: '100%'}} src={premiumEaton} />
-                </div>
-                <div className="ui column">
-                  <img style={{width: '100%', height: '20vh'}} src={premiumAltair} />
-                </div>
-              </div>
-              <div className="ui middle aligned three column divided grid" style={{marginTop: '1vh'}}>
-                <div className="ui column">
-                  <img style={{width: '100%'}} src={premiumEce} />
-                </div>
-                <div className="ui column">
-                  <img style={{width: '100%'}} src={premiumHwco} />
-                </div>
-                <div className="ui column">
-                  <img style={{width: '100%', height: '20vh'}} src={premiumSiemens} />
-                </div>
-              </div>
-              <div className="ui middle aligned three column divided grid" style={{marginTop: '1vh'}}>
-                <div className="ui column">
-                  <img style={{width: '100%'}} src={premiumSolarImpact} />
-                </div>
-                <div className="ui column">
-                  <img style={{width: '100%'}} src={premiumSunpower} />
-                </div>
-                <div className="ui column">
-                  <img style={{width: '100%', height: '20vh'}} src={premiumUfmae} />
-                </div>
-              </div>
-              <div className="ui middle aligned three column divided grid" style={{marginTop: '1vh'}}>
-                <div className="ui column">
-                </div>
-                <div className="ui column">
-                  <img style={{width: '100%'}} src={premiumUniversal} />
-                </div>
-                <div className="ui column">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="ui row centered">
-            <div className="fourteen wide column"><div className="ui fluid divider" /></div>
-          </div>
-          <div className="ui row centered" style={{marginTop: '5vh'}}>
-            <div className="fourteen wide column">
-              <div className="ui horizontal divider header dash_header">
-                <i className="gift icon" />
+            <SponsorRow img1={premiumSoldworks} img2={premiumEaton} img3={premiumAltair} />
+            <SponsorRow img1={premiumEce} img2={premiumHwco} img3={premiumSiemens} />
+            <SponsorRow img1={premiumSolarImpact} img2={premiumSunpower} img3={premiumUfmae} />
+            <SponsorRow img2={premiumUniversal} />
+
+            <div className="separator mt-5 mb-2">
+              <h2 className="ml-4 mr-4">
+                <i class="fas fa-gift mr-3" />
                 Silver Sponsors
-              </div>
-              <div className="ui middle aligned three column divided grid" style={{marginTop: '1vh'}}>
-                <div className="ui column">
-                  <img style={{width: '100%'}} src={silverBac} />
-                </div>
-                <div className="ui column">
-                  <img style={{width: '100%'}} src={silverUfippd} />
-                </div>
-                <div className="ui column">
-                  <img style={{width: '100%', height: '20vh'}} src={silverRohacell} />
-                </div>
-              </div>
-              <div className="ui middle aligned three column divided grid" style={{marginTop: '1vh'}}>
-                <div className="ui column">
-                  <img style={{width: '100%'}} src={silverMirage} />
-                </div>
-                <div className="ui column">
-                  <img style={{width: '100%'}} src={silverFgci} />
-                </div>
-                <div className="ui column">
-                  <img style={{width: '100%', height: '20vh'}} src={silverBrembo} />
-                </div>
-              </div>
-              <div className="ui middle aligned three column divided grid" style={{marginTop: '1vh'}}>
-                <div className="ui column">
-                  <img style={{width: '80%'}} src={silverUfsg} />
-                </div>
-                <div className="ui column">
-                  <img style={{width: '100%'}} src={silverAccurate} />
-                </div>
-              </div>
+              </h2>
             </div>
-          </div>
-          <div className="ui row centered">
-            <div className="fourteen wide column"><div className="ui fluid divider" /></div>
-          </div>
-          <div className="ui row centered" style={{marginTop: '5vh'}}>
-            <div className="fourteen wide column">
-              <div className="ui horizontal divider header dash_header">
-                <i className="gift icon" />
-                Bronze Sponsors
-              </div>
-              <div className="ui middle aligned three column divided grid" style={{marginTop: '1vh'}}>
-                <div className="ui column">
-                  <img style={{width: '100%'}} src={bronzeTdk} />
-                </div>
-                <div className="ui column">
-                  <img style={{width: '100%'}} src={bronzeZevia} />
-                </div>
-                <div className="ui column">
-                  <img style={{width: '100%', height: '20vh'}} src={bronzeStickermule} />
-                </div>
-              </div>
-              <div className="ui middle aligned three column divided grid" style={{marginTop: '1vh'}}>
-                <div className="ui column">
-                  <img style={{width: '100%'}} src={bronzeSolarcat} />
-                </div>
-                <div className="ui column">
-                  <img style={{width: '100%'}} src={bronzeKevins} />
-                </div>
-                <div className="ui column">
-                  <img style={{width: '100%', height: '20vh'}} src={bronzeHakko} />
-                </div>
-              </div>
-              <div className="ui middle aligned three column divided grid" style={{marginTop: '1vh'}}>
-                <div className="ui column">
-                  <img style={{width: '100%'}} src={bronzeMoss} />
-                </div>
-                <div className="ui column">
-                  <img style={{width: '100%'}} src={bronzeBmrs} />
-                </div>
-                <div className="ui column">
-                  <img style={{width: '100%', height: '20vh'}} src={bronzeBeadbuster} />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="ui row centered">
-            <div className="fourteen wide column"><div className="ui fluid divider" /></div>
-          </div>
-        </div>
 
+            <SponsorRow img1={silverBac} img2={silverUfippd} img3={silverRohacell} />
+            <SponsorRow img1={silverMirage} img2={silverFgci} img3={silverUfsg} />
+            <SponsorRow img1={premiumSoldworks} img2={premiumEaton} img3={premiumAltair} />
+            <SponsorRow img1={silverBrembo} img2={silverAccurate} />
+
+            <div className="separator mt-5 mb-2">
+              <h2 className="ml-4 mr-4">
+                <i class="fas fa-gift mr-3" />
+                Bronze Sponsors
+              </h2>
+            </div>
+
+            <SponsorRow img1={bronzeTdk} img2={bronzeZevia} img3={bronzeStickermule} />
+            <SponsorRow img1={bronzeSolarcat} img2={bronzeKevins} img3={bronzeMoss} />
+            <SponsorRow img1={premiumSoldworks} img2={premiumEaton} img3={premiumAltair} />
+            <SponsorRow img1={bronzeBmrs} img2={bronzeBeadbuster} img3={bronzeHakko} />
+
+          </Container>
         </React.Fragment>
     )
 }

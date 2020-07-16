@@ -1,0 +1,34 @@
+
+.about-section {
+    background: url(../assets/images/img1.jpg), no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.about-centered {
+    color: #fff;
+    text-align: center;
+    width: 100vw;
+    opacity: 0.9;
+    text-shadow: 2px 2px grey;
+    font-size: 5em;
+    margin: 0px auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.about-images {
+    max-width: 300px;
+}
+
+.about-row {
+    margin-top: 15%;
+}

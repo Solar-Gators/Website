@@ -34,19 +34,19 @@ function HomeIcon({ icon, children }) {
 
 function HomeCard({ im1, im2, linkTitle, link, children, index }) {
   return (
-    <Col
-      xl={{ span: 3, offset: 0 }}
-      lg={{ span: 4, offset: index == 3 ? 4 : 0 }}
-      md={6}
-      className={`mt-xl-0 ${index == 3 ? "mt-lg-4" : "mt-lg-0"} ${
-        index == 2 || index == 3 ? "mt-md-4" : "mt-md-0"
-      }`}
-    >
+    <Col 
+    xl={{span: 2, offset: index == 0 ? 0 : 0}} 
+    lg={{ span: 4, offset: index == 3 ? 2 : 0 }} md={6}
+    className={`
+    mt-xl-0 ${index == 3 || index == 4 ? "mt-lg-4" : "mt-lg-0"}
+    ${index == 2 || index == 3 || index == 4 ? "mt-md-4" : "mt-md-0"}
+    mt-sm-4
+    ml-auto mr-auto`}>
       <Card className="home-card m-auto h-100">
-        <Card.Title className="home-card-title">
-          <img className="img-fluid home-card-visible" src={im1} />
-          <img className="img-fluid home-card-hidden" src={im2} />
-        </Card.Title>
+        <div className="home-card-images">
+          <Card.Img src={im1} />
+          <Card.Img src={im2} className="home-card-hidden" />
+        </div>
         <Card.Body className="home-card-body text-center d-table m-auto">
           <p className="m-auto">{children}</p>
         </Card.Body>
@@ -65,9 +65,8 @@ function HomeCard({ im1, im2, linkTitle, link, children, index }) {
 
 export default function Home() {
   let getHeight = () => {
-    console.log(window.innerHeight);
-    return window.innerHeight - 62;
-  };
+    return window.innerHeight - 62
+  }
 
   const [homeImageHeight, setHomeImageHeight] = useState(getHeight());
 
@@ -118,6 +117,25 @@ export default function Home() {
                 contact us
               </Link>
             </Col>
+
+          <Card className="section">
+            <Card.Body>
+              <Row className="text-center home-icon">
+                <HomeIcon icon="fa-wrench">2 cars built</HomeIcon>
+                <HomeIcon icon="fa-trophy">Founded in 2012</HomeIcon>
+                <HomeIcon icon="fa-users">17 sub-engineering teams</HomeIcon>
+                <HomeIcon icon="fa-certificate ">25+ sponsors</HomeIcon>
+              </Row>
+            </Card.Body>
+          </Card>
+        </Container>
+        <Container fluid={true} className="container-home-cards p-0">
+          <Row className="section">
+            <HomeCard index={0} im1={aboutUs1} im2={aboutUs2} linkTitle="About Us" link="/about">Our organization goes way back. Learn more about our history.</HomeCard>
+            <HomeCard index={1} im1={team1} im2={team2} linkTitle="The Team" link="/team">Solar Gators is a University of Florida student organization driven by passionate engineers and designers determined to win the Formula Sun Grand Prix.</HomeCard>
+
+            <HomeCard index={2} im1={event1} im2={event2} linkTitle="Events" link="/events">Solar Gators provides many opportunities and activities. Find out when and where.</HomeCard>
+            <HomeCard index={3} im1={contact1} im2={contact2} linkTitle="Contact Us" link="/contact">Shoot as an email with any inquiry or question you have about us.</HomeCard>
           </Row>
         </Container>
       </div>
