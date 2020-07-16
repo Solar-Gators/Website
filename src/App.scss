@@ -3,6 +3,7 @@
 @import "./content/styles/Footer.scss";
 @import "./content/styles/About.scss";
 @import "./content/styles/Sponsors.scss";
+@import "./content/styles/Team.scss";
 
 @font-face {
   font-family: 'radnika';
@@ -11,16 +12,6 @@
   font-style: normal;
 }
 
-
-
-.team-first-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./content/assets/images/img3.jpg), no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: center;
-}
 
 body {
   background: #ECE9E6;

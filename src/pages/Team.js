@@ -10,9 +10,23 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 
+
+function TeamCard({name, title, img, className}) {
+  return (
+  <Col className={`${className}`} style={{ maxWidth: '220px' }}>
+    <Card>
+      <Card.Img top src={img} alt={title} />
+      <Card.Body className="pl-3 pr-3 pb-2">
+        <h6 className="card-title">{name}</h6>
+        <p style={{ fontSize: "14px", color: "rgba(0,0,0,.4)" }}>Member Since 2020</p>
+        <h8 style={{ borderTop: '2px solid rgba(0,0,0,.05)' }} className="mt-auto d-block text-center">{title}</h8>
+      </Card.Body>
+    </Card>
+  </Col>)
+}
+
 export default function Team() {
   let getHeight = () => {
-    console.log(window.innerHeight);
     return window.innerHeight - 62;
   };
 
@@ -24,83 +38,29 @@ export default function Team() {
   return (
     <React.Fragment>
       <div
-        className="team-first-section"
+        className="team-section"
         style={{ height: `${homeImageHeight}px`, margin: 0 }}
       >
-        <Container fluid={true}>
-          <Row>
-            <Col md={{ offset: 1 }}>
-              <h1
-                className="ui left aligned header"
-                style={{
-                  fontFamily: '"radnika"',
-                  marginTop: "25vh",
-                  fontSize: "9em",
-                  color: "white",
-                  opacity: "0.8",
-                }}
-              >
-                The Team
-              </h1>
-            </Col>
-          </Row>
-        </Container>
+        <h1 className="about-centered ">The Team</h1>
       </div>
       <Container>
         <h1
-          className="ui dividing header"
+          className="line-divider"
           style={{ opacity: "0.8", margin: "4vh" }}
         >
           Officers
         </h1>
         <Row>
-          <Col>
-            <Card>
-              <Card.Img top src={president} alt="President" />
-              <Card.Body>
-                <Card.Title>Stephen Thomas</Card.Title>
-                <Card.Subtitle>President</Card.Subtitle>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col>
-            <Card>
-              <Card.Img top src={vicepresident} alt="Vice President" />
-              <Card.Body>
-                <Card.Title>Mariana Casas</Card.Title>
-                <Card.Subtitle>Vice President</Card.Subtitle>
-              </Card.Body>
-            </Card>
-          </Col>
+          <TeamCard name="Stephen Thomas" title="President" img={president} className="ml-auto" />
+
+          <TeamCard name="Mariana Casas" title="Vice President" img={vicepresident} />
+
+          <TeamCard name="Katie Preiser" title="Secretary" img={secretary} className="mr-auto" />
         </Row>
         <Row style={{ marginTop: "4vh" }}>
-          <Col>
-            <Card>
-              <Card.Img top src={secretary} alt="Secretary" />
-              <Card.Body>
-                <Card.Title>Katie Preiser</Card.Title>
-                <Card.Subtitle>Secretary</Card.Subtitle>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col>
-            <Card>
-              <Card.Img top src={treasurer} alt="Treasurer" />
-              <Card.Body>
-                <Card.Title>Nathan Andreo</Card.Title>
-                <Card.Subtitle>Treasurer</Card.Subtitle>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col>
-            <Card>
-              <Card.Img top src={business} alt="Business Coordinator" />
-              <Card.Body>
-                <Card.Title>Kaitlyn Lyons</Card.Title>
-                <Card.Subtitle>Business Coordinator</Card.Subtitle>
-              </Card.Body>
-            </Card>
-          </Col>
+
+          <TeamCard name="Nathan Andreo" title="Treasurer" img={treasurer} className="ml-auto" />
+          <TeamCard name="Kaitlyn Lyons" title="Business Coordinator" img={business} className="mr-auto" />
         </Row>
       </Container>
     </React.Fragment>

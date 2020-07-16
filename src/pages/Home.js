@@ -15,7 +15,7 @@ import aboutUs2 from '../content/assets/images/about_us_2.jpg'
 import event1 from '../content/assets/images/event_1.jpg'
 import event2 from '../content/assets/images/event_2.jpg'
 
-import team1 from '../content/assets/images/team_1.jpg'
+import team1 from '../content/assets/images/team_1.JPG'
 import team2 from '../content/assets/images/team_2.jpg'
 
 import contact1 from '../content/assets/images/contact_us_1.jpg'
