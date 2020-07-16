@@ -4,6 +4,7 @@
 @import "./content/styles/About.scss";
 @import "./content/styles/Sponsors.scss";
 @import "./content/styles/Team.scss";
+@import "./content/styles/Donate.scss";
 
 @font-face {
   font-family: 'radnika';
@@ -31,4 +32,8 @@ body {
   line-height: 28px;
 }
 
-
+.btn-circle { 
+  padding: 7px 10px;
+  border-radius: 25px;
+  text-align: center;
+}
