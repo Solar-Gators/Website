@@ -1,11 +1,12 @@
 import React from 'react'
+import Container from 'react-bootstrap/Container'
 
 export default function Events() {
     return (
-        <div className="ui container" style={{margin: '25vh'}}>
-            <div className="ui header">
+        <Container style={{margin: '25vh'}}>
+            <h2>
                 Event page coming soon...
-            </div>
-        </div>
+            </h2>
+        </Container>
     )
 }

@@ -1,0 +1,106 @@
+
+$card-width: 300px;
+$card-height: 300px;
+
+/* 
+  Orange Button
+*/
+.btn-orange {
+    @include button-variant(#f2711c, #f2711c, #f26202);
+}
+
+.first-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/images/img2.jpg), no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+  }
+
+/* 
+  Create inverse button
+*/
+.btn-inverse {
+    @include button-variant(transparent, white, white);
+    font-family: 'radnika';
+}
+
+/* 
+  Configure break line
+*/
+.home-break-line {
+    margin-top: 10%;
+}
+
+hr {
+    border-style: inset;
+    border-width: 1px;
+}
+
+
+/* 
+  Icons CSS
+*/
+.home-icon {
+    font-size: 2em;
+}
+
+.home-icon-text {
+    font-size: 0.6em;
+}
+
+
+
+/* 
+  Custom button for home cards
+*/
+.btn-home-card {
+    @include button-variant(transparent, #2185d0, #2185d0);
+    color: #2185d0;
+    font-family: 'radnika';
+}
+
+
+/* 
+  Home Card
+*/
+.home-card {
+    overflow: hidden;
+    max-width: $card-width;
+}
+
+.home-card-images {
+    max-width: $card-width;
+}
+
+.home-card-images:hover {
+    transition: 0.5s;
+    transform: translateX(-100%);
+}
+.home-card-images:not( :hover ) {
+    transition: 0.5s;
+    transform: translateX(0px);
+}
+
+.home-card-body {
+    font-size: 0.8em;
+}
+
+.home-card-hidden {
+    position: absolute;
+    left: 100%;
+}
+.home-card-visible {
+    position: absolute;
+}
+
+.section {
+    margin-top: 8%;
+}
+
+@media (min-width: 1200px) {
+    .container-home-cards {
+        max-width: 2500px !important;
+    }
+}

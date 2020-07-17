@@ -1,9 +1,9 @@
-import React from 'react';
+import React from 'react'
 import {
   BrowserRouter as Router,
   Switch,
   Route
-} from "react-router-dom";
+} from "react-router-dom"
 
 
 import Footer from './components/Footer'
@@ -17,13 +17,13 @@ import Donate from './pages/Donate'
 import Contact from './pages/Contact'
 import NotFound from './pages/NotFound'
 
-import './App.css';
+import './App.scss'
 
 const routerBaseName = process.env.PUBLIC_URL;
 
 function App() {
   return (
-    <React.Fragment>
+    <div className="overflow-hidden">
       <Router basename={routerBaseName}>
         <Navbar />
         <Switch>
@@ -40,7 +40,7 @@ function App() {
         </Switch>
         <Footer />
       </Router>
-    </React.Fragment>
+    </div>
   );
 }
 
