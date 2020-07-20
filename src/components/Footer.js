@@ -10,7 +10,7 @@ import Col from 'react-bootstrap/Col'
 export default function Footer() {
 
     return (
-      <div style={{marginTop: '10vh', background: '#202121', paddingTop: '8vh', paddingLeft: '20vh', paddingRight: '20vh'}}>
+      <div id="footer">
         <Row>
             <Col md={6}>
               <h2 className="text-white" >UF Solar Gators</h2>
@@ -30,14 +30,14 @@ export default function Footer() {
                 </button>
               </a>
             </Col>
-            <Col md={3}>
+            <Col md={3} xs={6}>
               <h5 className="text-white mt-sm-3 mt-3">Connect</h5>
               <Link to="/contact" style={{color:  'white'}}>Contact us</Link>
               <br />
               <Link to="https://www.facebook.com/UFSolarGators/" style={{color: 'white'}}>Join Us</Link>
             </Col>
 
-            <Col md={3}>
+            <Col md={3} xs={6}>
               <h5 className="text-white mt-sm-3 mt-3">Support us</h5>
               <Link to="/donate" style={{color:  'white'}}>Donate</Link>
               <br />
