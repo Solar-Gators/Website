@@ -32,8 +32,6 @@ export default function Contact() {
         let name = document.getElementById('contact-name')?.value
         let msg = document.getElementById('contact-msg')?.value
 
-        console.log(document.getElementById('contact-email').value)
-
         if (!captcha) {
             return setErrorMsg("Please verify the reCaptcha.")
         }
