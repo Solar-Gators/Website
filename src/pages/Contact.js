@@ -61,6 +61,9 @@ export default function Contact() {
                 setErrorMsg(response.msg)
             }
         })
+        .catch(({data: response}) => {
+            setErrorMsg(response.msg ?? "There has been an internal error.")
+        })
     }
 
     return (
