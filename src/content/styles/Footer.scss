@@ -165,3 +165,21 @@ Pulled from: https://bbbootstrap.com/snippets/social-media-icons-footer-54412302
     font-size: 25px;
     margin-right: 10px;
 }
+
+#footer {
+  margin-top: 10vh;
+  background: #202121;
+  padding-top: 8vh;
+  padding-left: 20vh;
+  padding-right: 20vh;
+}
+
+@media screen and (max-width: 768px) {
+  #footer {
+    margin-top: 10vh;
+    background: #202121;
+    padding-top: 8vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+  }
+}

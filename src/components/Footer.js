@@ -10,7 +10,7 @@ import Col from 'react-bootstrap/Col'
 export default function Footer() {
 
     return (
-      <div style={{marginTop: '10vh', background: '#202121', paddingTop: '8vh', paddingLeft: '20vh', paddingRight: '20vh'}}>
+      <div id="footer">
         <Row>
             <Col md={6}>
               <h2 className="text-white" >UF Solar Gators</h2>
