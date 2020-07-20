@@ -30,14 +30,14 @@ export default function Footer() {
                 </button>
               </a>
             </Col>
-            <Col md={3}>
+            <Col md={3} xs={6}>
               <h5 className="text-white mt-sm-3 mt-3">Connect</h5>
               <Link to="/contact" style={{color:  'white'}}>Contact us</Link>
               <br />
               <Link to="https://www.facebook.com/UFSolarGators/" style={{color: 'white'}}>Join Us</Link>
             </Col>
 
-            <Col md={3}>
+            <Col md={3} xs={6}>
               <h5 className="text-white mt-sm-3 mt-3">Support us</h5>
               <Link to="/donate" style={{color:  'white'}}>Donate</Link>
               <br />
