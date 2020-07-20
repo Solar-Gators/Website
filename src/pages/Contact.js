@@ -28,9 +28,11 @@ export default function Contact() {
             return
         }
 
-        let email = document.getElementById('contact-email')?.textContent
-        let name = document.getElementById('contact-name')?.textContent
-        let msg = document.getElementById('contact-msg')?.textContent
+        let email = document.getElementById('contact-email')?.value
+        let name = document.getElementById('contact-name')?.value
+        let msg = document.getElementById('contact-msg')?.value
+
+        console.log(document.getElementById('contact-email').value)
 
         if (!captcha) {
             return setErrorMsg("Please verify the reCaptcha.")
@@ -53,9 +55,9 @@ export default function Contact() {
             if (response.success) {
                 //good
                 setSuccessMsg("Your message has successfully been delivered.")
-                document.getElementById('contact-email').textContent = ""
-                document.getElementById('contact-name').textContent = ""
-                document.getElementById('contact-msg').textContent = ""
+                document.getElementById('contact-email').value = ""
+                document.getElementById('contact-name').value = ""
+                document.getElementById('contact-msg').value = ""
             }
             else {
                 setErrorMsg(response.msg)
