@@ -9,7 +9,7 @@ $card-height: 300px;
     @include button-variant(#f2711c, #f2711c, #f26202);
 }
 
-.first-section {
+.home-section {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/images/img2.jpg), no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -17,6 +17,21 @@ $card-height: 300px;
     background-size: cover;
     background-position: center;
   }
+
+#home-header {
+    font-family: 'radnika';
+    margin-top: 25vh;
+    font-size: 9em;
+    color: white;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+    #home-header {
+        font-size: 7em;
+    }
+  }
+
 
 /* 
   Create inverse button
@@ -104,3 +119,5 @@ hr {
         max-width: 2500px !important;
     }
 }
+
+

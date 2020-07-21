@@ -64,11 +64,11 @@ function HomeCard({im1, im2, linkTitle, link, children, index}) {
 export default function Home() {
     return (
       <React.Fragment>
-        <Header className="first-section">
+        <Header className="home-section">
           <Container fluid={true}>
             <Row>
               <Col md={{ offset: 1 }}>
-                <h1 className="ui left aligned header" style={{fontFamily: '"radnika"', marginTop: '25vh', fontSize: '9em', color: 'white', opacity: '0.8'}}>Solar Gators</h1>
+                <h1 id="home-header" className="ui left aligned header">Solar Gators</h1>
               </Col>
             </Row>
             <Row className="home-break-line">
