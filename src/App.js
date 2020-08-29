@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-  BrowserRouter as Router,
+  Router,
   Switch,
   Route
 } from "react-router-dom"
@@ -17,14 +17,31 @@ import Donate from './pages/Donate'
 import Contact from './pages/Contact'
 import NotFound from './pages/NotFound'
 
+import ReactGA from 'react-ga'
+import { createBrowserHistory } from 'history'
+
 import './App.scss'
+
+ReactGA.initialize(process.env.REACT_APP_GOOGLE_ANALYTICS);
+const history = createBrowserHistory();
+
+function logGoogle(location)
+{
+    ReactGA.set({ page: location.pathname })
+    ReactGA.pageview(location.pathname)
+}
+history.listen(location => {
+  logGoogle(location)
+});
+
+logGoogle(window.location)
 
 const routerBaseName = process.env.PUBLIC_URL;
 
 function App() {
   return (
     <div className="overflow-hidden">
-      <Router basename={routerBaseName}>
+      <Router basename={routerBaseName} history={history}>
         <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />

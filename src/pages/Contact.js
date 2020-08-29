@@ -7,7 +7,7 @@ import Alert from 'react-bootstrap/Alert'
 import Header from '../components/Header'
 import ReCAPTCHA from "react-google-recaptcha";
 import axios from 'axios'
-
+import ReactGA from 'react-ga'
 
 export default function Contact() {
 
@@ -15,6 +15,7 @@ export default function Contact() {
     const [ validated, setValidated ] = useState(false)
     const [ errorMsg, setErrorMsg ] = useState("")
     const [ successMsg, setSuccessMsg ] = useState("")
+    const [ submitting, setSubmitting ] = useState(false)
 
 
     let onSubmit = (event) =>  {
@@ -35,6 +36,9 @@ export default function Contact() {
         if (!captcha) {
             return setErrorMsg("Please verify the reCaptcha.")
         }
+        
+        //set submitting true to disable form
+        setSubmitting(true)
 
         axios.post('https://api.ufsolargators.org/api/contact', {
             email: email,
@@ -51,6 +55,10 @@ export default function Contact() {
             */
 
             if (response.success) {
+                ReactGA.event({
+                    category: 'User',
+                    action: 'Successfully submitted Contact Form'
+                  })
                 //good
                 setSuccessMsg("Your message has successfully been delivered.")
                 document.getElementById('contact-email').value = ""
@@ -58,11 +66,25 @@ export default function Contact() {
                 document.getElementById('contact-msg').value = ""
             }
             else {
-                setErrorMsg(response.msg)
+                setErrorMsg(response?.msg)
+                ReactGA.event({
+                    category: 'User',
+                    action: 'User error submitting form'
+                  })
             }
+
+            //enable submitting
+            setSubmitting(false)
         })
         .catch(({data: response}) => {
-            setErrorMsg(response.msg ?? "There has been an internal error.")
+            setErrorMsg(response?.msg ?? "There has been an internal error.")
+            //enable submitting
+            setSubmitting(false)
+
+            ReactGA.event({
+                category: 'Error',
+                action: 'Got an error while submitting form (PROGRAMMING ERROR)'
+              })
         })
     }
 
@@ -116,7 +138,8 @@ export default function Contact() {
 
                         <Button
                             variant="primary"
-                            type="submit">
+                            type="submit"
+                            disabled={submitting}>
                             Submit
                         </Button>
                     </Form>
