@@ -34,7 +34,7 @@ export default function Footer() {
               <h5 className="text-white mt-sm-3 mt-3">Connect</h5>
               <Link to="/contact" style={{color:  'white'}}>Contact us</Link>
               <br />
-              <Link to="https://www.facebook.com/UFSolarGators/" style={{color: 'white'}}>Join Us</Link>
+              <a href="https://www.facebook.com/UFSolarGators/" target="_blank" style={{color: 'white'}}>Join Us</a>
             </Col>
 
             <Col md={3} xs={6}>
