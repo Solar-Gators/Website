@@ -5,11 +5,11 @@ import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import Header from '../components/Header'
 
-import president from "../content/assets/images/president.JPG";
-import vicepresident from "../content/assets/images/vicepresident.JPG";
-import treasurer from "../content/assets/images/treasurer.JPG";
-import secretary from "../content/assets/images/secretary.JPG";
-import business from "../content/assets/images/business.JPG";
+import president20 from "../content/assets/images/president.JPG";
+import vicepresident20 from "../content/assets/images/VicePresident20.png";
+import treasurer20 from "../content/assets/images/Treasurer20.jpg";
+import secretary20 from "../content/assets/images/Secretary20.png";
+import business20 from "../content/assets/images/Business20.JPG";
 
 
 
@@ -43,16 +43,16 @@ export default function Team() {
           Officers
         </h1>
         <Row>
-          <TeamCard name="Stephen Thomas" title="President" img={president} className="ml-auto" />
+          <TeamCard name="Stephen Thomas" title="President" img={president20} className="ml-auto" />
 
-          <TeamCard name="Mariana Casas" title="Vice President" img={vicepresident} />
+          <TeamCard name="Charles Stone" title="Vice President" img={vicepresident20} />
 
-          <TeamCard name="Katie Preiser" title="Secretary" img={secretary} className="mr-auto" />
+          <TeamCard name="Irene Chung" title="Secretary" img={secretary20} className="mr-auto" />
         </Row>
         <Row style={{ marginTop: "4vh" }}>
 
-          <TeamCard name="Nathan Andreo" title="Treasurer" img={treasurer} className="ml-auto" />
-          <TeamCard name="Kaitlyn Lyons" title="Business Coordinator" img={business} className="mr-auto" />
+          <TeamCard name="Yash Bhat" title="Treasurer" img={treasurer20} className="ml-auto" />
+          <TeamCard name="Polina Leger" title="Business Coordinator" img={business20} className="mr-auto" />
         </Row>
       </Container>
     </React.Fragment>
