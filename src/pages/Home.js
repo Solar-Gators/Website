@@ -10,6 +10,9 @@ import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import Header from '../components/Header'
 
+
+import MailchimpSubscribe from "react-mailchimp-subscribe"
+
 import aboutUs1 from '../content/assets/images/about_us_1.JPG'
 import aboutUs2 from '../content/assets/images/about_us_2.jpg'
 
@@ -60,6 +63,61 @@ function HomeCard({im1, im2, linkTitle, link, children, index}) {
     </Col>
   )
 }
+
+const SubscriptionForm = ({ status, message, onValidated }) => {
+  let email, name;
+  const submit = () =>
+    email &&
+    email.value.indexOf("@") > -1 &&
+    onValidated({
+      EMAIL: email.value
+    });
+
+  return (
+    <Container>
+      <Row noGutters={true}>
+        <Col xs = {{offset: 2, span: 8}} md = {{span: 6, offset: 3}} lg = {{span:4, offset: 4}}>
+        {status === "sending" && <div style={{ color: "blue", textAlign: "center" }}>Sending...</div>}
+        {status === "error" && (
+          <div
+            style={{ color: "red", textAlign: "center"}}
+            dangerouslySetInnerHTML={{ __html: message }}
+          />
+        )}
+        {status === "success" && (
+          <div
+            style={{ color: "green", textAlign: "center" }}
+            dangerouslySetInnerHTML={{ __html: message }}
+          />
+        )}
+        </Col>
+      </Row>
+          
+      <Row noGutters={false}>
+        <Col xs = {{offset: 2, span: 8}} md = {{span: 6, offset: 3}} lg = {{span:4, offset: 4}}>
+          <Row noGutters={true}>
+            <Col xs = {{span: 8}}>
+              <input
+                style={{ fontSize: "1.4em", marginTop: "1rem", width: "100%", height: "85%"}}
+                ref={node => (email = node)}
+                type="email"
+                placeholder="Email Address"
+              />
+            </Col>
+            <Col className = "ml-1" xs = {{span: 3}}> 
+              <Button className="btn-subscription" onClick={submit}>
+                Go!
+              </Button>
+            </Col>     
+          </Row>
+        </Col>  
+        <Col xs = {{offset: 4, span:4}} md = {{offset: 5, span: 2}}> 
+
+        </Col>
+      </Row>
+    </Container>
+  );
+};
 
 export default function Home() {
     return (
@@ -123,6 +181,24 @@ export default function Home() {
             <HomeCard index={4} im1={sponsors1} im2={sponsors2} linkTitle="Sponsors" link="/sponsors">All of this is possible because of our sponsors. Check them out.</HomeCard>
           </Row>
         </Container>
+        <Container>
+          <Row className="section">
+            <Col md={{span: 8, offset: 2}}>
+              <h2 className="ui dividing header" class="text-center" style={{opacity: '0.8'}}>
+                  Subscribe to our Monthly Newsletter!
+              </h2>
+            </Col>
+          </Row>
+        </Container>
+        <MailchimpSubscribe url={process.env.REACT_APP_MAILCHIMP_URL} 
+                  render={({ subscribe, status, message }) => (
+                    <SubscriptionForm
+                      status={status}
+                      message={message}
+                      onValidated={formData => subscribe(formData)}
+                    />
+                  )}
+        />
       </React.Fragment>
     )
 }
