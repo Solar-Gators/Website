@@ -8,6 +8,18 @@ $card-height: 300px;
 .btn-orange {
     @include button-variant(#f2711c, #f2711c, #f26202);
 }
+/*
+    Subscription Button
+*/
+.btn-subscription{
+    @include button-variant(#808080, #808080, #2185d0);
+    font-family: 'radnika';
+    font-size: 1.4em;
+    //padding: 0.5em;
+    margin-top: 1rem;
+    width: 100%;
+    height: 85%;
+}
 
 .home-section {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/images/img2.jpg), no-repeat center center fixed;
