@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "32fd8e33a036931fac232f8ecc94c466",
+    "revision": "67e56ca18fcbb3d1c74debaf81e7a424",
     "url": "/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.89339240.chunk.css"
   },
   {
-    "revision": "53f07bc2cb7ca98cead6",
+    "revision": "73432bcef5058620a15a",
     "url": "/static/css/main.e5ec0afd.chunk.css"
   },
   {
@@ -20,12 +20,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.2f3a0f56.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "53f07bc2cb7ca98cead6",
-    "url": "/static/js/main.83388e98.chunk.js"
+    "revision": "73432bcef5058620a15a",
+    "url": "/static/js/main.720b8681.chunk.js"
   },
   {
     "revision": "02cfbc05f11fe2c9752a",
     "url": "/static/js/runtime-main.6dbf8a04.js"
+  },
+  {
+    "revision": "818fdc6a39c6fec6a0eef90f3e577d01",
+    "url": "/static/media/Business20.818fdc6a.JPG"
+  },
+  {
+    "revision": "e32905eca801d36c285b14cea8c1ce06",
+    "url": "/static/media/Secretary20.e32905ec.png"
+  },
+  {
+    "revision": "b4c02d5b4e64986ee35de04568ad064f",
+    "url": "/static/media/Treasurer20.b4c02d5b.jpg"
+  },
+  {
+    "revision": "23dd87dc3614b3d3769001232c83a106",
+    "url": "/static/media/VicePresident20.23dd87dc.png"
   },
   {
     "revision": "977fdfc7dddaa1ada3adcdc344f763b9",
@@ -54,10 +70,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2fc9b5dfcea2a6d676a92b7da5962c85",
     "url": "/static/media/bronze_solarcat.2fc9b5df.jpg"
-  },
-  {
-    "revision": "fbb088dbb9153f45b593c9a1d8737e12",
-    "url": "/static/media/business.fbb088db.JPG"
   },
   {
     "revision": "ef40743eb0895005bbec7711aa3e0d97",
@@ -120,10 +132,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/radnika-medium-webfont.352f4137.woff2"
   },
   {
-    "revision": "42c0398890dc12cdf72ee7e58733272a",
-    "url": "/static/media/secretary.42c03988.JPG"
-  },
-  {
     "revision": "c64f10767d0883fa2a88cf269f620477",
     "url": "/static/media/silver_accurate.c64f1076.png"
   },
@@ -178,13 +186,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8fac7398175ca66d115f44f4bd4dbe54",
     "url": "/static/media/team_2.8fac7398.jpg"
-  },
-  {
-    "revision": "abfc928e588b13380d12a0dbffbadc84",
-    "url": "/static/media/treasurer.abfc928e.JPG"
-  },
-  {
-    "revision": "f495c8b0ba8c56006b4ed0040e54a42d",
-    "url": "/static/media/vicepresident.f495c8b0.JPG"
   }
 ]);

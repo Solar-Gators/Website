@@ -1,19 +1,23 @@
 {
   "files": {
     "main.css": "/static/css/main.e5ec0afd.chunk.css",
-    "main.js": "/static/js/main.83388e98.chunk.js",
-    "main.js.map": "/static/js/main.83388e98.chunk.js.map",
+    "main.js": "/static/js/main.720b8681.chunk.js",
+    "main.js.map": "/static/js/main.720b8681.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6dbf8a04.js",
     "runtime-main.js.map": "/static/js/runtime-main.6dbf8a04.js.map",
     "static/css/2.89339240.chunk.css": "/static/css/2.89339240.chunk.css",
     "static/js/2.2f3a0f56.chunk.js": "/static/js/2.2f3a0f56.chunk.js",
     "static/js/2.2f3a0f56.chunk.js.map": "/static/js/2.2f3a0f56.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.d072b8f0cc43687519a27ddd9283a410.js": "/precache-manifest.d072b8f0cc43687519a27ddd9283a410.js",
+    "precache-manifest.da17c47f11a982661b71b84ca7c4db76.js": "/precache-manifest.da17c47f11a982661b71b84ca7c4db76.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.89339240.chunk.css.map": "/static/css/2.89339240.chunk.css.map",
     "static/css/main.e5ec0afd.chunk.css.map": "/static/css/main.e5ec0afd.chunk.css.map",
     "static/js/2.2f3a0f56.chunk.js.LICENSE.txt": "/static/js/2.2f3a0f56.chunk.js.LICENSE.txt",
+    "static/media/Business20.JPG": "/static/media/Business20.818fdc6a.JPG",
+    "static/media/Secretary20.png": "/static/media/Secretary20.e32905ec.png",
+    "static/media/Treasurer20.jpg": "/static/media/Treasurer20.b4c02d5b.jpg",
+    "static/media/VicePresident20.png": "/static/media/VicePresident20.23dd87dc.png",
     "static/media/about_us_1.JPG": "/static/media/about_us_1.977fdfc7.JPG",
     "static/media/about_us_2.jpg": "/static/media/about_us_2.4b9f5a38.jpg",
     "static/media/bronze_beadbuster.jpg": "/static/media/bronze_beadbuster.a2e2fba2.jpg",
@@ -21,7 +25,6 @@
     "static/media/bronze_kevins.jpg": "/static/media/bronze_kevins.733ed6d4.jpg",
     "static/media/bronze_moss.jpg": "/static/media/bronze_moss.fcc1d643.jpg",
     "static/media/bronze_solarcat.jpg": "/static/media/bronze_solarcat.2fc9b5df.jpg",
-    "static/media/business.JPG": "/static/media/business.fbb088db.JPG",
     "static/media/contact_us_1.jpg": "/static/media/contact_us_1.ef40743e.jpg",
     "static/media/contact_us_2.jpg": "/static/media/contact_us_2.baf54706.jpg",
     "static/media/event_1.jpg": "/static/media/event_1.390b3611.jpg",
@@ -33,7 +36,6 @@
     "static/media/premium_solar_impact.png": "/static/media/premium_solar_impact.502fef26.png",
     "static/media/premium_ufmae.png": "/static/media/premium_ufmae.b6abc7a8.png",
     "static/media/president.JPG": "/static/media/president.e1a99d2a.JPG",
-    "static/media/secretary.JPG": "/static/media/secretary.42c03988.JPG",
     "static/media/silver_accurate.png": "/static/media/silver_accurate.c64f1076.png",
     "static/media/silver_bac.jpg": "/static/media/silver_bac.d64e345e.jpg",
     "static/media/silver_brembo.jpg": "/static/media/silver_brembo.933f13ca.jpg",
@@ -46,15 +48,13 @@
     "static/media/sponsors_2.jpg": "/static/media/sponsors_2.687e4518.jpg",
     "static/media/sponsorship-levels.png": "/static/media/sponsorship-levels.e14abf3d.png",
     "static/media/team_1.JPG": "/static/media/team_1.71eee591.JPG",
-    "static/media/team_2.jpg": "/static/media/team_2.8fac7398.jpg",
-    "static/media/treasurer.JPG": "/static/media/treasurer.abfc928e.JPG",
-    "static/media/vicepresident.JPG": "/static/media/vicepresident.f495c8b0.JPG"
+    "static/media/team_2.jpg": "/static/media/team_2.8fac7398.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.6dbf8a04.js",
     "static/css/2.89339240.chunk.css",
     "static/js/2.2f3a0f56.chunk.js",
     "static/css/main.e5ec0afd.chunk.css",
-    "static/js/main.83388e98.chunk.js"
+    "static/js/main.720b8681.chunk.js"
   ]
 }
