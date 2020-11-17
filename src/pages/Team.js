@@ -27,7 +27,17 @@ function TeamCard({name, title, img, className}) {
   </Col>)
 }
 
-export default function Team() {
+export default class Team extends React.Component{
+constructor(props) {
+    super(props)
+    this.state = {
+      names: names20,
+      imgs: imgs20,
+      years: years20
+    }
+}
+
+  render(){
   return (
     <React.Fragment>
       <Header
@@ -42,19 +52,48 @@ export default function Team() {
         >
           Officers
         </h1>
+        
         <Row>
-          <TeamCard name="Stephen Thomas" title="President" img={president20} className="ml-auto" />
+          <TeamCard name = {this.state.names[0]} title ="President" img ={this.state.imgs[0]} className ="ml-auto" year = {this.state.years[0]}/>
 
-          <TeamCard name="Charles Stone" title="Vice President" img={vicepresident20} />
+          <TeamCard name = {this.state.names[1]} title="Vice President" img={this.state.imgs[1]} year = {this.state.years[1]}/>
 
-          <TeamCard name="Irene Chung" title="Secretary" img={secretary20} className="mr-auto" />
+          <TeamCard name = {this.state.names[2]} title="Secretary" img={this.state.imgs[2]} className="mr-auto" year = {this.state.years[2]}/>
+          <Dropdown
+          onSelect={
+            (eventKey) =>
+            { 
+              if(eventKey === "201920")
+              {
+                this.setState((state) =>{
+                    return { names: names19, imgs: imgs19, years: years19}
+                });
+              }
+              if(eventKey === "202021")
+              {
+                this.setState((state) =>{
+                  return { names: names20, imgs: imgs20, years: years20}
+                });
+              }
+            }}>
+          <Dropdown.Toggle variant="Primary" id="dropdown-basic" className = "ml-auto">
+             Past Years
+          </Dropdown.Toggle>
+        
+          <Dropdown.Menu>
+          <Dropdown.Item eventKey = "202021" >2020-2021</Dropdown.Item>
+          <Dropdown.Item eventKey = "201920">2019-2020</Dropdown.Item>
+            
+          </Dropdown.Menu>
+
+          </Dropdown>
         </Row>
         <Row style={{ marginTop: "4vh" }}>
-
-          <TeamCard name="Yash Bhat" title="Treasurer" img={treasurer20} className="ml-auto" />
-          <TeamCard name="Polina Leger" title="Business Coordinator" img={business20} className="mr-auto" />
+          <TeamCard name={this.state.names[3]} title="Treasurer" img={this.state.imgs[3]} className="ml-auto" year = {this.state.years[3]}/>
+          <TeamCard name={this.state.names[4]} title="Business Coordinator" img={this.state.imgs[4]} className="mr-auto" year = {this.state.years[4]}/>
         </Row>
       </Container>
     </React.Fragment>
-  );
+  ); 
+}
 }
