@@ -3,29 +3,46 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
+import Dropdown from "react-bootstrap/Dropdown";
 import Header from '../components/Header'
 
-import president20 from "../content/assets/images/president.JPG";
+import president20 from "../content/assets/images/president20.JPG";
 import vicepresident20 from "../content/assets/images/VicePresident20.png";
 import treasurer20 from "../content/assets/images/Treasurer20.jpg";
 import secretary20 from "../content/assets/images/Secretary20.png";
 import business20 from "../content/assets/images/Business20.JPG";
+import president19 from "../content/assets/images/president20.JPG";
+import vicepresident19 from "../content/assets/images/vicepresident19.JPG";
+import treasurer19 from "../content/assets/images/treasurer19.JPG";
+import secretary19 from "../content/assets/images/secretary19.JPG";
+import business19 from "../content/assets/images/business19.JPG";
+ 
+var names = ["Stephen Thomas", "Charles Stone", "Irene Chung", "Yash Bhat", "Polina Leger"];
+var imgs = [president20, vicepresident20, secretary20, treasurer20, business20];
+var years = ["2017", "2018", "2019", "2019", "2019"];
+var names20 = ["Stephen Thomas", "Charles Stone", "Irene Chung", "Yash Bhat", "Polina Leger"];
+var imgs20 = [president20, vicepresident20, secretary20, treasurer20, business20];
+var years20 = ["2017", "2019", "2019", "2019", "2019"];
+var names19 = ["Stephen Thomas","Mariana Casas","Katie Preiser","Nathan Andreo","Kaitlyn Lyons"];
+var imgs19 = [president19, vicepresident19, secretary19, treasurer19, business19];
+var years19 = ["2017", "2017", "2017", "2017", "2018"];
 
 
-
-function TeamCard({name, title, img, className}) {
+function TeamCard({name, title, img, className, year}) {
   return (
   <Col className={`${className}`} style={{ maxWidth: '220px' }}>
     <Card>
       <Card.Img top src={img} alt={title} />
       <Card.Body className="pl-3 pr-3 pb-2">
         <h6 className="card-title">{name}</h6>
-        <p style={{ fontSize: "14px", color: "rgba(0,0,0,.4)" }}>Member Since 2020</p>
+        <p style={{ fontSize: "14px", color: "rgba(0,0,0,.4)" }}>Member Since {year}</p>
         <h8 style={{ borderTop: '2px solid rgba(0,0,0,.05)' }} className="mt-auto d-block text-center">{title}</h8>
       </Card.Body>
     </Card>
   </Col>)
 }
+
+
 
 export default class Team extends React.Component{
 constructor(props) {
