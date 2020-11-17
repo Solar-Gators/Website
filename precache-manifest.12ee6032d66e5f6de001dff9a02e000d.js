@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "67e56ca18fcbb3d1c74debaf81e7a424",
+    "revision": "95d866b176726f307101acb743d203f9",
     "url": "/index.html"
   },
   {
-    "revision": "05436605644000976a27",
+    "revision": "26cc776c7b280a4d869f",
     "url": "/static/css/2.89339240.chunk.css"
   },
   {
-    "revision": "73432bcef5058620a15a",
+    "revision": "7595f306104a7ad45ec8",
     "url": "/static/css/main.e5ec0afd.chunk.css"
   },
   {
-    "revision": "05436605644000976a27",
-    "url": "/static/js/2.2f3a0f56.chunk.js"
+    "revision": "26cc776c7b280a4d869f",
+    "url": "/static/js/2.20bee739.chunk.js"
   },
   {
     "revision": "b83dadd00b6b48ce861e1a8d3eb19a56",
-    "url": "/static/js/2.2f3a0f56.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.20bee739.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "73432bcef5058620a15a",
-    "url": "/static/js/main.720b8681.chunk.js"
+    "revision": "7595f306104a7ad45ec8",
+    "url": "/static/js/main.742eae71.chunk.js"
   },
   {
     "revision": "02cfbc05f11fe2c9752a",
@@ -70,6 +70,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2fc9b5dfcea2a6d676a92b7da5962c85",
     "url": "/static/media/bronze_solarcat.2fc9b5df.jpg"
+  },
+  {
+    "revision": "fbb088dbb9153f45b593c9a1d8737e12",
+    "url": "/static/media/business19.fbb088db.JPG"
   },
   {
     "revision": "ef40743eb0895005bbec7711aa3e0d97",
@@ -121,7 +125,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "e1a99d2a99a5d4b405d2364e7905a5f2",
-    "url": "/static/media/president.e1a99d2a.JPG"
+    "url": "/static/media/president20.e1a99d2a.JPG"
   },
   {
     "revision": "0474c6264579a9caf11dfc8efb1ee5b0",
@@ -130,6 +134,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "352f41373ec0adfc3f85c129a42f1a77",
     "url": "/static/media/radnika-medium-webfont.352f4137.woff2"
+  },
+  {
+    "revision": "42c0398890dc12cdf72ee7e58733272a",
+    "url": "/static/media/secretary19.42c03988.JPG"
   },
   {
     "revision": "c64f10767d0883fa2a88cf269f620477",
@@ -186,5 +194,13 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8fac7398175ca66d115f44f4bd4dbe54",
     "url": "/static/media/team_2.8fac7398.jpg"
+  },
+  {
+    "revision": "abfc928e588b13380d12a0dbffbadc84",
+    "url": "/static/media/treasurer19.abfc928e.JPG"
+  },
+  {
+    "revision": "f495c8b0ba8c56006b4ed0040e54a42d",
+    "url": "/static/media/vicepresident19.f495c8b0.JPG"
   }
 ]);
