@@ -29,6 +29,8 @@ import IC3D from '../content/assets/images/ic3-industries-logo.png'
 import ProtoPlasta from '../content/assets/images/Logomark_Desktop_Oct_2020.webp'
 import SainSmart from '../content/assets/images/sainsmart.webp'
 import NordLock from '../content/assets/images/nordlock.jpg'
+import IPF from '../content/assets/images/ipf.jpg'
+import MAE from '../content/assets/images/mae.png'
 
 import premiumSoldworks from '../content/assets/images/premium_solidworks.png'
 import premiumEaton from '../content/assets/images/premium_eaton.png'
@@ -105,7 +107,7 @@ export default function Sponsor() {
               </h2>
         </div>
 
-        <SponsorRow img1={premiumHwco} img1link="https://www.eng.ufl.edu/" img2={zenithTecnica} img2link="https://www.zenithtecnica.com/" img3={premiumEce} img3link="https://www.ece.ufl.edu/" />
+        <SponsorRow img1={MAE} img1link="https://mae.ufl.edu/" img2={zenithTecnica} img2link="https://www.zenithtecnica.com/" img3={premiumEce} img3link="https://www.ece.ufl.edu/" />
 
         <div className="separator mt-5 mb-2">
           <h2 className="ml-4 mr-4">
@@ -138,7 +140,7 @@ export default function Sponsor() {
         <SponsorRow img1={SKF} img1link="https://www.skf.com" img2={the3AComposites} img2link="https://3acompositesusa.com/" img3={silverFgci} img3link="https://www.fgci.com/" />
         <SponsorRow img1={PhoenixThermalSupply} img1link="https://www.phoenixthermalsupply.com/"img2={ansys} img2link="https://www.ansys.com/" img3={VR3} img3link="https://vr3.ca/" />
         <SponsorRow img1={FusionFilaments} img1link="https://fusionfilaments.com/" img2={IC3D} img2link="https://www.ic3dprinters.com/" img3={ProtoPlasta} img3link="https://www.proto-pasta.com/" />
-        <SponsorRow img1={SainSmart} img1link="https://www.sainsmart.com/" img2={NordLock} img2link="https://www.nord-lock.com" />
+        <SponsorRow img1={SainSmart} img1link="https://www.sainsmart.com/" img2={NordLock} img2link="https://www.nord-lock.com" img3={IPF} img3link="https://goo.gl/maps/a8tBJe2cCBKJWkzq5" />
 
       </Container>
 
