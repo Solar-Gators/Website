@@ -1,5 +1,4 @@
 import React from 'react'
-import sponsorsImage from '../content/assets/images/sponsors.png'
 import {
   Link
 } from "react-router-dom";
@@ -46,11 +45,11 @@ export default function Footer() {
         </Row>
         <Row className="mt-5">
           <Col>
-            <div className="separator text-white">
-              <i className="fas fa-certificate home-icon separator-icon ml-2" aria-hidden="true" />
-              <strong className="mr-2">Our Sponsors</strong>
+            <div className="separator text-white ">
+              <i className="fas ml-2" aria-hidden="true" />
+              <strong className="mr-2">
+              <Link to="/sponsors" style={{color:  'white'}}>Our Sponsors</Link></strong>
             </div>
-            <img style={{width: '100%'}} src={sponsorsImage} />
           </Col>
         </Row>
       </div>
