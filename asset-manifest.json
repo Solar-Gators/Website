@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.e5ec0afd.chunk.css",
-    "main.js": "/static/js/main.90ba33dc.chunk.js",
-    "main.js.map": "/static/js/main.90ba33dc.chunk.js.map",
+    "main.css": "/static/css/main.07744b18.chunk.css",
+    "main.js": "/static/js/main.df45fd92.chunk.js",
+    "main.js.map": "/static/js/main.df45fd92.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6dbf8a04.js",
     "runtime-main.js.map": "/static/js/runtime-main.6dbf8a04.js.map",
     "static/css/2.89339240.chunk.css": "/static/css/2.89339240.chunk.css",
-    "static/js/2.565aee0c.chunk.js": "/static/js/2.565aee0c.chunk.js",
-    "static/js/2.565aee0c.chunk.js.map": "/static/js/2.565aee0c.chunk.js.map",
+    "static/js/2.ff49d03a.chunk.js": "/static/js/2.ff49d03a.chunk.js",
+    "static/js/2.ff49d03a.chunk.js.map": "/static/js/2.ff49d03a.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.614fe67c8126ebf0564493190824e84e.js": "/precache-manifest.614fe67c8126ebf0564493190824e84e.js",
+    "precache-manifest.ec3c9d94d21879f1b40c68a6dfad7299.js": "/precache-manifest.ec3c9d94d21879f1b40c68a6dfad7299.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.89339240.chunk.css.map": "/static/css/2.89339240.chunk.css.map",
-    "static/css/main.e5ec0afd.chunk.css.map": "/static/css/main.e5ec0afd.chunk.css.map",
-    "static/js/2.565aee0c.chunk.js.LICENSE.txt": "/static/js/2.565aee0c.chunk.js.LICENSE.txt",
+    "static/css/main.07744b18.chunk.css.map": "/static/css/main.07744b18.chunk.css.map",
+    "static/js/2.ff49d03a.chunk.js.LICENSE.txt": "/static/js/2.ff49d03a.chunk.js.LICENSE.txt",
     "static/media/1234751087606171086_1234751087606171086.png": "/static/media/1234751087606171086_1234751087606171086.461fbeb0.png",
     "static/media/3a-logo.png": "/static/media/3a-logo.ad4811aa.png",
     "static/media/Business20.JPG": "/static/media/Business20.818fdc6a.JPG",
@@ -61,7 +61,6 @@
     "static/media/silver_mirage.png": "/static/media/silver_mirage.1900de95.png",
     "static/media/silver_rohacell.jpg": "/static/media/silver_rohacell.19c02d8e.jpg",
     "static/media/silver_ufsg.png": "/static/media/silver_ufsg.a49fa740.png",
-    "static/media/sponsors.png": "/static/media/sponsors.5b20304e.png",
     "static/media/sponsors_1.jpg": "/static/media/sponsors_1.9cc5da40.jpg",
     "static/media/sponsors_2.jpg": "/static/media/sponsors_2.687e4518.jpg",
     "static/media/sponsorship-levels.png": "/static/media/sponsorship-levels.e14abf3d.png",
@@ -74,8 +73,8 @@
   "entrypoints": [
     "static/js/runtime-main.6dbf8a04.js",
     "static/css/2.89339240.chunk.css",
-    "static/js/2.565aee0c.chunk.js",
-    "static/css/main.e5ec0afd.chunk.css",
-    "static/js/main.90ba33dc.chunk.js"
+    "static/js/2.ff49d03a.chunk.js",
+    "static/css/main.07744b18.chunk.css",
+    "static/js/main.df45fd92.chunk.js"
   ]
 }
