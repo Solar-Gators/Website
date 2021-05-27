@@ -96,7 +96,7 @@ export default function Sponsor() {
       </Container>
 
       <div className="separator">
-        <h2 className="ml-4 mr-4">Vanquish Sponsors (Car 3, 2021)</h2>
+        <h2 className="ml-4 mr-4">Vanquish Sponsors (Car 3, 2020-2021)</h2>
       </div>
 
       <Container className="mt-5">
@@ -145,7 +145,7 @@ export default function Sponsor() {
       </Container>
 
       <div className="separator">
-        <h2 className="ml-4 mr-4">Cielo Car Sponsors (2019)</h2>
+        <h2 className="ml-4 mr-4">Cielo Car Sponsors (Car 2, 2019)</h2>
       </div>
 
       <Container className="mt-5">
@@ -170,7 +170,6 @@ export default function Sponsor() {
 
         <SponsorRow img1={silverBac} img2={silverUfippd} img3={silverRohacell} />
         <SponsorRow img1={silverMirage} img2={silverFgci} img3={silverUfsg} />
-        <SponsorRow img1={premiumSoldworks} img2={premiumEaton} img3={premiumAltair} />
         <SponsorRow img1={silverBrembo} img2={silverAccurate} />
 
         <div className="separator mt-5 mb-2">
@@ -182,7 +181,6 @@ export default function Sponsor() {
 
         <SponsorRow img1={bronzeTdk} img2={bronzeZevia} img3={bronzeStickermule} />
         <SponsorRow img1={bronzeSolarcat} img2={bronzeKevins} img3={bronzeMoss} />
-        <SponsorRow img1={premiumSoldworks} img2={premiumEaton} img3={premiumAltair} />
         <SponsorRow img1={bronzeBmrs} img2={bronzeBeadbuster} img3={bronzeHakko} />
 
       </Container>
