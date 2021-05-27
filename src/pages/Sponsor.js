@@ -68,7 +68,7 @@ import bronzeBeadbuster from '../content/assets/images/bronze_beadbuster.jpg'
 
 function SponsorRow({ img1, img1link, img2, img2link, img3, img3link }) {
   let CustomImage = ({ src, link }) => {
-    return <Col><a href={link}><img src={src} className="img-fluid" /></a></Col>
+    return <Col><a href={link}><span class="align-center"><img src={src} className="img-fluid" /></span></a></Col>
   }
   return (
     <Row className="align-items-center mb-3">
