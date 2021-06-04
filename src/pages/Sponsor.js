@@ -96,7 +96,7 @@ export default function Sponsor() {
       </Container>
 
       <div className="separator">
-        <h2 className="ml-4 mr-4">Vanquish Sponsors (Car 3, 2020-2021)</h2>
+        <h2 className="ml-4 mr-4">Sunrider Sponsors (Car 3, 2020-2021)</h2>
       </div>
 
       <Container className="mt-5">
