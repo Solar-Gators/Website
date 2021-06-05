@@ -28,7 +28,7 @@ export default function Donate() {
                 </Col>
 
                 <Col>
-                <img style={{width: '100%', opacity: 1}} src={sponsorshipLevels} />
+                <img style={{width: '100%', opacity: 1}} src={sponsorshipLevels} alt="photo" />
                 </Col>
             </Row>
 

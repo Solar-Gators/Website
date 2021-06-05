@@ -16,7 +16,7 @@ export default function WebsiteNavbar() {
   return (
     <Navbar color="light" light expand="md">
         <Navbar.Brand as={Link} to="/">
-          <img width={35} height={35} src={logoImage} />
+          <img width={35} height={35} src={logoImage} alt="Logo" />
         </Navbar.Brand>
         <Navbar.Toggle onClick={toggle} />
         <Navbar.Collapse isOpen={isOpen} navbar>
