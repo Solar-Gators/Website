@@ -10,3 +10,10 @@
     position: relative;
     align-items: center;
 }
+
+.dropdownrow {
+    display: flex;
+    position: relative;
+    align-items: right;
+    align-content: stretch;
+}
