@@ -23,7 +23,7 @@ import treasurer19 from "../content/assets/images/treasurer19.JPG";
 import secretary19 from "../content/assets/images/secretary19.JPG";
 import business19 from "../content/assets/images/business19.JPG";
 
-var names21 = ["Charles Stone", "Irene Chung", "Maya Greene", "Jamie Van Der Veken", "Kiran Mital", "Christian Michaelis"];
+var names21 = ["Charles Stone", "Irene Chung", "Maya Greene", "Jamie Van Der Veken", "Christian Michaelis"];
 var imgs21 = [president21, vicepresident21, secretary21, treasurer21, business21];
 var years21 = ["2019", "2019", "2019", "2019", "2019", "2019"];
 var names20 = ["Stephen Thomas", "Charles Stone", "Irene Chung", "Yash Bhat", "Polina Leger"];
