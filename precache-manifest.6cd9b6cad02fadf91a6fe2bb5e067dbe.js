@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a976496dbdfab515c51d9a6d7cffa5d1",
+    "revision": "14996570064a64b5c12f719fa2ad4154",
     "url": "/index.html"
   },
   {
-    "revision": "4465fc654cf613d1e581",
+    "revision": "61221b7900af8fd914a7",
     "url": "/static/css/2.89339240.chunk.css"
   },
   {
-    "revision": "d11d7ff2f2666e63ecee",
-    "url": "/static/css/main.8472bc2e.chunk.css"
+    "revision": "4ce2613d0b8401d487da",
+    "url": "/static/css/main.309b390a.chunk.css"
   },
   {
-    "revision": "4465fc654cf613d1e581",
-    "url": "/static/js/2.ff49d03a.chunk.js"
+    "revision": "61221b7900af8fd914a7",
+    "url": "/static/js/2.9b554631.chunk.js"
   },
   {
     "revision": "b83dadd00b6b48ce861e1a8d3eb19a56",
-    "url": "/static/js/2.ff49d03a.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.9b554631.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d11d7ff2f2666e63ecee",
-    "url": "/static/js/main.b030676c.chunk.js"
+    "revision": "4ce2613d0b8401d487da",
+    "url": "/static/js/main.96bf2dba.chunk.js"
   },
   {
     "revision": "02cfbc05f11fe2c9752a",
@@ -38,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "818fdc6a39c6fec6a0eef90f3e577d01",
     "url": "/static/media/Business20.818fdc6a.JPG"
+  },
+  {
+    "revision": "3ec8c197bc1033bc64a0c172e52c6665",
+    "url": "/static/media/Business21.3ec8c197.png"
   },
   {
     "revision": "0c81c08f46d3e70f8226ebfcf2a2199a",
@@ -60,8 +64,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Secretary20.e32905ec.png"
   },
   {
+    "revision": "3b8a110f5a4290f7c60c283263db008f",
+    "url": "/static/media/Secretary21.3b8a110f.jpg"
+  },
+  {
     "revision": "b4c02d5b4e64986ee35de04568ad064f",
     "url": "/static/media/Treasurer20.b4c02d5b.jpg"
+  },
+  {
+    "revision": "6b358929498c99ac7924a5db6c7139dd",
+    "url": "/static/media/Treasurer21.6b358929.jpg"
   },
   {
     "revision": "67064aeffe8a5b913b12bb54a44c8bc1",
