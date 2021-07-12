@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "14996570064a64b5c12f719fa2ad4154",
+    "revision": "260d2216e86dddb0cad2f55563b0748b",
     "url": "/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.89339240.chunk.css"
   },
   {
-    "revision": "4ce2613d0b8401d487da",
+    "revision": "ada175677d8644b394ed",
     "url": "/static/css/main.309b390a.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.9b554631.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4ce2613d0b8401d487da",
-    "url": "/static/js/main.96bf2dba.chunk.js"
+    "revision": "ada175677d8644b394ed",
+    "url": "/static/js/main.396c221e.chunk.js"
   },
   {
     "revision": "02cfbc05f11fe2c9752a",
@@ -86,6 +86,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "890c8d4b1ed248af7157349b859c0b11",
     "url": "/static/media/West-System.890c8d4b.jpg"
+  },
+  {
+    "revision": "3194a9f7e0db6ebfd0b8c3d431dc9d50",
+    "url": "/static/media/ZT Logo 2020-12.3194a9f7.jpg"
   },
   {
     "revision": "977fdfc7dddaa1ada3adcdc344f763b9",
@@ -274,9 +278,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f495c8b0ba8c56006b4ed0040e54a42d",
     "url": "/static/media/vicepresident19.f495c8b0.JPG"
-  },
-  {
-    "revision": "58846c6f15c2594ed1ad587dd21b5474",
-    "url": "/static/media/zenith-tecnica.58846c6f.png"
   }
 ]);
