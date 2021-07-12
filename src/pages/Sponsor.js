@@ -10,7 +10,7 @@ import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
 import Header from '../components/Header'
 
-import zenithTecnica from '../content/assets/images/zenith-tecnica.png'
+import zenithTecnica from '../content/assets/images/ZT Logo 2020-12.jpg'
 import PellucereTech from '../content/assets/images/Pellucere+Logo+R.png'
 import MatrixComposities from '../content/assets/images/Matrix_Logo_lg.jpg'
 import ElektroAutomatik from '../content/assets/images/ElektroAutomatik.png'
