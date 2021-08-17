@@ -1,4 +1,13 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Advertisement-Website
+- Disable your adblocker to see the github commits on this page
+- install npm and then [yarn](https://yarnpkg.com/getting-started/install)
+- Then:
+```
+$ yarn install
+$ npm start
+```
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Rest below is default text:
 
 ## Available Scripts
 
