@@ -1,7 +1,7 @@
 ### Advertisement-Website
 - Disable your adblocker to see the github commits on this page
-- install npm and then [yarn](https://yarnpkg.com/getting-started/install)
-- Then:
+- Install npm and then [yarn](https://yarnpkg.com/getting-started/install)
+- git clone, then:
 ```
 $ yarn install
 $ npm start
