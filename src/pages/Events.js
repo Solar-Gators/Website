@@ -10,10 +10,11 @@ import dayGridPlugin from '@fullcalendar/daygrid'
 export default function Events() {
     return (
         <Container className="ml-auto mr-auto" style={{margin: '5vh'}}>
+            <p>Site under construction</p>
             <FullCalendar
                 plugins={[ googleCalendarPlugin, dayGridPlugin ]}
                 initialView="dayGridMonth"
-                googleCalendarApiKey='AIzaSyAHAyW347iPTLmSv8yL9WqitQ5YJnfHIXw'
+                googleCalendarApiKey='banana'
                 events={{
                     googleCalendarId: 'solargatorsweb@gmail.com'
                 }}
