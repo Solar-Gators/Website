@@ -165,6 +165,8 @@ export default class Team extends React.Component {
             </Row>
             <Row style={{ marginTop: "4vh" }}>
               <TeamCard name={this.state.names[3]} title="Treasurer" img={this.state.imgs[3]} className="ml-auto" year={this.state.years[3]} />
+              <TeamCard name={this.state.names[4]} title="Business Coordinator" img={this.state.imgs[4]} year={this.state.years[4]} />
+              among us
               <TeamCard name={this.state.names[4]} title="Business Coordinator" img={this.state.imgs[4]} className="mr-auto" year={this.state.years[4]} />
             </Row>
             {/* <EventTeamCard name={this.state.names} title={["Treasurer", "Business Coordinator"]} img={this.state.imgs} year={this.state.years} eventkey={this.state.eventkey} /> */}
