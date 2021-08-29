@@ -11,17 +11,17 @@ import vicepresident21 from "../content/assets/images/Secretary20.png";
 import treasurer21 from "../content/assets/images/Treasurer21.jpg";
 import secretary21 from "../content/assets/images/Secretary21.jpg";
 import business21 from "../content/assets/images/Business21.png";
-import AB_body21 from "../content/assets/images/Business21.png";
+import AB_body21 from "../content/assets/images/AB_body21.jpg";
 import AB_solararray21 from "../content/assets/images/Business21.png";
-import E_auxiliary21 from "../content/assets/images/Business21.png";
-import E_bms21 from "../content/assets/images/Business21.png";
+import E_auxiliary21 from "../content/assets/images/AUX21.jpg";
+import E_bms21 from "../content/assets/images/Treasurer20.jpg";
 import E_motorcontroller from "../content/assets/images/Business21.png";
-import E_powerboard from "../content/assets/images/Business21.png";
+import E_powerboard from "../content/assets/images/Business20.JPG";
 import E_telemetry from "../content/assets/images/Business21.png";
 import M_batterybox21 from "../content/assets/images/Business21.png";
-import M_brakes21 from "../content/assets/images/Business21.png";
-import M_chassis from "../content/assets/images/Business21.png";
-import M_suspension from "../content/assets/images/Business21.png";
+import M_brakes21 from "../content/assets/images/Brendan21.jpg";
+import M_chassis from "../content/assets/images/M_chassis.jpg";
+import M_suspension from "../content/assets/images/M_suspension.JPG";
 
 import president20 from "../content/assets/images/president20.JPG";
 import vicepresident20 from "../content/assets/images/VicePresident20.png";
@@ -41,7 +41,7 @@ var names21 = ["Charles Stone", "Irene Chung", "Maya Greene", "Jamie Van Der Vek
   "Daniel Kogstrom", "Brendan Reiss", "Shane Lovello", "Jessica Le"];
 var imgs21 = [president21, vicepresident21, secretary21, treasurer21, business21, AB_body21, AB_solararray21,
   E_auxiliary21, E_bms21, E_motorcontroller, E_powerboard, E_telemetry, M_batterybox21, M_brakes21, M_chassis, M_suspension];
-var years21 = ["2019", "2019", "2019", "2019", "2019", "2019"];
+var years21 = ["2019", "2019", "2019", "2019", "2019", "2019", "2019", "2020", "2019", "2019", "2019", "2019", "2020", "2019", "2019", "2019", "2019", "2019", "2020"];
 var names20 = ["Stephen Thomas", "Charles Stone", "Irene Chung", "Yash Bhat", "Polina Leger"];
 var imgs20 = [president20, vicepresident20, secretary20, treasurer20, business20];
 var years20 = ["2017", "2019", "2019", "2019", "2019"];
@@ -98,12 +98,12 @@ function EventTeamCard({ name, title, img, year, eventkey }) {
         </h3>
         <Row style={{ marginTop: "4vh" }}>
           <TeamCard name={name[0]} title="President" img={img[0]} className="ml-auto" year={year[3]} />
-          <TeamCard name={name[1]} title="Vice President" img={img[1]} year={year[5]} />
-          <TeamCard name={name[2]} title="Secretary" img={img[2]} className="mr-auto" year={year[4]} />
+          <TeamCard name={name[1]} title="Vice President" img={img[1]} year={year[4]} />
+          <TeamCard name={name[2]} title="Secretary" img={img[2]} className="mr-auto" year={year[5]} />
         </Row>
         <Row style={{ marginTop: "4vh" }}>
-          <TeamCard name={name[3]} title={title[0]} img={img[3]} className="ml-auto" year={year[3]} />
-          <TeamCard name={name[4]} title={title[1]} img={img[4]} className="mr-auto" year={year[4]} />
+          <TeamCard name={name[3]} title={title[0]} img={img[3]} className="ml-auto" year={year[6]} />
+          <TeamCard name={name[4]} title={title[1]} img={img[4]} className="mr-auto" year={year[7]} />
         </Row>
 
         <h3
@@ -113,8 +113,8 @@ function EventTeamCard({ name, title, img, year, eventkey }) {
           Aero-Body
         </h3>
         <Row style={{ marginTop: "4vh" }}>
-          <TeamCard name={name[5]} title="Body" img={img[5]} className="ml-auto" year={year[3]} />
-          <TeamCard name={name[6]} title="Solar Array" img={img[6]} className="mr-auto" year={year[4]} />
+          <TeamCard name={name[5]} title="Body" img={img[5]} className="ml-auto" year={year[8]} />
+          <TeamCard name={name[6]} title="Solar Array" img={img[6]} className="mr-auto" year={year[9]} />
         </Row>
 
         <h3
@@ -124,13 +124,13 @@ function EventTeamCard({ name, title, img, year, eventkey }) {
           Electrical
         </h3>
         <Row style={{ marginTop: "4vh" }}>
-          <TeamCard name={name[7]} title="Auxiliary" img={img[7]} className="ml-auto" year={year[3]} />
-          <TeamCard name={name[8]} title="Battery Manager" img={img[8]} year={year[5]} />
-          <TeamCard name={name[9]} title="Motor Controller" img={img[9]} className="mr-auto" year={year[4]} />
+          <TeamCard name={name[7]} title="Auxiliary" img={img[7]} className="ml-auto" year={year[10]} />
+          <TeamCard name={name[8]} title="Battery Manager" img={img[8]} year={year[11]} />
+          <TeamCard name={name[9]} title="Motor Controller" img={img[9]} className="mr-auto" year={year[12]} />
         </Row>
         <Row style={{ marginTop: "4vh" }}>
-          <TeamCard name={name[10]} title="Power Board" img={img[10]} className="ml-auto" year={year[3]} />
-          <TeamCard name={name[11]} title="Telemetry" img={img[11]} className="mr-auto" year={year[4]} />
+          <TeamCard name={name[10]} title="Power Board" img={img[10]} className="ml-auto" year={year[13]} />
+          <TeamCard name={name[11]} title="Telemetry" img={img[11]} className="mr-auto" year={year[14]} />
         </Row>
 
         <h3
@@ -140,12 +140,12 @@ function EventTeamCard({ name, title, img, year, eventkey }) {
           Mechanical
         </h3>
         <Row style={{ marginTop: "4vh" }}>
-          <TeamCard name={name[12]} title="Battery Box" img={img[12]} className="ml-auto" year={year[3]} />
-          <TeamCard name={name[13]} title="Brakes" img={img[13]} year={year[5]} />
-          <TeamCard name={name[14]} title="Chassis" img={img[14]} className="mr-auto" year={year[4]} />
+          <TeamCard name={name[12]} title="Battery Box" img={img[12]} className="ml-auto" year={year[15]} />
+          <TeamCard name={name[13]} title="Brakes" img={img[13]} year={year[16]} />
+          <TeamCard name={name[14]} title="Chassis" img={img[14]} className="mr-auto" year={year[17]} />
         </Row>
         <Row style={{ marginTop: "4vh" }}>
-          <TeamCard name={name[15]} title="Suspension" img={img[15]} className="m-auto" year={year[3]} />
+          <TeamCard name={name[15]} title="Suspension" img={img[15]} className="m-auto" year={year[18]} />
           </Row>
       </Col>
     )
@@ -153,13 +153,13 @@ function EventTeamCard({ name, title, img, year, eventkey }) {
     return (
       <Col>
         <Row style={{ marginTop: "4vh" }}>
-          <TeamCard name={name[0]} title="President" img={img[0]} className="ml-auto" year={year[0]} />
-          <TeamCard name={name[1]} title="Vice President" img={img[1]} year={year[1]} />
-          <TeamCard name={name[2]} title="Secretary" img={img[2]} className="mr-auto" year={year[2]} />
+          <TeamCard name={name[0]} title="President" img={img[0]} className="ml-auto" year={year[19]} />
+          <TeamCard name={name[1]} title="Vice President" img={img[1]} year={year[20]} />
+          <TeamCard name={name[2]} title="Secretary" img={img[2]} className="mr-auto" year={year[21]} />
         </Row>
         <Row style={{ marginTop: "4vh" }}>
-          <TeamCard name={name[3]} title="Treasurer" img={img[3]} className="ml-auto" year={year[3]} />
-          <TeamCard name={name[4]} title="Business Coordinator" img={img[4]} className="mr-auto" year={year[4]} />
+          <TeamCard name={name[3]} title="Treasurer" img={img[3]} className="ml-auto" year={year[22]} />
+          <TeamCard name={name[4]} title="Business Coordinator" img={img[4]} className="mr-auto" year={year[23]} />
         </Row>
       </Col>
     );
