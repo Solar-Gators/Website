@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.812dfbf4.chunk.css",
-    "main.js": "/static/js/main.f9586f23.chunk.js",
-    "main.js.map": "/static/js/main.f9586f23.chunk.js.map",
+    "main.js": "/static/js/main.4b0075d0.chunk.js",
+    "main.js.map": "/static/js/main.4b0075d0.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.47366dc8.js",
     "runtime-main.js.map": "/static/js/runtime-main.47366dc8.js.map",
     "static/css/2.8f4532ec.chunk.css": "/static/css/2.8f4532ec.chunk.css",
@@ -14,9 +14,14 @@
     "static/js/2.1c5fc37b.chunk.js.LICENSE.txt": "/static/js/2.1c5fc37b.chunk.js.LICENSE.txt",
     "static/media/1234751087606171086_1234751087606171086.98118ded.png": "/static/media/1234751087606171086_1234751087606171086.98118ded.png",
     "static/media/3a-logo.387da709.png": "/static/media/3a-logo.387da709.png",
+    "static/media/AB_body21.7d3af8e7.jpg": "/static/media/AB_body21.7d3af8e7.jpg",
+    "static/media/AUX21.79c83b65.jpg": "/static/media/AUX21.79c83b65.jpg",
+    "static/media/Brendan21.f19f035d.jpg": "/static/media/Brendan21.f19f035d.jpg",
     "static/media/Business20.22bdc7e9.JPG": "/static/media/Business20.22bdc7e9.JPG",
     "static/media/Business21.2e1b46e5.png": "/static/media/Business21.2e1b46e5.png",
     "static/media/Logomark_Desktop_Oct_2020.d988c000.webp": "/static/media/Logomark_Desktop_Oct_2020.d988c000.webp",
+    "static/media/M_chassis.d6181e3a.jpg": "/static/media/M_chassis.d6181e3a.jpg",
+    "static/media/M_suspension.e3a51f6e.JPG": "/static/media/M_suspension.e3a51f6e.JPG",
     "static/media/Matrix_Logo_lg.ed03cafc.jpg": "/static/media/Matrix_Logo_lg.ed03cafc.jpg",
     "static/media/Pellucere+Logo+R.f4327bc8.png": "/static/media/Pellucere+Logo+R.f4327bc8.png",
     "static/media/Phoenix-Side-Logo-Transparent.30be1501.png": "/static/media/Phoenix-Side-Logo-Transparent.30be1501.png",
@@ -38,6 +43,7 @@
     "static/media/business19.5f5cf3ed.JPG": "/static/media/business19.5f5cf3ed.JPG",
     "static/media/contact_us_1.13f09ae8.jpg": "/static/media/contact_us_1.13f09ae8.jpg",
     "static/media/contact_us_2.a0cea01c.jpg": "/static/media/contact_us_2.a0cea01c.jpg",
+    "static/media/daniel.0453fc10.jpg": "/static/media/daniel.0453fc10.jpg",
     "static/media/event_1.736bbcb2.jpg": "/static/media/event_1.736bbcb2.jpg",
     "static/media/event_2.5572e643.jpg": "/static/media/event_2.5572e643.jpg",
     "static/media/ic3-industries-logo.8dceffab.png": "/static/media/ic3-industries-logo.8dceffab.png",
@@ -46,6 +52,8 @@
     "static/media/logo_rapidcut_small_1.9f728c73.jpg": "/static/media/logo_rapidcut_small_1.9f728c73.jpg",
     "static/media/mae.b809e373.png": "/static/media/mae.b809e373.png",
     "static/media/merritt-trans-white-200-1.f5fc9df2.png": "/static/media/merritt-trans-white-200-1.f5fc9df2.png",
+    "static/media/morgen.2f892e4b.jpg": "/static/media/morgen.2f892e4b.jpg",
+    "static/media/mu.fa51d460.jpg": "/static/media/mu.fa51d460.jpg",
     "static/media/nordlock.b81dd7c8.jpg": "/static/media/nordlock.b81dd7c8.jpg",
     "static/media/premium_eaton.b9811980.png": "/static/media/premium_eaton.b9811980.png",
     "static/media/premium_hwco.fdfb7d0e.png": "/static/media/premium_hwco.fdfb7d0e.png",
@@ -76,6 +84,6 @@
     "static/css/2.8f4532ec.chunk.css",
     "static/js/2.1c5fc37b.chunk.js",
     "static/css/main.812dfbf4.chunk.css",
-    "static/js/main.f9586f23.chunk.js"
+    "static/js/main.4b0075d0.chunk.js"
   ]
 }
