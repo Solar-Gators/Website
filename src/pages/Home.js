@@ -134,12 +134,11 @@ export default function Home() {
                 <hr />
               </Col>
             </Row>
-            <Row>
-              <Col md={{ span: 11, offset: 1 }}>
-                <Link className="btn btn-inverse" to="/about">about us</Link>
-                <Link className="btn btn-inverse ml-1" to="/sponsors">sponsors</Link>
-                <Link className="btn btn-inverse ml-1" to="/team">our team</Link>
-                <Link className="btn btn-inverse ml-1" to="/contact">contact us</Link>
+                    <Row>
+              <Col md={{ offset: 1}}>
+             <h3 style={{ fontSize: "30ptx", color: "rgba(255,255,255,0.95)"}}>
+             Website under construction
+             </h3>
               </Col>
             </Row>
           </Container>
@@ -151,9 +150,6 @@ export default function Home() {
                   BRINGING STUDENTS TOGETHER
               </h2>
             </Col>
-          </Row>
-
-          <Row>
             <Col md={{span: 8, offset: 2}}>
               <hr />
               <p>Solar Gators is a University of Florida student organization driven by passionate engineers and designers determined to win the Formula Sun Grand Prix</p>
@@ -163,7 +159,7 @@ export default function Home() {
           <Card className="section">
             <Card.Body>
               <Row className="text-center home-icon">
-                <HomeIcon icon="fa-wrench">2 cars built</HomeIcon>
+                <HomeIcon icon="fa-wrench">3 cars built</HomeIcon>
                 <HomeIcon icon="fa-trophy">Founded in 2012</HomeIcon>
                 <HomeIcon icon="fa-users">17 sub-engineering teams</HomeIcon>
                 <HomeIcon icon="fa-certificate ">25+ sponsors</HomeIcon>
@@ -174,31 +170,12 @@ export default function Home() {
         <Container fluid={true} className="container-home-cards p-0">
           <Row className="section">
             <HomeCard index={0} im1={aboutUs1} im2={aboutUs2} linkTitle="About Us" link="/about">Our organization goes way back. Learn more about our history.</HomeCard>
-            <HomeCard index={1} im1={team1} im2={team2} linkTitle="The Team" link="/team">Solar Gators is a University of Florida student organization driven by passionate engineers and designers determined to win the Formula Sun Grand Prix.</HomeCard>
+                    <HomeCard index={1} im1={team1} im2={team2} linkTitle="The Team" link="/team">Solar Gators is a University of Florida student organization driven by passionate engineers and designers determined to win the Formula Sun Grand Prix.</HomeCard>
 
-            <HomeCard index={2} im1={event1} im2={event2} linkTitle="Events" link="/events">Solar Gators provides many opportunities and activities. Find out when and where.</HomeCard>
             <HomeCard index={3} im1={contact1} im2={contact2} linkTitle="Contact Us" link="/contact">Shoot as an email with any inquiry or question you have about us.</HomeCard>
             <HomeCard index={4} im1={sponsors1} im2={sponsors2} linkTitle="Sponsors" link="/sponsors">All of this is possible because of our sponsors. Check them out.</HomeCard>
           </Row>
         </Container>
-        <Container>
-          <Row className="section">
-            <Col md={{span: 8, offset: 2}}>
-              <h2 className="ui dividing header" class="text-center" style={{opacity: '0.8'}}>
-                  Subscribe to our Monthly Newsletter!
-              </h2>
-            </Col>
-          </Row>
-        </Container>
-        <MailchimpSubscribe url={process.env.REACT_APP_MAILCHIMP_URL} 
-                  render={({ subscribe, status, message }) => (
-                    <SubscriptionForm
-                      status={status}
-                      message={message}
-                      onValidated={formData => subscribe(formData)}
-                    />
-                  )}
-        />
       </React.Fragment>
     )
 }

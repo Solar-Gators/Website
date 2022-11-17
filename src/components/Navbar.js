@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import logoImage from '../content/assets/images/logo.png'
+import logoImage from '../content/assets/images/logo2.png'
 import {
   Link
 } from "react-router-dom";
@@ -16,19 +16,16 @@ export default function WebsiteNavbar() {
   return (
     <Navbar color="light" light expand="md">
         <Navbar.Brand as={Link} to="/">
-          <img width={35} height={35} src={logoImage} alt="Logo" />
+          <img width={120} height={35} src={logoImage} alt="Logo" />
         </Navbar.Brand>
         <Navbar.Toggle onClick={toggle} />
         <Navbar.Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <Nav.Item>
-              <Nav.Link as={Link} to="/">Solar Gators</Nav.Link>
+              <Nav.Link as={Link} to="/">Home</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link as={Link} to="/about">About Us</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link as={Link} to="/events">Events</Nav.Link>
+              <Nav.Link as={Link} to="/about">About</Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link as={Link} to="/sponsors">Sponsors</Nav.Link>
