@@ -55,11 +55,11 @@ import secretary19 from "../content/assets/images/secretary19.JPG";
 import business19 from "../content/assets/images/business19.JPG";
 
 var names22 = ["Christian Michaelis", "Lauren Shaw", "Andrew Carter", "Anton Nguyen", "Stanley Noel",
-    "Marcelo Valdez", "Taylor Gerke", "Timothy Dockham", "Alexander Theophanis", "Martin Lu", "Remington Ewing", "Stanely Noel",
+    "Marcelo Valdez", "Taylor Gerke", "Timothy Dockham", "Alexander Theophanis", "Martin Lu", "Remington Ewing", "Stanley Noel",
     "Anton Nguyen", "Yashasvi Bhat", "Mathew Shen", "Taylor Gerke", "Emma Geon"];
 var imgs22 = [president22, vicepresident22, secretary22, treasurer22, business22, mechanicalPM22, electricalPM22, integrationPM22, aerobody22, batterypack22, brakes22,
     suspension22, chassis22, embeddedsystems22, highvoltage22, lowvoltage22, powermanagement22];
-var years22 = ["2020", "2020", "2021", "2020", "2020", "2021", "2020", "2020", "2020", "2020", "2020", "2020", "2020", "2020", "2021", "2020", "2021"];
+var years22 = ["2020", "2020", "2021", "2020", "2020", "2020", "2019", "2020", "2020", "2021", "2020", "2020", "2020", "2019", "2021", "2019", "2021"];
 var names21 = ["Charles Stone", "Irene Chung", "Maya Greene", "Jamie Van Der Veken", "Christian Michaelis",
   "Justin Nelson", "Morgen Anthony", "Taylor Gerke", "Yash Bhat", "Christian Michaelis", "Polina Leger", "Muhamed Hobi",
   "Daniel Kogstrom", "Brendan Reiss", "Shane Lovello", "Jessica Le"];
@@ -144,9 +144,9 @@ function EventTeamCard({ name, title, img, year, eventkey }) {
            Project Managers
         </h3>
         <Row style={{ marginTop: "4vh" }}>
-          <TeamCard name={name[5]} title="Body" img={img[5]} className="ml-auto" year={year[5]} />
-          <TeamCard name={name[6]} title="Solar Array" img={img[6]} year={year[6]} />
-          <TeamCard name={name[7]} title="Auxiliary" img={img[7]} className="mr-auto" year={year[7]} />
+          <TeamCard name={name[5]} title="Mechanical PM" img={img[5]} className="ml-auto" year={year[5]} />
+          <TeamCard name={name[6]} title="Electrical PM" img={img[6]} year={year[6]} />
+          <TeamCard name={name[7]} title="Integration PM" img={img[7]} className="mr-auto" year={year[7]} />
         </Row>
 
         <h3
@@ -156,11 +156,11 @@ function EventTeamCard({ name, title, img, year, eventkey }) {
           Mechanical and Aerobody
         </h3>
         <Row style={{ marginTop: "4vh" }}>
-          <TeamCard name={name[8]} title="Body" img={img[8]} className="ml-auto" year={year[8]} />
-          <TeamCard name={name[9]} title="Solar Array" img={img[9]} year={year[9]} />
-          <TeamCard name={name[10]} title="Auxiliary" img={img[10]} year={year[10]} />
-          <TeamCard name={name[11]} title="Battery Manager" img={img[11]} year={year[11]} />
-          <TeamCard name={name[12]} title="Motor Controller" img={img[12]} className="mr-auto" year={year[12]} />
+          <TeamCard name={name[8]} title="Aerobody" img={img[8]} className="ml-auto" year={year[8]} />
+          <TeamCard name={name[9]} title="Battery Pack" img={img[9]} year={year[9]} />
+          <TeamCard name={name[10]} title="Brakes" img={img[10]} year={year[10]} />
+          <TeamCard name={name[11]} title="Suspension" img={img[11]} year={year[11]} />
+          <TeamCard name={name[12]} title="Chassis" img={img[12]} className="mr-auto" year={year[12]} />
         </Row>
 
         <h3
@@ -173,10 +173,10 @@ function EventTeamCard({ name, title, img, year, eventkey }) {
 
         </Row>
         <Row style={{ marginTop: "4vh" }}>
-          <TeamCard name={name[13]} title="Power Board" img={img[13]} className="ml-auto" year={year[13]} />
-          <TeamCard name={name[14]} title="Telemetry" img={img[14]} year={year[14]} />
-          <TeamCard name={name[15]} title="Telemetry" img={img[15]} year={year[15]} />
-          <TeamCard name={name[16]} title="Telemetry" img={img[16]} className="mr-auto" year={year[16]} />
+          <TeamCard name={name[13]} title="Embedded Systems" img={img[13]} className="ml-auto" year={year[13]} />
+          <TeamCard name={name[14]} title="High Voltage" img={img[14]} year={year[14]} />
+          <TeamCard name={name[15]} title="Low Voltage" img={img[15]} year={year[15]} />
+          <TeamCard name={name[16]} title="Power Management" img={img[16]} className="mr-auto" year={year[16]} />
         </Row>
 
       </Col>
