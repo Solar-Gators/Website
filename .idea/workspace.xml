@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cc4e1d2d-50d0-4b9c-91a0-44fd4e2a9b80" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/content/assets/fonts/Inter-VariableFont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/fonts/Inter-VariableFont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/app_icons/facebook_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/app_icons/facebook_logo0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/app_icons/instagram_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/app_icons/linkedin_logo copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/app_icons/linkedin_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/app_icons/youtube_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/app_icons/youtube_logo0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/car_finishline.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/car_finishline_crop.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/car_finishline_rotated.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2019/business19.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2019/president19.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2019/secretary19.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2019/treasurer19.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2019/vicepresident19.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2020/business20.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2020/president20.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2020/secretary20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2020/treasurer20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2020/vicepresident20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2021/business21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2021/president21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2021/secretary21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2021/treasurer21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2021/vicepresident21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2022/aerobody22 copy.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2022/batterypack22 copy.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2022/brakes22 copy.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2022/businesscoordinator22 copy.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2022/electricalPM22 copy.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2022/embeddedsystems22 copy.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2022/highvoltage22 copy.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2022/integrationPM22 copy.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2022/mechanicalPM22 copy.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2022/powermanagement22 copy.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2022/president22 copy.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2022/secretary22 copy.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2022/treasurer22 copy.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2022/vicepresident22 copy.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/misc/AB_body21 copy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/misc/AUX21 copy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/misc/Brendan21 copy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/misc/M_chassis copy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/misc/M_suspension copy.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/misc/daniel copy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/misc/morgen copy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/misc/mu copy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/misc/secretary copy.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/misc/treasurer copy.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/1234751087606171086_1234751087606171086 copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/3a-logo copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/ElektroAutomatik copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/Logomark_Desktop_Oct_2020 copy.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/Matrix_Logo_lg copy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/Pellucere+Logo+R copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/Phoenix-Side-Logo-Transparent copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/TDK_Vector_Pantone293_with_clear_zone copy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/VR3 copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/West-System copy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/ZT Logo 2020-12 copy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/bronze_beadbuster copy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/bronze_bmrs copy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/bronze_hakko copy.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/bronze_kevins copy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/bronze_moss copy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/bronze_solarcat copy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/bronze_stickermule copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/bronze_tdk copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/bronze_zevia copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/fusionfilaments copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/ic3-industries-logo copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/ipf copy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/logo_rapidcut_small_1 copy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/mae copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/merritt-trans-white-200-1 copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/new-molex-logo@2x copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/nordlock copy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/premium_altair copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/premium_eaton copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/premium_ece copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/premium_hwco copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/premium_siemens copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/premium_solar_impact copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/premium_solidworks copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/premium_sunpower copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/premium_ufmae copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/premium_universal copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/rapid-harness copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/sainsmart copy.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/silver_accurate copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/silver_bac copy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/silver_brembo copy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/silver_fgci copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/silver_mirage copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/silver_rohacell copy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/silver_ufippd copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/silver_ufsg copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/skf copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/sponsors copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/sponsorship-levels copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/zenith-tecnica copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/uncategorized/about_us_1 copy.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/uncategorized/about_us_2 copy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/uncategorized/contact_us_1 copy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/uncategorized/contact_us_2 copy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/uncategorized/event_1 copy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/uncategorized/event_2 copy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/uncategorized/favicon copy.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/uncategorized/full_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/uncategorized/img1 copy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/uncategorized/img2 copy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/uncategorized/img3 copy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/uncategorized/mini_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/uncategorized/new-home copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/uncategorized/new-teams copy.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/uncategorized/sponsor_banner copy 2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/uncategorized/sponsor_banner copy 3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/uncategorized/sponsors_1 copy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/uncategorized/sponsors_2 copy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/uncategorized/team_1 copy.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/uncategorized/team_2 copy.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/styles/Home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/content/styles/Footer.scss" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/content/styles/Home.scss" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/App.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/content/styles/About.scss" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/pages/About.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/index.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/App.scss" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/index.css" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/pages/Home.js" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2LG9B963ShUkI7G5b2HS7iXMh6B" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cc4e1d2d-50d0-4b9c-91a0-44fd4e2a9b80" name="Changes" comment="" />
+      <created>1675486415373</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675486415373</updated>
+      <workItem from="1675486421379" duration="132000" />
+      <workItem from="1678375487084" duration="1126000" />
+      <workItem from="1680463339262" duration="5394000" />
+      <workItem from="1680634518953" duration="412000" />
+      <workItem from="1680705814511" duration="17862000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

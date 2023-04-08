@@ -9,40 +9,122 @@ $card-height: 300px;
     @include button-variant(#f2711c, #f2711c, #f26202);
 }
 /*
-    Subscription Button
+    Subscription Button - depreciated circa 4/23
 */
 .btn-subscription{
     @include button-variant(#808080, #808080, #2185d0);
-    font-family: 'radnika';
+    font-family: 'Inter';
     font-size: 1.4em;
-    //padding: 0.5em;
     margin-top: 1rem;
     width: 100%;
     height: 85%;
 }
 
-.home-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/images/new-home.png), no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: center;
-  }
+//Page Header (container)
+.header {
+    //background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/images/car_pics/car_finishline.jpg), no-repeat center center fixed;
+    //-webkit-background-size: cover;
+    //-moz-background-size: cover;
+    //-o-background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    left: 0px;
+    top: 0px;
+}
 
-#home-header {
-    font-family: 'radnika';
-    margin-top: 25vh;
-    font-size: 9em;
-    color: white;
-    opacity: 0.8;
+//Page Header Text
+.header-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 65px;
+    opacity: 0.9;
+
+    color: #FFFFFF;
+    text-shadow: -6px 6px 6px rgba(0, 32, 62, 0.21);
+
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+
+    //Position
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top: 185px;                 //manually centers text
+    margin-top: 0px;            //will move image
+}
+
+.header-img {
+    position: relative;
+    width: 100%;
+    height: 500px;
+
+    object-fit: cover;
+    background: linear-gradient(0deg, rgba(0, 32, 62, 0.25), rgba(0, 32, 62, 0.25)), url(../assets/images/car_pics/car_finishline.jpg), no-repeat;
+    background-position: 0 52%;
+    background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 768px) {
-    #home-header {
+    #header-text {
         font-size: 7em;
+        font-style: Italic;
     }
   }
+
+//Sections of Page (container)
+.section {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    left: 0px;
+    top: 50px;
+}
+
+/* Heading 2 */
+.heading2-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+
+    color: #000000;
+
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top: 0px;                 //manually centers text
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.mission-statement {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #000000;
+
+    margin-top: 3em;
+    margin-left: 3em;
+    object-fit: cover;
+    flex: 0 0 20%;      /* each blurb will be 20% width */
+}
+
+
+
 
 
 /* 
@@ -50,7 +132,7 @@ $card-height: 300px;
 */
 .btn-inverse {
     @include button-variant(transparent, white, white);
-    font-family: 'radnika';
+    font-family: 'Inter';
 }
 
 /* 
@@ -60,6 +142,7 @@ $card-height: 300px;
     margin-top: 10%;
 }
 
+//horizontal line
 hr {
     border-style: inset;
     border-width: 1px;
@@ -67,7 +150,7 @@ hr {
 
 
 /* 
-  Icons CSS
+  Homepage Stats Icons CSS
 */
 .home-icon {
     font-size: 2em;
@@ -85,7 +168,7 @@ hr {
 .btn-home-card {
     @include button-variant(transparent, #2185d0, #2185d0);
     color: #2185d0;
-    font-family: 'radnika';
+    font-family: 'inter';
 }
 
 
@@ -120,10 +203,6 @@ hr {
 }
 .home-card-visible {
     position: absolute;
-}
-
-.section {
-    margin-top: 8%;
 }
 
 @media (min-width: 1200px) {

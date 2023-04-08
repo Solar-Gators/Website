@@ -122,60 +122,64 @@ const SubscriptionForm = ({ status, message, onValidated }) => {
 export default function Home() {
     return (
       <React.Fragment>
-        <Header className="home-section">
-          <Container fluid={true}>
+        {/*  Page Header */}
+        <Container fluid="true" className="header">
             <Row>
-              <Col md={{ offset: 1 }}>
-                <h1 id="home-header" className="ui left aligned header">Solar Gators</h1>
-              </Col>
+                <Col>
+                    <div className="header-img">
+                        <h1 className={"header-text"}>
+                          Powered By Florida sunshine
+                        </h1>
+                    </div>
+                </Col>
             </Row>
-            <Row className="home-break-line">
-              <Col md={{ span: 5, offset: 1 }}>
-                <hr />
-              </Col>
-            </Row>
-                    <Row>
-              <Col md={{ offset: 1}}>
-             <h3 style={{ fontSize: "30ptx", color: "rgba(255,255,255,0.95)"}}>
-             Website under construction
-             </h3>
-              </Col>
-            </Row>
-          </Container>
-        </Header>
-        <Container>
-          <Row className="section">
-            <Col md={{span: 8, offset: 2}}>
-              <h2 className="ui dividing header" style={{opacity: '0.8'}}>
-                  BRINGING STUDENTS TOGETHER
+        </Container>
+
+        {/*  Mission Section */}
+        <Container fluid="true" className="section">
+            <Row>
+              <h2 className="heading2-text">
+                  Our Mission
               </h2>
-            </Col>
-            <Col md={{span: 8, offset: 2}}>
-              <hr />
-              <p>Solar Gators is a University of Florida student organization driven by passionate engineers and designers determined to win the Formula Sun Grand Prix</p>
-            </Col>
-          </Row>
+            </Row>
 
-          <Card className="section">
-            <Card.Body>
-              <Row className="text-center home-icon">
-                <HomeIcon icon="fa-wrench">3 cars built</HomeIcon>
-                <HomeIcon icon="fa-trophy">Founded in 2012</HomeIcon>
-                <HomeIcon icon="fa-users">17 sub-engineering teams</HomeIcon>
-                <HomeIcon icon="fa-certificate ">25+ sponsors</HomeIcon>
-              </Row>
-            </Card.Body>
-          </Card>
+            <Row>
+                <Col className={"mission-statement"}>
+                    <p><b>Accelerate</b> the world's transition to sustainable energy</p>
+                </Col>
+                <Col className={"mission-statement"}>
+                    <p><b>Develop</b> gator engineers through design and manufacturing experience</p>
+                </Col>
+                <Col className={"mission-statement"}>
+                    <p><b>Inspire</b> students to explore their interests within STEM</p>
+                </Col>
+                <Col className={"mission-statement"}>
+                    <p><b>Build</b> awareness within our community about the benefits of solar energy</p>
+                </Col>
+            </Row>
         </Container>
-        <Container fluid={true} className="container-home-cards p-0">
-          <Row className="section">
-            <HomeCard index={0} im1={aboutUs1} im2={aboutUs2} linkTitle="About Us" link="/about">Our organization goes way back. Learn more about our history.</HomeCard>
-                    <HomeCard index={1} im1={team1} im2={team2} linkTitle="The Team" link="/team">Solar Gators is a University of Florida student organization driven by passionate engineers and designers determined to win the Formula Sun Grand Prix.</HomeCard>
 
-            <HomeCard index={3} im1={contact1} im2={contact2} linkTitle="Contact Us" link="/contact">Shoot as an email with any inquiry or question you have about us.</HomeCard>
-            <HomeCard index={4} im1={sponsors1} im2={sponsors2} linkTitle="Sponsors" link="/sponsors">All of this is possible because of our sponsors. Check them out.</HomeCard>
-          </Row>
-        </Container>
+          
+        {/*  <Card className="section">*/}
+        {/*    <Card.Body>*/}
+        {/*      <Row className="text-center home-icon">*/}
+        {/*        <HomeIcon icon="fa-wrench">3 cars built</HomeIcon>*/}
+        {/*        <HomeIcon icon="fa-trophy">Founded in 2012</HomeIcon>*/}
+        {/*        <HomeIcon icon="fa-users">17 sub-engineering teams</HomeIcon>*/}
+        {/*        <HomeIcon icon="fa-certificate ">25+ sponsors</HomeIcon>*/}
+        {/*      </Row>*/}
+        {/*    </Card.Body>*/}
+        {/*  </Card>*/}
+        {/*/!*</Container>*!/*/}
+        {/*<Container fluid={true} className="container-home-cards p-0">*/}
+        {/*  <Row className="section">*/}
+        {/*    <HomeCard index={0} im1={aboutUs1} im2={aboutUs2} linkTitle="About Us" link="/about">Our organization goes way back. Learn more about our history.</HomeCard>*/}
+        {/*            <HomeCard index={1} im1={team1} im2={team2} linkTitle="The Team" link="/team">Solar Gators is a University of Florida student organization driven by passionate engineers and designers determined to win the Formula Sun Grand Prix.</HomeCard>*/}
+
+        {/*    <HomeCard index={3} im1={contact1} im2={contact2} linkTitle="Contact Us" link="/contact">Shoot as an email with any inquiry or question you have about us.</HomeCard>*/}
+        {/*    <HomeCard index={4} im1={sponsors1} im2={sponsors2} linkTitle="Sponsors" link="/sponsors">All of this is possible because of our sponsors. Check them out.</HomeCard>*/}
+        {/*  </Row>*/}
+        {/*</Container>*/}
       </React.Fragment>
     )
 }

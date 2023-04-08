@@ -22,23 +22,27 @@ export default function WebsiteNavbar() {
         <Navbar.Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <Nav.Item>
-              <Nav.Link as={Link} to="/">Home</Nav.Link>
+              <Nav.Link as={Link} to="/about">About</Nav.Link>
+            </Nav.Item>
+            {/*FIX ME: link to /car page*/}
+            <Nav.Item>
+              <Nav.Link as={Link} to="/">Cars</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link as={Link} to="/about">About</Nav.Link>
+              <Nav.Link as={Link} to="/team">Teams</Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link as={Link} to="/sponsors">Sponsors</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link as={Link} to="/team">The Team</Nav.Link>
+              <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
             </Nav.Item>
           </Nav>
 
-          <Button color="" className="btn-orange" as={Link} to="/contact">
-            <i class="fas fa-envelope-open mr-3"></i>
-            Contact
-          </Button>
+          {/*<Button color="" className="btn-orange" as={Link} to="/contact">*/}
+          {/*  <i class="fas fa-envelope-open mr-3"></i>*/}
+          {/*  Contact*/}
+          {/*</Button>*/}
 
           <Button color="primary" className="ml-4" onClick={() => { window.location.href = "https://www.facebook.com/UFSolarGators/" }}>
             <i class="fas fa-flag-checkered mr-3"></i>
