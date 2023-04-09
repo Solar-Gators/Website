@@ -7,43 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc4e1d2d-50d0-4b9c-91a0-44fd4e2a9b80" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2022/aero22.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2022/battery22.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2022/brakes22.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2022/business22.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2022/electricalPM22.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2022/embedsyst22.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2022/highvolt22.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2022/integPM22.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2022/mechPM22.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2022/power22.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2022/president22.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2022/secretary22.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2022/treasurer22.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2022/vp22.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/styles/Button.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/styles/Header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/officers/2022/aerobody22 copy.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/officers/2022/batterypack22 copy.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/officers/2022/brakes22 copy.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/officers/2022/businesscoordinator22 copy.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/officers/2022/electricalPM22 copy.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/officers/2022/embeddedsystems22 copy.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/officers/2022/highvoltage22 copy.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/officers/2022/integrationPM22 copy.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/officers/2022/mechanicalPM22 copy.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/officers/2022/powermanagement22 copy.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/officers/2022/president22 copy.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/officers/2022/secretary22 copy.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/officers/2022/treasurer22 copy.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/officers/2022/vicepresident22 copy.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/styles/Button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Button.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/content/styles/Home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Home.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +80,7 @@
       <workItem from="1678375487084" duration="1126000" />
       <workItem from="1680463339262" duration="5394000" />
       <workItem from="1680634518953" duration="412000" />
-      <workItem from="1680705814511" duration="34612000" />
+      <workItem from="1680705814511" duration="40688000" />
     </task>
     <servers />
   </component>

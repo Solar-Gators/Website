@@ -6,11 +6,11 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
-import Header from '../components/Header'
 import "../content/styles/Header.scss";
 import "../content/styles/Home.scss";
 import "../content/styles/Button.scss";
 
+//Officer Pictures
 import president from '../content/assets/images/officers/2022/president22.JPG';
 import vp from '../content/assets/images/officers/2022/vp22.JPG';
 import treasurer from '../content/assets/images/officers/2022/treasurer22.JPG';
@@ -26,7 +26,10 @@ import brakes from '../content/assets/images/officers/2022/brakes22.JPG';
 import battery from '../content/assets/images/officers/2022/battery22.JPG';
 import aero from '../content/assets/images/officers/2022/aero22.JPG';
 
-
+//Car Pics
+import car1 from '../content/assets/images/car_pics/car1.jpg';
+import car2 from '../content/assets/images/car_pics/car2.JPG';
+import car3 from '../content/assets/images/car_pics/car3.jpg';
 
 
 function HomeIcon({icon, children}) {
@@ -118,7 +121,9 @@ const SubscriptionForm = ({ status, message, onValidated }) => {
   );
 };
 
+
 function Officer({pic}) {
+    //creates individual officer headshot container w image
     return (
         <div className={"headshot"} >
             <img className={"headshot-img"} src={pic}></img>
@@ -126,11 +131,23 @@ function Officer({pic}) {
     )
 }
 
+function Car({car_img}) {
+    //creates each car's container for image & hover description
+    return (
+        <div className="car-card">
+            <img className="car-card-img" src={car_img}/>
+            <div className="overlay">
+                <div className="overlay-text">Car Description</div>
+            </div>
+        </div>
+    )
+}
+
 export default function Home() {
     return (
       <React.Fragment>
-        {/*  Page Header */}
-        <Container fluid="true" className="header">
+          {/*  Page Header */}
+          <Container fluid="true" className="header">
             <Row>
                 <Col>
                     <div className="header-img">
@@ -142,8 +159,8 @@ export default function Home() {
             </Row>
         </Container>
 
-        {/*  Mission Section */}
-        <Container fluid="true" className="section">
+          {/*  Mission Section */}
+          <Container fluid="true" className="section">
             <Row>
               <h2 className="heading2-text">
                   Our Mission
@@ -169,11 +186,10 @@ export default function Home() {
             </Row>
         </Container>
 
-
           {/* Team Section */}
           <Container fluid="true" className="section" style={{backgroundColor: '#00203E' , height: "650px"}}>
               <Row>
-                  <h2 className="heading2-text" style={{color:'white'}}>
+                  <h2 className="heading2-text">
                       The Team
                   </h2>
               </Row>
@@ -210,11 +226,16 @@ export default function Home() {
                   </h2>
               </Row>
 
-              <Row>
-                    <div className="car-card">
-                        <img className="car-card-img" src={'../content/assets/images/car_pics/car1.jpg'}/>
-                    </div>
+              <Row className={"car-cards"}>
+                  <Car car_img={car1}></Car>
+                  <Car car_img={car2}></Car>
+                  <Car car_img={car3}></Car>
               </Row>
+
+              <Row>
+                  <Button className="btn-primary" as={Link} to={"/cars"}>Our Cars</Button>
+              </Row>
+
           </Container>
 
         {/*  <Card className="section">*/}
