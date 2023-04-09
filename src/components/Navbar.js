@@ -1,12 +1,10 @@
 import React, {useState} from 'react'
 import logoImage from '../content/assets/images/logo2.png'
-import {
-  Link
-} from "react-router-dom";
-
+import { Link } from "react-router-dom";
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import Button from 'react-bootstrap/Button'
+import '../content/styles/Button.scss'
 
 export default function WebsiteNavbar() {
 
@@ -39,15 +37,12 @@ export default function WebsiteNavbar() {
             </Nav.Item>
           </Nav>
 
-          {/*<Button color="" className="btn-orange" as={Link} to="/contact">*/}
-          {/*  <i class="fas fa-envelope-open mr-3"></i>*/}
-          {/*  Contact*/}
-          {/*</Button>*/}
-
-          <Button color="primary" className="ml-4" onClick={() => { window.location.href = "https://www.facebook.com/UFSolarGators/" }}>
-            <i class="fas fa-flag-checkered mr-3"></i>
-            Join
-          </Button>
+          {/*FIX: link to Join Page, not FB*/}
+          <div>
+            <button className="btn-primary-small" onClick={() => { window.location.href = "https://www.facebook.com/UFSolarGators/" }}>
+              Join Us
+            </button>
+          </div>
         </Navbar.Collapse>
       </Navbar>
   )

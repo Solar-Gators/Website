@@ -1,18 +1,14 @@
-
+@import "./Button.scss";
 $card-width: 300px;
 $card-height: 300px;
 
-/* 
-  Orange Button
-*/
+/* Orange Button */
 .btn-orange {
-    @include button-variant(#f2711c, #f2711c, #f26202);
+    //@include button-variant(#f2711c, #f2711c, #f26202);
 }
-/*
-    Subscription Button - depreciated circa 4/23
-*/
+/* Subscription Button - depreciated */
 .btn-subscription{
-    @include button-variant(#808080, #808080, #2185d0);
+    //@include button-variant(#808080, #808080, #2185d0);
     font-family: 'Inter';
     font-size: 1.4em;
     margin-top: 1rem;
@@ -20,72 +16,17 @@ $card-height: 300px;
     height: 85%;
 }
 
-//Page Header (container)
-.header {
-    //background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/images/car_pics/car_finishline.jpg), no-repeat center center fixed;
-    //-webkit-background-size: cover;
-    //-moz-background-size: cover;
-    //-o-background-size: cover;
-    position: relative;
-    width: 100%;
-    height: 500px;
-    left: 0px;
-    top: 0px;
-}
-
-//Page Header Text
-.header-text {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 65px;
-    opacity: 0.9;
-
-    color: #FFFFFF;
-    text-shadow: -6px 6px 6px rgba(0, 32, 62, 0.21);
-
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: capitalize;
-
-    //Position
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    top: 185px;                 //manually centers text
-    margin-top: 0px;            //will move image
-}
-
-.header-img {
-    position: relative;
-    width: 100%;
-    height: 500px;
-
-    object-fit: cover;
-    background: linear-gradient(0deg, rgba(0, 32, 62, 0.25), rgba(0, 32, 62, 0.25)), url(../assets/images/car_pics/car_finishline.jpg), no-repeat;
-    background-position: 0 52%;
-    background-repeat: no-repeat;
-}
-
-@media screen and (max-width: 768px) {
-    #header-text {
-        font-size: 7em;
-        font-style: Italic;
-    }
-  }
-
 //Sections of Page (container)
 .section {
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 460px;
     left: 0px;
-    top: 50px;
+    top: 0px;
+    background-color: #FFFFFF;
 }
 
-/* Heading 2 */
+/* Heading 2 (for Sections)*/
 .heading2-text {
     font-family: 'Inter';
     font-style: normal;
@@ -103,9 +44,9 @@ $card-height: 300px;
     width: 100%;
     display: flex;
     justify-content: center;
-    top: 0px;                 //manually centers text
-    margin-top: 60px;
-    margin-bottom: 30px;
+    top: 0px;
+    margin-top: 50px;
+    margin-bottom: 40px;
 }
 
 .mission-statement {
@@ -117,12 +58,112 @@ $card-height: 300px;
 
     color: #000000;
 
-    margin-top: 3em;
+    margin-top: 50px;
     margin-left: 3em;
+    margin-bottom: 50px;
     object-fit: cover;
     flex: 0 0 20%;      /* each blurb will be 20% width */
 }
 
+/*
+    Officer Carousel Animation
+    source: https://codepen.io/studiojvla/pen/qVbQqW
+*/
+@mixin blue-gradient {
+    background: linear-gradient(to right,  #00203E 0%, rgba(255,255,255,0) 100%);
+}
+
+$animationSpeed: 50s;
+
+// Animation
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-250px * 7))}
+}
+
+
+// Styling
+.slider {
+    background: #00203E;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+    height: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+    overflow:hidden;
+    position: relative;
+    width: 90%;
+
+    &::before,
+    &::after {
+        @include blue-gradient;
+        content: "";
+        height: 100%;
+        position: absolute;
+        width: 200px;
+        z-index: 2;
+    }
+
+    &::after {
+        right: 0;
+        top: 0;
+        transform: rotateZ(180deg);
+    }
+
+    &::before {
+        left: 0;
+        top: 0;
+    }
+
+    .slide-track {
+        animation: scroll $animationSpeed linear infinite;
+        display: flex;
+        width: calc(250px * 14);
+    }
+
+    .slide {
+        height: 100px;
+        width: 250px;
+    }
+
+    //Container
+    .headshot {
+         position: relative;
+         width: 200px;
+         height: 300px;
+         left: 65px;
+         margin-top: 50px;
+         margin-right: 65px;
+
+     }
+
+    //Img within container
+    .headshot-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-position: center;
+    }
+}
+
+.car-card {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    left: 65px;
+    margin-top: 50px;
+    margin-right: 65px;
+}
+
+.car-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+
+car-card:hover {
+    background: linear-gradient(to right,  #00203E 0%, rgba(255,255,255,0) 100%);
+}
 
 
 
@@ -131,7 +172,7 @@ $card-height: 300px;
   Create inverse button
 */
 .btn-inverse {
-    @include button-variant(transparent, white, white);
+    //@include button-variant(transparent, white, white);
     font-family: 'Inter';
 }
 
@@ -166,7 +207,7 @@ hr {
   Custom button for home cards
 */
 .btn-home-card {
-    @include button-variant(transparent, #2185d0, #2185d0);
+    //@include button-variant(transparent, #2185d0, #2185d0);
     color: #2185d0;
     font-family: 'inter';
 }

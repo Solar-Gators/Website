@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
-import {
-  Link
-} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -9,24 +7,25 @@ import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import Header from '../components/Header'
+import "../content/styles/Header.scss";
+import "../content/styles/Home.scss";
+import "../content/styles/Button.scss";
 
+import president from '../content/assets/images/officers/2022/president22.JPG';
+import vp from '../content/assets/images/officers/2022/vp22.JPG';
+import treasurer from '../content/assets/images/officers/2022/treasurer22.JPG';
+import secretary from '../content/assets/images/officers/2022/secretary22.JPG';
+import power from '../content/assets/images/officers/2022/power22.JPG';
+import mechPM from '../content/assets/images/officers/2022/mechPM22.JPG';
+import integPM from '../content/assets/images/officers/2022/integPM22.JPG';
+import highvoltPM from '../content/assets/images/officers/2022/integPM22.JPG';
+import embedsyst from '../content/assets/images/officers/2022/embedsyst22.JPG';
+import electricalPM from '../content/assets/images/officers/2022/electricalPM22.JPG';
+import business from '../content/assets/images/officers/2022/business22.JPG';
+import brakes from '../content/assets/images/officers/2022/brakes22.JPG';
+import battery from '../content/assets/images/officers/2022/battery22.JPG';
+import aero from '../content/assets/images/officers/2022/aero22.JPG';
 
-import MailchimpSubscribe from "react-mailchimp-subscribe"
-
-import aboutUs1 from '../content/assets/images/about_us_1.JPG'
-import aboutUs2 from '../content/assets/images/about_us_2.jpg'
-
-import event1 from '../content/assets/images/event_1.jpg'
-import event2 from '../content/assets/images/event_2.jpg'
-
-import team1 from '../content/assets/images/team_1.JPG'
-import team2 from '../content/assets/images/team_2.jpg'
-
-import contact1 from '../content/assets/images/contact_us_1.jpg'
-import contact2 from '../content/assets/images/contact_us_2.jpg'
-
-import sponsors1 from '../content/assets/images/sponsors_1.jpg'
-import sponsors2 from '../content/assets/images/sponsors_2.jpg'
 
 
 
@@ -119,6 +118,14 @@ const SubscriptionForm = ({ status, message, onValidated }) => {
   );
 };
 
+function Officer({pic}) {
+    return (
+        <div className={"headshot"} >
+            <img className={"headshot-img"} src={pic}></img>
+        </div>
+    )
+}
+
 export default function Home() {
     return (
       <React.Fragment>
@@ -157,9 +164,59 @@ export default function Home() {
                     <p><b>Build</b> awareness within our community about the benefits of solar energy</p>
                 </Col>
             </Row>
+            <Row>
+                <Button className="btn-primary" as={Link} to={"/about"}>About Us</Button>
+            </Row>
         </Container>
 
-          
+
+          {/* Team Section */}
+          <Container fluid="true" className="section" style={{backgroundColor: '#00203E' , height: "650px"}}>
+              <Row>
+                  <h2 className="heading2-text" style={{color:'white'}}>
+                      The Team
+                  </h2>
+              </Row>
+              <Row>
+                  <div className={"slider"}>
+                      <div className={"slide-track"}>
+                          <Officer pic={president}></Officer>
+                          <Officer pic={vp}></Officer>
+                          <Officer pic={treasurer}></Officer>
+                          <Officer pic={secretary}></Officer>
+                          <Officer pic={business}></Officer>
+                          <Officer pic={electricalPM}></Officer>
+                          <Officer pic={mechPM}></Officer>
+                          <Officer pic={integPM}></Officer>
+                          <Officer pic={aero}></Officer>
+                          <Officer pic={battery}></Officer>
+                          <Officer pic={brakes}></Officer>
+                          <Officer pic={embedsyst}></Officer>
+                          <Officer pic={highvoltPM}></Officer>
+                          <Officer pic={power}></Officer>
+                      </div>
+                  </div>
+              </Row>
+              <Row>
+                  <Button className="btn-primary" as={Link} to={"/team"}>Meet Our Team</Button>
+              </Row>
+          </Container>
+
+          {/* Car Section */}
+          <Container fluid="true" className="section" style={{height: "650px"}}>
+              <Row>
+                  <h2 className="heading2-text" style={{color:'#F37833'}}>
+                      Our Cars
+                  </h2>
+              </Row>
+
+              <Row>
+                    <div className="car-card">
+                        <img className="car-card-img" src={'../content/assets/images/car_pics/car1.jpg'}/>
+                    </div>
+              </Row>
+          </Container>
+
         {/*  <Card className="section">*/}
         {/*    <Card.Body>*/}
         {/*      <Row className="text-center home-icon">*/}
