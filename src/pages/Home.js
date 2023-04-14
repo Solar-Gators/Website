@@ -131,13 +131,14 @@ function Officer({pic}) {
     )
 }
 
-function Car({car_img}) {
+function Car({car_img, car_name, car_year1, car_year2}) {
     //creates each car's container for image & hover description
     return (
         <div className="car-card">
             <img className="car-card-img" src={car_img}/>
             <div className="overlay">
-                <div className="overlay-text">Car Description</div>
+                <div className="overlay-text-header">{car_name}</div>
+                <div className="overlay-text-body">{car_year1} - {car_year2}</div>
             </div>
         </div>
     )
@@ -190,7 +191,7 @@ export default function Home() {
           <Container fluid="true" className="section" style={{backgroundColor: '#00203E' , height: "650px"}}>
               <Row>
                   <h2 className="heading2-text">
-                      The Team
+                      Our Team
                   </h2>
               </Row>
               <Row>
@@ -227,18 +228,37 @@ export default function Home() {
               </Row>
 
               <Row className={"car-cards"}>
-                  <Car car_img={car1}></Car>
-                  <Car car_img={car2}></Car>
-                  <Car car_img={car3}></Car>
+                  <Car car_img={car1} car_name={"Torch"} car_year1={"2017"} car_year2={"2018"}></Car>
+                  <Car car_img={car2} car_name={"Cielo"} car_year1={"2018"} car_year2={"2019"}></Car>
+                  <Car car_img={car3} car_name={"Sunrider"} car_year1={"2020"} car_year2={"present"}></Car>
+
               </Row>
 
               <Row>
-                  <Button className="btn-primary" as={Link} to={"/cars"}>Our Cars</Button>
+                  <Button className="btn-primary" as={Link} to={"/cars"}>Learn More</Button>
               </Row>
 
           </Container>
 
-        {/*  <Card className="section">*/}
+          {/* Sponsors Section */}
+          <Container fluid="true" className="section" style={{height: "650px"}}>
+              <Row>
+                  <h2 className="heading2-text" style={{color:'#F37833'}}>
+                      Our Sponsors
+                  </h2>
+              </Row>
+
+              <Row>
+
+              </Row>
+
+              <Row>
+                  <Button className="btn-primary" as={Link} to={"/sponsors"}>Learn More</Button>
+              </Row>
+
+          </Container>
+
+          {/*  <Card className="section">*/}
         {/*    <Card.Body>*/}
         {/*      <Row className="text-center home-icon">*/}
         {/*        <HomeIcon icon="fa-wrench">3 cars built</HomeIcon>*/}

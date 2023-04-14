@@ -173,6 +173,7 @@ $animationSpeed: 50s;
     object-fit: cover;
     background-position: center;
 }
+
 .overlay {
     position: absolute;
     transition: 0.2s ease;
@@ -182,22 +183,37 @@ $animationSpeed: 50s;
     background-color: #2d4278;
 }
 
-.overlay-text {
+.overlay-text-header {
     color: white;
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: bold;
     text-align: center;
     align-items: center;
     position: relative;
     width: 100%;
-    height: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    height: 40%;
+    top: 20%;
+    justify-content: center;
+}
+
+.overlay-text-body {
+    color: white;
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 50%;
+    margin-top: 0;
+    margin-bottom: 0px;
     justify-content: center;
 }
 
 .car-card:hover .overlay{
-    opacity: .7;
+    opacity: .75;
 }
+
 
 
 /* 

@@ -26,6 +26,7 @@
 
 .btn-primary:hover {
   background-color: #1B7AD2;
+  filter: drop-shadow(0px 4px 4px rgba(0, 32, 62, 0.4));
 }
 
 .btn-primary-small {
@@ -55,6 +56,8 @@
 
 .btn-primary-small:hover {
   background-color: #1B7AD2;
+  filter: drop-shadow(0px 4px 4px rgba(0, 32, 62, 0.4));
+
 }
 
 //Sections of Page (container)

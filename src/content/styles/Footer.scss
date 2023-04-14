@@ -2,185 +2,163 @@
 Pulled from: https://bbbootstrap.com/snippets/social-media-icons-footer-54412302
 */
 
-.btn.btn-social-icon {
-    width: 50px;
-    height: 50px;
-    padding: 0
+#footer {
+    margin-top: 10vh;
+    background: #00203E;
+    padding-top: 8vh;
+    padding-bottom: 5vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
 }
 
-.template-demo>.btn {
-    margin-right: 0.5rem !important
+.column-container {
+    width: auto;
+    height: 100px;
+
+    position: relative;
+    bottom: 0px;
 }
 
-.template-demo {
-    margin-top: 0.5rem !important
+.row-container {
+    width: 100%;
+    height: 50%;
+
+    position: relative;
+    top: 0px;
 }
 
-.btn.btn-rounded {
-    border-radius: 50px
+//Solar Gators logo
+.left-aligned-container {
+    width: 130px;
+    height: auto;
+
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
 }
 
-.btn-outline-facebook {
-    border: 1px solid #3b579d;
-    color: #3b579d
+//Container for social media buttons
+.logos {
+    width: 100%;
+    height: 40px;
+
+    position: absolute;
+    bottom: 0px;
 }
 
-.btn-outline-facebook:hover {
-    background: #3b579d;
-    color: #ffffff
+//Container for email and address
+.right-aligned-container {
+    width: auto;
+    height: auto;
+
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+
 }
 
-.btn-outline-youtube {
-    border: 1px solid #e52d27;
-    color: #e52d27
-}
+.text {
+    width: auto;
+    height: auto;
+    right: 0;
+    botton:0;
 
-.btn-outline-twitter {
-    border: 1px solid #2caae1;
-    color: #2caae1
-}
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
 
-.btn-outline-dribbble {
-    border: 1px solid #ea4c89;
-    color: #ea4c89
-}
-
-.btn-outline-linkedin {
-    border: 1px solid #0177b5;
-    color: #0177b5
-}
-
-.btn-outline-instagram {
-    border: 1px solid #dc4a38;
-    color: #dc4a38
-}
-
-.btn-outline-twitter:hover {
-    background: #2caae1;
-    color: #ffffff
-}
-
-.btn-outline-linkedin:hover {
-    background: #0177b5;
-    color: #ffffff
-}
-
-.btn-outline-youtube:hover {
-    background: #e52d27;
-    color: #ffffff
-}
-
-.btn-outline-instagram:hover {
-    background: #e52d27;
-    color: #ffffff
-}
-
-.btn-facebook {
-    background: #3b579d;
-    color: #ffffff
-}
-
-.btn-youtube {
-    background: #e52d27;
-    color: #ffffff
-}
-
-.btn-twitter {
-    background: #2caae1;
-    color: #ffffff
-}
-
-.btn-dribbble {
-    background: #ea4c89;
-    color: #ffffff
-}
-
-.btn-linkedin {
-    background: #0177b5;
-    color: #ffffff
-}
-
-.btn-instagram {
-    background: #dc4a38;
-    color: #ffffff
-}
-
-.btn-facebook:hover,
-.btn-facebook:focus {
-    background: #2d4278;
-    color: #ffffff
-}
-
-.btn-youtube:hover,
-.btn-youtube:focus {
-    background: #c21d17;
-    color: #ffffff
-}
-
-.btn-twitter:hover,
-.btn-twitter:focus {
-    background: #1b8dbf;
-    color: #ffffff
-}
-
-.btn-dribbble:hover,
-.btn-dribbble:focus {
-    background: #e51e6b;
-    color: #ffffff
-}
-
-.btn-linkedin:hover,
-.btn-linkedin:focus {
-    background: #015682;
-    color: #ffffff
-}
-
-.btn-instagram:hover,
-.btn-instagram:focus {
-    background: #bf3322;
-    color: #ffffff
-}
-
-/* Based on: https://stackoverflow.com/questions/2812770/add-centered-text-to-the-middle-of-a-hr-like-line */
-
-.separator {
+    color: #EDEBE8;
     display: flex;
     align-items: center;
-    text-align: center;
-    // color: white
-}
-.separator::before, .separator::after {
-    content: '';
-    flex: 1;
-    border-bottom: 1px solid grey;
-}
-.separator::before {
-    margin-right: .25em;
-}
-.separator::after {
-    margin-left: .25em;
+    text-align: right;
 }
 
-.separator-icon {
-    font-size: 25px;
-    margin-right: 10px;
+.btn-social-media-icon {
+    width: 40px;
+    height: 40px;
+
+    position: relative;
+    display: inline;
+    margin-inline: 5%;
+    left: 0px;
+
+    background: transparent;
 }
 
-#footer {
-  margin-top: 10vh;
-  background: #202121;
-  padding-top: 8vh;
-  padding-bottom: 4vh;
-  padding-left: 20vh;
-  padding-right: 20vh;
+.btn-social-media-icon:hover {
+    background: transparent;
+    border: transparent;
 }
 
+.app-icon {
+    height: 100%;
+    width: auto;
+
+    position: relative;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    right: 40%;
+}
+
+/* Resize for shrunk desktop window */
+@media screen and (max-width: 925px) {
+    .btn-social-media-icon {
+        margin-inline: 2%;
+    }
+}
+
+/* Resize for larger mobile devices */
 @media screen and (max-width: 768px) {
-  #footer {
-    margin-top: 10vh;
-    background: #202121;
-    padding-top: 8vh;
-    padding-left: 2vh;
-    padding-right: 2vh;
-  }
+    #footer {
+        margin-top: 10vh;
+        padding-top: 8vh;
+        padding-left: 2vh;
+        padding-right: 2vh;
+        padding-bottom: 5vh;
+    }
+}
+
+/* Resize for mobile devices */
+@media screen and (max-width: 600px) {
+    #footer {
+        height: 150px;
+        padding-top: 3vh;
+        padding-left: 2vh;
+        padding-right: 2vh;
+        padding-bottom: 2vh;
+    }
+
+    .logos {
+        width: 100%;
+        height: 25%;
+
+        position: relative;
+        display: flex;
+        justify-content: center;
+        //margin: 10%;
+    }
+
+    .left-aligned-container {
+        width: 130px;
+        height: auto;
+
+        position: absolute;
+        bottom: 0px;
+        left: 10px;
+
+    }
+
+    .right-aligned-container {
+        position: absolute;
+        bottom: 0px;
+        right: 10px;
+    }
+
+    .text {
+        font-size: 12px;
+    }
+
+
 }
