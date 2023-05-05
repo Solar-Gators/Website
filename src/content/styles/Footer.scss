@@ -74,23 +74,6 @@ Pulled from: https://bbbootstrap.com/snippets/social-media-icons-footer-54412302
     text-align: right;
 }
 
-.btn-social-media-icon {
-    width: 40px;
-    height: 40px;
-
-    position: relative;
-    display: inline;
-    margin-inline: 5%;
-    left: 0px;
-
-    background: transparent;
-}
-
-.btn-social-media-icon:hover {
-    background: transparent;
-    border: transparent;
-}
-
 .app-icon {
     height: 100%;
     width: auto;
@@ -100,13 +83,6 @@ Pulled from: https://bbbootstrap.com/snippets/social-media-icons-footer-54412302
     justify-items: center;
     justify-content: center;
     right: 40%;
-}
-
-/* Resize for shrunk desktop window */
-@media screen and (max-width: 925px) {
-    .btn-social-media-icon {
-        margin-inline: 2%;
-    }
 }
 
 /* Resize for larger mobile devices */

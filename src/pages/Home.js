@@ -188,10 +188,10 @@ export default function Home() {
         </Container>
 
           {/* Team Section */}
-          <Container fluid="true" className="section" style={{backgroundColor: '#00203E' , height: "650px"}}>
+          <Container fluid="true" className="section" style={{backgroundColor: '#00203E'}}>
               <Row>
                   <h2 className="heading2-text">
-                      Our Team
+                      Meet The Team
                   </h2>
               </Row>
               <Row>
@@ -215,14 +215,14 @@ export default function Home() {
                   </div>
               </Row>
               <Row>
-                  <Button className="btn-primary" as={Link} to={"/team"}>Meet Our Team</Button>
+                  <Button className="btn-primary" as={Link} to={"/team"}>Team 2023</Button>
               </Row>
           </Container>
 
           {/* Car Section */}
-          <Container fluid="true" className="section" style={{height: "650px"}}>
+          <Container fluid="true" className="section">
               <Row>
-                  <h2 className="heading2-text" style={{color:'#F37833'}}>
+                  <h2 className="heading2-text">
                       Our Cars
                   </h2>
               </Row>
@@ -241,20 +241,29 @@ export default function Home() {
           </Container>
 
           {/* Sponsors Section */}
-          <Container fluid="true" className="section" style={{height: "650px"}}>
+          <Container fluid="true" className="section">
               <Row>
-                  <h2 className="heading2-text" style={{color:'#F37833'}}>
-                      Our Sponsors
+                  <h2 className="heading2-text">
+                      Become A Sponsor
                   </h2>
               </Row>
 
               <Row>
-
+                  <Col>
+                  {/*    sponsor logos      */}
+                  </Col>
+                  <Col>
+                      <Row>
+                          {/*    blurb*/}
+                      </Row>
+                      <Row>
+                          <Button className="btn-secondary" as={Link} to={"/sponsors"}>Learn More</Button>
+                          <Button className="btn-primary" as={Link} to={"/sponsors"}>Sponsor Us</Button>
+                      </Row>
+                  </Col>
               </Row>
 
-              <Row>
-                  <Button className="btn-primary" as={Link} to={"/sponsors"}>Learn More</Button>
-              </Row>
+
 
           </Container>
 

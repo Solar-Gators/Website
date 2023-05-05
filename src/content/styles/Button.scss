@@ -1,22 +1,34 @@
 //DEFINES BUTTON STYLES
+$primary_blue: #00519C;
+$primary_orange: #F37833;
+$dark_blue: #00203E;
+$bright_blue: #0067c7;
+$white: #F8F8F8;
+$light-grey: #cdcdcd;
+$grey: #B6BABE;
+$black: #000000;
+
+$curve: 40px;
 
 .btn-primary {
   font-family: 'Inter';
-  font-weight: normal;
+  font-weight: 525;
   font-size: 18px;
-  margin: 0px;
   width: 180px;
   height: 55px;
+
   left: calc(50% - 180px/2 + 2px);
+  margin-top: 0px;
+  margin-bottom: 125px;
 
   align-items: center;
   text-align: center;
   text-transform: capitalize;
 
-  color: #FFFFFF;
-  background-color: #00519C;
-  border-radius: 1px;
-  border-color: rgba(0,0,0,0);
+  color: $bright_blue;
+  background-color: transparent;
+  border: 3px solid $bright_blue;
+  border-radius: $curve;
 
   display: flex;
   position: relative;
@@ -25,8 +37,41 @@
 }
 
 .btn-primary:hover {
-  background-color: #1B7AD2;
-  filter: drop-shadow(0px 4px 4px rgba(0, 32, 62, 0.4));
+  color: $white;
+  background-color: $bright_blue;
+  border: 3px solid $bright_blue;
+}
+
+.btn-secondary {
+  font-family: 'Inter';
+  font-weight: 525;
+  font-size: 18px;
+  width: 180px;
+  height: 55px;
+
+  left: calc(50% - 180px/2 + 2px);
+  margin-top: 0px;
+  margin-bottom: 125px;
+
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: $grey;
+  background-color: transparent;
+  border: 3px solid $grey;
+  border-radius: $curve;
+
+  display: flex;
+  position: relative;
+  justify-content: center;
+  top: 0px;
+}
+
+.btn-secondary:hover {
+  color: $white;
+  background-color: $grey;
+  border: 3px solid $grey;
 }
 
 .btn-primary-small {
@@ -43,10 +88,10 @@
   text-align: center;
   text-transform: capitalize;
 
-  color: #FFFFFF;
-  background-color: #00519C;
-  border-radius: 1px;
-  border-color: rgba(0,0,0,0);
+  color: $white;
+  background-color: $bright_blue;
+  border: 3px solid $bright_blue;
+  border-radius: $curve - (35/55);
 
   //display: flex;
   //position: relative;
@@ -55,17 +100,32 @@
 }
 
 .btn-primary-small:hover {
-  background-color: #1B7AD2;
-  filter: drop-shadow(0px 4px 4px rgba(0, 32, 62, 0.4));
-
+  color: $white;
+  background-color: $primary_orange;
+  border: 3px solid $primary-orange;
 }
 
-//Sections of Page (container)
-//.section {
-//  position: relative;
-//  width: 100%;
-//  height: 460px;
-//  left: 0px;
-//  top: 0px;
-//  background-color: #FFFFFF;
-//}
+.btn-social-media-icon {
+  width: 40px;
+  height: 40px;
+
+  position: relative;
+  display: inline;
+  margin-inline: 5%;
+  left: 0px;
+
+  background: transparent;
+  border: transparent;
+}
+
+.btn-social-media-icon:hover {
+  background: transparent;
+  border: transparent;
+}
+
+/* Resize for shrunk desktop window */
+@media screen and (max-width: 925px) {
+  .btn-social-media-icon {
+    margin-inline: 2%;
+  }
+}

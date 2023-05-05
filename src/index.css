@@ -7,13 +7,21 @@
   font-variation-settings: normal;
 }
 
+/*Define medium Inter font*/
+@font-face {
+  font-family: 'Inter';
+  src: local("Inter-Variable"), url("./content/assets/fonts/Inter-VariableFont.woff2") format("woff2-variations");
+  font-weight: 525;
+  font-style: normal;
+  font-variation-settings: normal;
+}
+
 /*Define bold Inter font*/
 @font-face {
   font-family: 'Inter';
   src: local("Inter-Variable"), url("./content/assets/fonts/Inter-VariableFont.woff2") format("woff2-variations");
   font-weight: bold;
   font-style: normal;
-
   font-variation-settings: normal;
 }
 
