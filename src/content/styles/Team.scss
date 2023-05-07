@@ -1,19 +1,65 @@
-.team-section {
-    background: url(../assets/images/new-teams.JPG), no-repeat center center fixed;
+.team-header-img {
+    width: 100%;
+    height: 500px;
+
+    background: linear-gradient(0deg, rgba(0, 32, 62, 0.25), rgba(0, 32, 62, 0.25)), url(../assets/images/uncategorized/team2023.png), no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-position: center;
+    background-position: center 27%;
 
     display: flex;
     position: relative;
     align-items: center;
 }
 
-.dropdownrow {
+//Image + Name + Title Container
+.officer-container {
+    position: relative;
+    width: 186px;
+    height: 330px;
+    //background: white;
+}
+
+//Image Container
+.headshot {
+    position: relative;
+    width: 100%;
+    height: 230px;
+    left: 0px;
+    margin: $no-margin;
+
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, .35);
+}
+
+//Img in container
+.headshot-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+
+.dropdown-menu {
+    background: rgba(1,1,1,0.5);
+    position: absolute;
+    width: 170px;
+    left: 15px;
+    justify-content: center;
+    text-align: center;
+
+    margin: 10px;
+}
+
+.dropdown-row {
     display: flex;
     position: relative;
-    align-items: right;
+    align-items: center;
     align-content: stretch;
+    justify-content: center;
+}
+
+.dropdown-row:hover {
+    background-color: $dark-grey;
 }

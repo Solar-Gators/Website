@@ -1,11 +1,25 @@
 @import "./Button.scss";
-$heading2-margin-top: 120px;
-$heading2-margin-bottom: $heading2-margin-top - 10px;
-$content1-margin: $heading2-margin-bottom - 10px;
+@import "./Header.scss";
+$content1-margin: 0px;
 $no-margin: 0;
 
+.home-header-img {
+    width: 100%;
+    height: 500px;
 
-//Sections of Page (container)
+    background: linear-gradient(0deg, rgba(0, 32, 62, 0.25), rgba(0, 32, 62, 0.25)), url(../assets/images/car_pics/car_finishline.jpg), no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+/* Sections of Page (container) */
 .section {
     position: relative;
     width: 100%;
@@ -14,45 +28,21 @@ $no-margin: 0;
     right: 0px;
     top: 0px;
     bottom: 0px;
-    //background-color: #219014;
-}
+    $section-padding-top: 120px;
+    padding-top: $section-padding-top;
+    padding-bottom: $section-padding-top - 10;
+    padding-left: $section-padding-top / 2;
+    padding-right: $section-padding-top / 2;
 
-/* Heading 2 (for Sections)*/
-.heading2-text {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 36px;
-
-    align-items: center;
-    text-align: center;
-    text-transform: capitalize;
-
-    color: $primary_orange;
-
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    top: 0px;
-    margin-top: $heading2-margin-top;
-    margin-bottom: $no-margin;
 }
 
 .mission-statement {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 22px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
 
-    color: $black;
-
-    margin-top: $content1-margin;
-    margin-bottom: $content1-margin - 10px;
-    margin-left: 3em;
-
+    justify-content: center;
     object-fit: cover;
     flex: 0 0 20%;      /* each blurb will be 20% width */
 }
@@ -140,18 +130,23 @@ $animationSpeed: 50s;
     }
 }
 
+/* Container for Car Images */
 .car-cards {
     justify-content: center;
     margin-top: $content1-margin;
     margin-bottom: $content1-margin - 10px;
 }
 
+/* Container for Individual Car Image */
 .car-card {
     position: relative;
     width: 26%;
     height: 300px;
     margin-left: 3%;
     margin-right: 3%;
+    margin-top: 0px;
+    transition: 0.5s ease;
+
     justify-content: center;
     display: flex;
     background-color: transparent;
@@ -160,24 +155,26 @@ $animationSpeed: 50s;
     overflow: hidden;
 }
 
+/* Car Image */
 .car-card-img {
     width: 100%;
     height: 100%;
     display: block;
-    transition: .5s ease;
+    transition: 0.5s ease;
     object-fit: cover;
     background-position: center;
 }
 
 .overlay {
     position: absolute;
-    transition: 0.2s ease;
+    transition: 0.5s ease;
     opacity: 0;
     width: 100%;
     height: 100%;
     background-color: $dark_blue;
 }
 
+//Car Name
 .overlay-text-header {
     color: $white;
     font-size: 24px;
@@ -191,6 +188,7 @@ $animationSpeed: 50s;
     justify-content: center;
 }
 
+//Car Years
 .overlay-text-body {
     color: $white;
     font-size: 18px;
@@ -205,94 +203,17 @@ $animationSpeed: 50s;
     justify-content: center;
 }
 
+//when hovering over car card, adjusts overlay opacity
 .car-card:hover .overlay{
     opacity: .75;
 }
 
+.car-card:hover {
+    //left down blur scale color
+    box-shadow: 0px 20px 20px 5px rgba(0, 0, 0, .25);
+    margin-top: -20px;
+    transition: 0.5s ease;
+}
 
-
-///*
-//  Create inverse button
-//*/
-//.btn-inverse {
-//    //@include button-variant(transparent, white, white);
-//    font-family: 'Inter';
-//}
-//
-///*
-//  Configure break line
-//*/
-//.home-break-line {
-//    margin-top: 10%;
-//}
-//
-////horizontal line
-//hr {
-//    border-style: inset;
-//    border-width: 1px;
-//}
-//
-//
-///*
-//  Homepage Stats Icons CSS
-//*/
-//.home-icon {
-//    font-size: 2em;
-//}
-//
-//.home-icon-text {
-//    font-size: 0.6em;
-//}
-//
-//
-//
-///*
-//  Custom button for home cards
-//*/
-//.btn-home-card {
-//    //@include button-variant(transparent, #2185d0, #2185d0);
-//    color: #2185d0;
-//    font-family: 'inter';
-//}
-//
-//
-///*
-//  Home Card
-//*/
-//.home-card {
-//    overflow: hidden;
-//    max-width: $card-width;
-//}
-//
-//.home-card-images {
-//    max-width: $card-width;
-//}
-//
-//.home-card-images:hover {
-//    transition: 0.5s;
-//    transform: translateX(-100%);
-//}
-//.home-card-images:not( :hover ) {
-//    transition: 0.5s;
-//    transform: translateX(0px);
-//}
-//
-//.home-card-body {
-//    font-size: 0.8em;
-//}
-//
-//.home-card-hidden {
-//    position: absolute;
-//    left: 100%;
-//}
-//.home-card-visible {
-//    position: absolute;
-//}
-//
-//@media (min-width: 1200px) {
-//    .container-home-cards {
-//        max-width: 2500px !important;
-//    }
-//}
 
 

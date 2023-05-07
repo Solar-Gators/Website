@@ -11,7 +11,16 @@
 @font-face {
   font-family: 'Inter';
   src: local("Inter-Variable"), url("./content/assets/fonts/Inter-VariableFont.woff2") format("woff2-variations");
-  font-weight: 525;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: normal;
+}
+
+/*Define semi-bold Inter font*/
+@font-face {
+  font-family: 'Inter';
+  src: local("Inter-Variable"), url("./content/assets/fonts/Inter-VariableFont.woff2") format("woff2-variations");
+  font-weight: 600;
   font-style: normal;
   font-variation-settings: normal;
 }
@@ -22,6 +31,33 @@
   src: local("Inter-Variable"), url("./content/assets/fonts/Inter-VariableFont.woff2") format("woff2-variations");
   font-weight: bold;
   font-style: normal;
+  font-variation-settings: normal;
+}
+
+/*Define light italic Inter font*/
+@font-face {
+  font-family: 'Inter';
+  src: local("Inter-Variable"), url("./content/assets/fonts/Inter-VariableFont.woff2") format("woff2-variations");
+  font-weight: 300;
+  font-style: italic;
+  font-variation-settings: normal;
+}
+
+/*Define bold italic Inter font*/
+@font-face {
+  font-family: 'Inter';
+  src: local("Inter-Variable"), url("./content/assets/fonts/Inter-VariableFont.woff2") format("woff2-variations");
+  font-weight: bold;
+  font-style: italic;
+  font-variation-settings: normal;
+}
+
+/*Define extra bold italic Inter font*/
+@font-face {
+  font-family: 'Inter';
+  src: local("Inter-Variable"), url("./content/assets/fonts/Inter-VariableFont.woff2") format("woff2-variations");
+  font-weight: extra-bold;
+  font-style: italic;
   font-variation-settings: normal;
 }
 

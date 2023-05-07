@@ -1,5 +1,45 @@
 @import "~bootstrap/scss/bootstrap";
 
+/* FILE DEFINES:
+  1) TEXT HEADING STYLES
+  2) WEBSITE COLORS
+  3) FORMAT OF PAGE HEADERS
+  NOTE: header image component handled by individual page .scss file
+*/
+
+//Document Colors
+$primary_blue: #00519C;
+$primary_orange: #F37833;
+$dark_blue: #00203E;
+$bright_blue: #0067c7;
+$white: #F8F8F8;
+$light-grey: #cdcdcd;
+$grey: #B6BABE;
+$dark-grey: #888;
+$black: #000000;
+
+//Heading 2 Margin
+$heading2-padding-top: 0px;
+$heading2-padding-bottom: 90px;
+
+//Heading 3 Margin
+$heading3-padding-top: 100px;
+$heading3-padding-bottom: $heading3-padding-top - 10px;
+
+//Heading 4 Margin
+$heading4-padding-top: 60px;
+$heading4-padding-bottom: $heading4-padding-top - 10px;
+
+//Heading 5 Margin
+$heading5-padding-top: 25px;
+$heading5-padding-bottom: $heading5-padding-top - 10px;
+
+//Heading 6 Margin
+$heading6-padding-top: 20px;
+$heading6-padding-bottom: $heading6-padding-top - 10px;
+
+$no-padding: 0;
+
 //----THIS FILE DEFINES PAGE HEADER STYLES----
 
 //Page Header (container)
@@ -16,20 +56,22 @@
   top: 0px;
 }
 
-//Page Header Text
-.header-text {
+/* Title */
+.title-text {
   font-family: 'Inter';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 65px;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 64px;
   opacity: 0.9;
 
-  color: #FFFFFF;
-  text-shadow: -6px 6px 6px rgba(0, 32, 62, 0.21);
+  color: $white;
+  text-shadow: -6px 6px 6px rgba(0, 32, 62, 0.20);
+  transition: 5ms;
 
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
+  line-height: 68px;
   text-transform: capitalize;
 
   //Position
@@ -38,24 +80,180 @@
   display: flex;
   justify-content: center;
   top: 0px;
-  margin-top: 0px;
+  padding-top: 0px;
 }
 
-.header-img {
-  width: 100%;
-  height: 500px;
-
-  background: linear-gradient(0deg, rgba(0, 32, 62, 0.25), rgba(0, 32, 62, 0.25)), url(../assets/images/car_pics/car_finishline.jpg), no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: center;
+/* Heading 1 */
+.heading1-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 52px;
 
   display: flex;
-  position: relative;
   align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: $bright_blue;
+  transition: 5ms;
+
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  top: 0px;
+  padding-top: $heading2-padding-top;
+  padding-bottom: $heading2-padding-bottom;
 }
+
+
+/* Heading 2 */
+.heading2-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 40px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: $primary_orange;
+  transition: 5ms;
+
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  top: 0px;
+  padding-top: $heading2-padding-top;
+  padding-bottom: $heading2-padding-bottom;
+}
+
+/* Heading 3 */
+.heading3-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 34px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: $black;
+  transition: 5ms;
+
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  top: 0px;
+  padding-top: $heading3-padding-top;
+  padding-bottom: $heading3-padding-bottom;
+}
+
+/* Heading 4 */
+.heading4-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: $black;
+  transition: 5ms;
+
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  top: 0px;
+  padding-top: $heading4-padding-top;
+  padding-bottom: $heading4-padding-bottom;
+}
+
+/* Heading 5 */
+.heading5-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: $white;
+  transition: 5ms;
+
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  top: 0px;
+  padding-top: $heading5-padding-top;
+  padding-bottom: $heading5-padding-bottom;
+}
+
+/* Heading 6 */
+.heading6-text {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: $dark-grey;
+  transition: 5ms;
+
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  top: 0px;
+  padding-top: $heading6-padding-top;
+  padding-bottom: $heading6-padding-bottom;
+}
+
+
+.body-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+
+  text-align: left;
+  color: $black;
+  transition: 5ms;
+}
+
+.body-text-white {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+
+  text-align: left;
+  color: $white;
+  transition: 5ms;
+}
+
+
 
 @media screen and (max-width: 768px) {
   #header-text {
