@@ -83,13 +83,13 @@ export default function Home() {
                     <p className={"body-text"}><b>Accelerate</b> the world's transition to sustainable energy</p>
                 </Col>
                 <Col className={"mission-statement"}>
-                    <p className={"body-text"}><b>Develop</b> gator engineers through design and manufacturing experience</p>
+                    <p className={"body-text"}><b>Develop</b> gator engineers through hands-on design and manufacturing experience</p>
                 </Col>
                 <Col className={"mission-statement"}>
-                    <p className={"body-text"}><b>Inspire</b> students to explore their interests within STEM</p>
+                    <p className={"body-text"}><b>Inspire</b> students to explore their interests within STEM and become the next generation of innovators shaping the future</p>
                 </Col>
                 <Col className={"mission-statement"}>
-                    <p className={"body-text"}><b>Build</b> awareness within our community about the benefits of solar energy</p>
+                    <p className={"body-text"}><b>Build</b> awareness within our community about the transformative potential of solar energy</p>
                 </Col>
             </Row>
             <Row>

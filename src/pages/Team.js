@@ -165,7 +165,7 @@ function OfficerTeam({ name, title, img, year, eventkey }) {
           <Officer name={name[4]} title="Business Coordinator" img={img[4]} year={year[23]} />
         </Row>
       </Col>
-    );
+    )
   }
 }
 

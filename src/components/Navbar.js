@@ -12,7 +12,7 @@ export default function WebsiteNavbar() {
   
   const toggle = () => setIsOpen(!isOpen);
   return (
-    <Navbar color="light" light expand="md">
+    <Navbar class="navbar navbar-expand-lg top navbar-scroll" color="light">
         <Navbar.Brand as={Link} to="/">
           <img width={120} height={35} src={logoImage} alt="Logo" />
         </Navbar.Brand>

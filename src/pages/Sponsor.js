@@ -1,189 +1,166 @@
-import React, { useState } from 'react'
-
-import {
-  Link
-} from "react-router-dom"
+import React from 'react'
+import {Link} from "react-router-dom"
 
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
-import Header from '../components/Header'
 
-import zenithTecnica from '../content/assets/images/ZT Logo 2020-12.jpg'
-import PellucereTech from '../content/assets/images/Pellucere+Logo+R.png'
-import MatrixComposities from '../content/assets/images/Matrix_Logo_lg.jpg'
-import ElektroAutomatik from '../content/assets/images/ElektroAutomatik.png'
-import westSystems from '../content/assets/images/West-System.jpg'
-import molex from '../content/assets/images/new-molex-logo@2x.png'
-import RapidHarness from '../content/assets/images/rapid-harness.png'
-import RapidCut from '../content/assets/images/logo_rapidcut_small_1.jpg'
-import merritSupply from '../content/assets/images/merritt-trans-white-200-1.png'
-import SKF from '../content/assets/images/skf.png'
-import the3AComposites from '../content/assets/images/3a-logo.png'
-import PhoenixThermalSupply from '../content/assets/images/Phoenix-Side-Logo-Transparent.png'
-import ansys from '../content/assets/images/1234751087606171086_1234751087606171086.png'
-import FusionFilaments from '../content/assets/images/fusionfilaments.png'
-import VR3 from '../content/assets/images/VR3.png'
-import IC3D from '../content/assets/images/ic3-industries-logo.png'
-import ProtoPlasta from '../content/assets/images/Logomark_Desktop_Oct_2020.webp'
-import SainSmart from '../content/assets/images/sainsmart.webp'
-import NordLock from '../content/assets/images/nordlock.jpg'
-import IPF from '../content/assets/images/ipf.jpg'
-import MAE from '../content/assets/images/mae.png'
+//Car 3 Sponsor Logos
+//Platinum
+import MAE from '../content/assets/images/sponsor_logos/MAE.png'
+import ZenithTecnica from '../content/assets/images/sponsor_logos/ZenithTecnica.png'
+import ECE from '../content/assets/images/sponsor_logos/ECE.png'
+//Gold
+import Pellucere from '../content/assets/images/sponsor_logos/Pellucere.png'
+import MatrixComposities from '../content/assets/images/sponsor_logos/Matrix.png'
+import ElektroAutomatik from '../content/assets/images/sponsor_logos/ElektroAutomatik.png'
+import BayArea from '../content/assets/images/sponsor_logos/BayArea.png'
+import WestSystems from '../content/assets/images/sponsor_logos/WestSystem.png'
+//Silver
+import Mirage from '../content/assets/images/sponsor_logos/Mirage.png'
+import RapidCut from '../content/assets/images/sponsor_logos/RapidCut.png'
+import BMRS from '../content/assets/images/sponsor_logos/Bmrs.png'
+import Molex from '../content/assets/images/sponsor_logos/Molex.png'
+import RapidHarness from '../content/assets/images/sponsor_logos/RapidHarness.png'
+import TDK from '../content/assets/images/sponsor_logos/TDK.png'
+//Bronze
+import Altair from '../content/assets/images/sponsor_logos/Altair.png'
+import MerritSupply from '../content/assets/images/sponsor_logos/MerritSupply.png'
+import SKF from '../content/assets/images/sponsor_logos/SKF.png'
+import _3A from '../content/assets/images/sponsor_logos/3A.png'
+import FGCI from '../content/assets/images/sponsor_logos/FGCI.png'
+import PhoenixThermalSupply from '../content/assets/images/sponsor_logos/PhoenixThermal.png'
+import Ansys from '../content/assets/images/sponsor_logos/Ansys.png'
+import VR3 from '../content/assets/images/sponsor_logos/VR3.png'
+import FusionFilaments from '../content/assets/images/sponsor_logos/FusionFilaments.png'
+import IC3D from '../content/assets/images/sponsor_logos/IC3D.png'
+import ProtoPasta from '../content/assets/images/sponsor_logos/Protopasta.webp'
+import SainSmart from '../content/assets/images/sponsor_logos/SainSmart.webp'
+import NordLock from '../content/assets/images/sponsor_logos/NordLock.png'
+import IPF from '../content/assets/images/sponsor_logos/IPF.png'
 
-import premiumSoldworks from '../content/assets/images/premium_solidworks.png'
-import premiumEaton from '../content/assets/images/premium_eaton.png'
-import premiumAltair from '../content/assets/images/premium_altair.png'
-import premiumEce from '../content/assets/images/premium_ece.png'
-import premiumHwco from '../content/assets/images/premium_hwco.png'
-import premiumSiemens from '../content/assets/images/premium_siemens.png'
-import premiumSolarImpact from '../content/assets/images/premium_solar_impact.png'
-import premiumSunpower from '../content/assets/images/premium_sunpower.png'
-import premiumUfmae from '../content/assets/images/premium_ufmae.png'
-import premiumUniversal from '../content/assets/images/premium_universal.png'
+//Car 2 Sponsors
+// import Solidworks from '../content/assets/images/sponsor_logos/SolidWorks.png'
+// import Eaton from '../content/assets/images/sponsor_logos/Eaton.png'
+// import HWCE from '../content/assets/images/sponsor_logos/HWCE.png'
+// import Siemens from '../content/assets/images/sponsor_logos/Siemens.png'
+// import SolarImpact from '../content/assets/images/sponsor_logos/SolarImpact.png'
+// import SunPower from '../content/assets/images/sponsor_logos/SunPower.png'
+// import Universal from '../content/assets/images/sponsor_logos/Universal.png'
+// import IPPD from '../content/assets/images/sponsor_logos/IPPD.png'
+// import Rohacell from '../content/assets/images/sponsor_logos/Rohacell.png'
+// import Brembo from '../content/assets/images/sponsor_logos/Brembo.png'
+// import UFSG from '../content/assets/images/sponsor_logos/UFSG.png'
+// import Accurate from '../content/assets/images/sponsor_logos/Accurate.png'
+// import Zevia from '../content/assets/images/sponsor_logos/Zevia.png'
+// import Stickermule from '../content/assets/images/sponsor_logos/StickerMule.png'
+// import SolarCat from '../content/assets/images/sponsor_logos/SolarCat.png'
+// import Kevins from '../content/assets/images/sponsor_logos/Kevins.png'
+// import Hakko from '../content/assets/images/sponsor_logos/Hakko.png'
+// import MossSolar from '../content/assets/images/sponsor_logos/MossSolar.png'
+// import BeadBuster from '../content/assets/images/sponsor_logos/BeadBuster.png'
 
+//Car 3 Sponsors
+let platinum3 = [[MAE, "https://mae.ufl.edu/"], [ZenithTecnica, "https://www.zenithtecnica.com/"], [ECE, "https://www.ece.ufl.edu/"]];
+let gold3 = [[Pellucere, "https://www.pellucere.com/"], [MatrixComposities, "https://matrixcomp.com"],
+    [ElektroAutomatik, "https://elektroautomatik.com/"], [BayArea,"https://bayareacircuits.com/"], [WestSystems, "https://www.westsystem.com/"]];
+let silver3 = [[Mirage, "https://www.mirage-mfg.com/"], [RapidCut, "https://www.rapidcut.com/"], [BMRS, "https://www.bmrswired.com/"],
+    [Molex, "https://www.molex.com"], [RapidHarness, "https://rapidharness.com/"], [TDK, "https://www.tdk-lambda.com"]];
+let bronze3 = [[Altair, "https://www.altair.com/"], [MerritSupply, "https://www.merrittsupply.com/"], [WestSystems, "https://www.westsystem.com/"],
+    [SKF, "https://www.skf.com"],[_3A, "https://3acompositesusa.com/"],[FGCI, "https://www.fgci.com/"],
+    [PhoenixThermalSupply, "https://www.phoenixthermalsupply.com/"], [Ansys, "https://www.ansys.com/"], [VR3, "https://vr3.ca/"],
+    [FusionFilaments, "https://fusionfilaments.com/"], [IC3D, "https://www.ic3dprinters.com/"], [ProtoPasta, "https://www.proto-pasta.com/"],
+    [SainSmart, "https://www.sainsmart.com/"], [NordLock, "https://www.nord-lock.com"], [IPF, "https://goo.gl/maps/a8tBJe2cCBKJWkzq5"]];
 
-import silverBac from '../content/assets/images/silver_bac.jpg'
-import silverUfippd from '../content/assets/images/silver_ufippd.png'
-import silverRohacell from '../content/assets/images/silver_rohacell.jpg'
-import silverMirage from '../content/assets/images/silver_mirage.png'
-import silverFgci from '../content/assets/images/silver_fgci.png'
-import silverBrembo from '../content/assets/images/silver_brembo.jpg'
-import silverUfsg from '../content/assets/images/silver_ufsg.png'
-import silverAccurate from '../content/assets/images/silver_accurate.png'
-
-
-import bronzeTdk from '../content/assets/images/bronze_tdk.png'
-import bronzeZevia from '../content/assets/images/bronze_zevia.png'
-import bronzeStickermule from '../content/assets/images/bronze_stickermule.png'
-import bronzeSolarcat from '../content/assets/images/bronze_solarcat.jpg'
-import bronzeKevins from '../content/assets/images/bronze_kevins.jpg'
-
-import bronzeHakko from '../content/assets/images/bronze_hakko.gif'
-import bronzeMoss from '../content/assets/images/bronze_moss.jpg'
-import bronzeBmrs from '../content/assets/images/bronze_bmrs.jpg'
-import bronzeBeadbuster from '../content/assets/images/bronze_beadbuster.jpg'
-
+//Car 2 Sponsors
+// var platinum2 = [Solidworks, Eaton, Altair, ECE, HWCE, Siemens, SolarImpact, SunPower, MAE, Universal];
+// var silver2 = [BayArea, IPPD, Rohacell, Mirage, FGCI, UFSG, Brembo, Accurate];
+// var bronze2 = [TDK, Zevia, Stickermule, SolarCat, Kevins, MossSolar, BMRS, BeadBuster, Hakko];
 
 function SponsorRow({ img1, img1link, img2, img2link, img3, img3link }) {
   let CustomImage = ({ src, link }) => {
-    return <Col><a href={link}><span class="align-center"><img src={src} className="img-fluid" /></span></a></Col>
+    return <Col>
+        <a href={link}>
+            <span class="align-center">
+                <img src={src} className="sponsor-logo" />
+            </span>
+        </a>
+    </Col>
   }
   return (
-    <Row className="align-items-center mb-3">
-      { img1 ? <CustomImage src={img1} link={img1link} /> : <Col />}
-      { img2 ? <CustomImage src={img2} link={img2link} /> : <Col />}
-      { img3 ? <CustomImage src={img3} link={img3link} /> : <Col />}
+    <Row style={{justifyContent: "center", alignItems: "center"}}>
+      { img1 ? <CustomImage src={img1} link={img1link} /> : ""}
+      { img2 ? <CustomImage src={img2} link={img2link} /> : ""}
+      { img3 ? <CustomImage src={img3} link={img3link} /> : ""}
     </Row>
   )
+}
+
+function ShowSponsors({car_num}) {
+    if (car_num === "3") {
+        return (
+            <Container fluid="true" className="section">
+                <h2 className="heading2-text" style={{paddingBottom: "10px"}}>Sunrider Sponsors</h2>
+                <h4 className="heading6-text">2020-2023</h4>
+
+                {/* PLATINUM */}
+                <h3 className="heading3-text">Platinum Sponsors</h3>
+                <SponsorRow img1={platinum3[0][0]} img1link={platinum3[0][1]} img2={platinum3[1][0]} img2link={platinum3[1][1]} img3={platinum3[2][0]} img3link={platinum3[2][1]} />
+
+                {/* GOLD */}
+                <h3 className="heading3-text">Gold Sponsors</h3>
+                <SponsorRow img1={gold3[0][0]} img1link={gold3[0][1]} img2={gold3[1][0]} img2link={gold3[1][1]} img3={gold3[2][0]} img3link={gold3[2][1]} />
+                <SponsorRow img1={gold3[3][0]} img1link={gold3[3][1]} img2={gold3[4][0]} img2link={gold3[4][1]} />
+
+                {/* SILVER */}
+                <h3 className="heading3-text">Silver Sponsors</h3>
+                <SponsorRow img1={silver3[0][0]} img1link={silver3[0][1]} img2={silver3[1][0]} img2link={silver3[1][1]} img3={silver3[2][0]} img3link={silver3[2][1]} />
+                <SponsorRow img1={silver3[3][0]} img1link={silver3[3][1]} img2={silver3[4][0]} img2link={silver3[4][1]} />
+
+                {/* BRONZE */}
+                <h3 className="heading3-text">Bronze Sponsors</h3>
+                <SponsorRow img1={bronze3[0][0]} img1link={bronze3[0][1]} img2={bronze3[1][0]} img2link={bronze3[1][1]} img3={bronze3[2][0]} img3link={bronze3[2][1]} />
+                <SponsorRow img1={bronze3[3][0]} img1link={bronze3[3][1]} img2={bronze3[4][0]} img2link={bronze3[4][1]} img3={bronze3[5][0]} img3link={bronze3[5][1]}/>
+                <SponsorRow img1={bronze3[6][0]} img1link={bronze3[6][1]} img2={bronze3[7][0]} img2link={bronze3[7][1]} img3={bronze3[8][0]} img3link={bronze3[8][1]} />
+                <SponsorRow img1={bronze3[9][0]} img1link={bronze3[9][1]} img2={bronze3[10][0]} img2link={bronze3[10][1]} img3={bronze3[11][0]} img3link={bronze3[11][1]}/>
+                <SponsorRow img1={bronze3[12][0]} img1link={bronze3[12][1]} img2={bronze3[13][0]} img2link={bronze3[13][1]} img3={bronze3[14][0]} img3link={bronze3[14][1]} />
+
+            </Container>
+        );
+    }
 }
 
 export default function Sponsor() {
   return (
     <React.Fragment>
-      <Header className="sponsor-section">
-        <h1 className="sponsor-centered">Sponsors</h1>
-      </Header>
-      <Container>
-        <Row className="mt-5">
-          <Col lg={{ span: 10, offset: 1 }}>
-            <h2 className="line-divider">OUR SPONSORS</h2>
-            <p>Building, designing, prototyping, and organizing the build of a solar-powered vehicle is a very resource-intensive feat. All of this is possible due to the generosity and support of our beloved sponsors.</p>
-          </Col>
-          <Button className="btn-lg sponsor-button mt-3 mb-5 ml-auto mr-auto" as={Link} to="/donate">Sponsorship Opportunities</Button>
-        </Row>
-      </Container>
+        {/*  Page Header */}
+        <Container fluid="true" className="header">
+            <Row>
+                <Col>
+                    <div className="sponsor-header-img">
+                        <h1 className={"title-text"}>
+                            Sponsors
+                        </h1>
+                    </div>
+                </Col>
+            </Row>
+        </Container>
 
-      <div className="separator">
-        <h2 className="ml-4 mr-4">Sunrider Sponsors (Car 3, 2020-2021)</h2>
-      </div>
+        {/*  Sponsorship Blurb */}
+        <Container fluid="true" className="section" style={{background: "#00203E", paddingTop: "80px", paddingBottom: "80px"}}>
+            <Row style={{justifyContent: "center"}}>
+                <p className={"body-text-white"} style={{paddingLeft: "30px", paddingRight: "30px", textAlign: "center"}}>
+                    Our mission to show the potential of solar energy is made possible by our wonderful sponsors.
+                    Their generosity and commitment to sustainability are instrumental in helping us
+                    design, build and test our solar cars. Thank you.
+                </p>
+            </Row>
+            <Button className="btn-primary" style={{width: "250px", justifyContent: "center", left: "calc(50% - 250px/2 + 2px)", marginTop: "40px"}} as={Link} to={"/donate"}>Become a Sponsor</Button>
+        </Container>
 
-      <Container className="mt-5">
-        <div className="separator">
-          <h2 className="ml-4 mr-4">
-            <i class="fas fa-gift mr-3" />
-                Platinum Sponsors
-              </h2>
-        </div>
+        <ShowSponsors car_num={"3"}/>
 
-        <SponsorRow img1={MAE} img1link="https://mae.ufl.edu/" img2={zenithTecnica} img2link="https://www.zenithtecnica.com/" img3={premiumEce} img3link="https://www.ece.ufl.edu/" />
-
-        <div className="separator mt-5 mb-2">
-          <h2 className="ml-4 mr-4">
-            <i class="fas fa-gift mr-3" />
-                Gold Sponsors
-              </h2>
-        </div>
-
-        <SponsorRow img1={PellucereTech} img1link="https://www.pellucere.com/" img2={MatrixComposities} img2link="https://matrixcomp.com" img3={ElektroAutomatik} img3link="https://elektroautomatik.com/" />
-        <SponsorRow img1={silverBac} img1link="https://bayareacircuits.com/" img2={westSystems} img2link="https://www.westsystem.com/" />
-
-        <div className="separator mt-5 mb-2">
-          <h2 className="ml-4 mr-4">
-            <i class="fas fa-gift mr-3" />
-                Silver Sponsors
-              </h2>
-        </div>
-
-        <SponsorRow img1={silverMirage} img1link="http://www.mirage-mfg.com/" img2={RapidCut} img2link="https://www.rapidcut.com/" img3={bronzeBmrs} img3link="https://www.bmrswired.com/"/>
-        <SponsorRow img1={molex} img1link="https://www.molex.com" img2={RapidHarness} img2link="https://rapidharness.com/" img3={bronzeTdk} img3link="https://www.tdk-lambda.com"/>
-
-        <div className="separator mt-5 mb-2">
-          <h2 className="ml-4 mr-4">
-            <i class="fas fa-gift mr-3" />
-                Bronze Sponsors
-              </h2>
-        </div>
-
-        <SponsorRow img1={premiumAltair} img1link="https://www.altair.com/" img2={merritSupply} img2link="https://www.merrittsupply.com/" img3={westSystems} img3link="https://www.westsystem.com/" />
-        <SponsorRow img1={SKF} img1link="https://www.skf.com" img2={the3AComposites} img2link="https://3acompositesusa.com/" img3={silverFgci} img3link="https://www.fgci.com/" />
-        <SponsorRow img1={PhoenixThermalSupply} img1link="https://www.phoenixthermalsupply.com/"img2={ansys} img2link="https://www.ansys.com/" img3={VR3} img3link="https://vr3.ca/" />
-        <SponsorRow img1={FusionFilaments} img1link="https://fusionfilaments.com/" img2={IC3D} img2link="https://www.ic3dprinters.com/" img3={ProtoPlasta} img3link="https://www.proto-pasta.com/" />
-        <SponsorRow img1={SainSmart} img1link="https://www.sainsmart.com/" img2={NordLock} img2link="https://www.nord-lock.com" img3={IPF} img3link="https://goo.gl/maps/a8tBJe2cCBKJWkzq5" />
-
-      </Container>
-
-      <div className="separator">
-        <h2 className="ml-4 mr-4">Cielo Car Sponsors (Car 2, 2019)</h2>
-      </div>
-
-      <Container className="mt-5">
-        <div className="separator">
-          <h2 className="ml-4 mr-4">
-            <i class="fas fa-gift mr-3" />
-                Platinum Sponsors
-              </h2>
-        </div>
-
-        <SponsorRow img1={premiumSoldworks} img2={premiumEaton} img3={premiumAltair} />
-        <SponsorRow img1={premiumEce} img2={premiumHwco} img3={premiumSiemens} />
-        <SponsorRow img1={premiumSolarImpact} img2={premiumSunpower} img3={premiumUfmae} />
-        <SponsorRow img2={premiumUniversal} />
-
-        <div className="separator mt-5 mb-2">
-          <h2 className="ml-4 mr-4">
-            <i class="fas fa-gift mr-3" />
-                Silver Sponsors
-              </h2>
-        </div>
-
-        <SponsorRow img1={silverBac} img2={silverUfippd} img3={silverRohacell} />
-        <SponsorRow img1={silverMirage} img2={silverFgci} img3={silverUfsg} />
-        <SponsorRow img1={silverBrembo} img2={silverAccurate} />
-
-        <div className="separator mt-5 mb-2">
-          <h2 className="ml-4 mr-4">
-            <i class="fas fa-gift mr-3" />
-                Bronze Sponsors
-              </h2>
-        </div>
-
-        <SponsorRow img1={bronzeTdk} img2={bronzeZevia} img3={bronzeStickermule} />
-        <SponsorRow img1={bronzeSolarcat} img2={bronzeKevins} img3={bronzeMoss} />
-        <SponsorRow img1={bronzeBmrs} img2={bronzeBeadbuster} img3={bronzeHakko} />
-
-      </Container>
     </React.Fragment>
   )
 }

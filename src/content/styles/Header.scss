@@ -23,11 +23,11 @@ $heading2-padding-top: 0px;
 $heading2-padding-bottom: 90px;
 
 //Heading 3 Margin
-$heading3-padding-top: 100px;
-$heading3-padding-bottom: $heading3-padding-top - 10px;
+$heading3-padding-top: 130px;
+$heading3-padding-bottom: 0px;
 
 //Heading 4 Margin
-$heading4-padding-top: 60px;
+$heading4-padding-top: 0px;
 $heading4-padding-bottom: $heading4-padding-top - 10px;
 
 //Heading 5 Margin
@@ -51,7 +51,7 @@ $no-padding: 0;
 
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 36vw;   //36% view height
   left: 0px;
   top: 0px;
 }
@@ -145,7 +145,7 @@ $no-padding: 0;
   text-align: center;
   text-transform: capitalize;
 
-  color: $black;
+  color: $bright_blue;
   transition: 5ms;
 
   position: relative;
@@ -239,6 +239,10 @@ $no-padding: 0;
   text-align: left;
   color: $black;
   transition: 5ms;
+
+  padding: 0;
+  margin: 0;
+
 }
 
 .body-text-white {
@@ -251,6 +255,8 @@ $no-padding: 0;
   text-align: left;
   color: $white;
   transition: 5ms;
+
+  padding: 0px;
 }
 
 

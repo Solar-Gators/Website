@@ -43,7 +43,9 @@ Pulled from: https://bbbootstrap.com/snippets/social-media-icons-footer-54412302
     height: 40px;
 
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
+    top:0;
+    padding-bottom: 50px;
 }
 
 //Container for email and address

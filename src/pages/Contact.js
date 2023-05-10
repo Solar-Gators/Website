@@ -8,6 +8,10 @@ import Header from '../components/Header'
 import ReCAPTCHA from "react-google-recaptcha";
 import axios from 'axios'
 import ReactGA from 'react-ga'
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import "../content/styles/Contact.scss";
+
 
 export default function Contact() {
 
@@ -60,7 +64,7 @@ export default function Contact() {
                     action: 'Successfully submitted Contact Form'
                   })
                 //good
-                setSuccessMsg("Your message has successfully been delivered.")
+                setSuccessMsg("Message sent!")
                 document.getElementById('contact-email').value = ""
                 document.getElementById('contact-name').value = ""
                 document.getElementById('contact-msg').value = ""
@@ -90,12 +94,21 @@ export default function Contact() {
 
     return (
         <React.Fragment>
-            <Header className="sponsor-section">
-                <h1 className="sponsor-centered">Contact Us</h1>
-            </Header>
+            {/*  Page Header */}
+            <Container fluid="true" className="header">
+                <Row>
+                    <Col>
+                        <div className="contact-header-img">
+                            <h1 className={"title-text"}>
+                                Contact Us
+                            </h1>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
 
         <Container className="mt-4">
-            <Card>
+            <Card className="transparent-box">
                 <Card.Body>
                     { errorMsg ? <Alert variant="danger" >
                         {errorMsg}
@@ -106,24 +119,26 @@ export default function Contact() {
                     </Alert> : "" }
 
                     <Form onSubmit={onSubmit} validated={validated} noValidate>
-                        <Form.Group controlId="formBasicEmail">
-                            <Form.Label>Your Name</Form.Label>
-                            <Form.Control type="text" placeholder="Enter name" id="contact-name" required />
+                        <Form.Group controlId="formBasicEmail" >
+                            <Form.Label className="body-text" style={{paddingBottom: "10px"}}>Name</Form.Label>
+                            <Form.Control className="contact-entry-box" type="text" placeholder="Enter name" id="contact-name" required />
                             <Form.Control.Feedback type="invalid">
                                 Please enter your name.
                             </Form.Control.Feedback>
                         </Form.Group>
 
                         <Form.Group controlId="formBasicPassword">
-                            <Form.Label>Your Email</Form.Label>
-                            <Form.Control type="email" placeholder="Enter email" id="contact-email" required />
+                            <Form.Label className="body-text" style={{paddingBottom: "10px"}}>Email</Form.Label>
+                            <Form.Control className="contact-entry-box" type="email" placeholder="Enter email" id="contact-email" required />
                             <Form.Control.Feedback type="invalid">
                                 Please enter your email.
                             </Form.Control.Feedback>
                         </Form.Group>
                         <Form.Group controlId="formBasicCheckbox">
-                            <Form.Label>Your Message</Form.Label>
-                            <Form.Control as="textarea" rows="3" placeholder="message" id="contact-msg" required />
+                            <Form.Label className="body-text" style={{paddingBottom: "10px"}}>
+                                Message
+                            </Form.Label>
+                            <Form.Control className="contact-entry-box" as="textarea" rows="3" placeholder="Hey Solar Gators..." id="contact-msg" required />
                             <Form.Control.Feedback type="invalid">
                                 Please enter your message.
                             </Form.Control.Feedback>
