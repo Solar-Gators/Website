@@ -89,7 +89,7 @@ function SponsorRow({ img1, img1link, img2, img2link, img3, img3link }) {
     </Col>
   }
   return (
-    <Row style={{justifyContent: "center", alignItems: "center"}}>
+    <Row style={{justifyContent: "center", alignItems: "center", paddingTop: "0px"}}>
       { img1 ? <CustomImage src={img1} link={img1link} /> : ""}
       { img2 ? <CustomImage src={img2} link={img2link} /> : ""}
       { img3 ? <CustomImage src={img3} link={img3link} /> : ""}
@@ -105,7 +105,7 @@ function ShowSponsors({car_num}) {
                 <h4 className="heading6-text">2020-2023</h4>
 
                 {/* PLATINUM */}
-                <h3 className="heading3-text">Platinum Sponsors</h3>
+                <h3 className="heading3-text" >Platinum Sponsors</h3>
                 <SponsorRow img1={platinum3[0][0]} img1link={platinum3[0][1]} img2={platinum3[1][0]} img2link={platinum3[1][1]} img3={platinum3[2][0]} img3link={platinum3[2][1]} />
 
                 {/* GOLD */}

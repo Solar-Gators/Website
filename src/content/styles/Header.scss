@@ -20,15 +20,15 @@ $black: #000000;
 
 //Heading 2 Margin
 $heading2-padding-top: 0px;
-$heading2-padding-bottom: 90px;
+$heading2-padding-bottom: 60px;
 
 //Heading 3 Margin
-$heading3-padding-top: 130px;
+$heading3-padding-top: 100px;
 $heading3-padding-bottom: 0px;
 
 //Heading 4 Margin
 $heading4-padding-top: 0px;
-$heading4-padding-bottom: $heading4-padding-top - 10px;
+$heading4-padding-bottom: 0px;
 
 //Heading 5 Margin
 $heading5-padding-top: 25px;
@@ -254,7 +254,7 @@ $no-padding: 0;
 
   text-align: left;
   color: $white;
-  transition: 5ms;
+  //transition: 5ms ease-in-out;
 
   padding: 0px;
 }
@@ -262,8 +262,7 @@ $no-padding: 0;
 
 
 @media screen and (max-width: 768px) {
-  #header-text {
-    font-size: 7em;
-    font-style: Italic;
+  .title-text {
+    font-size: 42px;
   }
 }

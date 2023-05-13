@@ -151,10 +151,13 @@ $curve: 40px;
   width: 40px;
   height: 40px;
 
+  left: 0;
   position: relative;
-  display: inline;
-  margin-inline: 5%;
-  left: 0px;
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 10px;
+  margin-right: 10px;
 
   background: transparent;
   border: transparent;
@@ -163,6 +166,30 @@ $curve: 40px;
 .btn-social-media-icon:hover {
   background: transparent;
   border: transparent;
+}
+
+.btn-collapsable-field {
+  width: 40px;
+  height: 40px;
+
+  margin: 0;
+  margin-right: 10px;
+  left: 0;
+  right: 0;
+
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: $bright_blue;
+  background-color: transparent;
+  border: 3px solid $bright_blue;
+  border-radius: 10px;
+
+  display: flex;
+  position: relative;
+  justify-content: center;
+  top: 0px;
 }
 
 /* Resize for shrunk desktop window */

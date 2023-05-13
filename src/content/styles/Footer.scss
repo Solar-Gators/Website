@@ -3,28 +3,44 @@ Pulled from: https://bbbootstrap.com/snippets/social-media-icons-footer-54412302
 */
 
 #footer {
-    margin-top: 10vh;
     background: #00203E;
     padding-top: 8vh;
-    padding-bottom: 5vh;
-    padding-left: 5vh;
-    padding-right: 5vh;
+    padding-bottom: 4vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-content: flex-end;
+}
+
+#sg-logo {
+    width: 120px;
+    height: max-content;
+
+    align-self: flex-end;
 }
 
 .column-container {
-    width: auto;
-    height: 100px;
+    width: 30%;
+    height: auto;
 
+    display: flex;
     position: relative;
-    bottom: 0px;
+
+    padding: 0;
 }
 
 .row-container {
+    height: auto;
     width: 100%;
-    height: 50%;
 
     position: relative;
-    top: 0px;
+    display: flex;
+
+    justify-content: center;
+    align-content: center;
 }
 
 //Solar Gators logo
@@ -37,86 +53,34 @@ Pulled from: https://bbbootstrap.com/snippets/social-media-icons-footer-54412302
     left: 10px;
 }
 
-//Container for social media buttons
-.logos {
-    width: 100%;
-    height: 40px;
-
-    position: absolute;
-    bottom: 0;
-    top:0;
-    padding-bottom: 50px;
-}
-
-//Container for email and address
-.right-aligned-container {
-    width: auto;
-    height: auto;
-
-    position: absolute;
-    bottom: 0px;
-    right: 10px;
-
-}
-
-.text {
-    width: auto;
-    height: auto;
-    right: 0;
-    botton:0;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-
-    color: #EDEBE8;
+#address {
     display: flex;
-    align-items: center;
+    align-items: end;
     text-align: right;
+
+    margin-bottom: 10px;
 }
 
 .app-icon {
-    height: 100%;
-    width: auto;
+    height: 30px;
+    width: 30px;
 
     position: relative;
     display: flex;
     justify-items: center;
     justify-content: center;
-    right: 40%;
+
+
+    margin: 0;
 }
 
 /* Resize for larger mobile devices */
 @media screen and (max-width: 768px) {
-    #footer {
-        margin-top: 10vh;
-        padding-top: 8vh;
-        padding-left: 2vh;
-        padding-right: 2vh;
-        padding-bottom: 5vh;
-    }
+
 }
 
 /* Resize for mobile devices */
 @media screen and (max-width: 600px) {
-    #footer {
-        height: 150px;
-        padding-top: 3vh;
-        padding-left: 2vh;
-        padding-right: 2vh;
-        padding-bottom: 2vh;
-    }
-
-    .logos {
-        width: 100%;
-        height: 25%;
-
-        position: relative;
-        display: flex;
-        justify-content: center;
-        //margin: 10%;
-    }
 
     .left-aligned-container {
         width: 130px;

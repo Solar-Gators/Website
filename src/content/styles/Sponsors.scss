@@ -15,11 +15,15 @@
 }
 
 .sponsor-logo{
-    width: 25vw;
+    width: 20vw;
     height: auto;
 
     padding: 10px;
 }
+@media screen and (min-width: 2800px){
+    width: 250px;
+}
+
 //OLD
 .sponsor-centered {
     color: #fff;

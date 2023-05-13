@@ -55,29 +55,39 @@ import treasurer19 from "../content/assets/images/treasurer19.JPG";
 import secretary19 from "../content/assets/images/secretary19.JPG";
 import business19 from "../content/assets/images/business19.JPG";
 
-var names22 = ["Christian Michaelis", "Lauren Shaw", "Andrew Carter", "Anton Nguyen", "Stanley Noel",
-    "Marcelo Valdez", "Taylor Gerke", "Timothy Dockham", "Alexander Theophanis", "Martin Lu", "Remington Ewing", "Stanley Noel",
-    "Anton Nguyen", "Yashasvi Bhat", "Mathew Shen", "Taylor Gerke", "Emma Geon"];
-var imgs22 = [president22, vicepresident22, secretary22, treasurer22, business22, mechanicalPM22, electricalPM22, integrationPM22, aerobody22, batterypack22, brakes22,
-    suspension22, chassis22, embeddedsystems22, highvoltage22, lowvoltage22, powermanagement22];
-var years22 = ["2020", "2020", "2021", "2020", "2020", "2020", "2019", "2020", "2020", "2021", "2020", "2020", "2020", "2019", "2021", "2019", "2021"];
-var names21 = ["Charles Stone", "Irene Chung", "Maya Greene", "Jamie Van Der Veken", "Christian Michaelis",
-  "Justin Nelson", "Morgen Anthony", "Taylor Gerke", "Yash Bhat", "Christian Michaelis", "Polina Leger", "Muhamed Hobi",
-  "Daniel Kogstrom", "Brendan Reiss", "Shane Lovello", "Jessica Le"];
-var imgs21 = [president21, vicepresident21, secretary21, treasurer21, business21, AB_body21, AB_solararray21,
-  E_auxiliary21, E_bms21, E_motorcontroller, E_powerboard, E_telemetry, M_batterybox21, M_brakes21, M_chassis, M_suspension];
-var years21 = ["2019", "2019", "2019", "2019", "2019", "2019", "2019", "2020", "2019", "2019", "2019", "2019", "2020", "2019", "2019", "2019", "2019", "2019", "2020"];
-var names20 = ["Stephen Thomas", "Charles Stone", "Irene Chung", "Yash Bhat", "Polina Leger"];
-var imgs20 = [president20, vicepresident20, secretary20, treasurer20, business20];
-var years20 = ["2017", "2019", "2019", "2019", "2019"];
-var names19 = ["Stephen Thomas", "Mariana Casas", "Katie Preiser", "Nathan Andreo", "Kaitlyn Lyons"];
-var imgs19 = [president19, vicepresident19, secretary19, treasurer19, business19];
-var years19 = ["2017", "2017", "2017", "2017", "2018"];
+//2022-23 Officers: (Names, Positions, Headshot)
+let executive_board22 = [["Christian Michaelis", "President", president22], ["Lauren Shaw", "Vice President", vicepresident22], ["Andrew Carter", "Secretary", secretary22],
+    ["Anton Nguyen", "Treasurer", treasurer22], ["Stanley Noel", "Business Coordinator", business22]];
+let pms22 = [["Marcelo Valdez", "Mechanical PM", mechanicalPM22], ["Taylor Gerke", "Electrical PM", electricalPM22], ["Timothy Dockham", "Integration PM", integrationPM22]];
+let mech_aero22 = [["Alexander Theophanis", "Aerobody", aerobody22], ["Martin Lu", "Battery Pack", batterypack22], ["Remington Ewing", "Brakes", brakes22],
+    ["Stanley Noel", "Suspension", suspension22], ["Anton Nguyen", "Chassis", chassis22]];
+let electrical22 =  [ ["Yashasvi Bhat", "Embedded Systems", embeddedsystems22], ["Mathew Shen", "High Voltage", highvoltage22],
+    ["Taylor Gerke", "Low Voltage", lowvoltage22], ["Emma Geon", "Power Management", powermanagement22]];
+
+//2021-22 Officers
+let executive_board21 = [["Charles Stone", "President", president21], ["Irene Chung", "Vice President",vicepresident21],
+    ["Maya Greene", "Secretary", secretary21], ["Jamie Van Der Veken", "Treasurer", treasurer21],
+    ["Christian Michaelis", "Business Coordinator", business21]];
+let mech_aero21 =[["Justin Nelson", "Aerobody", AB_body21], ["Morgen Anthony", "Solar Array", AB_solararray21], ["Daniel Kogstrom", "Battery Box", M_batterybox21],
+    ["Brendan Reiss","Brakes", M_brakes21], ["Shane Lovello","Chassis",M_chassis], ["Jessica Le", "Suspension", M_suspension]];
+let electrical21 = [["Taylor Gerke", "Auxiliary", E_auxiliary21], ["Yash Bhat", "Battery Management", E_bms21],
+    ["Christian Michaelis", "Motor Control", E_motorcontroller], ["Polina Leger", "Power Board", E_powerboard],
+    ["Muhamed Hobi", "Telemetry", E_telemetry]];
+
+//2020-21 Officers
+let executive_board20 = [["Stephen Thomas", "President", president20], ["Charles Stone", "Vice President",vicepresident20],
+    ["Irene Chung", "Secretary", secretary20], ["Yash Bhat", "Treasurer", treasurer20],
+    ["Polina Leger", "Business Coordinator", business20]];
+
+//2019-20 Officers
+let executive_board19 = [["Stephen Thomas", "President", president19], ["Mariana Casas", "Vice President",vicepresident19],
+    ["Katie Preiser", "Secretary", secretary19], ["Nathan Andreo", "Treasurer", treasurer19],
+    ["Kaitlyn Lyons", "Business Coordinator", business19]];
 
 
 var h_top_margin = 100;
 var margin1 = 20;
-var r_top_margin = 60;
+var r_top_margin = 0;
 var r_bottom_margin = 70;
 
 function AcademicYear({ eventkey }) {
@@ -104,73 +114,50 @@ function AcademicYear({ eventkey }) {
     );
 }
 
-function OfficerTeam({ name, title, img, year, eventkey }) {
+function OfficerTeam({ eventkey, executive_board }) {
+    let OfficersRow = ({heading, officers}) => {
+        return (
+            <Row style={{paddingTop: r_top_margin, paddingBottom: r_bottom_margin, justifyContent: "center"}}>
+                <h2 className={"heading2-text"} style={{paddingTop: "50px"}}>{heading}</h2>
+                { officers[0] ? <Officer name={officers[0][0]} title={officers[0][1]} img={officers[0][2]} /> : "" }
+                { officers[1] ? <Officer name={officers[1][0]} title={officers[1][1]} img={officers[1][2]} /> : "" }
+                { officers[2] ? <Officer name={officers[2][0]} title={officers[2][1]} img={officers[2][2]} /> : "" }
+                { officers[3] ? <Officer name={officers[3][0]} title={officers[3][1]} img={officers[3][2]} /> : "" }
+                { officers[4] ? <Officer name={officers[4][0]} title={officers[4][1]} img={officers[4][2]} /> : "" }
+                { officers[5] ? <Officer name={officers[5][0]} title={officers[5][1]} img={officers[5][2]} /> : "" }
+            </Row>
+        )
+    }
   if (eventkey === "202223") {
     return (
       <Col>
-        <div className={"heading2-text"} style={{paddingTop: "50px", paddingBottom: margin1}}>
-          Executive Board
-        </div>
-        <Row style={{paddingTop: r_top_margin, paddingBottom: r_bottom_margin, justifyContent: "center"}}>
-                <Officer name={name[0]} title="President"      img={img[0]} year={year[0]} />
-                <Officer name={name[1]} title="Vice President" img={img[1]} year={year[1]} />
-                <Officer name={name[2]} title="Secretary"      img={img[2]} year={year[2]} />
-                <Officer name={name[3]} title={title[0]}       img={img[3]} year={year[3]} />
-                <Officer name={name[4]} title={title[1]}       img={img[4]} year={year[4]} />
-        </Row>
-
-        <div className={"heading2-text"} style={{paddingTop: h_top_margin, paddingBottom: margin1}}>
-           Project Managers
-        </div>
-        <Row style={{paddingTop: r_top_margin, paddingBottom: r_bottom_margin, justifyContent: "center"}}>
-          <Officer name={name[5]} title="Mechanical PM"    img={img[5]} year={year[5]} />
-          <Officer name={name[6]} title="Electrical PM"    img={img[6]} year={year[6]} />
-          <Officer name={name[7]} title="Integration PM"   img={img[7]} year={year[7]} />
-        </Row>
-
-        <div className={"heading2-text"} style={{paddingTop: h_top_margin, paddingBottom: margin1}}>
-          Mechanical and Aerobody
-        </div>
-        <Row style={{paddingTop: r_top_margin, paddingBottom: r_bottom_margin, justifyContent: "center"}}>
-          <Officer name={name[8]} title="Aerobody"     img={img[8]}    year={year[8]} />
-          <Officer name={name[9]} title="Battery Pack" img={img[9]}    year={year[9]} />
-          <Officer name={name[10]} title="Brakes"      img={img[10]}   year={year[10]} />
-          <Officer name={name[11]} title="Suspension"  img={img[11]}   year={year[11]} />
-          <Officer name={name[12]} title="Chassis"     img={img[12]}   year={year[12]} />
-        </Row>
-
-        <div className={"heading2-text"} style={{paddingTop: h_top_margin, paddingBottom: margin1}}>
-          Electrical
-        </div>
-        <Row style={{paddingTop: r_top_margin, paddingBottom: r_bottom_margin, justifyContent: "center"}}>
-          <Officer name={name[13]} title="Embedded Systems"    img={img[13]} year={year[13]} />
-          <Officer name={name[14]} title="High Voltage"        img={img[14]} year={year[14]} />
-          <Officer name={name[15]} title="Low Voltage"         img={img[15]} year={year[15]} />
-          <Officer name={name[16]} title="Power Management"    img={img[16]} year={year[16]} />
-        </Row>
-
+        <OfficersRow heading="Executive Board" officers={executive_board22}></OfficersRow>
+        <OfficersRow heading="Project Managers" officers={pms22}></OfficersRow>
+        <OfficersRow heading="Mechanical and Aerobody" officers={mech_aero22}></OfficersRow>
+        <OfficersRow heading="Electrical" officers={electrical22}></OfficersRow>
       </Col>
     )
-  } else {
+  }
+  else if (eventkey === "202122") {
+      return (
+          <Col>
+              <OfficersRow heading="Executive Board" officers={executive_board21}></OfficersRow>
+              <OfficersRow heading="Mechanical and Aerobody" officers={mech_aero21}></OfficersRow>
+              <OfficersRow heading="Electrical" officers={electrical21}></OfficersRow>
+          </Col>
+      )
+  }
+  else {
     return (
       <Col>
-          <div className={"heading2-text"} style={{paddingTop: "50px", paddingBottom: margin1}}>
-              Executive Board
-          </div>
-        <Row style={{paddingTop: r_top_margin, paddingBottom: r_bottom_margin, justifyContent: "center"}}>
-          <Officer name={name[0]} title="President"        img={img[0]} year={year[19]} />
-          <Officer name={name[1]} title="Vice President"   img={img[1]} year={year[20]} />
-          <Officer name={name[2]} title="Secretary"        img={img[2]} year={year[21]} />
-          <Officer name={name[3]} title="Treasurer"        img={img[3]} year={year[22]} />
-          <Officer name={name[4]} title="Business Coordinator" img={img[4]} year={year[23]} />
-        </Row>
+          <OfficersRow heading="Executive Board" officers={executive_board}></OfficersRow>
       </Col>
     )
   }
 }
 
-function Officer({ name, title, img, year }) {
-    var padding = 13.5;
+function Officer({ name, title, img }) {
+    let padding = 13.5;
     //to align title properly for people with long name
     if (name.length > 17) {
         padding = 2;
@@ -192,9 +179,7 @@ export default class Team extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            names: names22,
-            imgs: imgs22,
-            years: years22,
+            executive_board: executive_board22,
             eventkey: "202223"
         }
     }
@@ -223,22 +208,22 @@ export default class Team extends React.Component {
                         (eventKey) => {
                             if (eventKey === "201920") {
                                 this.setState((state) => {
-                                    return { names: names19, imgs: imgs19, years: years19, eventkey: eventKey }
+                                    return { executive_board: executive_board19, eventkey: eventKey }
                                 });
                             }
                             if (eventKey === "202021") {
                                 this.setState((state) => {
-                                    return { names: names20, imgs: imgs20, years: years20, eventkey: eventKey }
+                                    return { executive_board: executive_board20,eventkey: eventKey }
                                 });
                             }
                             if (eventKey === "202122") {
                                 this.setState((state) => {
-                                    return { names: names21, imgs: imgs21, years: years21, eventkey: eventKey }
+                                    return { executive_board: executive_board21, eventkey: eventKey }
                                 });
                             }
                             if (eventKey === "202223") {
                                 this.setState((state) => {
-                                    return { names: names22, imgs: imgs22, years: years22, eventkey: eventKey }
+                                    return { executive_board: executive_board22, eventkey: eventKey }
                                 });
                             }
                         }}
@@ -256,7 +241,7 @@ export default class Team extends React.Component {
                     </Dropdown>
               </Col>
 
-              <OfficerTeam name={this.state.names} title={["Treasurer", "Business Coordinator"]} img={this.state.imgs} year={this.state.years} eventkey={this.state.eventkey} />
+              <OfficerTeam eventkey={this.state.eventkey} executive_board={this.state.executive_board}/>
 
             </Container>
             </React.Fragment>

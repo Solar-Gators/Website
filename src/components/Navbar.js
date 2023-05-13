@@ -22,12 +22,11 @@ export default function WebsiteNavbar() {
             <Nav.Item>
               <Nav.Link as={Link} to="/about">About</Nav.Link>
             </Nav.Item>
-            {/*FIX ME: link to /car page*/}
             <Nav.Item>
-              <Nav.Link as={Link} to="/">Cars</Nav.Link>
+              <Nav.Link as={Link} to="/cars">Cars</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link as={Link} to="/team">Teams</Nav.Link>
+              <Nav.Link as={Link} to="/team">Team</Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link as={Link} to="/sponsors">Sponsors</Nav.Link>

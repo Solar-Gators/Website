@@ -4,7 +4,6 @@ import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form'
 import Alert from 'react-bootstrap/Alert'
-import Header from '../components/Header'
 import ReCAPTCHA from "react-google-recaptcha";
 import axios from 'axios'
 import ReactGA from 'react-ga'
@@ -51,11 +50,8 @@ export default function Contact() {
             token: captcha
         })
         .then(({ data: response }) => {
-            /*
-                {
-                    success: boolean
+            /* success: boolean
                     msg: string
-                }
             */
 
             if (response.success) {
@@ -107,60 +103,58 @@ export default function Contact() {
                 </Row>
             </Container>
 
-        <Container className="mt-4">
-            <Card className="transparent-box">
-                <Card.Body>
-                    { errorMsg ? <Alert variant="danger" >
-                        {errorMsg}
-                    </Alert> : "" }
+            <Container style={{justifyContent: "center", paddingTop: "40px"}}>
+                <Container className="transparent-box">
+                        { errorMsg ? <Alert variant="danger" >
+                            {errorMsg}
+                        </Alert> : "" }
 
-                    { successMsg ? <Alert variant="success" >
-                        {successMsg}
-                    </Alert> : "" }
+                        { successMsg ? <Alert variant="success" >
+                            {successMsg}
+                        </Alert> : "" }
 
-                    <Form onSubmit={onSubmit} validated={validated} noValidate>
-                        <Form.Group controlId="formBasicEmail" >
-                            <Form.Label className="body-text" style={{paddingBottom: "10px"}}>Name</Form.Label>
-                            <Form.Control className="contact-entry-box" type="text" placeholder="Enter name" id="contact-name" required />
-                            <Form.Control.Feedback type="invalid">
-                                Please enter your name.
-                            </Form.Control.Feedback>
-                        </Form.Group>
+                        <Form onSubmit={onSubmit} validated={validated} noValidate>
+                            <Form.Group controlId="formBasicEmail" style={{paddingBottom: "15px"}}>
+                                <Form.Label className="body-text" style={{paddingBottom: "10px"}}>Name</Form.Label>
+                                <Form.Control type="text" placeholder="Enter name" id="contact-name" required />
+                                <Form.Control.Feedback type="invalid">
+                                    Please enter your name.
+                                </Form.Control.Feedback>
+                            </Form.Group>
 
-                        <Form.Group controlId="formBasicPassword">
-                            <Form.Label className="body-text" style={{paddingBottom: "10px"}}>Email</Form.Label>
-                            <Form.Control className="contact-entry-box" type="email" placeholder="Enter email" id="contact-email" required />
-                            <Form.Control.Feedback type="invalid">
-                                Please enter your email.
-                            </Form.Control.Feedback>
-                        </Form.Group>
-                        <Form.Group controlId="formBasicCheckbox">
-                            <Form.Label className="body-text" style={{paddingBottom: "10px"}}>
-                                Message
-                            </Form.Label>
-                            <Form.Control className="contact-entry-box" as="textarea" rows="3" placeholder="Hey Solar Gators..." id="contact-msg" required />
-                            <Form.Control.Feedback type="invalid">
-                                Please enter your message.
-                            </Form.Control.Feedback>
-                        </Form.Group>
+                            <Form.Group controlId="formBasicPassword">
+                                <Form.Label className="body-text" style={{paddingBottom: "10px"}}>Email</Form.Label>
+                                <Form.Control type="email" placeholder="Enter email" id="contact-email" required />
+                                <Form.Control.Feedback type="invalid">
+                                    Please enter your email.
+                                </Form.Control.Feedback>
+                            </Form.Group>
+                            <Form.Group controlId="formBasicCheckbox">
+                                <Form.Label className="body-text" style={{paddingBottom: "10px"}}>
+                                    Message
+                                </Form.Label>
+                                <Form.Control as="textarea" rows="3" placeholder="Hey Solar Gators..." id="contact-msg" required />
+                                <Form.Control.Feedback type="invalid">
+                                    Please enter your message.
+                                </Form.Control.Feedback>
+                            </Form.Group>
 
 
-                        <ReCAPTCHA
-                            sitekey={process.env.REACT_APP_ReCAPTCHA}
-                            onChange={setCaptcha}
-                            className="mb-3"
-                        />
+                            <ReCAPTCHA
+                                sitekey={process.env.REACT_APP_ReCAPTCHA}
+                                onChange={setCaptcha}
+                                className="mb-3"
+                            />
 
-                        <Button
-                            variant="primary"
-                            type="submit"
-                            disabled={submitting}>
-                            Submit
-                        </Button>
-                    </Form>
-                </Card.Body>
-            </Card>
-        </Container>
+                            <Button
+                                variant="primary"
+                                type="submit"
+                                disabled={submitting}>
+                                Submit
+                            </Button>
+                        </Form>
+                </Container>
+            </Container>
 
         </React.Fragment>
     )
