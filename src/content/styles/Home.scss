@@ -28,18 +28,18 @@ $no-margin: 0;
     width: 100%;
     height: auto;
 
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 
-    margin: 0px;
+    margin: 0;
 
     $section-padding-top: 120px;
     padding-top: $section-padding-top;
     padding-bottom: $section-padding-top - 10;
-    padding-inline-start: $section-padding-top / 2;
-    padding-inline-end: $section-padding-top / 2;
+    padding-left: $section-padding-top * 0.75;
+    padding-right: $section-padding-top * 0.75;
 
 }
 

@@ -12,20 +12,22 @@ import MAE from '../content/assets/images/sponsor_logos/MAE.png'
 import ZenithTecnica from '../content/assets/images/sponsor_logos/ZenithTecnica.png'
 import ECE from '../content/assets/images/sponsor_logos/ECE.png'
 //Gold
-import Pellucere from '../content/assets/images/sponsor_logos/Pellucere.png'
 import MatrixComposities from '../content/assets/images/sponsor_logos/Matrix.png'
 import ElektroAutomatik from '../content/assets/images/sponsor_logos/ElektroAutomatik.png'
-import BayArea from '../content/assets/images/sponsor_logos/BayArea.png'
 import WestSystems from '../content/assets/images/sponsor_logos/WestSystem.png'
+import Bridgestone from '../content/assets/images/sponsor_logos/Bridgestone.png'
+import Solidworks from '../content/assets/images/sponsor_logos/SolidWorks.png'
 //Silver
 import Mirage from '../content/assets/images/sponsor_logos/Mirage.png'
 import RapidCut from '../content/assets/images/sponsor_logos/RapidCut.png'
 import BMRS from '../content/assets/images/sponsor_logos/Bmrs.png'
 import Molex from '../content/assets/images/sponsor_logos/Molex.png'
-import RapidHarness from '../content/assets/images/sponsor_logos/RapidHarness.png'
 import TDK from '../content/assets/images/sponsor_logos/TDK.png'
+import Cytec from '../content/assets/images/sponsor_logos/CytecSolvay.png'
+import Signarama from '../content/assets/images/sponsor_logos/Signarama.webp'
+import Mathworks from '../content/assets/images/sponsor_logos/Mathworks.webp'
+import Lowes from '../content/assets/images/sponsor_logos/Lowes.png'
 //Bronze
-import Altair from '../content/assets/images/sponsor_logos/Altair.png'
 import MerritSupply from '../content/assets/images/sponsor_logos/MerritSupply.png'
 import SKF from '../content/assets/images/sponsor_logos/SKF.png'
 import _3A from '../content/assets/images/sponsor_logos/3A.png'
@@ -37,11 +39,18 @@ import FusionFilaments from '../content/assets/images/sponsor_logos/FusionFilame
 import IC3D from '../content/assets/images/sponsor_logos/IC3D.png'
 import ProtoPasta from '../content/assets/images/sponsor_logos/Protopasta.webp'
 import SainSmart from '../content/assets/images/sponsor_logos/SainSmart.webp'
-import NordLock from '../content/assets/images/sponsor_logos/NordLock.png'
 import IPF from '../content/assets/images/sponsor_logos/IPF.png'
+import Spirpol from '../content/assets/images/sponsor_logos/Spirol.png'
+import CustomDynamics from '../content/assets/images/sponsor_logos/CustomDynamics.png'
+
+//Past Sponsors
+import RapidHarness from '../content/assets/images/sponsor_logos/RapidHarness.png'
+import Altair from '../content/assets/images/sponsor_logos/Altair.png'
+import NordLock from '../content/assets/images/sponsor_logos/NordLock.png'
+import BayArea from '../content/assets/images/sponsor_logos/BayArea.png'
+import Pellucere from '../content/assets/images/sponsor_logos/Pellucere.png'
 
 //Car 2 Sponsors
-// import Solidworks from '../content/assets/images/sponsor_logos/SolidWorks.png'
 // import Eaton from '../content/assets/images/sponsor_logos/Eaton.png'
 // import HWCE from '../content/assets/images/sponsor_logos/HWCE.png'
 // import Siemens from '../content/assets/images/sponsor_logos/Siemens.png'
@@ -63,15 +72,17 @@ import IPF from '../content/assets/images/sponsor_logos/IPF.png'
 
 //Car 3 Sponsors
 let platinum3 = [[MAE, "https://mae.ufl.edu/"], [ZenithTecnica, "https://www.zenithtecnica.com/"], [ECE, "https://www.ece.ufl.edu/"]];
-let gold3 = [[Pellucere, "https://www.pellucere.com/"], [MatrixComposities, "https://matrixcomp.com"],
-    [ElektroAutomatik, "https://elektroautomatik.com/"], [BayArea,"https://bayareacircuits.com/"], [WestSystems, "https://www.westsystem.com/"]];
+let gold3 = [[MatrixComposities, "https://matrixcomp.com"], [ElektroAutomatik, "https://elektroautomatik.com/"], [Molex, "https://www.molex.com"],
+            [Solidworks, "https://www.solidworks.com/"], [Bridgestone, "https://www.bridgestoneamericas.com/en/index"]];
 let silver3 = [[Mirage, "https://www.mirage-mfg.com/"], [RapidCut, "https://www.rapidcut.com/"], [BMRS, "https://www.bmrswired.com/"],
-    [Molex, "https://www.molex.com"], [RapidHarness, "https://rapidharness.com/"], [TDK, "https://www.tdk-lambda.com"]];
-let bronze3 = [[Altair, "https://www.altair.com/"], [MerritSupply, "https://www.merrittsupply.com/"], [WestSystems, "https://www.westsystem.com/"],
-    [SKF, "https://www.skf.com"],[_3A, "https://3acompositesusa.com/"],[FGCI, "https://www.fgci.com/"],
+    [Cytec, "https://www.solvay.com/en/"], [TDK, "https://www.tdk-lambda.com"], [SKF, "https://www.skf.com"],
+    [Signarama, "https://signarama.com/"], [Mathworks, "https://www.mathworks.com/"], [Lowes, "https://www.lowes.com/"]];
+let bronze3 = [[MerritSupply, "https://www.merrittsupply.com/"], [WestSystems, "https://www.westsystem.com/"],
+    [_3A, "https://3acompositesusa.com/"],[FGCI, "https://www.fgci.com/"],
     [PhoenixThermalSupply, "https://www.phoenixthermalsupply.com/"], [Ansys, "https://www.ansys.com/"], [VR3, "https://vr3.ca/"],
     [FusionFilaments, "https://fusionfilaments.com/"], [IC3D, "https://www.ic3dprinters.com/"], [ProtoPasta, "https://www.proto-pasta.com/"],
-    [SainSmart, "https://www.sainsmart.com/"], [NordLock, "https://www.nord-lock.com"], [IPF, "https://goo.gl/maps/a8tBJe2cCBKJWkzq5"]];
+    [SainSmart, "https://www.sainsmart.com/"], [IPF, "https://goo.gl/maps/a8tBJe2cCBKJWkzq5"], [Spirpol, "https://www.spirol.com/"],
+    [CustomDynamics, "https://www.customdynamics.com/"]];
 
 //Car 2 Sponsors
 // var platinum2 = [Solidworks, Eaton, Altair, ECE, HWCE, Siemens, SolarImpact, SunPower, MAE, Universal];
@@ -116,7 +127,8 @@ function ShowSponsors({car_num}) {
                 {/* SILVER */}
                 <h3 className="heading3-text">Silver Sponsors</h3>
                 <SponsorRow img1={silver3[0][0]} img1link={silver3[0][1]} img2={silver3[1][0]} img2link={silver3[1][1]} img3={silver3[2][0]} img3link={silver3[2][1]} />
-                <SponsorRow img1={silver3[3][0]} img1link={silver3[3][1]} img2={silver3[4][0]} img2link={silver3[4][1]} />
+                <SponsorRow img1={silver3[3][0]} img1link={silver3[3][1]} img2={silver3[4][0]} img2link={silver3[4][1]} img3={silver3[5][0]} img3link={silver3[5][1]}/>
+                <SponsorRow img1={silver3[6][0]} img1link={silver3[6][1]} img2={silver3[7][0]} img2link={silver3[7][1]} img3={silver3[8][0]} img3link={silver3[8][1]}/>
 
                 {/* BRONZE */}
                 <h3 className="heading3-text">Bronze Sponsors</h3>
@@ -124,8 +136,8 @@ function ShowSponsors({car_num}) {
                 <SponsorRow img1={bronze3[3][0]} img1link={bronze3[3][1]} img2={bronze3[4][0]} img2link={bronze3[4][1]} img3={bronze3[5][0]} img3link={bronze3[5][1]}/>
                 <SponsorRow img1={bronze3[6][0]} img1link={bronze3[6][1]} img2={bronze3[7][0]} img2link={bronze3[7][1]} img3={bronze3[8][0]} img3link={bronze3[8][1]} />
                 <SponsorRow img1={bronze3[9][0]} img1link={bronze3[9][1]} img2={bronze3[10][0]} img2link={bronze3[10][1]} img3={bronze3[11][0]} img3link={bronze3[11][1]}/>
-                <SponsorRow img1={bronze3[12][0]} img1link={bronze3[12][1]} img2={bronze3[13][0]} img2link={bronze3[13][1]} img3={bronze3[14][0]} img3link={bronze3[14][1]} />
-
+                <SponsorRow img1={bronze3[12][0]} img1link={bronze3[12][1]}  img2={bronze3[13][0]} img2link={bronze3[13][1]} />
+                {/*img3={bronze3[14][0]} img3link={bronze3[14][1]}*/}
             </Container>
         );
     }
@@ -156,7 +168,9 @@ export default function Sponsor() {
                     design, build and test our solar cars. Thank you.
                 </p>
             </Row>
-            <Button className="btn-primary" style={{width: "250px", justifyContent: "center", left: "calc(50% - 250px/2 + 2px)", marginTop: "40px"}} as={Link} to={"/donate"}>Become a Sponsor</Button>
+            <Button className="btn-primary" style={{width: "250px", justifyContent: "center", left: "calc(50% - 250px/2 + 2px)", marginTop: "40px"}}
+                    as={Link} to={"/donate"} onClick={() => {window.scroll(0,0);}}>
+                    Become a Sponsor</Button>
         </Container>
 
         <ShowSponsors car_num={"3"}/>

@@ -26,11 +26,16 @@ import brakes from '../content/assets/images/officers/2022/brakes22.JPG';
 import battery from '../content/assets/images/officers/2022/battery22.JPG';
 import aero from '../content/assets/images/officers/2022/aero22.JPG';
 
-//Car Pics
+//Car Pictures
 import car1 from '../content/assets/images/car_pics/car1.jpg';
 import car2 from '../content/assets/images/car_pics/car2.JPG';
 import car3 from '../content/assets/images/car_pics/car3.jpg';
+import MAE from "../content/assets/images/sponsor_logos/MAE.png";
+import ZenithTecnica from "../content/assets/images/sponsor_logos/ZenithTecnica.png";
+import ECE from "../content/assets/images/sponsor_logos/ECE.png";
 
+//Car 3 Sponsors
+let platinum3 = [[MAE, "https://mae.ufl.edu/"], [ZenithTecnica, "https://www.zenithtecnica.com/"], [ECE, "https://www.ece.ufl.edu/"]];
 
 function Officer({pic}) {
     //creates individual officer headshot container w image
@@ -44,13 +49,29 @@ function Officer({pic}) {
 function Car({car_img, car_name, car_year1, car_year2}) {
     //creates each car's container for image & hover description
     return (
-        <Link to={"/cars"} className="car-card">
+        <Link className="car-card" to={"/cars"} onClick={() => {window.scroll(0,0);}} >
             <img className="car-card-img" src={car_img}/>
             <div className="overlay">
                 <div className="overlay-text-header">{car_name}</div>
                 <div className="overlay-text-body">{car_year1} - {car_year2}</div>
             </div>
         </Link>
+    )
+}
+
+function SponsorLogo({link1, img1, link2, img2}) {
+    return (
+        <Row style={{justifyContent: "center", display: "flex"}}>
+            <a href={link1}>
+                <img src={img1} className="sponsor-logo"/>
+            </a>
+            {/* if second img passed in, put in same row */}
+            { img2 ?
+                <a href={link2}>
+                    <img src={img2} className="sponsor-logo" style={{marginLeft: "20px"}}/>
+                </a> : ""}
+
+        </Row>
     )
 }
 
@@ -93,7 +114,10 @@ export default function Home() {
                 </Col>
             </Row>
             <Row>
-                <Button className="btn-primary" as={Link} to={"/about"}>About Us</Button>
+                <Button className="btn-primary" as={Link} to={"/about"}
+                        onClick={() => {window.scroll(0,0);}}>
+                    About Us
+                </Button>
             </Row>
         </Container>
 
@@ -125,7 +149,10 @@ export default function Home() {
                   </div>
               </Row>
               <Row>
-                  <Button className="btn-primary" as={Link} to={"/team"}>Team 2023</Button>
+                  <Button className="btn-primary" as={Link} to={"/team"}
+                          onClick={() => {window.scroll(0,0);}}>
+                      Team 2023
+                  </Button>
               </Row>
           </Container>
 
@@ -145,7 +172,10 @@ export default function Home() {
               </Row>
 
               <Row>
-                  <Button className="btn-primary" as={Link} to={"/cars"}>Learn More</Button>
+                  <Button className="btn-primary" as={Link} to={"/cars"}
+                          onClick={() => {window.scroll(0,0);}}>
+                      Learn More
+                  </Button>
               </Row>
 
           </Container>
@@ -160,15 +190,27 @@ export default function Home() {
 
               <Row>
                   <Col>
-                  {/*    sponsor logos      */}
+                      <SponsorLogo img1={platinum3[0][0]} link1={platinum3[0][1]} img2={platinum3[2][0]} link2={platinum3[2][1]}></SponsorLogo>
+                      <SponsorLogo img1={platinum3[1][0]} link1={platinum3[1][1]}></SponsorLogo>
+
                   </Col>
                   <Col>
                       <Row>
-                          {/*    blurb*/}
+                          <p>
+                              Solar Gators relies on the support of sponsors to further our mission of showing the potential of solar energy. Sponsoring us means becoming an integral part of our team, and helping to inspire the next generation of engineers and innovators. Join us on our mission towards a brighter, more sustainable future.
+                          </p>
                       </Row>
-                      <Row>
-                          <Button className="btn-secondary" as={Link} to={"/sponsors"}>Learn More</Button>
-                          <Button className="btn-primary" as={Link} to={"/sponsors"}>Sponsor Us</Button>
+                      <Row style={{justifyContent: "center", alignContent: "center"}}>
+                          <Button className="btn-secondary" style={{left: "0", marginRight: "70px"}}
+                                  as={Link} to={"/sponsors"}
+                                  onClick={() => {window.scroll(0,0);}}>
+                              Learn More
+                          </Button>
+                          <Button className="btn-primary" style={{left: "0"}}
+                                  as={Link} to={"/donate"}
+                                  onClick={() => {window.scroll(0,0);}}>
+                              Sponsor Us
+                          </Button>
                       </Row>
                   </Col>
               </Row>

@@ -6,7 +6,9 @@ import Col from 'react-bootstrap/Col'
 import "../content/styles/Header.scss";
 import "../content/styles/Cars.scss";
 import "../content/styles/Button.scss";
-import torch_img from "../content/assets/images/people/people_sunrider0.jpeg";
+import torch from "../content/assets/images/car_pics/car1.jpg";
+import sunrider from "../content/assets/images/car_pics/car3.jpg";
+import cielo from "../content/assets/images/car_pics/car2.JPG";
 import Button from "react-bootstrap/Button";
 import {Link} from "react-router-dom";
 
@@ -64,27 +66,30 @@ export default function Cars() {
             </Container>
 
             {/* Sunrider */}
-            <SplitSection name={"Sunrider"} year1={"2020"} year2={"2023"} img={torch_img} pic_side={"right"}
+            <SplitSection name={"Sunrider"} year1={"2020"} year2={"2023"} img={sunrider} pic_side={"right"}
                           blurb={"Pandemic restrictions brought progress to a halt with limited in-person meetings and significant supply chain delays. Through this difficult time, the team banded together  and worked relentlessly to complete our newest car, Sunrider." +
                               " Making its debut in the 2022 Formula Sun Grand Prix (FSGP), Sunrider set new team records in almost every aspect of the competition. Sunrider drove a total distance of over 225 miles."}>
             </SplitSection>
 
             {/* Cielo */}
-            <SplitSection name={"Cielo"} year1={"2018"} year2={"2020"} img={torch_img} pic_side={"left"}
+            <SplitSection name={"Cielo"} year1={"2018"} year2={"2020"} img={cielo} pic_side={"left"}
                           blurb={"We competed with our second car Cielo in the 2018 FSGP. During the year, we designed and manufactured a brand new carbon fiber aero-body, making the car much lighter and quicker. In addition, new mechanical, electrical, and solar systems were designed and integrated, resulting in a more reliable and competitive car. Cielo drove 20 miles on the final race day, a significant improvement over the previous year."}>
             </SplitSection>
 
             {/* Torch */}
-            <SplitSection name={"Torch"} year1={"2016"} year2={"2018"} img={torch_img} pic_side={"right"}
+            <SplitSection name={"Torch"} year1={"2016"} year2={"2018"} img={torch} pic_side={"right"}
                           blurb={"We debuted our first car, Torch, at the 2017 FSGP; making Solar Gators the first Florida team to race since 1989."}>
             </SplitSection>
 
             {/* Sponsorship */}
-            <Container fluid="true" className="section" style={{paddingBottom: "0px"}}>
+            <Container fluid="true" className="section">
                 <p className={"body-text"} style={{textAlign: "center"}}>
                     Throughout our history, our sponsors have been at the center of everything we accomplish. As we continue to grow, we hope that you will join us in our mission to develop state of the art technologies and compete for championships.
                 </p>
-                <Button className="btn-primary" style={{width: "250px", justifyContent: "center", left: "calc(50% - 250px/2 + 2px)", marginTop: "40px"}} as={Link} to={"/donate"}>Become a Sponsor</Button>
+                <Button className="btn-primary" as={Link} to={"/donate"}
+                        onClick={() => {window.scroll(0,0);}}>
+                    Sponsor Us
+                </Button>
             </Container>
 
         </React.Fragment>

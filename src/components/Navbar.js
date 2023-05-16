@@ -36,10 +36,9 @@ export default function WebsiteNavbar() {
             </Nav.Item>
           </Nav>
 
-          {/*FIX: link to Join Page, not FB*/}
           <div>
-            <button className="btn-primary-small" onClick={() => { window.location.href = "https://www.facebook.com/UFSolarGators/" }}>
-              Join Us
+            <button className="btn-primary-small" onClick={() => { window.location.href = "/donate" }}>
+              Donate
             </button>
           </div>
         </Navbar.Collapse>

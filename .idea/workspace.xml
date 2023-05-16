@@ -7,17 +7,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc4e1d2d-50d0-4b9c-91a0-44fd4e2a9b80" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/uncategorized/SponsorshipTiers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/Cielo/IMG_8970.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/Cielo/IMG_8971.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/Cielo/IMG_9011.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/Cielo/IMG_9050.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/Cielo/IMG_9051.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/Cielo/IMG_9093.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/Cielo/IMG_9119.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/Cielo/IMG_9121.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/Cielo/IMG_9125.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/Cielo/IMG_9126.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/Cielo/IMG_9150.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/Cielo/IMG_9151.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/Cielo/IMG_9185.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/Cielo/IMG_9198.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/Cielo/IMG_9219.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/Torch/DSC02580.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/Torch/DSC02941.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/Torch/IMG_3458.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/Bridgestone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/CustomDynamics.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/CytecSolvay.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/CytecSolvay.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/Lowes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/Mathworks.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/STMicroelectronics.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/Signarama.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/Spirol.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/sponsorship-levels old.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/sponsorship-levels copy.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/content/styles/Button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Button.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/styles/Cars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Cars.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/content/styles/Contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Contact.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/content/styles/Donate.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Donate.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/styles/Footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Footer.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/content/styles/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/styles/Home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Home.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/content/styles/Sponsors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Sponsors.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/About.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Cars.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Cars.js" afterDir="false" />
@@ -25,7 +50,6 @@
       <change beforePath="$PROJECT_DIR$/src/pages/Donate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Donate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Sponsor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Sponsor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Team.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Team.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +130,7 @@
       <workItem from="1680705814511" duration="59749000" />
       <workItem from="1681511197819" duration="1803000" />
       <workItem from="1683240455008" duration="75842000" />
-      <workItem from="1683671385084" duration="47796000" />
+      <workItem from="1683671385084" duration="60395000" />
     </task>
     <servers />
   </component>

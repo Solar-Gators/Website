@@ -131,7 +131,7 @@ export default function About() {
             </h2>
             <Row style={{justifyContent: "center"}}>
                 <Col className={"mission-statement"}>
-                    <p className={"body-text-white"}>Representing the sunshine state in the Formula Sun Grand Prix every year since 2017</p>
+                    <p className={"body-text-white"}>Competed in Formula Sun Grand Prix (FSGP) every year since 2017</p>
                 </Col>
                 <Col className={"mission-statement"}>
                     <p className={"body-text-white"}>Raced 225 miles in the 2022 Formula Sun Grand Prix</p>
@@ -160,7 +160,10 @@ export default function About() {
                 </Row>
 
                 <Row>
-                    <Button className="btn-primary" style={{width: "250px", left: "calc(50% - 250px/2 + 2px)"}} as={Link} to={"/sponsors"}>Become a Sponsor</Button>
+                    <Button className="btn-primary" as={Link} to={"/donate"}
+                            onClick={() => {window.scroll(0,0);}}>
+                        Sponsor Us
+                    </Button>
                 </Row>
 
             </Container>

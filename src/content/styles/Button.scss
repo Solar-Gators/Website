@@ -119,32 +119,52 @@ $curve: 40px;
 .btn-primary-small {
   font-family: 'Inter';
   font-style: normal;
-  font-weight: normal;
+  font-weight: 450;
   font-size: 18px;
   margin-top: 0px;
   width: 120px;
   height: 35px;
-  //left: calc(50% - 180px/2 + 2px);
 
   align-items: center;
   text-align: center;
   text-transform: capitalize;
 
-  color: $white;
-  background-color: $bright_blue;
-  border: 3px solid $bright_blue;
+  color: $bright_blue;
+  background-color: transparent;
+  border: 2.5px solid $bright_blue;
   border-radius: $curve - (35/55);
-
-  //display: flex;
-  //position: relative;
-  //justify-content: right;
-  //top: 0px;
 }
 
 .btn-primary-small:hover {
   color: $white;
-  background-color: $primary_orange;
-  border: 3px solid $primary-orange;
+  background-color: $bright_blue;
+  border: 2.5px solid $bright_blue;
+}
+
+.btn-primary-small-secondary {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 18px;
+  margin-top: 0px;
+  margin-right: 10px;
+  width: 120px;
+  height: 35px;
+
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: $grey;
+  background-color: transparent;
+  border: 2.5px solid $grey;
+  border-radius: $curve - (35/55);
+}
+
+.btn-primary-small-secondary:hover {
+  color: $white;
+  background-color: $grey;
+  border: 2.5px solid $grey;
 }
 
 .btn-social-media-icon {

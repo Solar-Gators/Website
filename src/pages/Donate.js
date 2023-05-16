@@ -27,7 +27,7 @@ function CollapsableComponent( {open, setOpen, label, text, emphasis, link}){
 
                         {/* Hyperlink if one */}
                         { {link} ? <Link className="body-text" style={{color: '#F37833', display: 'inline'}}
-                                        to={"/contact"}>{link}</Link> : ""}
+                                        to={"/contact"} onClick={() => {window.scroll(0,0);}}>{link}</Link> : ""}
                     </p>
 
                 </div>
