@@ -34,7 +34,7 @@ import MAE from "../content/assets/images/sponsor_logos/MAE.png";
 import ZenithTecnica from "../content/assets/images/sponsor_logos/ZenithTecnica.png";
 import ECE from "../content/assets/images/sponsor_logos/ECE.png";
 
-//Car 3 Sponsors
+//Car 3 Platinum Sponsors
 let platinum3 = [[MAE, "https://mae.ufl.edu/"], [ZenithTecnica, "https://www.zenithtecnica.com/"], [ECE, "https://www.ece.ufl.edu/"]];
 
 function Officer({pic}) {
@@ -60,8 +60,9 @@ function Car({car_img, car_name, car_year1, car_year2}) {
 }
 
 function SponsorLogo({link1, img1, link2, img2}) {
+    //creates Row with one (or two) sponsor logos
     return (
-        <Row style={{justifyContent: "center", display: "flex"}}>
+        <Row className="section" style={{padding: "0"}}>
             <a href={link1}>
                 <img src={img1} className="sponsor-logo"/>
             </a>
@@ -100,7 +101,7 @@ export default function Home() {
             </Row>
 
             <Row style={{justifyContent: "center"}}>
-                <Col className={"mission-statement"}>
+                <Col className={"mission-statement"} style={{marginLeft: "0"}}>
                     <p className={"body-text"}><b>Accelerate</b> the world's transition to sustainable energy</p>
                 </Col>
                 <Col className={"mission-statement"}>
@@ -109,7 +110,7 @@ export default function Home() {
                 <Col className={"mission-statement"}>
                     <p className={"body-text"}><b>Inspire</b> students to explore their interests within STEM and become the next generation of innovators shaping the future</p>
                 </Col>
-                <Col className={"mission-statement"}>
+                <Col className={"mission-statement"} style={{marginRight: "0"}}>
                     <p className={"body-text"}><b>Build</b> awareness within our community about the transformative potential of solar energy</p>
                 </Col>
             </Row>
@@ -121,7 +122,7 @@ export default function Home() {
             </Row>
         </Container>
 
-          {/* Team Section */}
+          {/*  Team Section */}
           <Container fluid="true" className="section" style={{backgroundColor: '#00203E'}}>
               <Row>
                   <h2 className="heading2-text">
@@ -156,7 +157,7 @@ export default function Home() {
               </Row>
           </Container>
 
-          {/* Car Section */}
+          {/*  Car Section */}
           <Container fluid="true" className="section">
               <Row>
                   <h2 className="heading2-text">
@@ -180,7 +181,7 @@ export default function Home() {
 
           </Container>
 
-          {/* Sponsors Section */}
+          {/*  Sponsors Section */}
           <Container fluid="true" className="section">
               <Row>
                   <h2 className="heading2-text">
@@ -189,33 +190,32 @@ export default function Home() {
               </Row>
 
               <Row>
-                  <Col>
+                  <Col className={"section-half"} id="sponsor_logos_half">
                       <SponsorLogo img1={platinum3[0][0]} link1={platinum3[0][1]} img2={platinum3[2][0]} link2={platinum3[2][1]}></SponsorLogo>
                       <SponsorLogo img1={platinum3[1][0]} link1={platinum3[1][1]}></SponsorLogo>
-
                   </Col>
-                  <Col>
-                      <Row>
-                          <p>
-                              Solar Gators relies on the support of sponsors to further our mission of showing the potential of solar energy. Sponsoring us means becoming an integral part of our team, and helping to inspire the next generation of engineers and innovators. Join us on our mission towards a brighter, more sustainable future.
-                          </p>
-                      </Row>
-                      <Row style={{justifyContent: "center", alignContent: "center"}}>
-                          <Button className="btn-secondary" style={{left: "0", marginRight: "70px"}}
-                                  as={Link} to={"/sponsors"}
-                                  onClick={() => {window.scroll(0,0);}}>
-                              Learn More
-                          </Button>
-                          <Button className="btn-primary" style={{left: "0"}}
-                                  as={Link} to={"/donate"}
-                                  onClick={() => {window.scroll(0,0);}}>
-                              Sponsor Us
-                          </Button>
-                      </Row>
+                  <Col className={"section-half"}>
+                      <Container >
+                          <Row >
+                              <p className={"body-text"} >
+                                  Solar Gators relies on the support of sponsors to further our mission of showing the potential of solar energy. Sponsoring us means becoming an integral part of our team, and helping to inspire the next generation of engineers and innovators. Join us on our mission towards a brighter, more sustainable future.
+                              </p>
+                          </Row>
+                          <Row style={{justifyContent: "center", alignContent: "center"}}>
+                              <Button className="btn-secondary" style={{left: "0", marginRight: "3vw", marginTop: "5vw"}}
+                                      as={Link} to={"/sponsors"}
+                                      onClick={() => {window.scroll(0,0);}}>
+                                  Our Sponsors
+                              </Button>
+                              <Button className="btn-primary" style={{left: "0", marginTop: "5vw"}}
+                                      as={Link} to={"/donate"}
+                                      onClick={() => {window.scroll(0,0);}}>
+                                  Sponsor Us
+                              </Button>
+                          </Row>
+                      </Container>
                   </Col>
               </Row>
-
-
 
           </Container>
 

@@ -168,9 +168,9 @@ export default function Sponsor() {
                     design, build and test our solar cars. Thank you.
                 </p>
             </Row>
-            <Button className="btn-primary" style={{width: "250px", justifyContent: "center", left: "calc(50% - 250px/2 + 2px)", marginTop: "40px"}}
+            <Button className="btn-primary" style={{marginTop: "40px"}}
                     as={Link} to={"/donate"} onClick={() => {window.scroll(0,0);}}>
-                    Become a Sponsor</Button>
+                    Sponsor Us</Button>
         </Container>
 
         <ShowSponsors car_num={"3"}/>

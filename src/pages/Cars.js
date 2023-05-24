@@ -15,25 +15,25 @@ import {Link} from "react-router-dom";
 function SplitSection ({name, year1, year2, blurb, img, pic_side}) {
     let TextContent = ({textColor}) => {
         return (
-            <Col className={"section-half"} style={{padding: "0px"}}>
-                <Container className="section">
+            <Col className={"section-half"}>
+                <div className="text-half-container">
                     <h1 className="heading2-text" style={{paddingBottom: "0px"}}>{name}</h1>
                     <h6 className="heading6-text" style={{paddingBottom: "20px"}}>{year1} - {year2}</h6>
                     <p className={"body-text"} style={{color: textColor}}>{blurb}</p>
-                </Container>
+                </div>
             </Col>
         )
     }
     let ImageContent = () => {
         return (
-            <Col style={{padding: "0px"}}>
-                <div className="image-container" style={{backgroundImage: "url(" + img + ")"}}></div>
+            <Col className="section-half">
+                <div className="image-half-container" style={{backgroundImage: "url(" + img + ")"}}></div>
             </Col>
         )
     }
     if (pic_side === "right") {
         return (
-            <Row style={{background: "#00203E"}}>
+            <Row style={{background: "#00203E", padding: "0", margin: "0"}}>
                 <TextContent textColor={"#cdcdcd"}></TextContent>
                 <ImageContent></ImageContent>
             </Row>
@@ -41,7 +41,7 @@ function SplitSection ({name, year1, year2, blurb, img, pic_side}) {
     }
     else {
         return (
-            <Row>
+            <Row style={{padding: "0", margin: "0"}}>
                 <ImageContent></ImageContent>
                 <TextContent></TextContent>
             </Row>

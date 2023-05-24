@@ -14,6 +14,27 @@ import car1 from "../content/assets/images/car_pics/car1.jpg";
 import car2 from "../content/assets/images/car_pics/car2.JPG";
 import car3 from "../content/assets/images/car_pics/car3.jpg";
 
+let p1 = "Solar Gators is a fully student-run engineering design team at " +
+    "the University of Florida. We are passionate about driving innovative and sustainable " +
+    "technology in the automotive industry. We design, build, and race solar-powered cars to showcase " +
+    "the potential of solar energy and inspire the next generation of engineers and innovators. " +
+    "Each year we proudly represent the Sunshine State in the Formula Sun Grand Prix (FSGP)."
+
+let p2a = "We're the new kids on the solar racing track, but don't let our age fool you. " +
+    "In just six years, we've quickly made a name for ourselves in the world of solar racing, " +
+    "proving that innovation and determination can overcome any obstacle."
+
+let p2b = "As a team of passionate engineers, we work tirelessly to achieve our goals. " +
+    "From the initial design phase to the final race day, we're committed to excellence " +
+    "in everything we do. Even when facing the toughest challenges, our team stays motivated " +
+    "and dedicated to keeping things on track."
+
+let p3 = "Inclusivity is one of our founding principles. We believe that everyone deserves " +
+    "a chance to learn and grow, regardless of their background or experience. That's " +
+    "why we welcome new members with open arms, and provide them with the tools and " +
+    "resources they need to become better engineers and better people. Join us as we " +
+    "push the limits of what's possible in solar racing and beyond."
+
 function Car({car_img, car_name, car_year1, car_year2}) {
     //creates each car's container for image & hover description
     return (
@@ -25,6 +46,44 @@ function Car({car_img, car_name, car_year1, car_year2}) {
             </div>
         </Link>
     )
+}
+
+function DividedSection({img, blurb, blurb2, img_align}) {
+    let ImageHalf = () => {
+        return (
+            <Col className="section-half">
+                <div className="image-half-container" style={{backgroundImage: "url(" + img + ")"}}></div>
+            </Col>
+        )
+    }
+    let TextHalf = () => {
+        return (
+            <Col className="section-half">
+                <div className="text-half-container">
+                    <p className={"body-text"}>{blurb}</p>
+                    {/* if second paragraph */}
+                    { blurb2 ? <p className={"body-text"} style={{marginTop: "50px"}}>{blurb2}</p> : ""}
+                </div>
+            </Col>
+        )
+    }
+    // (img_align = true) => image on left side
+    if (img_align) {
+        return(
+            <Row style={{padding: "0", margin: "0"}}>
+                <ImageHalf></ImageHalf>
+                <TextHalf></TextHalf>
+            </Row>
+        )
+    }
+    else {
+        return (
+            <Row style={{padding: "0", margin: "0"}}>
+                <TextHalf></TextHalf>
+                <ImageHalf></ImageHalf>
+            </Row>
+        )
+    }
 }
 
 export default function About() {
@@ -44,22 +103,7 @@ export default function About() {
           </Container>
 
             {/* Blurb & Picture */}
-            <Row>
-              <Col className={"section-half"}>
-                <Container className="section" >
-                  <p className={"body-text"}>
-                    Solar Gators is a fully student-run engineering design team at
-                    the University of Florida. We are passionate about driving innovative and sustainable
-                    technology in the automotive industry. We design, build, and race solar-powered cars to showcase
-                    the potential of solar energy and inspire the next generation of engineers and innovators.
-                    Each year we proudly represent the Sunshine State in the Formula Sun Grand Prix (FSGP).
-                  </p>
-                </Container>
-              </Col>
-              <Col style={{padding: "0px"}}>
-                  <div className="image-container" style={{backgroundImage: "url(" + img1 + ")"}}></div>
-              </Col>
-          </Row>
+            <DividedSection img={img1} blurb={p1} img_align={false}></DividedSection>
 
             {/*  Mission Section */}
             <Container fluid="true" className="section" style={{background: "#00203E"}}>
@@ -85,65 +129,31 @@ export default function About() {
           </Container>
 
             {/* Blurb 2 & Picture */}
-            <Row>
-                <Col style={{padding: "0px"}}>
-                  <div className="image-container" style={{backgroundImage: "url(" + img2 + ")"}}></div>
-                </Col>
-                <Col className={"section-half"} style={{padding: "0px"}}>
-                  <Container className="section">
-                    <p className={"body-text"}>
-                      We're the new kids on the solar racing track, but don't let our age fool you.
-                      In just six years, we've quickly made a name for ourselves in the world of solar racing,
-                      proving that innovation and determination can overcome any obstacle.
-                    </p>
-                    <p className={"body-text"} style={{marginTop: "50px"}}>
-                      As a team of passionate engineers, we work tirelessly to achieve our goals.
-                      From the initial design phase to the final race day, we're committed to excellence
-                      in everything we do. Even when facing the toughest challenges, our team stays motivated
-                      and dedicated to keeping things on track.
-                    </p>
-                  </Container>
-                </Col>
-              </Row>
+            <DividedSection img={img2} blurb={p2a} blurb2={p2b} img_align={true}></DividedSection>
 
             {/* Blurb 3 & Picture */}
-            <Row>
-            <Col className={"section-half"} style={{padding: "0px"}}>
-              <Container className="section">
-                <p className={"body-text"}>
-                  Inclusivity is one of our founding principles. We believe that everyone deserves
-                  a chance to learn and grow, regardless of their background or experience. That's
-                  why we welcome new members with open arms, and provide them with the tools and
-                  resources they need to become better engineers and better people. Join us as we
-                  push the limits of what's possible in solar racing and beyond.
-                </p>
-              </Container>
-            </Col>
-            <Col style={{padding: "0px"}}>
-                <div className="image-container" style={{backgroundImage: "url(" + img3 + ")"}}></div>
-            </Col>
-          </Row>
+            <DividedSection img={img3} blurb={p3} img_align={false}></DividedSection>
 
             {/* Our Track Record */}
             <Container fluid="true" className="section" style={{background: "#00203E"}}>
             <h2 className="heading2-text">
                 Our Track Record
             </h2>
-            <Row style={{justifyContent: "center"}}>
-                <Col className={"mission-statement"}>
-                    <p className={"body-text-white"}>Competed in Formula Sun Grand Prix (FSGP) every year since 2017</p>
-                </Col>
-                <Col className={"mission-statement"}>
-                    <p className={"body-text-white"}>Raced 225 miles in the 2022 Formula Sun Grand Prix</p>
-                </Col>
-                <Col className={"mission-statement"}>
-                    <p className={"body-text-white"}>Designed and manufactured 3 solar cars from the ground up</p>
-                </Col>
-                <Col className={"mission-statement"}>
-                    <p className={"body-text-white"}>100% student run</p>
-                </Col>
-            </Row>
-        </Container>
+                <Row style={{justifyContent: "center"}}>
+                    <Col className={"mission-statement"}>
+                        <p className={"body-text-white"}>Competed in Formula Sun Grand Prix (FSGP) every year since 2017</p>
+                    </Col>
+                    <Col className={"mission-statement"}>
+                        <p className={"body-text-white"}>Raced 225 miles in the 2022 Formula Sun Grand Prix</p>
+                    </Col>
+                    <Col className={"mission-statement"}>
+                        <p className={"body-text-white"}>Designed and manufactured 3 solar cars from the ground up</p>
+                    </Col>
+                    <Col className={"mission-statement"}>
+                        <p className={"body-text-white"}>100% student run</p>
+                    </Col>
+                </Row>
+            </Container>
 
             {/* Car Section */}
             <Container fluid="true" className="section">

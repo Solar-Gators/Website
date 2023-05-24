@@ -107,7 +107,6 @@ $no-padding: 0;
   padding-bottom: $heading2-padding-bottom;
 }
 
-
 /* Heading 2 */
 .heading2-text {
   font-family: 'Inter';
@@ -228,7 +227,6 @@ $no-padding: 0;
   padding-bottom: $heading6-padding-bottom;
 }
 
-
 .body-text {
   font-family: 'Inter';
   font-style: normal;
@@ -242,7 +240,6 @@ $no-padding: 0;
 
   padding: 0;
   margin: 0;
-
 }
 
 .body-text-white {
@@ -263,6 +260,30 @@ $no-padding: 0;
 
 @media screen and (max-width: 768px) {
   .title-text {
-    font-size: 42px;
+    font-size: 52px;
+  }
+  .heading1-text {
+    font-size: 38px;
+  }
+  .heading2-text {
+    font-size: 28px;
+  }
+  .heading3-text {
+    font-size: 24px;
+  }
+  .heading4-text {
+    font-size: 20px;
+  }
+  .heading5-text {
+    font-size: 14px;
+  }
+  .heading6-text {
+    font-size: 12px;
+  }
+  .body-text {
+    font-size: 12px;
+  }
+  .body-text-white {
+    font-size: 12px;
   }
 }

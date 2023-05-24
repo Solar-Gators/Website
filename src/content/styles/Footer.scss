@@ -43,16 +43,6 @@ Pulled from: https://bbbootstrap.com/snippets/social-media-icons-footer-54412302
     align-content: center;
 }
 
-//Solar Gators logo
-.left-aligned-container {
-    width: 130px;
-    height: auto;
-
-    position: absolute;
-    bottom: 0px;
-    left: 10px;
-}
-
 #address {
     display: flex;
     align-items: end;
@@ -70,37 +60,16 @@ Pulled from: https://bbbootstrap.com/snippets/social-media-icons-footer-54412302
     justify-items: center;
     justify-content: center;
 
-
     margin: 0;
+    //padding: 0;
 }
 
-/* Resize for larger mobile devices */
+/* Resize for larger mobile devices
 @media screen and (max-width: 768px) {
 
-}
+}*/
 
-/* Resize for mobile devices */
+/* Resize for mobile devices
 @media screen and (max-width: 600px) {
 
-    .left-aligned-container {
-        width: 130px;
-        height: auto;
-
-        position: absolute;
-        bottom: 0px;
-        left: 10px;
-
-    }
-
-    .right-aligned-container {
-        position: absolute;
-        bottom: 0px;
-        right: 10px;
-    }
-
-    .text {
-        font-size: 12px;
-    }
-
-
-}
+}*/

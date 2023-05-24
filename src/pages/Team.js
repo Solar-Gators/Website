@@ -85,11 +85,6 @@ let executive_board19 = [["Stephen Thomas", "President", president19], ["Mariana
     ["Kaitlyn Lyons", "Business Coordinator", business19]];
 
 
-var h_top_margin = 100;
-var margin1 = 20;
-var r_top_margin = 0;
-var r_bottom_margin = 70;
-
 function AcademicYear({ eventkey }) {
     var year1;
     var year2;
@@ -115,9 +110,31 @@ function AcademicYear({ eventkey }) {
 }
 
 function OfficerTeam({ eventkey, executive_board }) {
+
+    //Individual Officer
+    let Officer = ({ name, title, img }) => {
+        let padding = 13.5;
+        //to align title properly for people with long name
+        if (name.length > 19) {
+            padding = 2;
+        }
+        return (
+            <Col style={{ maxWidth: '220px', justifyContent: "center", margin: "1vw", padding: "0"}}>
+                <div className={"officer-container"}>
+                    <div className={"headshot"}>
+                        <img className={"headshot-img"} src={img}></img>
+                    </div>
+                    <h5 className="heading5-text" style={{paddingBottom: padding}}>{name}</h5>
+                    <h6 className="heading6-text" style={{paddingTop: padding}}>{title}</h6>
+                </div>
+            </Col>
+        )
+    }
+
+    //Row of officers in same category
     let OfficersRow = ({heading, officers}) => {
         return (
-            <Row style={{paddingTop: r_top_margin, paddingBottom: r_bottom_margin, justifyContent: "center"}}>
+            <Row className="container">
                 <h2 className={"heading2-text"} style={{paddingTop: "50px"}}>{heading}</h2>
                 { officers[0] ? <Officer name={officers[0][0]} title={officers[0][1]} img={officers[0][2]} /> : "" }
                 { officers[1] ? <Officer name={officers[1][0]} title={officers[1][1]} img={officers[1][2]} /> : "" }
@@ -128,51 +145,34 @@ function OfficerTeam({ eventkey, executive_board }) {
             </Row>
         )
     }
-  if (eventkey === "202223") {
-    return (
-      <Col>
-        <OfficersRow heading="Executive Board" officers={executive_board22}></OfficersRow>
-        <OfficersRow heading="Project Managers" officers={pms22}></OfficersRow>
-        <OfficersRow heading="Mechanical and Aerobody" officers={mech_aero22}></OfficersRow>
-        <OfficersRow heading="Electrical" officers={electrical22}></OfficersRow>
-      </Col>
-    )
-  }
-  else if (eventkey === "202122") {
-      return (
-          <Col>
-              <OfficersRow heading="Executive Board" officers={executive_board21}></OfficersRow>
-              <OfficersRow heading="Mechanical and Aerobody" officers={mech_aero21}></OfficersRow>
-              <OfficersRow heading="Electrical" officers={electrical21}></OfficersRow>
-          </Col>
-      )
-  }
-  else {
-    return (
-      <Col>
-          <OfficersRow heading="Executive Board" officers={executive_board}></OfficersRow>
-      </Col>
-    )
-  }
-}
 
-function Officer({ name, title, img }) {
-    let padding = 13.5;
-    //to align title properly for people with long name
-    if (name.length > 17) {
-        padding = 2;
+    //Officer Year
+    if (eventkey === "202223") {
+        return (
+            <Col className="container">
+                <OfficersRow heading="Executive Board" officers={executive_board22}></OfficersRow>
+                <OfficersRow heading="Project Managers" officers={pms22}></OfficersRow>
+                <OfficersRow heading="Mechanical and Aerobody" officers={mech_aero22}></OfficersRow>
+                <OfficersRow heading="Electrical" officers={electrical22}></OfficersRow>
+            </Col>
+        )
     }
-    return (
-        <Col style={{ maxWidth: '220px', paddingLeft: "1%", paddingRight: "1%" }}>
-            <div className={"officer-container"}>
-            <div className={"headshot"}>
-            <img className={"headshot-img"} src={img}></img>
-            </div>
-                <h5 className="heading5-text" style={{paddingBottom: padding}}>{name}</h5>
-                <h6 className="heading6-text" style={{paddingTop: padding}}>{title}</h6>
-            </div>
-        </Col>
-    )
+    else if (eventkey === "202122") {
+        return (
+            <Col>
+                <OfficersRow heading="Executive Board" officers={executive_board21}></OfficersRow>
+                <OfficersRow heading="Mechanical and Aerobody" officers={mech_aero21}></OfficersRow>
+                <OfficersRow heading="Electrical" officers={electrical21}></OfficersRow>
+            </Col>
+        )
+    }
+    else {
+        return (
+            <Col>
+                <OfficersRow heading="Executive Board" officers={executive_board}></OfficersRow>
+            </Col>
+        )
+    }
 }
 
 export default class Team extends React.Component {
@@ -201,9 +201,9 @@ export default class Team extends React.Component {
             </Container>
 
             {/*  Page Contents  */}
-            <Container fluid="true" style={{background: "#00203E", paddingBottom: "40px",}}>
+            <Container fluid="true" className="section" style={{background: "#00203E"}}>
                 {/*  Dropdown Menu  */}
-                <Col style={{paddingTop: '40px', justifyContent: "center"}}>
+                <Col style={{justifyContent: "center"}}>
                     <Dropdown onSelect={
                         (eventKey) => {
                             if (eventKey === "201920") {
@@ -241,7 +241,7 @@ export default class Team extends React.Component {
                     </Dropdown>
               </Col>
 
-              <OfficerTeam eventkey={this.state.eventkey} executive_board={this.state.executive_board}/>
+                <OfficerTeam eventkey={this.state.eventkey} executive_board={this.state.executive_board}/>
 
             </Container>
             </React.Fragment>

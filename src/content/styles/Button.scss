@@ -8,16 +8,20 @@ $light-grey: #cdcdcd;
 $grey: #B6BABE;
 $black: #000000;
 
-$margin-top: 85px;
-$margin-bottom: 0px;
+$margin-top: 7vw;
+$margin-bottom: 0;
 $curve: 40px;
+
+$button-height: 50px;
+$small-button-height: 35px;
+$square-button-height-width: 40px;
 
 .btn-primary {
   font-family: 'Inter';
   font-weight: 525;
   font-size: 18px;
   width: 180px;
-  height: 55px;
+  height: $button-height;
 
   left: calc(50% - 180px/2 + 2px);
   margin-top: $margin-top;
@@ -49,7 +53,7 @@ $curve: 40px;
   font-weight: 525;
   font-size: 18px;
   width: 180px;
-  height: 55px;
+  height: $button-height;
 
   left: calc(50% - 180px/2 + 2px);
   margin-top: $margin-top;
@@ -78,7 +82,7 @@ $curve: 40px;
 
 .btn-transparent {
   width: 180px;
-  height: 30px;
+  height: $small-button-height;
 
   left: calc(50% - 180px/2 + 2px);
   margin-top: 0px;
@@ -120,10 +124,10 @@ $curve: 40px;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 450;
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 0px;
   width: 120px;
-  height: 35px;
+  height: $small-button-height;
 
   align-items: center;
   text-align: center;
@@ -131,7 +135,7 @@ $curve: 40px;
 
   color: $bright_blue;
   background-color: transparent;
-  border: 2.5px solid $bright_blue;
+  border: 2.25px solid $bright_blue;
   border-radius: $curve - (35/55);
 }
 
@@ -139,32 +143,6 @@ $curve: 40px;
   color: $white;
   background-color: $bright_blue;
   border: 2.5px solid $bright_blue;
-}
-
-.btn-primary-small-secondary {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 450;
-  font-size: 18px;
-  margin-top: 0px;
-  margin-right: 10px;
-  width: 120px;
-  height: 35px;
-
-  align-items: center;
-  text-align: center;
-  text-transform: capitalize;
-
-  color: $grey;
-  background-color: transparent;
-  border: 2.5px solid $grey;
-  border-radius: $curve - (35/55);
-}
-
-.btn-primary-small-secondary:hover {
-  color: $white;
-  background-color: $grey;
-  border: 2.5px solid $grey;
 }
 
 .btn-social-media-icon {
@@ -176,8 +154,8 @@ $curve: 40px;
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 1vw;
+  margin-right: 1vw;
 
   background: transparent;
   border: transparent;
@@ -189,8 +167,8 @@ $curve: 40px;
 }
 
 .btn-collapsable-field {
-  width: 40px;
-  height: 40px;
+  width: $square-button-height-width;
+  height: $square-button-height-width;
 
   margin: 0;
   margin-right: 10px;
@@ -212,9 +190,27 @@ $curve: 40px;
   top: 0px;
 }
 
-/* Resize for shrunk desktop window */
+/* Resize for shrunk desktop window
 @media screen and (max-width: 925px) {
   .btn-social-media-icon {
     margin-inline: 2%;
+  }
+}*/
+
+/* Resize for large tablet - scale down 25% */
+@media screen and (max-width: 768px) {
+  .btn-primary {
+    font-size: 14px;
+    width: 144px;
+    height: 40px;
+
+    left: calc(50% - 144px/2 + 2px);
+  }
+
+  .btn-social-media-icon {
+    width: 40px;
+    height: 40px;
+
+    left: 0;
   }
 }
