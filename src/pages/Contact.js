@@ -103,8 +103,8 @@ export default function Contact() {
                 </Row>
             </Container>
 
-            <Container style={{justifyContent: "center", paddingTop: "90px", paddingBottom: "90px"}}>
-                <Container className="transparent-box">
+            <Container fluid="true" style={{justifyContent: "center"}}>
+                <Container fluid="true" className="transparent-box">
                         { errorMsg ? <Alert variant="danger" >
                             {errorMsg}
                         </Alert> : "" }
