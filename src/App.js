@@ -1,10 +1,5 @@
 import React from 'react'
-import {
-  Router,
-  Switch,
-  Route
-} from "react-router-dom"
-
+import { Router, Switch, Route } from "react-router-dom"
 
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
@@ -13,6 +8,7 @@ import About from './pages/About'
 import Events from './pages/Events'
 import Sponsor from './pages/Sponsor'
 import Team from './pages/Team'
+import Cars from './pages/Cars'
 import Donate from './pages/Donate'
 import Contact from './pages/Contact'
 import NotFound from './pages/NotFound'
@@ -49,6 +45,7 @@ function App() {
           <Route exact path="/events" component={Events} />
           <Route exact path="/sponsors" component={Sponsor} />
           <Route exact path="/team" component={Team} />
+          <Route exact path="/cars" component={Cars} />
           <Route exact path="/donate" component={Donate} />
           <Route exact path="/contact" component={Contact} />
 

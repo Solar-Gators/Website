@@ -1,43 +1,112 @@
-import React from 'react'
+import React, { useState } from 'react';
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
-import Header from '../components/Header'
+import Button from "react-bootstrap/Button";
+import Collapse from 'react-bootstrap/Collapse';
+import {Link} from "react-router-dom";
+import sponsorshipTiers from '../content/assets/images/uncategorized/SponsorshipTiers.png'
 
-import sponsorshipLevels from '../content/assets/images/sponsorship-levels.png'
+function CollapsableComponent( {open, setOpen, label, text, emphasis, link}){
+    return (
+        <Row>
+        <Col style={{paddingLeft: "15%", paddingRight: "15%"}}>
+            <h5 className="heading5-text" style={{justifyContent: "left", alignContent: "center", paddingTop: "8px", paddingBottom: "8px", color: "black"}}>
+                <Button className="btn-collapsable-field"
+                        onClick={() => setOpen(!open)}
+                        aria-controls="online-collapse-text"
+                        aria-expanded={open}
+                >+</Button>
+                {label}
+            </h5>
+            <Collapse in={open} style={{marginLeft: "50px"}}>
+                <div id="online-collapse-text" style={{paddingTop: "20px"}}>
+                    <p className="body-text" style={{marginBottom: "0px"}}>{text}
+                        {/* Orange Emphasis Text */}
+                        <span style={{color: "#F37833", fontWeight: "500", display: "inline"}}>{emphasis}</span>
+
+                        {/* Hyperlink if one */}
+                        { {link} ? <Link className="body-text" style={{color: '#F37833', display: 'inline'}}
+                                        to={"/contact"} onClick={() => {window.scroll(0,0);}}>{link}</Link> : ""}
+                    </p>
+
+                </div>
+            </Collapse>
+        </Col>
+    </Row>
+    )
+}
+
 
 export default function Donate() {
+    //Initialization for collapsable field components
+    const [open0, setOpen0] = useState(false);
+    const [open1, setOpen1] = useState(false);
+
     return (
         <React.Fragment>
 
-            <Header className="donate-section">
-                <h1 className="sponsor-centered">Sponsorship Opportunities</h1>
-            </Header>
-            <Container>
-            <h2 className="line-divider" style={{marginTop: '10vh', marginBottom: '30px'}}>About the Organization</h2>
-            <Row>
-                <Col className="text-center">
-                    <p className="text-left">Solar Gators is a 501(c)(3) nonprofit organization. We have sponsorship tiers available, but appreciate any contribution to the organization. Contributions online are general use and permit the club to continue constructing the car and working towards our goal of competitions. Please note that if making an online contribution, you will be redirected to the University of Florida website to complete your gift. On the university's donation page, please be sure to mention "Solar Gators" in the comment box. If you would prefer to make a contribution by check, or have something else to give, please follow the links below. Tax forms are available upon request.</p>
+            {/*  Page Header  */}
+            <Container fluid="true" className="header">
+                <Row>
+                    <Col>
+                        <div className="donate-header-img">
+                            <h1 className={"title-text"}>
+                                Donate
+                            </h1>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
 
-                    <a
-                    className="btn btn-primary btn-circle ml-auto mr-auto mt-4"
-                    href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=003911&AppealCode=GESWQA1"
-                    target="_blank">
-                        <i class="fas fa-credit-card mr-2"></i>
-                        Donate Online</a>
-                </Col>
+            {/*  About Donations  */}
+            <Container fluid="true" className="section">
+                <h3 className="heading3-text" style={{paddingTop: "0", paddingBottom: "50px"}}>
+                    About Donations</h3>
+                <Row>
+                    <Col>
+                        <p className="body-text" style={{paddingLeft: "6%", paddingRight: "6%", paddingBottom: "25px"}}>
+                            A project of this scale would not be possible without the generosity and support of our sponsors. Your support will not only help us build a lighter, faster and more efficient car, but will also provide a platform for the next generation of engineers to develop their skills.
+                            We offer a variety of different donation options, but appreciate any contribution to our organization. For those who would like to play a larger role, find out more about our sponsorship opportunities below!
+                        </p>
+                    </Col>
+                </Row>
 
-                <Col>
-                <img style={{width: '100%', opacity: 1}} src={sponsorshipLevels} alt="photo" />
-                </Col>
-            </Row>
+                {/*  Collapsable fields  */}
+                <CollapsableComponent open={open0} setOpen={setOpen0} label={"Online Donations"}
+                                  text={"Online contributions are made via the University of Florida Advancement website. "}
+                                  emphasis={"Please be sure to mention \"Solar Gators\" in the comment box."}
+                                  link=""
+                ></CollapsableComponent>
+                <CollapsableComponent open={open1} setOpen={setOpen1} label={"Other Options"}
+                                      text={"If you would prefer to make a contribution by check or donate materials, please contact us at "}
+                                      link={"info@ufsolargators.org"}
+                ></CollapsableComponent>
+                <p className="body-text" style={{paddingLeft: "6%", paddingRight: "6%", paddingTop: "25px",}}>
+                    Your generosity helps us to build our solar car and so much more. We are grateful that you are considering joining us on our mission towards a brighter, more sustainable future.
+                </p>
 
-            <Row>
-                <Col xs={{ span: 2, offset: 4 }} >
-                    
-                </Col>
-            </Row>
-        </Container>
+                {/* Donate Button */}
+                <Row>
+                    <Button className="btn-primary" style={{width: "250px", left: "calc(50% - 250px/2 + 2px)"}} onClick={() => { window.location.href = "https://www.uff.ufl.edu/give-now/?fund_id=003911&appeal=GESWQA1" }}>Donate Online</Button>
+                </Row>
+                <p className="heading6-text" style={{paddingTop: "70px", paddingBottom: "0"}}>
+                    All donations are tax deductible. Solar Gators is a 501(c)(3) nonprofit organization. Tax forms available upon request.
+                </p>
+            </Container>
+
+            {/* Sponsorship Opportunities */}
+            <Container fluid="true" className="section" style={{background: "#00203E"}}>
+                <h2 className="heading2-text" style={{paddingTop: "0", paddingBottom: "50px"}}>
+                    Sponsorship Opportunities</h2>
+                <Row>
+                    <Col>
+                        <img style={{width: '100%',paddingLeft: "6%", paddingRight: "6%", opacity: 1}} src={sponsorshipTiers} alt="photo" />
+                    </Col>
+                </Row>
+            </Container>
+
+
     </React.Fragment>
     )
 }

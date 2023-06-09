@@ -1,0 +1,216 @@
+//DEFINES BUTTON STYLES
+$primary_blue: #00519C;
+$primary_orange: #F37833;
+$dark_blue: #00203E;
+$bright_blue: #0067c7;
+$white: #F8F8F8;
+$light-grey: #cdcdcd;
+$grey: #B6BABE;
+$black: #000000;
+
+$margin-top: 7vw;
+$margin-bottom: 0;
+$curve: 40px;
+
+$button-height: 50px;
+$small-button-height: 35px;
+$square-button-height-width: 40px;
+
+.btn-primary {
+  font-family: 'Inter';
+  font-weight: 525;
+  font-size: 18px;
+  width: 180px;
+  height: $button-height;
+
+  left: calc(50% - 180px/2 + 2px);
+  margin-top: $margin-top;
+  margin-bottom: $margin-bottom;
+
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: $bright_blue;
+  background-color: transparent;
+  border: 3px solid $bright_blue;
+  border-radius: $curve;
+
+  display: flex;
+  position: relative;
+  justify-content: center;
+  top: 0px;
+}
+
+.btn-primary:hover {
+  color: $white;
+  background-color: $bright_blue;
+  border: 3px solid $bright_blue;
+}
+
+.btn-secondary {
+  font-family: 'Inter';
+  font-weight: 525;
+  font-size: 18px;
+  width: 180px;
+  height: $button-height;
+
+  left: calc(50% - 180px/2 + 2px);
+  margin-top: $margin-top;
+  margin-bottom: $margin-bottom;
+
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: $grey;
+  background-color: transparent;
+  border: 3px solid $grey;
+  border-radius: $curve;
+
+  display: flex;
+  position: relative;
+  justify-content: center;
+  top: 0px;
+}
+
+.btn-secondary:hover {
+  color: $white;
+  background-color: $grey;
+  border: 3px solid $grey;
+}
+
+.btn-transparent {
+  width: 180px;
+  height: $small-button-height;
+
+  left: calc(50% - 180px/2 + 2px);
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: $primary_orange;
+  background-color: transparent;
+  border: transparent;
+  border-radius: $curve;
+  transition: 5ms;
+
+  display: flex;
+  position: relative;
+  justify-content: center;
+  top: 0px;
+
+}
+
+.btn-transparent:hover {
+  color: $bright_blue;
+  background-color: transparent;
+  border: transparent;
+  transition: 5ms;
+}
+
+.btn-transparent:active {
+  color: $bright_blue;
+  background-color: transparent;
+  border: transparent;
+  transition: 5ms;
+
+}
+
+.btn-primary-small {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 16px;
+  margin-top: 0px;
+  width: 120px;
+  height: $small-button-height;
+
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: $bright_blue;
+  background-color: transparent;
+  border: 2.25px solid $bright_blue;
+  border-radius: $curve - (35/55);
+}
+
+.btn-primary-small:hover {
+  color: $white;
+  background-color: $bright_blue;
+  border: 2.5px solid $bright_blue;
+}
+
+.btn-social-media-icon {
+  width: 40px;
+  height: 40px;
+
+  left: 0;
+  position: relative;
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 1vw;
+  margin-right: 1vw;
+
+  background: transparent;
+  border: transparent;
+}
+
+.btn-social-media-icon:hover {
+  background: transparent;
+  border: transparent;
+}
+
+.btn-collapsable-field {
+  width: $square-button-height-width;
+  height: $square-button-height-width;
+
+  margin: 0;
+  margin-right: 10px;
+  left: 0;
+  right: 0;
+
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: $bright_blue;
+  background-color: transparent;
+  border: 3px solid $bright_blue;
+  border-radius: 10px;
+
+  display: flex;
+  position: relative;
+  justify-content: center;
+  top: 0px;
+}
+
+/* Resize for shrunk desktop window
+@media screen and (max-width: 925px) {
+  .btn-social-media-icon {
+    margin-inline: 2%;
+  }
+}*/
+
+/* Resize for large tablet - scale down 25% */
+@media screen and (max-width: 768px) {
+  .btn-primary {
+    font-size: 14px;
+    width: 144px;
+    height: 40px;
+
+    left: calc(50% - 144px/2 + 2px);
+  }
+
+  .btn-social-media-icon {
+    width: 40px;
+    height: 40px;
+
+    left: 0;
+  }
+}

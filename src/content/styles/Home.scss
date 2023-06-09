@@ -1,135 +1,238 @@
+@import "./Button.scss";
+@import "./Header.scss";
+$content1-margin: 0px;
+$no-margin: 0;
 
-$card-width: 300px;
-$card-height: 300px;
-
-/* 
-  Orange Button
-*/
-.btn-orange {
-    @include button-variant(#f2711c, #f2711c, #f26202);
-}
-/*
-    Subscription Button
-*/
-.btn-subscription{
-    @include button-variant(#808080, #808080, #2185d0);
-    font-family: 'radnika';
-    font-size: 1.4em;
-    //padding: 0.5em;
-    margin-top: 1rem;
+.home-header-img {
     width: 100%;
-    height: 85%;
-}
-
-.home-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/images/new-home.png), no-repeat center center fixed;
+    height: 36vw;
+    background: linear-gradient(0deg, rgba(0, 32, 62, 0.25), rgba(0, 32, 62, 0.25)), url(../assets/images/car_pics/car3_fl_gators.JPG), no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-position: center;
-  }
+    background-position: center 33%;
 
-#home-header {
-    font-family: 'radnika';
-    margin-top: 25vh;
-    font-size: 9em;
-    color: white;
-    opacity: 0.8;
+    display: flex;
+    position: relative;
+    align-items: center;
 }
 
-@media screen and (max-width: 768px) {
-    #home-header {
-        font-size: 7em;
-    }
-  }
-
-
-/* 
-  Create inverse button
-*/
-.btn-inverse {
-    @include button-variant(transparent, white, white);
-    font-family: 'radnika';
-}
-
-/* 
-  Configure break line
-*/
-.home-break-line {
-    margin-top: 10%;
-}
-
-hr {
-    border-style: inset;
-    border-width: 1px;
-}
-
-
-/* 
-  Icons CSS
-*/
-.home-icon {
-    font-size: 2em;
-}
-
-.home-icon-text {
-    font-size: 0.6em;
-}
-
-
-
-/* 
-  Custom button for home cards
-*/
-.btn-home-card {
-    @include button-variant(transparent, #2185d0, #2185d0);
-    color: #2185d0;
-    font-family: 'radnika';
-}
-
-
-/* 
-  Home Card
-*/
-.home-card {
-    overflow: hidden;
-    max-width: $card-width;
-}
-
-.home-card-images {
-    max-width: $card-width;
-}
-
-.home-card-images:hover {
-    transition: 0.5s;
-    transform: translateX(-100%);
-}
-.home-card-images:not( :hover ) {
-    transition: 0.5s;
-    transform: translateX(0px);
-}
-
-.home-card-body {
-    font-size: 0.8em;
-}
-
-.home-card-hidden {
-    position: absolute;
-    left: 100%;
-}
-.home-card-visible {
-    position: absolute;
-}
-
+/* Sections of Page (container) */
 .section {
-    margin-top: 8%;
+    position: relative;
+    justify-content: center;
+
+    width: 100%;
+    height: auto;
+
+    margin: 0;
+
+    //background: #456703;
+    padding-top: 10vw;
+    padding-bottom: 8vw;
+    padding-left: 8vw;
+    padding-right: 8vw;
+
 }
 
-@media (min-width: 1200px) {
-    .container-home-cards {
-        max-width: 2500px !important;
+.section-half {
+    margin: 0;
+    padding: 0;
+}
+
+#sponsor_logos_half {
+    padding: 0;
+    display: inline;
+}
+
+.mission-statement {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    padding: 0;
+
+    justify-content: center;
+    width: 20vw;
+}
+
+/*  Officer Carousel Animation
+    source: https://codepen.io/studiojvla/pen/qVbQqW
+*/
+@mixin blue-gradient {
+    background: linear-gradient(to right,  $dark_blue 0%, transparent 100%);
+}
+$animationSpeed: 50s;
+
+// Animation
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-250px * 7))}
+}
+
+// Officer Slide Styling
+.slider {
+    background: $dark_blue;
+    height: 100%;
+    margin: auto;
+    margin-top: $content1-margin;
+    margin-bottom: $content1-margin - 10px;
+    overflow: hidden;
+    position: relative;
+    width: 90%;
+
+    &::before,
+    &::after {
+        @include blue-gradient;
+        content: "";
+        height: 100%;
+        position: absolute;
+        width: 200px;
+        z-index: 2;
+    }
+
+    &::after {
+        right: 0;
+        top: 0;
+        transform: rotateZ(180deg);
+    }
+
+    &::before {
+        left: 0;
+        top: 0;
+    }
+
+    .slide-track {
+        animation: scroll $animationSpeed linear infinite;
+        display: flex;
+        width: calc(250px * 14);
+    }
+
+    .slide {
+        height: 100px;
+        width: 250px;
+    }
+
+    //Container
+    .headshot {
+        position: relative;
+        width: 200px;
+        height: 300px;
+        left: 65px;
+        margin-top: $no-margin;
+        margin-bottom: $no-margin;
+        margin-right: 65px;
+
+        box-shadow: 5px 20px 20px 5px rgba(0, 0, 0, .35);
+     }
+
+    //Image in container
+    .headshot-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-position: center;
     }
 }
 
+/* Container for Car Images */
+.car-cards {
+    justify-content: center;
+    margin-top: $content1-margin;
+    margin-bottom: $content1-margin - 10px;
+}
+
+/* Container for Individual Car Image */
+.car-card {
+    position: relative;
+    width: 26%;
+    height: 300px;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 0px;
+    transition: 0.5s ease;
+
+    justify-content: center;
+    display: flex;
+    background-color: transparent;
+    border: 0px;
+
+    overflow: hidden;
+}
+
+/* Car Image */
+.car-card-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: 0.5s ease;
+    object-fit: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    transition: 0.5s ease;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $dark_blue;
+}
+
+//Car Name
+.overlay-text-header {
+    color: $white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 40%;
+    top: 20%;
+    justify-content: center;
+}
+
+//Car Years
+.overlay-text-body {
+    color: $white;
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 50%;
+    margin-top: 0;
+    margin-bottom: 0px;
+    justify-content: center;
+}
+
+//when hovering over car card, adjusts overlay opacity
+.car-card:hover .overlay{
+    opacity: .75;
+}
+
+.car-card:hover {
+    //left down blur scale color
+    box-shadow: 0px 20px 20px 5px rgba(0, 0, 0, .25);
+    margin-top: -20px;
+    transition: 0.5s ease;
+}
+
+
+/* Resize for large tablet - scale down 25% */
+@media screen and (max-width: 768px) {
+    .slider {
+        .headshot {
+            width: 160px;
+            height: 240px;
+        }
+    }
+
+    .car-card {
+        height: 200px;
+    }
+}
 

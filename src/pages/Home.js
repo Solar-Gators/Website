@@ -1,181 +1,224 @@
 import React, { useState } from 'react'
-import {
-  Link
-} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
-import Header from '../components/Header'
+import "../content/styles/Header.scss";
+import "../content/styles/Home.scss";
+import "../content/styles/Button.scss";
 
+//Officer Pictures
+import president from '../content/assets/images/officers/2022/president22.JPG';
+import vp from '../content/assets/images/officers/2022/vp22.JPG';
+import treasurer from '../content/assets/images/officers/2022/treasurer22.JPG';
+import secretary from '../content/assets/images/officers/2022/secretary22.JPG';
+import power from '../content/assets/images/officers/2022/power22.JPG';
+import mechPM from '../content/assets/images/officers/2022/mechPM22.JPG';
+import integPM from '../content/assets/images/officers/2022/integPM22.JPG';
+import highvoltPM from '../content/assets/images/officers/2022/integPM22.JPG';
+import embedsyst from '../content/assets/images/officers/2022/embedsyst22.JPG';
+import electricalPM from '../content/assets/images/officers/2022/electricalPM22.JPG';
+import business from '../content/assets/images/officers/2022/business22.JPG';
+import brakes from '../content/assets/images/officers/2022/brakes22.JPG';
+import battery from '../content/assets/images/officers/2022/battery22.JPG';
+import aero from '../content/assets/images/officers/2022/aero22.JPG';
 
-import MailchimpSubscribe from "react-mailchimp-subscribe"
+//Car Pictures
+import car1 from '../content/assets/images/car_pics/car1.jpg';
+import car2 from '../content/assets/images/car_pics/car2.JPG';
+import car3 from '../content/assets/images/car_pics/car3.jpg';
+import MAE from "../content/assets/images/sponsor_logos/MAE.png";
+import ZenithTecnica from "../content/assets/images/sponsor_logos/ZenithTecnica.png";
+import ECE from "../content/assets/images/sponsor_logos/ECE.png";
 
-import aboutUs1 from '../content/assets/images/about_us_1.JPG'
-import aboutUs2 from '../content/assets/images/about_us_2.jpg'
+//Car 3 Platinum Sponsors
+let platinum3 = [[MAE, "https://mae.ufl.edu/"], [ZenithTecnica, "https://www.zenithtecnica.com/"], [ECE, "https://www.ece.ufl.edu/"]];
 
-import event1 from '../content/assets/images/event_1.jpg'
-import event2 from '../content/assets/images/event_2.jpg'
-
-import team1 from '../content/assets/images/team_1.JPG'
-import team2 from '../content/assets/images/team_2.jpg'
-
-import contact1 from '../content/assets/images/contact_us_1.jpg'
-import contact2 from '../content/assets/images/contact_us_2.jpg'
-
-import sponsors1 from '../content/assets/images/sponsors_1.jpg'
-import sponsors2 from '../content/assets/images/sponsors_2.jpg'
-
-
-
-function HomeIcon({icon, children}) {
-  return (
-    <Col md={3}>
-        <i class={`fas ${icon} home-icon`} />
-        <br />
-        <p className="mt-1 home-icon-text">{children}</p>
-    </Col>
-  )
-}
-
-function HomeCard({im1, im2, linkTitle, link, children, index}) {
-  return (
-    <Col 
-    xl={{span: 2, offset: index == 0 ? 0 : 0}} 
-    lg={{ span: 4, offset: index == 3 ? 2 : 0 }} md={6}
-    className={`
-    mt-xl-0 ${index == 3 || index == 4 ? "mt-lg-4" : "mt-lg-0"}
-    ${index == 2 || index == 3 || index == 4 ? "mt-md-4" : "mt-md-0"}
-    mt-sm-4
-    ml-auto mr-auto`}>
-      <Card className="home-card m-auto h-100">
-        <div className="home-card-images">
-          <Card.Img src={im1} />
-          <Card.Img src={im2} className="home-card-hidden" />
+function Officer({pic}) {
+    //creates individual officer headshot container w image
+    return (
+        <div className={"headshot"} >
+            <img className={"headshot-img"} src={pic}></img>
         </div>
-        <Card.Body className="home-card-body text-center d-table m-auto">
-          <p className="m-auto">{children}</p>
-        </Card.Body>
-        <Button variant="home-card" className="w-100 btn-sm" as={Link} to={link}>{linkTitle}</Button>
-      </Card>
-    </Col>
-  )
+    )
 }
 
-const SubscriptionForm = ({ status, message, onValidated }) => {
-  let email, name;
-  const submit = () =>
-    email &&
-    email.value.indexOf("@") > -1 &&
-    onValidated({
-      EMAIL: email.value
-    });
+function Car({car_img, car_name, car_year1, car_year2}) {
+    //creates each car's container for image & hover description
+    return (
+        <Link className="car-card" to={"/cars"} onClick={() => {window.scroll(0,0);}} >
+            <img className="car-card-img" src={car_img}/>
+            <div className="overlay">
+                <div className="overlay-text-header">{car_name}</div>
+                <div className="overlay-text-body">{car_year1} - {car_year2}</div>
+            </div>
+        </Link>
+    )
+}
 
-  return (
-    <Container>
-      <Row noGutters={true}>
-        <Col xs = {{offset: 2, span: 8}} md = {{span: 6, offset: 3}} lg = {{span:4, offset: 4}}>
-        {status === "sending" && <div style={{ color: "blue", textAlign: "center" }}>Sending...</div>}
-        {status === "error" && (
-          <div
-            style={{ color: "red", textAlign: "center"}}
-            dangerouslySetInnerHTML={{ __html: message }}
-          />
-        )}
-        {status === "success" && (
-          <div
-            style={{ color: "green", textAlign: "center" }}
-            dangerouslySetInnerHTML={{ __html: message }}
-          />
-        )}
-        </Col>
-      </Row>
-          
-      <Row noGutters={false}>
-        <Col xs = {{offset: 2, span: 8}} md = {{span: 6, offset: 3}} lg = {{span:4, offset: 4}}>
-          <Row noGutters={true}>
-            <Col xs = {{span: 8}}>
-              <input
-                style={{ fontSize: "1.4em", marginTop: "1rem", width: "100%", height: "85%"}}
-                ref={node => (email = node)}
-                type="email"
-                placeholder="Email Address"
-              />
-            </Col>
-            <Col className = "ml-1" xs = {{span: 3}}> 
-              <Button className="btn-subscription" onClick={submit}>
-                Go!
-              </Button>
-            </Col>     
-          </Row>
-        </Col>  
-        <Col xs = {{offset: 4, span:4}} md = {{offset: 5, span: 2}}> 
+function SponsorLogo({link1, img1, link2, img2}) {
+    //creates Row with one (or two) sponsor logos
+    return (
+        <Row className="section" style={{padding: "0"}}>
+            <a href={link1}>
+                <img src={img1} className="sponsor-logo"/>
+            </a>
+            {/* if second img passed in, put in same row */}
+            { img2 ?
+                <a href={link2}>
+                    <img src={img2} className="sponsor-logo" style={{marginLeft: "20px"}}/>
+                </a> : ""}
 
-        </Col>
-      </Row>
-    </Container>
-  );
-};
+        </Row>
+    )
+}
 
 export default function Home() {
     return (
       <React.Fragment>
-        <Header className="home-section">
-          <Container fluid={true}>
+          {/*  Page Header */}
+          <Container fluid="true" className="header">
             <Row>
-              <Col md={{ offset: 1 }}>
-                <h1 id="home-header" className="ui left aligned header">Solar Gators</h1>
-              </Col>
+                <Col>
+                    <div className="home-header-img">
+                        <h1 className={"title-text"}>
+                          Powered By Florida sunshine
+                        </h1>
+                    </div>
+                </Col>
             </Row>
-            <Row className="home-break-line">
-              <Col md={{ span: 5, offset: 1 }}>
-                <hr />
-              </Col>
-            </Row>
-                    <Row>
-              <Col md={{ offset: 1}}>
-             <h3 style={{ fontSize: "30ptx", color: "rgba(255,255,255,0.95)"}}>
-             Website under construction
-             </h3>
-              </Col>
-            </Row>
-          </Container>
-        </Header>
-        <Container>
-          <Row className="section">
-            <Col md={{span: 8, offset: 2}}>
-              <h2 className="ui dividing header" style={{opacity: '0.8'}}>
-                  BRINGING STUDENTS TOGETHER
+        </Container>
+
+          {/*  Mission Section */}
+          <Container fluid="true" className="section">
+            <Row>
+              <h2 className="heading2-text">
+                  Our Mission
               </h2>
-            </Col>
-            <Col md={{span: 8, offset: 2}}>
-              <hr />
-              <p>Solar Gators is a University of Florida student organization driven by passionate engineers and designers determined to win the Formula Sun Grand Prix</p>
-            </Col>
-          </Row>
+            </Row>
 
-          <Card className="section">
-            <Card.Body>
-              <Row className="text-center home-icon">
-                <HomeIcon icon="fa-wrench">3 cars built</HomeIcon>
-                <HomeIcon icon="fa-trophy">Founded in 2012</HomeIcon>
-                <HomeIcon icon="fa-users">17 sub-engineering teams</HomeIcon>
-                <HomeIcon icon="fa-certificate ">25+ sponsors</HomeIcon>
+            <Row style={{justifyContent: "center"}}>
+                <Col className={"mission-statement"} style={{marginLeft: "0"}}>
+                    <p className={"body-text"}><b>Accelerate</b> the world's transition to sustainable energy</p>
+                </Col>
+                <Col className={"mission-statement"}>
+                    <p className={"body-text"}><b>Develop</b> gator engineers through hands-on design and manufacturing experience</p>
+                </Col>
+                <Col className={"mission-statement"}>
+                    <p className={"body-text"}><b>Inspire</b> students to explore their interests within STEM and become the next generation of innovators shaping the future</p>
+                </Col>
+                <Col className={"mission-statement"} style={{marginRight: "0"}}>
+                    <p className={"body-text"}><b>Build</b> awareness within our community about the transformative potential of solar energy</p>
+                </Col>
+            </Row>
+            <Row>
+                <Button className="btn-primary" as={Link} to={"/about"}
+                        onClick={() => {window.scroll(0,0);}}>
+                    About Us
+                </Button>
+            </Row>
+        </Container>
+
+          {/*  Team Section */}
+          <Container fluid="true" className="section" style={{backgroundColor: '#00203E'}}>
+              <Row>
+                  <h2 className="heading2-text">
+                      Meet The Team
+                  </h2>
               </Row>
-            </Card.Body>
-          </Card>
-        </Container>
-        <Container fluid={true} className="container-home-cards p-0">
-          <Row className="section">
-            <HomeCard index={0} im1={aboutUs1} im2={aboutUs2} linkTitle="About Us" link="/about">Our organization goes way back. Learn more about our history.</HomeCard>
-                    <HomeCard index={1} im1={team1} im2={team2} linkTitle="The Team" link="/team">Solar Gators is a University of Florida student organization driven by passionate engineers and designers determined to win the Formula Sun Grand Prix.</HomeCard>
+              <Row>
+                  <div className={"slider"}>
+                      <div className={"slide-track"}>
+                          <Officer pic={president}></Officer>
+                          <Officer pic={vp}></Officer>
+                          <Officer pic={treasurer}></Officer>
+                          <Officer pic={secretary}></Officer>
+                          <Officer pic={business}></Officer>
+                          <Officer pic={electricalPM}></Officer>
+                          <Officer pic={mechPM}></Officer>
+                          <Officer pic={integPM}></Officer>
+                          <Officer pic={aero}></Officer>
+                          <Officer pic={battery}></Officer>
+                          <Officer pic={brakes}></Officer>
+                          <Officer pic={embedsyst}></Officer>
+                          <Officer pic={highvoltPM}></Officer>
+                          <Officer pic={power}></Officer>
+                      </div>
+                  </div>
+              </Row>
+              <Row>
+                  <Button className="btn-primary" as={Link} to={"/team"}
+                          onClick={() => {window.scroll(0,0);}}>
+                      Team 2023
+                  </Button>
+              </Row>
+          </Container>
 
-            <HomeCard index={3} im1={contact1} im2={contact2} linkTitle="Contact Us" link="/contact">Shoot as an email with any inquiry or question you have about us.</HomeCard>
-            <HomeCard index={4} im1={sponsors1} im2={sponsors2} linkTitle="Sponsors" link="/sponsors">All of this is possible because of our sponsors. Check them out.</HomeCard>
-          </Row>
-        </Container>
+          {/*  Car Section */}
+          <Container fluid="true" className="section">
+              <Row>
+                  <h2 className="heading2-text">
+                      Our Cars
+                  </h2>
+              </Row>
+
+              <Row className={"car-cards"}>
+                  <Car car_img={car1} car_name={"Torch"} car_year1={"2017"} car_year2={"2018"}></Car>
+                  <Car car_img={car2} car_name={"Cielo"} car_year1={"2018"} car_year2={"2019"}></Car>
+                  <Car car_img={car3} car_name={"Sunrider"} car_year1={"2020"} car_year2={"present"}></Car>
+
+              </Row>
+
+              <Row>
+                  <Button className="btn-primary" as={Link} to={"/cars"}
+                          onClick={() => {window.scroll(0,0);}}>
+                      Learn More
+                  </Button>
+              </Row>
+
+          </Container>
+
+          {/*  Sponsors Section */}
+          <Container fluid="true" className="section">
+              <Row>
+                  <h2 className="heading2-text">
+                      Become A Sponsor
+                  </h2>
+              </Row>
+
+              <Row>
+                  <Col className={"section-half"} id="sponsor_logos_half">
+                      <SponsorLogo img1={platinum3[0][0]} link1={platinum3[0][1]} img2={platinum3[2][0]} link2={platinum3[2][1]}></SponsorLogo>
+                      <SponsorLogo img1={platinum3[1][0]} link1={platinum3[1][1]}></SponsorLogo>
+                  </Col>
+                  <Col className={"section-half"}>
+                      <Container >
+                          <Row >
+                              <p className={"body-text"} >
+                                  Solar Gators relies on the support of sponsors to further our mission of showing the potential of solar energy. Sponsoring us means becoming an integral part of our team, and helping to inspire the next generation of engineers and innovators. Join us on our mission towards a brighter, more sustainable future.
+                              </p>
+                          </Row>
+                          <Row style={{justifyContent: "center", alignContent: "center"}}>
+                              <Button className="btn-secondary" style={{left: "0", marginRight: "3vw", marginTop: "5vw"}}
+                                      as={Link} to={"/sponsors"}
+                                      onClick={() => {window.scroll(0,0);}}>
+                                  Our Sponsors
+                              </Button>
+                              <Button className="btn-primary" style={{left: "0", marginTop: "5vw"}}
+                                      as={Link} to={"/donate"}
+                                      onClick={() => {window.scroll(0,0);}}>
+                                  Sponsor Us
+                              </Button>
+                          </Row>
+                      </Container>
+                  </Col>
+              </Row>
+
+          </Container>
+
       </React.Fragment>
     )
 }

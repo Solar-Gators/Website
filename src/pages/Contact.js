@@ -4,10 +4,13 @@ import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form'
 import Alert from 'react-bootstrap/Alert'
-import Header from '../components/Header'
 import ReCAPTCHA from "react-google-recaptcha";
 import axios from 'axios'
 import ReactGA from 'react-ga'
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import "../content/styles/Contact.scss";
+
 
 export default function Contact() {
 
@@ -47,11 +50,8 @@ export default function Contact() {
             token: captcha
         })
         .then(({ data: response }) => {
-            /*
-                {
-                    success: boolean
+            /* success: boolean
                     msg: string
-                }
             */
 
             if (response.success) {
@@ -60,7 +60,7 @@ export default function Contact() {
                     action: 'Successfully submitted Contact Form'
                   })
                 //good
-                setSuccessMsg("Your message has successfully been delivered.")
+                setSuccessMsg("Message sent!")
                 document.getElementById('contact-email').value = ""
                 document.getElementById('contact-name').value = ""
                 document.getElementById('contact-msg').value = ""
@@ -90,62 +90,71 @@ export default function Contact() {
 
     return (
         <React.Fragment>
-            <Header className="sponsor-section">
-                <h1 className="sponsor-centered">Contact Us</h1>
-            </Header>
+            {/*  Page Header */}
+            <Container fluid="true" className="header">
+                <Row>
+                    <Col>
+                        <div className="contact-header-img">
+                            <h1 className={"title-text"}>
+                                Contact Us
+                            </h1>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
 
-        <Container className="mt-4">
-            <Card>
-                <Card.Body>
-                    { errorMsg ? <Alert variant="danger" >
-                        {errorMsg}
-                    </Alert> : "" }
+            <Container fluid="true" style={{justifyContent: "center"}}>
+                <Container fluid="true" className="transparent-box">
+                        { errorMsg ? <Alert variant="danger" >
+                            {errorMsg}
+                        </Alert> : "" }
 
-                    { successMsg ? <Alert variant="success" >
-                        {successMsg}
-                    </Alert> : "" }
+                        { successMsg ? <Alert variant="success" >
+                            {successMsg}
+                        </Alert> : "" }
 
-                    <Form onSubmit={onSubmit} validated={validated} noValidate>
-                        <Form.Group controlId="formBasicEmail">
-                            <Form.Label>Your Name</Form.Label>
-                            <Form.Control type="text" placeholder="Enter name" id="contact-name" required />
-                            <Form.Control.Feedback type="invalid">
-                                Please enter your name.
-                            </Form.Control.Feedback>
-                        </Form.Group>
+                        <Form onSubmit={onSubmit} validated={validated} noValidate>
+                            <Form.Group controlId="formBasicEmail" style={{paddingBottom: "15px"}}>
+                                <Form.Label className="body-text" style={{paddingBottom: "10px"}}>Name</Form.Label>
+                                <Form.Control type="text" placeholder="Enter name" id="contact-name" required />
+                                <Form.Control.Feedback type="invalid">
+                                    Please enter your name.
+                                </Form.Control.Feedback>
+                            </Form.Group>
 
-                        <Form.Group controlId="formBasicPassword">
-                            <Form.Label>Your Email</Form.Label>
-                            <Form.Control type="email" placeholder="Enter email" id="contact-email" required />
-                            <Form.Control.Feedback type="invalid">
-                                Please enter your email.
-                            </Form.Control.Feedback>
-                        </Form.Group>
-                        <Form.Group controlId="formBasicCheckbox">
-                            <Form.Label>Your Message</Form.Label>
-                            <Form.Control as="textarea" rows="3" placeholder="message" id="contact-msg" required />
-                            <Form.Control.Feedback type="invalid">
-                                Please enter your message.
-                            </Form.Control.Feedback>
-                        </Form.Group>
+                            <Form.Group controlId="formBasicPassword">
+                                <Form.Label className="body-text" style={{paddingBottom: "10px"}}>Email</Form.Label>
+                                <Form.Control type="email" placeholder="Enter email" id="contact-email" required />
+                                <Form.Control.Feedback type="invalid">
+                                    Please enter your email.
+                                </Form.Control.Feedback>
+                            </Form.Group>
+                            <Form.Group controlId="formBasicCheckbox">
+                                <Form.Label className="body-text" style={{paddingBottom: "10px"}}>
+                                    Message
+                                </Form.Label>
+                                <Form.Control as="textarea" rows="3" placeholder="Hey Solar Gators..." id="contact-msg" required />
+                                <Form.Control.Feedback type="invalid">
+                                    Please enter your message.
+                                </Form.Control.Feedback>
+                            </Form.Group>
 
 
-                        <ReCAPTCHA
-                            sitekey={process.env.REACT_APP_ReCAPTCHA}
-                            onChange={setCaptcha}
-                            className="mb-3"
-                        />
+                            <ReCAPTCHA
+                                sitekey={process.env.REACT_APP_ReCAPTCHA}
+                                onChange={setCaptcha}
+                                className="mb-3"
+                            />
 
-                        <Button
-                            variant="primary"
-                            type="submit"
-                            disabled={submitting}>
-                            Submit
-                        </Button>
-                    </Form>
-                </Card.Body>
-            </Card>
-        </Container>
+                            <Button
+                                variant="primary"
+                                type="submit"
+                                disabled={submitting}>
+                                Submit
+                            </Button>
+                        </Form>
+                </Container>
+            </Container>
 
         </React.Fragment>
     )

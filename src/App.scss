@@ -5,27 +5,14 @@
 @import "./content/styles/Sponsors.scss";
 @import "./content/styles/Team.scss";
 @import "./content/styles/Donate.scss";
-
-@font-face {
-  font-family: 'radnika';
-  src: url('./content/assets/fonts/radnika-medium-webfont.woff2') format("woff2"), url('./content/assets/fonts/radnika-medium-webfont.woff') format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
+@import "./content/styles/Button.scss";
+@import "./content/styles/Cars.scss";
 
 body {
-  background: #ECE9E6;
-
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);
-
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
-
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: $white;
+  margin: 0px;
+  padding: 0px;
 }
-
 
 .regular-text {
   font-size: 1.2em;
