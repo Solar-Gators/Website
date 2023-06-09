@@ -42,6 +42,7 @@ import SainSmart from '../content/assets/images/sponsor_logos/SainSmart.webp'
 import IPF from '../content/assets/images/sponsor_logos/IPF.png'
 import Spirpol from '../content/assets/images/sponsor_logos/Spirol.png'
 import CustomDynamics from '../content/assets/images/sponsor_logos/CustomDynamics.png'
+import ExtremeCanopy from '../content/assets/images/sponsor_logos/ExtremeCanopy.png'
 
 //Past Sponsors
 import RapidHarness from '../content/assets/images/sponsor_logos/RapidHarness.png'
@@ -82,7 +83,7 @@ let bronze3 = [[MerritSupply, "https://www.merrittsupply.com/"], [WestSystems, "
     [PhoenixThermalSupply, "https://www.phoenixthermalsupply.com/"], [Ansys, "https://www.ansys.com/"], [VR3, "https://vr3.ca/"],
     [FusionFilaments, "https://fusionfilaments.com/"], [IC3D, "https://www.ic3dprinters.com/"], [ProtoPasta, "https://www.proto-pasta.com/"],
     [SainSmart, "https://www.sainsmart.com/"], [IPF, "https://goo.gl/maps/a8tBJe2cCBKJWkzq5"], [Spirpol, "https://www.spirol.com/"],
-    [CustomDynamics, "https://www.customdynamics.com/"]];
+    [CustomDynamics, "https://www.customdynamics.com/"], [ExtremeCanopy, "http://www.extremecanopy.com/"]];
 
 //Car 2 Sponsors
 // var platinum2 = [Solidworks, Eaton, Altair, ECE, HWCE, Siemens, SolarImpact, SunPower, MAE, Universal];
@@ -136,8 +137,7 @@ function ShowSponsors({car_num}) {
                 <SponsorRow img1={bronze3[3][0]} img1link={bronze3[3][1]} img2={bronze3[4][0]} img2link={bronze3[4][1]} img3={bronze3[5][0]} img3link={bronze3[5][1]}/>
                 <SponsorRow img1={bronze3[6][0]} img1link={bronze3[6][1]} img2={bronze3[7][0]} img2link={bronze3[7][1]} img3={bronze3[8][0]} img3link={bronze3[8][1]} />
                 <SponsorRow img1={bronze3[9][0]} img1link={bronze3[9][1]} img2={bronze3[10][0]} img2link={bronze3[10][1]} img3={bronze3[11][0]} img3link={bronze3[11][1]}/>
-                <SponsorRow img1={bronze3[12][0]} img1link={bronze3[12][1]}  img2={bronze3[13][0]} img2link={bronze3[13][1]} />
-                {/*img3={bronze3[14][0]} img3link={bronze3[14][1]}*/}
+                <SponsorRow img1={bronze3[12][0]} img1link={bronze3[12][1]}  img2={bronze3[13][0]} img2link={bronze3[13][1]} img3={bronze3[14][0]} img3link={bronze3[14][1]}/>
             </Container>
         );
     }
