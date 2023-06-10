@@ -119,7 +119,7 @@ function OfficerTeam({ eventkey, executive_board }) {
             padding = 2;
         }
         return (
-            <Col style={{ maxWidth: '220px', justifyContent: "center", margin: "1vw", padding: "0"}}>
+            <Col style={{maxWidth: "186px", justifyContent: "center", margin: "1vw", padding: "0"}}>
                 <div className={"officer-container"}>
                     <div className={"headshot"}>
                         <img className={"headshot-img"} src={img}></img>
@@ -134,7 +134,7 @@ function OfficerTeam({ eventkey, executive_board }) {
     //Row of officers in same category
     let OfficersRow = ({heading, officers}) => {
         return (
-            <Row className="container">
+            <Row style={{justifyContent: "center"}}>
                 <h2 className={"heading2-text"} style={{paddingTop: "50px"}}>{heading}</h2>
                 { officers[0] ? <Officer name={officers[0][0]} title={officers[0][1]} img={officers[0][2]} /> : "" }
                 { officers[1] ? <Officer name={officers[1][0]} title={officers[1][1]} img={officers[1][2]} /> : "" }
@@ -149,7 +149,7 @@ function OfficerTeam({ eventkey, executive_board }) {
     //Officer Year
     if (eventkey === "202223") {
         return (
-            <Col className="container">
+            <Col className="officer-row-col">
                 <OfficersRow heading="Executive Board" officers={executive_board22}></OfficersRow>
                 <OfficersRow heading="Project Managers" officers={pms22}></OfficersRow>
                 <OfficersRow heading="Mechanical and Aerobody" officers={mech_aero22}></OfficersRow>
