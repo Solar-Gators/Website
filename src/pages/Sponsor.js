@@ -6,7 +6,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
 
-//Car 3 Sponsor Logos
+//Car 3 Sponsor Logos:
 //Platinum
 import MAE from '../content/assets/images/sponsor_logos/MAE.png'
 import ZenithTecnica from '../content/assets/images/sponsor_logos/ZenithTecnica.png'
@@ -42,15 +42,16 @@ import SainSmart from '../content/assets/images/sponsor_logos/SainSmart.webp'
 import IPF from '../content/assets/images/sponsor_logos/IPF.png'
 import Spirpol from '../content/assets/images/sponsor_logos/Spirol.png'
 import CustomDynamics from '../content/assets/images/sponsor_logos/CustomDynamics.png'
+import ExtremeCanopy from '../content/assets/images/sponsor_logos/ExtremeCanopy.png'
 
-//Past Sponsors
+//Past Sponsors - not displayed on website
 import RapidHarness from '../content/assets/images/sponsor_logos/RapidHarness.png'
 import Altair from '../content/assets/images/sponsor_logos/Altair.png'
 import NordLock from '../content/assets/images/sponsor_logos/NordLock.png'
 import BayArea from '../content/assets/images/sponsor_logos/BayArea.png'
 import Pellucere from '../content/assets/images/sponsor_logos/Pellucere.png'
 
-//Car 2 Sponsors
+//Car 2 Sponsor Logos
 // import Eaton from '../content/assets/images/sponsor_logos/Eaton.png'
 // import HWCE from '../content/assets/images/sponsor_logos/HWCE.png'
 // import Siemens from '../content/assets/images/sponsor_logos/Siemens.png'
@@ -71,6 +72,7 @@ import Pellucere from '../content/assets/images/sponsor_logos/Pellucere.png'
 // import BeadBuster from '../content/assets/images/sponsor_logos/BeadBuster.png'
 
 //Car 3 Sponsors
+//Sorted by tier in array of pairs: [logo, website link]
 let platinum3 = [[MAE, "https://mae.ufl.edu/"], [ZenithTecnica, "https://www.zenithtecnica.com/"], [ECE, "https://www.ece.ufl.edu/"]];
 let gold3 = [[MatrixComposities, "https://matrixcomp.com"], [ElektroAutomatik, "https://elektroautomatik.com/"], [Molex, "https://www.molex.com"],
             [Solidworks, "https://www.solidworks.com/"], [Bridgestone, "https://www.bridgestoneamericas.com/en/index"]];
@@ -82,7 +84,7 @@ let bronze3 = [[MerritSupply, "https://www.merrittsupply.com/"], [WestSystems, "
     [PhoenixThermalSupply, "https://www.phoenixthermalsupply.com/"], [Ansys, "https://www.ansys.com/"], [VR3, "https://vr3.ca/"],
     [FusionFilaments, "https://fusionfilaments.com/"], [IC3D, "https://www.ic3dprinters.com/"], [ProtoPasta, "https://www.proto-pasta.com/"],
     [SainSmart, "https://www.sainsmart.com/"], [IPF, "https://goo.gl/maps/a8tBJe2cCBKJWkzq5"], [Spirpol, "https://www.spirol.com/"],
-    [CustomDynamics, "https://www.customdynamics.com/"]];
+    [CustomDynamics, "https://www.customdynamics.com/"], [ExtremeCanopy, "https://www.extremecanopy.com/"]];
 
 //Car 2 Sponsors
 // var platinum2 = [Solidworks, Eaton, Altair, ECE, HWCE, Siemens, SolarImpact, SunPower, MAE, Universal];
@@ -136,8 +138,7 @@ function ShowSponsors({car_num}) {
                 <SponsorRow img1={bronze3[3][0]} img1link={bronze3[3][1]} img2={bronze3[4][0]} img2link={bronze3[4][1]} img3={bronze3[5][0]} img3link={bronze3[5][1]}/>
                 <SponsorRow img1={bronze3[6][0]} img1link={bronze3[6][1]} img2={bronze3[7][0]} img2link={bronze3[7][1]} img3={bronze3[8][0]} img3link={bronze3[8][1]} />
                 <SponsorRow img1={bronze3[9][0]} img1link={bronze3[9][1]} img2={bronze3[10][0]} img2link={bronze3[10][1]} img3={bronze3[11][0]} img3link={bronze3[11][1]}/>
-                <SponsorRow img1={bronze3[12][0]} img1link={bronze3[12][1]}  img2={bronze3[13][0]} img2link={bronze3[13][1]} />
-                {/*img3={bronze3[14][0]} img3link={bronze3[14][1]}*/}
+                <SponsorRow img1={bronze3[12][0]} img1link={bronze3[12][1]}  img2={bronze3[13][0]} img2link={bronze3[13][1]} img3={bronze3[14][0]} img3link={bronze3[14][1]}/>
             </Container>
         );
     }

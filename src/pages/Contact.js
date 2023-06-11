@@ -122,14 +122,14 @@ export default function Contact() {
                                 </Form.Control.Feedback>
                             </Form.Group>
 
-                            <Form.Group controlId="formBasicPassword">
+                            <Form.Group controlId="formBasicPassword" style={{paddingBottom: "15px"}}>
                                 <Form.Label className="body-text" style={{paddingBottom: "10px"}}>Email</Form.Label>
                                 <Form.Control type="email" placeholder="Enter email" id="contact-email" required />
                                 <Form.Control.Feedback type="invalid">
                                     Please enter your email.
                                 </Form.Control.Feedback>
                             </Form.Group>
-                            <Form.Group controlId="formBasicCheckbox">
+                            <Form.Group controlId="formBasicCheckbox" style={{paddingBottom: "15px"}}>
                                 <Form.Label className="body-text" style={{paddingBottom: "10px"}}>
                                     Message
                                 </Form.Label>
