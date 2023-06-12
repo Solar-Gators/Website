@@ -14,12 +14,14 @@
     align-items: center;
 }
 
-.container {
-    padding: 0;
-    margin: 0;
+.officer-row-col {
+    width: 100%;
+    position: relative;
     justify-content: center;
-    align-content: center;
+    margin: 0;
+    padding: 0;
 }
+
 
 //Image + Name + Title Container
 .officer-container {
@@ -74,17 +76,11 @@
     background-color: $dark-grey;
 }
 
-#name {
-
-}
-
 /* Resize for large tablet - scale down 25% */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1216px) {
     .officer-container {
         width: 150px;
         height: 285px;
-
-        background: #128753;
     }
 
     .headshot {
