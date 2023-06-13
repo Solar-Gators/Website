@@ -175,11 +175,11 @@ function SponsorSection ({on_mobile}) {
     else {
         return (
             <Row>
-                <Col className={"section-half"} id="sponsor_logos_half">
+                <Col className={"no-margin-padding"} id="sponsor_logos_half">
                     <SponsorLogo img1={platinum3[0][0]} link1={platinum3[0][1]} img2={platinum3[2][0]} link2={platinum3[2][1]}></SponsorLogo>
                     <SponsorLogo img1={platinum3[1][0]} link1={platinum3[1][1]}></SponsorLogo>
                 </Col>
-                <Col className={"section-half"}>
+                <Col className={"no-margin-padding"}>
                     <Container >
                         <Row >
                             <p className={"body-text"} >

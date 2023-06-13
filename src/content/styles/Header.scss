@@ -253,7 +253,9 @@ $no-padding: 0;
   color: $white;
   //transition: 5ms ease-in-out;
 
-  padding: 0px;
+  padding: 0;
+  padding-bottom: 18px;
+  margin: 0;
 }
 
 
@@ -332,13 +334,14 @@ $no-padding: 0;
   .body-text {
     line-height: 18px;
     padding-bottom: 18px;
-    padding-right: 3vw;
-    padding-left: 3vw;
+    padding-right: 4vw;
+    padding-left: 4vw;
   }
   .body-text-white {
     line-height: 18px;
+    padding-top: 0;
     padding-bottom: 18px;
-    padding-right: 3vw;
-    padding-left: 3vw;
+    padding-right: 4vw;
+    padding-left: 4vw;
   }
 }

@@ -217,6 +217,10 @@ $square-button-height-width: 40px;
 
 /* Resize for large tablet - scale down 25% */
 @media screen and (max-width: 425px) {
+  .btn-primary {
+    margin-top: 2vw;
+    margin-bottom: 3vw;
+  }
   .btn-social-media-icon {
     margin-left: 2vw;
     margin-right: 2vw;

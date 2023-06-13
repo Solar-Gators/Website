@@ -15,7 +15,6 @@
 }
 
 .text-half-container {
-    padding: 0;
     margin: 0;
 
     padding-top: 10vw;
@@ -46,42 +45,25 @@
     background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 1210px) {
+// Resize for large tablet
+@media screen and (max-width: 786px) {
 
 }
 
-
-//OLD
-.about-section {
-    background: url(../assets/images/img1.jpg), no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: center;
-
-    display: flex;
-    position: relative;
-    align-items: center;
-}
-
-.about-centered {
-    color: #fff;
-    text-align: center;
-    width: 100vw;
-    opacity: 0.9;
-    text-shadow: 2px 2px grey;
-    font-size: 5em;
-    margin: 0px auto;
-    position: absolute;
-    left: 0;
-    right: 0;
-}
-
-.about-images {
-    max-width: 300px;
-}
-
-.about-row {
-    margin-top: 15%;
+//Resize text for mobile
+@media screen and (max-width: 425px) {
+    .about-header-img {
+        height: 50vw;
+    }
+    .image-half-container {
+        padding: 0;
+        margin: 0;
+        height: 40vw;
+    }
+    .text-half-container {
+        padding-top: 10vw;
+        padding-bottom: 8vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
 }
