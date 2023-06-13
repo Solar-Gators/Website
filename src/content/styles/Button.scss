@@ -214,3 +214,11 @@ $square-button-height-width: 40px;
     left: 0;
   }
 }
+
+/* Resize for large tablet - scale down 25% */
+@media screen and (max-width: 425px) {
+  .btn-social-media-icon {
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+}

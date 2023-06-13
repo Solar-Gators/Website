@@ -23,46 +23,34 @@ function Social_App({logo_img, url_link}) {
 
 export default function Footer() {
     /* mql = media query list (https://dev.to/yanns1/how-to-render-different-components-based-on-screen-size-2p35) */
-    const mql = window.matchMedia('(max-width: 600px)');
+    const mql = window.matchMedia('(max-width: 425px)');
     let mobileView = mql.matches;
 
+    //Mobile
     if (mobileView) {
         return (
             <Container fluid="true" id="footer">
-                 {/*Social Media Links*/}
-                <Row className={"row-container"}>
-                    <div className={"logos"}>
+                <Col style={{padding: "0", margin: "0", alignContent: "center"}}>
+                    {/* Social Media Links */}
+                    <Row style={{padding: "0", margin: "0", justifyContent: "center"}}>
                         <Social_App logo_img={facebook}
-                                    url_link={"https://www.facebook.com/UFSolarGators/"}></Social_App>
+                                    url_link={"https://www.facebook.com/UFSolarGators/"}/>
                         <Social_App logo_img={instagram}
-                                    url_link={"https://www.instagram.com/ufsolargators/"}></Social_App>
+                                    url_link={"https://www.instagram.com/ufsolargators/"}/>
                         <Social_App logo_img={linkedin}
-                                    url_link={"https://www.linkedin.com/company/ufsolargators/"}></Social_App>
+                                    url_link={"https://www.linkedin.com/company/ufsolargators/"}/>
                         <Social_App logo_img={youtube}
-                                    url_link={"https://www.youtube.com/@ufsolargators/featured"}></Social_App>
-                    </div>
-                </Row>
-
-                <Row className="row-container" style={{display: 'flex'}}>
-                    {/* Logo */}
-                    <img className={"left-aligned-container"} src={logo}/>
-
-                    {/* Email & Mailing Addresses */}
-                    <div className={"right-aligned-container"}>
-                        <text className="text">
-                            Solar Gators<br/>
-                            PO Box 116250
-                            Gainesville, FL 32611<br/>
-                        </text>
-
-                        <Link className="text" style={{color: '#F37833', display: 'flex', justifyContent: 'right'}}
-                              to={"/contact"}>info@ufsolargators.org</Link>
-                    </div>
-                </Row>
-
+                                    url_link={"https://www.youtube.com/@ufsolargators/featured"}/>
+                    </Row>
+                    {/* Email */}
+                    <Row className="row-container" style={{justifyContent: "center"}}>
+                        <Link className="body-text" style={{color: '#F37833', padding: "0", marginTop: "10px"}} to={"/contact"}>info@ufsolargators.org</Link>
+                    </Row>
+                </Col>
             </Container>
         );
     }
+    //Desktop & Tablet
     else {
         return (
             <Container fluid="true" id="footer">
@@ -94,7 +82,6 @@ export default function Footer() {
                         {/*    Gainesville, FL 32611<br/>*/}
                         {/*</p>*/}
                         <Link className="body-text" style={{color: '#F37833', alignSelf: "flex-end"}} to={"/contact"}>info@ufsolargators.org</Link>
-
                     </Col>
                 </Row>
             </Container>

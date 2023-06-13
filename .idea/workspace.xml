@@ -7,12 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc4e1d2d-50d0-4b9c-91a0-44fd4e2a9b80" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/ExtremeCanopy.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/styles/Team.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Team.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Contact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Sponsor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Sponsor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Team.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Team.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/styles/Button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/styles/Footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/styles/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/styles/Home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
