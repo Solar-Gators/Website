@@ -14,3 +14,9 @@
   position: relative;
   align-items: center;
 }
+
+@media screen and (max-width: 425px) {
+  .cars-header-img {
+    height: 50vw;
+  }
+}

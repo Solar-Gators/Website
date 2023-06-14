@@ -97,11 +97,11 @@ function BlurbAndPicture({on_mobile, img, blurb, blurb2, img_align, img_above}) 
     }
     let Text = () => {
         return (
-            <Row>
+            <Row className={"no-margin-padding"}>
                 <div className="text-half-container">
-                    <p className={"body-text"} style={{paddingBottom: "0px"}}>{blurb}</p>
+                    <p className={"body-text"}>{blurb}</p>
                     {/* if there is a second paragraph */}
-                    { blurb2 ? <p className={"body-text"} style={{marginTop: "20px", paddingBottom: "0px"}}>{blurb2}</p> : ""}
+                    { blurb2 ? <p className={"body-text"} style={{paddingTop: "10px"}}>{blurb2}</p> : ""}
                 </div>
             </Row>
         )

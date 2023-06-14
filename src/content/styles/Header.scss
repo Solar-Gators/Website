@@ -297,13 +297,15 @@ $no-padding: 0;
     font-size: 42px;
   }
   .heading1-text {
-    font-size: 32px;
+    font-size: 28px;
   }
   .heading2-text {
     font-size: 24px;
+    padding-bottom: 32px;
   }
   .heading3-text {
     font-size: 20px;
+    padding-top: 30px;
   }
   .heading4-text {
     font-size: 16px;
@@ -312,7 +314,9 @@ $no-padding: 0;
     font-size: 12px;
   }
   .heading6-text {
-    font-size: 10px;
+    font-size: 12px;
+    padding-top: 8px;
+    padding-bottom: 10px;
   }
   .body-text {
     font-size: 10px;
@@ -333,15 +337,12 @@ $no-padding: 0;
   }
   .body-text {
     line-height: 18px;
+    padding-top: 18px;
     padding-bottom: 18px;
-    padding-right: 4vw;
-    padding-left: 4vw;
   }
   .body-text-white {
     line-height: 18px;
-    padding-top: 0;
+    padding-top: 18px;
     padding-bottom: 18px;
-    padding-right: 4vw;
-    padding-left: 4vw;
   }
 }
