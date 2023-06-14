@@ -114,7 +114,7 @@ export default function Contact() {
                         </Alert> : "" }
 
                         <Form onSubmit={onSubmit} validated={validated} noValidate>
-                            <Form.Group controlId="formBasicEmail" style={{paddingBottom: "15px"}}>
+                            <Form.Group controlId="formBasicEmail" style={{paddingBottom: "1vw"}}>
                                 <Form.Label className="body-text" style={{paddingBottom: "10px"}}>Name</Form.Label>
                                 <Form.Control type="text" placeholder="Enter name" id="contact-name" required />
                                 <Form.Control.Feedback type="invalid">
@@ -122,14 +122,14 @@ export default function Contact() {
                                 </Form.Control.Feedback>
                             </Form.Group>
 
-                            <Form.Group controlId="formBasicPassword" style={{paddingBottom: "15px"}}>
+                            <Form.Group controlId="formBasicPassword" style={{paddingBottom: "1vw"}}>
                                 <Form.Label className="body-text" style={{paddingBottom: "10px"}}>Email</Form.Label>
                                 <Form.Control type="email" placeholder="Enter email" id="contact-email" required />
                                 <Form.Control.Feedback type="invalid">
                                     Please enter your email.
                                 </Form.Control.Feedback>
                             </Form.Group>
-                            <Form.Group controlId="formBasicCheckbox" style={{paddingBottom: "15px"}}>
+                            <Form.Group controlId="formBasicCheckbox" style={{paddingBottom: "1vw"}}>
                                 <Form.Label className="body-text" style={{paddingBottom: "10px"}}>
                                     Message
                                 </Form.Label>
