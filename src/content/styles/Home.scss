@@ -27,13 +27,7 @@ $no-margin: 0;
     height: auto;
 
     margin: 0;
-
-    //background: #456703;
-    padding-top: 10vw;
-    padding-bottom: 8vw;
-    padding-left: 8vw;
-    padding-right: 8vw;
-
+    padding: 10vw 8vw 8vw 8vw;
 }
 
 .no-margin-padding {
@@ -47,12 +41,8 @@ $no-margin: 0;
 }
 
 .mission-statement {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 2vw;
-    margin-right: 2vw;
+    margin: 0 2vw;
     padding: 0;
-
     justify-content: center;
     width: 20vw;
 }
@@ -75,9 +65,7 @@ $animationSpeed: 50s;
 .slider {
     background: $dark_blue;
     height: 100%;
-    margin: auto;
-    margin-top: $content1-margin;
-    margin-bottom: $content1-margin - 10px;
+    margin: 0 auto;
     overflow: hidden;
     position: relative;
     width: 90%;
@@ -148,9 +136,7 @@ $animationSpeed: 50s;
     position: relative;
     width: 26%;
     height: 300px;
-    margin-left: 3%;
-    margin-right: 3%;
-    margin-top: 0px;
+    margin: 0 3%;
     transition: 0.5s ease;
 
     justify-content: center;
@@ -204,8 +190,7 @@ $animationSpeed: 50s;
     position: relative;
     width: 100%;
     height: 50%;
-    margin-top: 0;
-    margin-bottom: 0px;
+    margin: 0;
     justify-content: center;
 }
 
@@ -216,7 +201,7 @@ $animationSpeed: 50s;
 
 .car-card:hover {
     box-shadow: 0px 20px 20px 5px rgba(0, 0, 0, .25);
-    margin-top: -20px;
+    //margin: 0;
     transition: 0.5s ease;
 }
 
@@ -241,8 +226,7 @@ $animationSpeed: 50s;
         height: 50vw;
     }
     .section {
-        padding-left: 2vw;
-        padding-right: 2vw;
+        padding: 8vw 3vw 7vw;
     }
 
     .mission-statement {

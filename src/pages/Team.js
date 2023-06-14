@@ -136,38 +136,17 @@ function OfficerTeam({ eventkey, executive_board, on_mobile }) {
 
     //Row of officers in same category
     let OfficersRow = ({heading, officers}) => {
-        // if (on_mobile) {
-        //     return (
-        //         <Col className="no-margin-padding">
-        //             <Row className="no-margin-padding" style={{justifyContent: "center"}}>
-        //                 <h2 className={"heading2-text"}>{heading}</h2>
-        //                 {officers[0] ? <Officer name={officers[0][0]} title={officers[0][1]} img={officers[0][2]}/> : ""}
-        //                 {officers[1] ? <Officer name={officers[1][0]} title={officers[1][1]} img={officers[1][2]}/> : ""}
-        //             </Row>
-        //             <Row className="no-margin-padding" style={{justifyContent: "center"}}>
-        //                 {officers[2] ? <Officer name={officers[2][0]} title={officers[2][1]} img={officers[2][2]}/> : ""}
-        //                 {officers[3] ? <Officer name={officers[3][0]} title={officers[3][1]} img={officers[3][2]}/> : ""}
-        //             </Row>
-        //             <Row className="no-margin-padding" style={{justifyContent: "center"}}>
-        //                 {officers[4] ? <Officer name={officers[4][0]} title={officers[4][1]} img={officers[4][2]}/> : ""}
-        //                 {officers[5] ? <Officer name={officers[5][0]} title={officers[5][1]} img={officers[5][2]}/> : ""}
-        //             </Row>
-        //         </Col>
-        //     )
-        // }
-        // else {
-            return (
-                <Row className="no-margin-padding" style={{justifyContent: "center"}}>
-                    <h2 className={"heading2-text"} id="officer-category-heading">{heading}</h2>
-                    {officers[0] ? <Officer name={officers[0][0]} title={officers[0][1]} img={officers[0][2]}/> : ""}
-                    {officers[1] ? <Officer name={officers[1][0]} title={officers[1][1]} img={officers[1][2]}/> : ""}
-                    {officers[2] ? <Officer name={officers[2][0]} title={officers[2][1]} img={officers[2][2]}/> : ""}
-                    {officers[3] ? <Officer name={officers[3][0]} title={officers[3][1]} img={officers[3][2]}/> : ""}
-                    {officers[4] ? <Officer name={officers[4][0]} title={officers[4][1]} img={officers[4][2]}/> : ""}
-                    {officers[5] ? <Officer name={officers[5][0]} title={officers[5][1]} img={officers[5][2]}/> : ""}
-                </Row>
-            )
-        // }
+        return (
+            <Row className="no-margin-padding" style={{justifyContent: "center"}}>
+                <h2 className={"heading2-text"} id="officer-category-heading">{heading}</h2>
+                {officers[0] ? <Officer name={officers[0][0]} title={officers[0][1]} img={officers[0][2]}/> : ""}
+                {officers[1] ? <Officer name={officers[1][0]} title={officers[1][1]} img={officers[1][2]}/> : ""}
+                {officers[2] ? <Officer name={officers[2][0]} title={officers[2][1]} img={officers[2][2]}/> : ""}
+                {officers[3] ? <Officer name={officers[3][0]} title={officers[3][1]} img={officers[3][2]}/> : ""}
+                {officers[4] ? <Officer name={officers[4][0]} title={officers[4][1]} img={officers[4][2]}/> : ""}
+                {officers[5] ? <Officer name={officers[5][0]} title={officers[5][1]} img={officers[5][2]}/> : ""}
+            </Row>
+        )
     }
 
     //Officer Year
