@@ -35,7 +35,6 @@ export default function WebsiteNavbar() {
               <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
             </Nav.Item>
           </Nav>
-
           <div>
             <button className="btn-primary-small" onClick={() => { window.location.href = "/donate" }}>
               Donate

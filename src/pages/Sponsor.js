@@ -91,7 +91,7 @@ let bronze3 = [[MerritSupply, "https://www.merrittsupply.com/"], [WestSystems, "
 // var silver2 = [BayArea, IPPD, Rohacell, Mirage, FGCI, UFSG, Brembo, Accurate];
 // var bronze2 = [TDK, Zevia, Stickermule, SolarCat, Kevins, MossSolar, BMRS, BeadBuster, Hakko];
 
-function SponsorRow({ img1, img1link, img2, img2link, img3, img3link }) {
+function SponsorRow({ img1, link1, img2, link2, img3, link3 }) {
     let LogoImage = ({ src, link }) => {
         return (
             <Col className="logo-col">
@@ -105,9 +105,9 @@ function SponsorRow({ img1, img1link, img2, img2link, img3, img3link }) {
     }
   return (
     <Row className="no-margin-padding" style={{justifyContent: "center", alignItems: "center"}}>
-      { img1 ? <LogoImage src={img1} link={img1link} /> : ""}
-      { img2 ? <LogoImage src={img2} link={img2link} /> : ""}
-      { img3 ? <LogoImage src={img3} link={img3link} /> : ""}
+      { img1 ? <LogoImage src={img1} link={link1} /> : ""}
+      { img2 ? <LogoImage src={img2} link={link2} /> : ""}
+      { img3 ? <LogoImage src={img3} link={link3} /> : ""}
     </Row>
   )
 }
@@ -121,26 +121,26 @@ function ShowSponsors({car_num}) {
 
                 {/* PLATINUM */}
                 <h3 className="heading3-text" style={{paddingTop: "8vw"}}>Platinum Sponsors</h3>
-                <SponsorRow img1={platinum3[0][0]} img1link={platinum3[0][1]} img2={platinum3[1][0]} img2link={platinum3[1][1]} img3={platinum3[2][0]} img3link={platinum3[2][1]} />
+                <SponsorRow img1={platinum3[0][0]} link1={platinum3[0][1]} img2={platinum3[1][0]} link2={platinum3[1][1]} img3={platinum3[2][0]} link3={platinum3[2][1]} />
 
                 {/* GOLD */}
                 <h3 className="heading3-text">Gold Sponsors</h3>
-                <SponsorRow img1={gold3[0][0]} img1link={gold3[0][1]} img2={gold3[1][0]} img2link={gold3[1][1]} img3={gold3[2][0]} img3link={gold3[2][1]} />
-                <SponsorRow img1={gold3[3][0]} img1link={gold3[3][1]} img2={gold3[4][0]} img2link={gold3[4][1]} />
+                <SponsorRow img1={gold3[0][0]} link1={gold3[0][1]} img2={gold3[1][0]} link2={gold3[1][1]} img3={gold3[2][0]} link3={gold3[2][1]} />
+                <SponsorRow img1={gold3[3][0]} link1={gold3[3][1]} img2={gold3[4][0]} link2={gold3[4][1]} />
 
                 {/* SILVER */}
                 <h3 className="heading3-text">Silver Sponsors</h3>
-                <SponsorRow img1={silver3[0][0]} img1link={silver3[0][1]} img2={silver3[1][0]} img2link={silver3[1][1]} img3={silver3[2][0]} img3link={silver3[2][1]} />
-                <SponsorRow img1={silver3[3][0]} img1link={silver3[3][1]} img2={silver3[4][0]} img2link={silver3[4][1]} img3={silver3[5][0]} img3link={silver3[5][1]}/>
-                <SponsorRow img1={silver3[6][0]} img1link={silver3[6][1]} img2={silver3[7][0]} img2link={silver3[7][1]} img3={silver3[8][0]} img3link={silver3[8][1]}/>
+                <SponsorRow img1={silver3[0][0]} link1={silver3[0][1]} img2={silver3[1][0]} link2={silver3[1][1]} img3={silver3[2][0]} link3={silver3[2][1]} />
+                <SponsorRow img1={silver3[3][0]} link1={silver3[3][1]} img2={silver3[4][0]} link2={silver3[4][1]} img3={silver3[5][0]} link3={silver3[5][1]}/>
+                <SponsorRow img1={silver3[6][0]} link1={silver3[6][1]} img2={silver3[7][0]} link2={silver3[7][1]} img3={silver3[8][0]} link3={silver3[8][1]}/>
 
                 {/* BRONZE */}
                 <h3 className="heading3-text">Bronze Sponsors</h3>
-                <SponsorRow img1={bronze3[0][0]} img1link={bronze3[0][1]} img2={bronze3[1][0]} img2link={bronze3[1][1]} img3={bronze3[2][0]} img3link={bronze3[2][1]} />
-                <SponsorRow img1={bronze3[3][0]} img1link={bronze3[3][1]} img2={bronze3[4][0]} img2link={bronze3[4][1]} img3={bronze3[5][0]} img3link={bronze3[5][1]}/>
-                <SponsorRow img1={bronze3[6][0]} img1link={bronze3[6][1]} img2={bronze3[7][0]} img2link={bronze3[7][1]} img3={bronze3[8][0]} img3link={bronze3[8][1]} />
-                <SponsorRow img1={bronze3[9][0]} img1link={bronze3[9][1]} img2={bronze3[10][0]} img2link={bronze3[10][1]} img3={bronze3[11][0]} img3link={bronze3[11][1]}/>
-                <SponsorRow img1={bronze3[12][0]} img1link={bronze3[12][1]}  img2={bronze3[13][0]} img2link={bronze3[13][1]} img3={bronze3[14][0]} img3link={bronze3[14][1]}/>
+                <SponsorRow img1={bronze3[0][0]} link1={bronze3[0][1]} img2={bronze3[1][0]} link2={bronze3[1][1]} img3={bronze3[2][0]} link3={bronze3[2][1]} />
+                <SponsorRow img1={bronze3[3][0]} link1={bronze3[3][1]} img2={bronze3[4][0]} link2={bronze3[4][1]} img3={bronze3[5][0]} link3={bronze3[5][1]}/>
+                <SponsorRow img1={bronze3[6][0]} link1={bronze3[6][1]} img2={bronze3[7][0]} link2={bronze3[7][1]} img3={bronze3[8][0]} link3={bronze3[8][1]} />
+                <SponsorRow img1={bronze3[9][0]} link1={bronze3[9][1]} img2={bronze3[10][0]} link2={bronze3[10][1]} img3={bronze3[11][0]} link3={bronze3[11][1]}/>
+                <SponsorRow img1={bronze3[12][0]} link1={bronze3[12][1]}  img2={bronze3[13][0]} link2={bronze3[13][1]} img3={bronze3[14][0]} link3={bronze3[14][1]}/>
             </Container>
         );
     }
@@ -171,9 +171,6 @@ export default function Sponsor() {
                     design, build and test our solar cars. Thank you.
                 </p>
             </Row>
-            <Button className="btn-primary"
-                    as={Link} to={"/donate"} onClick={() => {window.scroll(0,0);}}>
-                    Sponsor Us</Button>
         </Container>
 
         <ShowSponsors car_num={"3"}/>

@@ -19,9 +19,9 @@ function SplitSection ({name, year1, year2, blurb, img, pic_side, on_mobile}) {
                 <Col className={"no-margin-padding"}>
                     <div className="text-half-container">
                         <h1 className="heading2-text" style={{paddingBottom: "0px"}}>{name}</h1>
-                        <h6 className="heading6-text" style={{paddingBottom: "20px"}}>{year1} - {year2}</h6>
+                        <h6 className="heading6-text" style={{paddingBottom: "15px"}}>{year1} - {year2}</h6>
                         <ImageContent/>
-                        <p className={"body-text"} style={{color: textColor}}>{blurb}</p>
+                        <p className={"body-text"} style={{color: textColor, paddingTop: "20px"}}>{blurb}</p>
                     </div>
                 </Col>
             )
@@ -125,7 +125,7 @@ export default function Cars() {
                 </p>
                 <Button className="btn-primary" as={Link} to={"/donate"}
                         onClick={() => {window.scroll(0,0);}}>
-                    Sponsor Us
+                    Donate
                 </Button>
             </Container>
 

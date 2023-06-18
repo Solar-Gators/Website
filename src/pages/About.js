@@ -134,7 +134,7 @@ function BlurbAndPicture({on_mobile, img, blurb, blurb2, img_align, img_above}) 
 function MissionStatements({on_mobile, accent1, blurb1, accent2, blurb2, accent3, blurb3, accent4, blurb4}) {
     let Text = ({accent, blurb}) => {
         return (
-            <p className={"body-text-white"} style={{paddingLeft: "0", paddingRight: "0"}}><span style={{color: "#F37833", fontWeight: "bold", display: "inline"}}>{accent}</span>{blurb}</p>
+            <p className={"body-text-white"} style={{paddingBottom: "16px"}}><span style={{color: "#F37833", fontWeight: "bold", display: "inline"}}>{accent}</span>{blurb}</p>
         )
     }
 
@@ -174,7 +174,7 @@ function TrackRecord({on_mobile, blurb1, blurb2, blurb3, blurb4}) {
     let Text = ({blurb}) => {
         return (
             <ol className="no-margin-padding" style={{listStyleType: 'square', marginLeft: "5vw"}}>
-                <li className={"body-text-white"} style={{paddingLeft: "0", paddingRight: "0"}}>{blurb}</li>
+                <li className={"body-text-white"} style={{paddingBottom: "16px"}}>{blurb}</li>
             </ol>
         )
     }
@@ -208,6 +208,20 @@ function TrackRecord({on_mobile, blurb1, blurb2, blurb3, blurb4}) {
                 </Col>
             </Row>
         )
+    }
+}
+
+function DonateButton ({on_mobile}) {
+    if (!on_mobile) {
+        return (
+            <Button className="btn-primary" as={Link} to={"/donate"}
+                    onClick={() => {window.scroll(0,0);}}>
+                Donate
+            </Button>
+        )
+    }
+    else {
+        return ("")
     }
 }
 
@@ -282,18 +296,13 @@ export default function About() {
                         Our Cars
                     </h2>
                 </Row>
-
                 <Row className={"car-cards"}>
                     <Car car_img={car1} car_name={"Torch"} car_year1={"2017"} car_year2={"2018"}></Car>
                     <Car car_img={car2} car_name={"Cielo"} car_year1={"2018"} car_year2={"2019"}></Car>
                     <Car car_img={car3} car_name={"Sunrider"} car_year1={"2020"} car_year2={"present"}></Car>
                 </Row>
-
                 <Row>
-                    <Button className="btn-primary" as={Link} to={"/donate"}
-                            onClick={() => {window.scroll(0,0);}}>
-                        Sponsor Us
-                    </Button>
+                    <DonateButton on_mobile={mobileView}/>
                 </Row>
 
             </Container>
