@@ -9,31 +9,30 @@ import sponsorshipTiers from '../content/assets/images/uncategorized/Sponsorship
 
 function CollapsableComponent( {open, setOpen, label, text, emphasis, link}){
     return (
-        <Row>
-        <Col style={{paddingLeft: "15%", paddingRight: "15%"}}>
-            <h5 className="heading5-text" style={{justifyContent: "left", alignContent: "center", paddingTop: "8px", paddingBottom: "8px", color: "black"}}>
-                <Button className="btn-collapsable-field"
-                        onClick={() => setOpen(!open)}
-                        aria-controls="online-collapse-text"
-                        aria-expanded={open}
-                >+</Button>
-                {label}
-            </h5>
-            <Collapse in={open} style={{marginLeft: "50px"}}>
-                <div id="online-collapse-text" style={{paddingTop: "20px"}}>
-                    <p className="body-text" style={{marginBottom: "0px"}}>{text}
-                        {/* Orange Emphasis Text */}
-                        <span style={{color: "#F37833", fontWeight: "500", display: "inline"}}>{emphasis}</span>
+        <Row className="no-margin-padding">
+            <Col className="collapse-col">
+                <h5 className="heading5-text" id="collapse-heading">
+                    <Button className="btn-collapsable-field"
+                            onClick={() => setOpen(!open)}
+                            aria-controls="online-collapse-text"
+                            aria-expanded={open}
+                    >+</Button>
+                    {label}
+                </h5>
+                <Collapse in={open} id="collapse-content">
+                    <div id="collapse-text">
+                        <p className="body-text" style={{marginBottom: "0px"}}>{text}
+                            {/* Orange Emphasis Text */}
+                            <span style={{color: "#F37833", fontWeight: "500", display: "inline"}}>{emphasis}</span>
 
-                        {/* Hyperlink if one */}
-                        { {link} ? <Link className="body-text" style={{color: '#F37833', display: 'inline'}}
-                                        to={"/contact"} onClick={() => {window.scroll(0,0);}}>{link}</Link> : ""}
-                    </p>
-
-                </div>
-            </Collapse>
-        </Col>
-    </Row>
+                            {/* Hyperlink if one */}
+                            { {link} ? <Link className="body-text" style={{color: '#F37833', display: 'inline'}}
+                                            to={"/contact"} onClick={() => {window.scroll(0,0);}}>{link}</Link> : ""}
+                        </p>
+                    </div>
+                </Collapse>
+            </Col>
+        </Row>
     )
 }
 
@@ -61,28 +60,31 @@ export default function Donate() {
 
             {/*  About Donations  */}
             <Container fluid="true" className="section">
-                <h3 className="heading3-text" style={{paddingTop: "0", paddingBottom: "50px"}}>
-                    About Donations</h3>
                 <Row>
-                    <Col>
-                        <p className="body-text" style={{paddingLeft: "6%", paddingRight: "6%", paddingBottom: "25px"}}>
-                            A project of this scale would not be possible without the generosity and support of our sponsors. Your support will not only help us build a lighter, faster and more efficient car, but will also provide a platform for the next generation of engineers to develop their skills.
-                            We offer a variety of different donation options, but appreciate any contribution to our organization. For those who would like to play a larger role, find out more about our sponsorship opportunities below!
-                        </p>
-                    </Col>
+                    <h2 className="heading2-text">
+                        About Donations
+                    </h2>
+                </Row>
+
+                <Row className="no-margin-padding">
+                    <p className="body-text" style={{paddingBottom: "25px"}}>
+                        A project of this scale would not be possible without the generosity and support of our sponsors. Your support will not only help us build a lighter, faster and more efficient car, but will also provide a platform for the next generation of engineers to develop their skills.
+                        We offer a variety of different donation options, but appreciate any contribution to our organization. For those who would like to play a larger role, find out more about our sponsorship opportunities below!
+                    </p>
                 </Row>
 
                 {/*  Collapsable fields  */}
                 <CollapsableComponent open={open0} setOpen={setOpen0} label={"Online Donations"}
-                                  text={"Online contributions are made via the University of Florida Advancement website. "}
-                                  emphasis={"Please be sure to mention \"Solar Gators\" in the comment box."}
-                                  link=""
-                ></CollapsableComponent>
+                      text={"Online contributions are made via the University of Florida Advancement website. "}
+                      emphasis={"Please be sure to mention \"Solar Gators\" in the comment box."}
+                      link=""
+                />
                 <CollapsableComponent open={open1} setOpen={setOpen1} label={"Other Options"}
-                                      text={"If you would prefer to make a contribution by check or donate materials, please contact us at "}
-                                      link={"info@ufsolargators.org"}
-                ></CollapsableComponent>
-                <p className="body-text" style={{paddingLeft: "6%", paddingRight: "6%", paddingTop: "25px",}}>
+                      text={"If you would prefer to make a contribution by check or donate materials, please contact us at "}
+                      link={"info@ufsolargators.org"}
+                />
+
+                <p className="body-text" style={{paddingTop: "25px"}}>
                     Your generosity helps us to build our solar car and so much more. We are grateful that you are considering joining us on our mission towards a brighter, more sustainable future.
                 </p>
 

@@ -198,9 +198,9 @@ $no-padding: 0;
   position: relative;
   justify-content: center;
   width: 100%;
-  top: 0px;
-  padding-top: $heading5-padding-top;
-  padding-bottom: $heading5-padding-bottom;
+  top: 0;
+  margin: 0;
+  padding: $heading5-padding-top 0 $heading5-padding-bottom;
 }
 
 /* Heading 6 */
@@ -253,11 +253,12 @@ $no-padding: 0;
   color: $white;
   //transition: 5ms ease-in-out;
 
-  padding: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 
-
+//Resize text for large tablets: scale font down 25%
 @media screen and (max-width: 768px) {
   .title-text {
     font-size: 52px;
@@ -267,6 +268,7 @@ $no-padding: 0;
   }
   .heading2-text {
     font-size: 28px;
+    padding-bottom: 28px;
   }
   .heading3-text {
     font-size: 24px;
@@ -285,5 +287,57 @@ $no-padding: 0;
   }
   .body-text-white {
     font-size: 12px;
+  }
+}
+
+//Resize text for small tablets & mobile: scale font down 50%
+@media screen and (max-width: 570px) {
+  .title-text {
+    font-size: 42px;
+  }
+  .heading1-text {
+    font-size: 28px;
+  }
+  .heading2-text {
+    font-size: 24px;
+    padding-bottom: 24px;
+  }
+  .heading3-text {
+    font-size: 20px;
+    padding-top: 75px;
+  }
+  .heading4-text {
+    font-size: 16px;
+  }
+  .heading5-text {
+    font-size: 12px;
+  }
+  .heading6-text {
+    font-size: 12px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+  }
+  .body-text {
+    font-size: 12px;
+  }
+  .body-text-white {
+    font-size: 12px;
+  }
+}
+
+//Resize header & text for mobile
+@media screen and (max-width: 425px) {
+  .header {
+    height: 50vw;
+  }
+  .title-text {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .body-text {
+    line-height: 18px;
+  }
+  .body-text-white {
+    line-height: 18px;
   }
 }

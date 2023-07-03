@@ -18,7 +18,6 @@ Pulled from: https://bbbootstrap.com/snippets/social-media-icons-footer-54412302
 #sg-logo {
     width: 120px;
     height: max-content;
-
     align-self: flex-end;
 }
 
@@ -30,6 +29,7 @@ Pulled from: https://bbbootstrap.com/snippets/social-media-icons-footer-54412302
     position: relative;
 
     padding: 0;
+    margin: 0;
 }
 
 .row-container {
@@ -41,6 +41,9 @@ Pulled from: https://bbbootstrap.com/snippets/social-media-icons-footer-54412302
 
     justify-content: center;
     align-content: center;
+
+    padding: 0;
+    margin: 0;
 }
 
 #address {
@@ -64,12 +67,24 @@ Pulled from: https://bbbootstrap.com/snippets/social-media-icons-footer-54412302
     //padding: 0;
 }
 
-/* Resize for larger mobile devices
+/* Resize for larger tablet devices
 @media screen and (max-width: 768px) {
 
 }*/
 
-/* Resize for mobile devices
-@media screen and (max-width: 600px) {
-
-}*/
+/* Resize for mobile devices */
+@media screen and (max-width: 425px) {
+    #footer {
+        padding-top: 8vw;
+        padding-bottom: 8vw;
+    }
+    .row-container {
+        justify-content: left;
+    }
+    .column-container {
+        width: auto;
+        justify-content: center;
+        align-content: center;
+        display: block;
+    }
+}

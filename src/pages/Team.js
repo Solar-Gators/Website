@@ -109,17 +109,20 @@ function AcademicYear({ eventkey }) {
     );
 }
 
-function OfficerTeam({ eventkey, executive_board }) {
+function OfficerTeam({ eventkey, executive_board, on_mobile }) {
 
     //Individual Officer
     let Officer = ({ name, title, img }) => {
         let padding = 13.5;
+        if (on_mobile) {
+            padding = 2;
+        }
         //to align title properly for people with long name
         if (name.length > 19) {
             padding = 2;
         }
         return (
-            <Col style={{ maxWidth: '186px', justifyContent: "center", margin: "1vw", padding: "0"}}>
+            <Col className="officer-col">
                 <div className={"officer-container"}>
                     <div className={"headshot"}>
                         <img className={"headshot-img"} src={img}></img>
@@ -134,14 +137,14 @@ function OfficerTeam({ eventkey, executive_board }) {
     //Row of officers in same category
     let OfficersRow = ({heading, officers}) => {
         return (
-            <Row style={{justifyContent: "center"}}>
-                <h2 className={"heading2-text"} style={{paddingTop: "50px"}}>{heading}</h2>
-                { officers[0] ? <Officer name={officers[0][0]} title={officers[0][1]} img={officers[0][2]} /> : "" }
-                { officers[1] ? <Officer name={officers[1][0]} title={officers[1][1]} img={officers[1][2]} /> : "" }
-                { officers[2] ? <Officer name={officers[2][0]} title={officers[2][1]} img={officers[2][2]} /> : "" }
-                { officers[3] ? <Officer name={officers[3][0]} title={officers[3][1]} img={officers[3][2]} /> : "" }
-                { officers[4] ? <Officer name={officers[4][0]} title={officers[4][1]} img={officers[4][2]} /> : "" }
-                { officers[5] ? <Officer name={officers[5][0]} title={officers[5][1]} img={officers[5][2]} /> : "" }
+            <Row className="no-margin-padding" style={{justifyContent: "center"}}>
+                <h2 className={"heading2-text"} id="officer-category-heading">{heading}</h2>
+                {officers[0] ? <Officer name={officers[0][0]} title={officers[0][1]} img={officers[0][2]}/> : ""}
+                {officers[1] ? <Officer name={officers[1][0]} title={officers[1][1]} img={officers[1][2]}/> : ""}
+                {officers[2] ? <Officer name={officers[2][0]} title={officers[2][1]} img={officers[2][2]}/> : ""}
+                {officers[3] ? <Officer name={officers[3][0]} title={officers[3][1]} img={officers[3][2]}/> : ""}
+                {officers[4] ? <Officer name={officers[4][0]} title={officers[4][1]} img={officers[4][2]}/> : ""}
+                {officers[5] ? <Officer name={officers[5][0]} title={officers[5][1]} img={officers[5][2]}/> : ""}
             </Row>
         )
     }
@@ -149,7 +152,7 @@ function OfficerTeam({ eventkey, executive_board }) {
     //Officer Year
     if (eventkey === "202223") {
         return (
-            <Col className="officer-row-col">>
+            <Col className="no-margin-padding" style={{justifyContent: "center"}}>
                 <OfficersRow heading="Executive Board" officers={executive_board22}></OfficersRow>
                 <OfficersRow heading="Project Managers" officers={pms22}></OfficersRow>
                 <OfficersRow heading="Mechanical and Aerobody" officers={mech_aero22}></OfficersRow>
@@ -185,6 +188,10 @@ export default class Team extends React.Component {
     }
 
     render() {
+        /* mql = media query list (https://dev.to/yanns1/how-to-render-different-components-based-on-screen-size-2p35) */
+        const mql = window.matchMedia('(max-width: 425px)');
+        let mobileView = mql.matches;
+
         return (
             <React.Fragment >
             {/*  Page Header    */}
@@ -241,7 +248,7 @@ export default class Team extends React.Component {
                     </Dropdown>
               </Col>
 
-                <OfficerTeam eventkey={this.state.eventkey} executive_board={this.state.executive_board}/>
+                <OfficerTeam eventkey={this.state.eventkey} executive_board={this.state.executive_board} on_mobile={mobileView}/>
 
             </Container>
             </React.Fragment>

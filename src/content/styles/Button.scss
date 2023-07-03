@@ -170,24 +170,23 @@ $square-button-height-width: 40px;
   width: $square-button-height-width;
   height: $square-button-height-width;
 
-  margin: 0;
-  margin-right: 10px;
+  margin: 0  1vw 0 0;
   left: 0;
   right: 0;
+  top: 0;
 
-  align-items: center;
-  text-align: center;
-  text-transform: capitalize;
+  //align-items: center;
+  //text-align: center;
+  //text-transform: capitalize;
 
   color: $bright_blue;
   background-color: transparent;
   border: 3px solid $bright_blue;
   border-radius: 10px;
 
-  display: flex;
-  position: relative;
-  justify-content: center;
-  top: 0px;
+  //display: flex;
+  //position: relative;
+  //justify-content: center;
 }
 
 /* Resize for shrunk desktop window
@@ -208,9 +207,33 @@ $square-button-height-width: 40px;
   }
 
   .btn-social-media-icon {
-    width: 40px;
-    height: 40px;
+    width: $square-button-height-width;
+    height: $square-button-height-width;
 
     left: 0;
+  }
+}
+
+/* Resize for large tablet - scale down 25% */
+@media screen and (max-width: 425px) {
+  .btn-primary {
+    margin-top: 8vw;
+    margin-bottom: 3vw;
+  }
+  .btn-social-media-icon {
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+  .btn-collapsable-field {
+    width: $square-button-height-width;
+    height: $square-button-height-width;
+    margin: 0 4vw;
+    padding: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+  .btn-primary-small {
+    margin: 5px 0 25px;
   }
 }

@@ -55,3 +55,18 @@
   border-radius: 0px;
 }
 
+//Resize text for mobile
+@media screen and (max-width: 425px) {
+  .contact-header-img {
+    height: 50vw;
+  }
+  #contact-name {
+    font-size: 12px;
+  }
+  #contact-email {
+    font-size: 12px;
+  }
+  #contact-msg {
+    font-size: 12px;
+  }
+}
