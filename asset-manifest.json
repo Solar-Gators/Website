@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.dc0a0644.chunk.css",
-    "main.js": "/static/js/main.9094c462.chunk.js",
-    "main.js.map": "/static/js/main.9094c462.chunk.js.map",
+    "main.css": "/static/css/main.34da5939.chunk.css",
+    "main.js": "/static/js/main.a780fbd1.chunk.js",
+    "main.js.map": "/static/js/main.a780fbd1.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3bb3c85a.js",
     "runtime-main.js.map": "/static/js/runtime-main.3bb3c85a.js.map",
     "static/css/2.375bef05.chunk.css": "/static/css/2.375bef05.chunk.css",
-    "static/js/2.87237b44.chunk.js": "/static/js/2.87237b44.chunk.js",
-    "static/js/2.87237b44.chunk.js.map": "/static/js/2.87237b44.chunk.js.map",
+    "static/js/2.09a35668.chunk.js": "/static/js/2.09a35668.chunk.js",
+    "static/js/2.09a35668.chunk.js.map": "/static/js/2.09a35668.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.375bef05.chunk.css.map": "/static/css/2.375bef05.chunk.css.map",
-    "static/css/main.dc0a0644.chunk.css.map": "/static/css/main.dc0a0644.chunk.css.map",
-    "static/js/2.87237b44.chunk.js.LICENSE.txt": "/static/js/2.87237b44.chunk.js.LICENSE.txt",
+    "static/css/main.34da5939.chunk.css.map": "/static/css/main.34da5939.chunk.css.map",
+    "static/js/2.09a35668.chunk.js.LICENSE.txt": "/static/js/2.09a35668.chunk.js.LICENSE.txt",
     "static/media/3A.cb62ab00.png": "/static/media/3A.cb62ab00.png",
     "static/media/AB_body21.7d3af8e7.jpg": "/static/media/AB_body21.7d3af8e7.jpg",
     "static/media/AUX21.79c83b65.jpg": "/static/media/AUX21.79c83b65.jpg",
@@ -60,7 +60,7 @@
     "static/media/VR3.d105427b.png": "/static/media/VR3.d105427b.png",
     "static/media/VicePresident20.a0ae8c04.png": "/static/media/VicePresident20.a0ae8c04.png",
     "static/media/WestSystem.fa9ff176.png": "/static/media/WestSystem.fa9ff176.png",
-    "static/media/ZenithTecnica.fc743c6f.png": "/static/media/ZenithTecnica.fc743c6f.png",
+    "static/media/ZenithTecnica.f9db83b2.png": "/static/media/ZenithTecnica.f9db83b2.png",
     "static/media/aero22.7cb66811.JPG": "/static/media/aero22.7cb66811.JPG",
     "static/media/aerobody22.7cb66811.JPG": "/static/media/aerobody22.7cb66811.JPG",
     "static/media/battery22.7fff554e.JPG": "/static/media/battery22.7fff554e.JPG",
@@ -108,8 +108,8 @@
   "entrypoints": [
     "static/js/runtime-main.3bb3c85a.js",
     "static/css/2.375bef05.chunk.css",
-    "static/js/2.87237b44.chunk.js",
-    "static/css/main.dc0a0644.chunk.css",
-    "static/js/main.9094c462.chunk.js"
+    "static/js/2.09a35668.chunk.js",
+    "static/css/main.34da5939.chunk.css",
+    "static/js/main.a780fbd1.chunk.js"
   ]
 }
