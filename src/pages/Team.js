@@ -1,59 +1,55 @@
 import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import Dropdown from "react-bootstrap/Dropdown";
-import Header from '../components/Header'
 
-import headerImg from "../content/assets/images/new-teams.JPG"
-import president22 from "../content/assets/images/president22.JPG";
-import vicepresident22 from "../content/assets/images/vicepresident22.JPG";
-import treasurer22 from "../content/assets/images/treasurer22.JPG";
-import secretary22 from "../content/assets/images/secretary22.JPG";
-import business22 from "../content/assets/images/businesscoordinator22.JPG";
-import mechanicalPM22 from "../content/assets/images/mechanicalPM22.JPG";
-import electricalPM22 from "../content/assets/images/electricalPM22.JPG";
-import integrationPM22 from "../content/assets/images/integrationPM22.JPG";
-import aerobody22 from "../content/assets/images/aerobody22.JPG";
-import batterypack22 from "../content/assets/images/batterypack22.JPG";
-import brakes22 from "../content/assets/images/brakes22.JPG";
-import suspension22 from "../content/assets/images/businesscoordinator22.JPG";
-import chassis22 from "../content/assets/images/treasurer22.JPG";
-import embeddedsystems22 from "../content/assets/images/embeddedsystems22.JPG";
-import highvoltage22 from "../content/assets/images/highvoltage22.JPG";
-import lowvoltage22 from "../content/assets/images/electricalPM22.JPG";
-import powermanagement22 from "../content/assets/images/powermanagement22.JPG";
+import president22      from "../content/assets/images/officers/2022/president22.JPG";
+import vicepresident22  from "../content/assets/images/officers/2022/vp22.JPG";
+import treasurer22      from "../content/assets/images/officers/2022/treasurer22.JPG";
+import secretary22      from "../content/assets/images/officers/2022/secretary22.JPG";
+import business22       from "../content/assets/images/officers/2022/business22.JPG";
+import mechanicalPM22   from "../content/assets/images/officers/2022/mechPM22.JPG";
+import electricalPM22   from "../content/assets/images/officers/2022/electricalPM22.JPG";
+import integrationPM22  from "../content/assets/images/officers/2022/integPM22.JPG";
+import aerobody22       from "../content/assets/images/officers/2022/aero22.JPG";
+import batterypack22    from "../content/assets/images/officers/2022/battery22.JPG";
+import brakes22         from "../content/assets/images/officers/2022/brakes22.JPG";
+import suspension22     from "../content/assets/images/officers/2022/business22.JPG";
+import chassis22        from "../content/assets/images/officers/2022/treasurer22.JPG";
+import embeddedsystems22 from "../content/assets/images/officers/2022/embedsyst22.JPG";
+import highvoltage22    from "../content/assets/images/officers/2022/highvolt22.JPG";
+import lowvoltage22     from "../content/assets/images/officers/2022/electricalPM22.JPG";
+import powermanagement22 from "../content/assets/images/officers/2022/power22.JPG";
 
-import president21 from "../content/assets/images/VicePresident20.png";
-import vicepresident21 from "../content/assets/images/Secretary20.png";
-import treasurer21 from "../content/assets/images/Treasurer21.jpg";
-import secretary21 from "../content/assets/images/Secretary21.jpg";
-import business21 from "../content/assets/images/Business21.png";
-import AB_body21 from "../content/assets/images/AB_body21.jpg";
-import AB_solararray21 from "../content/assets/images/morgen.jpg";
-import E_auxiliary21 from "../content/assets/images/AUX21.jpg";
-import E_bms21 from "../content/assets/images/Treasurer20.jpg";
-import E_motorcontroller from "../content/assets/images/Business21.png";
-import E_powerboard from "../content/assets/images/Business20.JPG";
-import E_telemetry from "../content/assets/images/mu.jpg";
-import M_batterybox21 from "../content/assets/images/daniel.jpg";
-import M_brakes21 from "../content/assets/images/Brendan21.jpg";
-import M_chassis from "../content/assets/images/M_chassis.jpg";
-import M_suspension from "../content/assets/images/M_suspension.JPG";
+import president21      from "../content/assets/images/officers/2021/president21.png";
+import vicepresident21  from "../content/assets/images/officers/2021/vp21.png";
+import treasurer21      from "../content/assets/images/officers/2021/treasurer21.jpg";
+import secretary21      from "../content/assets/images/officers/2021/secretary21.jpg";
+import business21       from "../content/assets/images/officers/2021/business21.png";
+import aerobody21       from "../content/assets/images/AB_body21.jpg";     //pierre
+import solararray21     from "../content/assets/images/officers/2021/solararray21.jpg";
+import auxiliary21      from "../content/assets/images/officers/2021/auxilary21.jpg";
+import bms21            from "../content/assets/images/officers/2021/bms21.jpg";
+import motorcontroller21 from "../content/assets/images/officers/2021/business21.png";
+import powerboard21     from "../content/assets/images/officers/2021/power21.JPG";
+import telemetry21      from "../content/assets/images/officers/2021/telemetry21.jpg";
+import battery21        from "../content/assets/images/officers/2022/mechPM22.JPG";
+import brakes21         from "../content/assets/images/officers/2022/vp22.JPG";
+import chassis21        from "../content/assets/images/officers/2021/chassis21.jpg";
+import suspension21     from "../content/assets/images/officers/2021/suspension21.JPG";
 
-import president20 from "../content/assets/images/president20.JPG";
-import vicepresident20 from "../content/assets/images/VicePresident20.png";
-import treasurer20 from "../content/assets/images/Treasurer20.jpg";
-import secretary20 from "../content/assets/images/Secretary20.png";
-import business20 from "../content/assets/images/Business20.JPG";
+import president20      from "../content/assets/images/officers/2020/president20.JPG";
+import vicepresident20  from "../content/assets/images/officers/2020/vicepresident20.png";
+import treasurer20      from "../content/assets/images/officers/2020/treasurer20.jpg";
+import secretary20      from "../content/assets/images/officers/2020/secretary20.png";
+import business20       from "../content/assets/images/officers/2020/business20.JPG";
 
-
-import president19 from "../content/assets/images/president20.JPG";
-import vicepresident19 from "../content/assets/images/vicepresident19.JPG";
-import treasurer19 from "../content/assets/images/treasurer19.JPG";
-import secretary19 from "../content/assets/images/secretary19.JPG";
-import business19 from "../content/assets/images/business19.JPG";
+import president19      from "../content/assets/images/officers/2019/president19.JPG";
+import vicepresident19  from "../content/assets/images/officers/2019/vicepresident19.JPG";
+import treasurer19      from "../content/assets/images/officers/2019/treasurer19.JPG";
+import secretary19      from "../content/assets/images/officers/2019/secretary19.JPG";
+import business19       from "../content/assets/images/officers/2019/business19.JPG";
 
 //2022-23 Officers: (Names, Positions, Headshot)
 let executive_board22 = [["Christian Michaelis", "President", president22], ["Lauren Shaw", "Vice President", vicepresident22], ["Andrew Carter", "Secretary", secretary22],
@@ -68,23 +64,29 @@ let electrical22 =  [ ["Yashasvi Bhat", "Embedded Systems", embeddedsystems22], 
 let executive_board21 = [["Charles Stone", "President", president21], ["Irene Chung", "Vice President",vicepresident21],
     ["Maya Greene", "Secretary", secretary21], ["Jamie Van Der Veken", "Treasurer", treasurer21],
     ["Christian Michaelis", "Business Coordinator", business21]];
-let mech_aero21 =[["Justin Nelson", "Aerobody", AB_body21], ["Morgen Anthony", "Solar Array", AB_solararray21], ["Daniel Kogstrom", "Battery Box", M_batterybox21],
-    ["Brendan Reiss","Brakes", M_brakes21], ["Shane Lovello","Chassis",M_chassis], ["Jessica Le", "Suspension", M_suspension]];
-let electrical21 = [["Taylor Gerke", "Auxiliary", E_auxiliary21], ["Yash Bhat", "Battery Management", E_bms21],
-    ["Christian Michaelis", "Motor Control", E_motorcontroller], ["Polina Leger", "Power Board", E_powerboard],
-    ["Muhamed Hobi", "Telemetry", E_telemetry]];
+let pms21 = [["Brenden Reiss", "Mechanical PM"], ["Muhamed Hobi", "Electrical PM"], ["Pierre Angibaud", "Aero PM"]];
+//aerobody: Pierre Angibaud
+let mech_aero21 =[["Justin Nelson", "Aerobody", aerobody21], ["Morgen Anthony", "Solar Array", solararray21], ["Marcelo Valdez", "Battery Box", battery21],
+    ["Lauren Shaw","Brakes", brakes21], ["Shane Lovello","Chassis",chassis21], ["Jessica Le", "Suspension", suspension21]];
+let electrical21 = [["Taylor Gerke", "Auxiliary", auxiliary21], ["Yash Bhat", "Battery Management", bms21],
+    ["Christian Michaelis", "Motor Control", motorcontroller21], ["Polina Leger", "Power Board", powerboard21],
+    ["Muhamed Hobi", "Telemetry", telemetry21]];
 
 //2020-21 Officers
 let executive_board20 = [["Stephen Thomas", "President", president20], ["Charles Stone", "Vice President",vicepresident20],
-    ["Irene Chung", "Secretary", secretary20], ["Yash Bhat", "Treasurer", treasurer20],
+    ["Yash Bhat", "Treasurer", treasurer20], ["Irene Chung", "Secretary", secretary20],
     ["Polina Leger", "Business Coordinator", business20]];
+let pms20 = [["Bridgette Ortiz & Adam Edwards", "Mechanical PM"],
+    ["Samuel Cuervo", "Electrical PM"],
+    ["Valeria Niebles & Jennifer Brett", "Aero PM"]];
+
 
 //2019-20 Officers
 let executive_board19 = [["Stephen Thomas", "President", president19], ["Mariana Casas", "Vice President",vicepresident19],
-    ["Katie Preiser", "Secretary", secretary19], ["Nathan Andreo", "Treasurer", treasurer19],
+    ["Nathan Andreo", "Treasurer", treasurer19], ["Katie Preiser", "Secretary", secretary19],
     ["Kaitlyn Lyons", "Business Coordinator", business19]];
 
-
+let pms19 = [["Jovani Hernandez", "Mechanical PM"], ["John Carr", "Electrical PM"], ["Pierre Angibaud", "Aero PM"], ["Valeria Giraldo", "General PM"]];
 function AcademicYear({ eventkey }) {
     var year1;
     var year2;
@@ -198,7 +200,7 @@ export default class Team extends React.Component {
             <Container fluid="true" className="header">
                 <Row>
                     <Col>
-                        <div className="team-header-img" style={{background: "headerImg"}}>
+                        <div className="team-header-img">
                             <h1 className={"title-text"}>
                               Our Team
                             </h1>

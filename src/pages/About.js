@@ -280,8 +280,8 @@ export default function About() {
             </h2>
                 <TrackRecord
                     on_mobile={mobileView}
-                    blurb1="Competed in Formula Sun Grand Prix (FSGP) every year since 2017"
-                    blurb2="Raced 225 miles in the 2022 Formula Sun Grand Prix"
+                    blurb1="Won 1st place at the 2023 Formula Sun Grand Prix (FSGP) after completing 707.5 miles on track."
+                    blurb2="Competed in Formula Sun Grand Prix (FSGP) every year since 2017"
                     blurb3="Designed and manufactured 3 solar cars from the ground up"
                     blurb4="100% student run"
                 />

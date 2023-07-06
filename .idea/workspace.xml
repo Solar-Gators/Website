@@ -7,9 +7,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc4e1d2d-50d0-4b9c-91a0-44fd4e2a9b80" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2021/aero21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2021/auxilary21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2021/bms21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2021/chassis21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2021/power21.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2021/solararray21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2021/suspension21.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2021/telemetry21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2021/vp21.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/styles/Home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/assets/images/car_pics/Torch/IMG_3458.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/assets/images/officers/2021/vicepresident21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/assets/images/officers/misc/AB_body21 copy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/assets/images/officers/misc/AUX21 copy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/assets/images/officers/misc/M_chassis copy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/assets/images/officers/misc/M_suspension copy.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/assets/images/officers/misc/morgen copy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/assets/images/officers/misc/mu copy.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Cars.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Cars.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Donate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Donate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Team.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Team.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col'
 import "../content/styles/Header.scss";
 import "../content/styles/Cars.scss";
 import "../content/styles/Button.scss";
-import torch from "../content/assets/images/car_pics/car1.jpg";
+import torch from "../content/assets/images/car_pics/Torch/torch_team.JPG";
 import sunrider from "../content/assets/images/car_pics/car3.jpg";
 import cielo from "../content/assets/images/car_pics/car2.JPG";
 import Button from "react-bootstrap/Button";
@@ -104,18 +104,17 @@ export default function Cars() {
 
             {/* Sunrider */}
             <SplitSection name={"Sunrider"} year1={"2020"} year2={"2023"} img={sunrider} pic_side={"right"}
-                          blurb={"Pandemic restrictions brought progress to a halt with limited in-person meetings and significant supply chain delays. Through this difficult time, the team banded together  and worked relentlessly to complete our newest car, Sunrider." +
-                              " Making its debut in the 2022 Formula Sun Grand Prix (FSGP), Sunrider set new team records in almost every aspect of the competition. Sunrider drove a total distance of over 225 miles."}
+                          blurb={"Design for our third car, Sunrider, commenced in 2019. However, pandemic restrictions brought progress to a halt with limited in-person meetings and significant supply chain delays. Through this difficult time, the team banded together and worked relentlessly to complete Sunrider. Making its debut in the 2022 Formula Sun Grand Prix (FSGP), Sunrider set new team records in almost every aspect of the competition. Sunrider drove a total distance of over 187.5 miles and finished in tenth place."}
                           on_mobile={mobileView}/>
 
             {/* Cielo */}
             <SplitSection name={"Cielo"} year1={"2018"} year2={"2020"} img={cielo} pic_side={"left"}
-                          blurb={"We competed with our second car Cielo in the 2018 FSGP. During the year, we designed and manufactured a brand new carbon fiber aero-body, making the car much lighter and quicker. In addition, new mechanical, electrical, and solar systems were designed and integrated, resulting in a more reliable and competitive car. Cielo drove 20 miles on the final race day, a significant improvement over the previous year."}
+                          blurb={"We competed with our second car Cielo in the 2018 and 2019 Formula Sun Grand Prix (FSGP). Cielo required an overhaul of almost all the existing car’s electrical and mechanical systems, and the changes paid off. During the year, we designed and manufactured a brand-new carbon fiber aero-body, making the car much lighter and quicker. In addition, new mechanical, electrical, and solar systems were designed and integrated, resulting in a more reliable and competitive car. Cielo drove 23 miles on the final race day in 2018, a significant improvement from the previous year, and almost 200 miles over the course of the final two race days in 2019."}
                           on_mobile={mobileView}/>
 
             {/* Torch */}
             <SplitSection name={"Torch"} year1={"2016"} year2={"2018"} img={torch} pic_side={"right"}
-                          blurb={"We debuted our first car, Torch, at the 2017 FSGP; making Solar Gators the first Florida team to race since 1989."}
+                          blurb={"In 2012, UF Solar Gators was founded. The 2012-2014 team disbanded before they completed their car, but left their chassis behind. In 2016, the team was reestablished and we built our first car Torch from the existing chassis. Torch was built over the course of the summer in 2017 and became Solar Gators’ first entry into the Formula Sun Grand Prix. Torch passed scrutineering and went on to complete the team’s first lap; making Solar Gators the first Florida team to race since 1989!"}
                           on_mobile={mobileView}/>
 
             {/* Sponsorship */}
