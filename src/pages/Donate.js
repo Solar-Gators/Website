@@ -6,8 +6,10 @@ import Button from "react-bootstrap/Button";
 import Collapse from 'react-bootstrap/Collapse';
 import {Link} from "react-router-dom";
 import sponsorshipTiers from '../content/assets/images/uncategorized/SponsorshipTiers.png'
+import sponsorshipPacket from '../content/assets/Solar Gators 2023 Sponsorship Packet.pdf'
+let donateLink = "https://www.uff.ufl.edu/give-now/?fund_id=003911&appeal=GESWQA1"
 
-function CollapsableComponent( {open, setOpen, label, text, emphasis, link}){
+function CollapsableComponent({open, setOpen, label, text, emphasis, link}) {
     return (
         <Row className="no-margin-padding">
             <Col className="collapse-col">
@@ -35,7 +37,6 @@ function CollapsableComponent( {open, setOpen, label, text, emphasis, link}){
         </Row>
     )
 }
-
 
 export default function Donate() {
     //Initialization for collapsable field components
@@ -90,7 +91,12 @@ export default function Donate() {
 
                 {/* Donate Button */}
                 <Row>
-                    <Button className="btn-primary" style={{width: "250px", left: "calc(50% - 250px/2 + 2px)"}} onClick={() => { window.location.href = "https://www.uff.ufl.edu/give-now/?fund_id=003911&appeal=GESWQA1" }}>Donate Online</Button>
+                    <Button className="btn-primary" style={{width: "250px", left: "calc(50% - 250px/2 + 2px)"}}
+                            href={donateLink} target="_blank" >
+                        Donate Online
+                    </Button>
+
+
                 </Row>
                 <p className="heading6-text" style={{paddingTop: "70px", paddingBottom: "0"}}>
                     All donations are tax deductible. Solar Gators is a 501(c)(3) nonprofit organization. Tax forms available upon request.
@@ -100,12 +106,17 @@ export default function Donate() {
             {/* Sponsorship Opportunities */}
             <Container fluid="true" className="section" style={{background: "#00203E"}}>
                 <h2 className="heading2-text" style={{paddingTop: "0", paddingBottom: "50px"}}>
-                    Sponsorship Opportunities</h2>
+                    Sponsorship Opportunities
+                </h2>
                 <Row>
                     <Col>
                         <img style={{width: '100%',paddingLeft: "6%", paddingRight: "6%", opacity: 1}} src={sponsorshipTiers} alt="photo" />
                     </Col>
                 </Row>
+                <Button className="btn-primary" style={{width: "300px", left: "calc(50% - 300px/2 + 2px)"}}
+                              href={sponsorshipPacket} target="_blank">
+                    Full Sponsorship Packet
+                </Button>
             </Container>
 
 

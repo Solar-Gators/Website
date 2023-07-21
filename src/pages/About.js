@@ -1,9 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import Card from 'react-bootstrap/Card'
-import Header from '../components/Header'
 import Button from "react-bootstrap/Button";
 import {Link} from "react-router-dom";
 
@@ -41,7 +39,7 @@ let p3 = "Inclusivity is one of our founding principles. We believe that everyon
 function Car({car_img, car_name, car_year1, car_year2}) {
     //creates each car's container for image & hover description
     return (
-        <Link to={"/cars"} className="car-card">
+        <Link className="car-card" to={"/cars"} onClick={() => {window.scroll(0,0);}} >
             <img className="car-card-img" src={car_img} />
             <div className="overlay">
                 <div className="overlay-text-header">{car_name}</div>
@@ -282,8 +280,8 @@ export default function About() {
             </h2>
                 <TrackRecord
                     on_mobile={mobileView}
-                    blurb1="Competed in Formula Sun Grand Prix (FSGP) every year since 2017"
-                    blurb2="Raced 225 miles in the 2022 Formula Sun Grand Prix"
+                    blurb1="Won 1st place at the 2023 Formula Sun Grand Prix (FSGP) after completing 707.5 miles on track."
+                    blurb2="Competed in Formula Sun Grand Prix (FSGP) every year since 2017"
                     blurb3="Designed and manufactured 3 solar cars from the ground up"
                     blurb4="100% student run"
                 />

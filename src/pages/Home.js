@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import "../content/styles/Header.scss";
 import "../content/styles/Home.scss";
@@ -27,7 +26,7 @@ import battery from '../content/assets/images/officers/2022/battery22.JPG';
 import aero from '../content/assets/images/officers/2022/aero22.JPG';
 
 //Car Pictures
-import car1 from '../content/assets/images/car_pics/car1.jpg';
+import car1 from '../content/assets/images/car_pics/Torch/torch_team.JPG';
 import car2 from '../content/assets/images/car_pics/car2.JPG';
 import car3 from '../content/assets/images/car_pics/car3.jpg';
 import MAE from "../content/assets/images/sponsor_logos/MAE.png";
