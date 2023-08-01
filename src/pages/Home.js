@@ -26,9 +26,9 @@ import battery from '../content/assets/images/officers/2022/battery22.JPG';
 import aero from '../content/assets/images/officers/2022/aero22.JPG';
 
 //Car Pictures
-import car1 from '../content/assets/images/car_pics/Torch/torch_team.JPG';
-import car2 from '../content/assets/images/car_pics/car2.JPG';
-import car3 from '../content/assets/images/car_pics/car3.jpg';
+import car1 from '../content/assets/images/car_pics/torch/torch_team.JPG';
+import car2 from '../content/assets/images/car_pics/cielo/IMG_9219.JPG';
+import car3 from '../content/assets/images/car_pics/sunrider/2022/car3_zoom.jpg';
 import MAE from "../content/assets/images/sponsor_logos/MAE.png";
 import ZenithTecnica from "../content/assets/images/sponsor_logos/ZenithTecnica.png";
 import ECE from "../content/assets/images/sponsor_logos/ECE.png";

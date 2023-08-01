@@ -3,14 +3,15 @@ import React from 'react'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import Button from "react-bootstrap/Button";
+import {Link} from "react-router-dom";
 import "../content/styles/Header.scss";
 import "../content/styles/Cars.scss";
 import "../content/styles/Button.scss";
-import torch from "../content/assets/images/car_pics/Torch/torch_team.JPG";
-import sunrider from "../content/assets/images/car_pics/car3.jpg";
-import cielo from "../content/assets/images/car_pics/car2.JPG";
-import Button from "react-bootstrap/Button";
-import {Link} from "react-router-dom";
+import torch from "../content/assets/images/car_pics/torch/torch_team.JPG";
+import sunrider from "../content/assets/images/car_pics/sunrider/2021/car3.jpg";
+import cielo from "../content/assets/images/car_pics/cielo/IMG_9219.JPG";
+
 
 function SplitSection ({name, year1, year2, blurb, img, pic_side, on_mobile}) {
     let TextContent = ({textColor}) => {

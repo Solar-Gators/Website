@@ -5,12 +5,12 @@ import Col from 'react-bootstrap/Col'
 import Button from "react-bootstrap/Button";
 import {Link} from "react-router-dom";
 
-import img1 from '../content/assets/images/people/people_sunrider0.jpeg';
-import img2 from '../content/assets/images/people/outreach1.jpeg';
-import img3 from '../content/assets/images/people/working1.jpeg';
-import car1 from "../content/assets/images/car_pics/car1.jpg";
-import car2 from "../content/assets/images/car_pics/car2.JPG";
-import car3 from "../content/assets/images/car_pics/car3.jpg";
+import img1 from '../content/assets/images/people/team21/people_sunrider0.jpeg';
+import img2 from '../content/assets/images/people/team22/outreach1.jpeg';
+import img3 from '../content/assets/images/people/team21/working1.jpeg';
+import car1 from "../content/assets/images/car_pics/torch/torch_ontrack.jpg";
+import car2 from "../content/assets/images/car_pics/cielo/IMG_9219.JPG";
+import car3 from "../content/assets/images/car_pics/sunrider/2021/car3.jpg";
 
 //Blurb Section 1
 let p1 = "Solar Gators is a fully student-run engineering design team at " +

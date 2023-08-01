@@ -7,7 +7,7 @@ import Collapse from 'react-bootstrap/Collapse';
 import {Link} from "react-router-dom";
 import sponsorshipTiers from '../content/assets/images/uncategorized/SponsorshipTiers.png'
 import sponsorshipPacket from '../content/assets/Solar Gators 2023 Sponsorship Packet.pdf'
-let donateLink = "https://www.uff.ufl.edu/give-now/?fund_id=003911&appeal=GESWQA1"
+let donateLink = "https://www.uff.ufl.edu/giving-opportunities/027995-mae-solar-gators/"
 
 function CollapsableComponent({open, setOpen, label, text, emphasis, link}) {
     return (
@@ -76,8 +76,8 @@ export default function Donate() {
 
                 {/*  Collapsable fields  */}
                 <CollapsableComponent open={open0} setOpen={setOpen0} label={"Online Donations"}
-                      text={"Online contributions are made via the University of Florida Advancement website. "}
-                      emphasis={"Please be sure to mention \"Solar Gators\" in the comment box."}
+                      text={"Online contributions are made via the University of Florida MAE Solar Gators webpage. Please note that there is a 5% gift tax applied to all donations, as well as an additional 3% for donations made by credit."}
+                      emphasis={""}
                       link=""
                 />
                 <CollapsableComponent open={open1} setOpen={setOpen1} label={"Other Options"}
