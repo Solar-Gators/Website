@@ -6,11 +6,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc4e1d2d-50d0-4b9c-91a0-44fd4e2a9b80" name="Changes" comment="Optimized Car &amp; Mission Statement sections to be reusable between pages.">
-      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/styles/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
+    <list default="true" id="cc4e1d2d-50d0-4b9c-91a0-44fd4e2a9b80" name="Changes" comment="Cleaned Up Header.css file &amp; global variables">
+      <change beforePath="$PROJECT_DIR$/src/pages/Cars.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Cars.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +96,7 @@
       <workItem from="1683671385084" duration="60664000" />
       <workItem from="1684858360738" duration="19606000" />
       <workItem from="1686322868066" duration="172000" />
-      <workItem from="1690910126265" duration="8854000" />
+      <workItem from="1690910126265" duration="9493000" />
     </task>
     <task id="LOCAL-00001" summary="Organized image files. Updated pathes">
       <created>1690910957798</created>
@@ -122,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691089106150</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Cleaned Up Header.css file &amp; global variables">
+      <created>1691090007092</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1691090007092</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,6 +147,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Organized image files. Updated pathes" />
     <MESSAGE value="Optimized Car &amp; Mission Statement sections to be reusable between pages." />
-    <option name="LAST_COMMIT_MESSAGE" value="Optimized Car &amp; Mission Statement sections to be reusable between pages." />
+    <MESSAGE value="Cleaned Up Header.css file &amp; global variables" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaned Up Header.css file &amp; global variables" />
   </component>
 </project>
