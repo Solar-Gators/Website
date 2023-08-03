@@ -1,31 +1,16 @@
 import React from 'react'
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
-export default class Header extends React.Component {
-    state = {
-        height: 0
-    }
-
-    setHeight = () => {
-        this.setState({height: window.innerHeight - 62})
-    }
-    
-    resizeEvent = null
-
-    componentDidMount() {
-        this.resizeEvent = window.addEventListener("resize", this.setHeight)
-        this.setHeight()
-    }
-
-    componentWillUnmount() {
-        window.removeEventListener("resize", this.setHeight)
-    }
-
-    render() {
-        let { className, children } = this.props
-        return (
-            <div className={className} style={{height: `${this.state.height}px`, margin: 0}}>
-                {children}
+export default function Header({title, imgcss}) {
+    return (
+        <Container fluid="true" className="header">
+            <div className={imgcss}>
+                <h1 className={"title-text"}>
+                    {title}
+                </h1>
             </div>
-        )
-    }
+        </Container>
+    )
 }

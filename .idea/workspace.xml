@@ -6,201 +6,18 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc4e1d2d-50d0-4b9c-91a0-44fd4e2a9b80" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/Cielo/cielo_team0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/Cielo/cielo_team1.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/sunrider/2022/car3_fl_gators.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/sunrider/2022/car3_panels.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/sunrider/2022/car3_zoom.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/people/team-old/old0.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/people/team-old/old1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/people/team-old/old2.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/people/team-old/old3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/people/team-old/old_team0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/people/team-old/old_team1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/people/team-old/outreach0.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/people/team-old/team_torch0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/people/team-old/team_torch1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/people/team-old/team_torch2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/people/team-old/team_torch3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/people/team-old/working0.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/people/team21/outreach2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/people/team21/people_sunrider0.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/people/team21/team_sunrider0.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/people/team21/team_sunrider1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/people/team21/working1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/people/team22/outreach1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/people/team22/people_sunrider1.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/people/team22/sponsorship0.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/people/team22/sponsorship1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/people/team22/team0.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/people/team22/team1.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/people/team22/team2.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/people/team22/team3.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/people/team22/team4.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/people/team22/team5.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/people/team22/team6.JPG" afterDir="false" />
+    <list default="true" id="cc4e1d2d-50d0-4b9c-91a0-44fd4e2a9b80" name="Changes" comment="Organized image files. Updated pathes">
+      <change afterPath="$PROJECT_DIR$/src/components/CarsSection/CarsSection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CarsSection/CarsSection.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MissionStatements/MissionStatements.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MissionStatements/MissionStatements.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/1234751087606171086_1234751087606171086.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/3a-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/AB_body21.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/AND00631.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/AUX21.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/Brendan21.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/Business20.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/Business21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/ElektroAutomatik.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/Logomark_Desktop_Oct_2020.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/M_chassis.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/M_suspension.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/Matrix_Logo_lg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/Pellucere+Logo+R.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/Phoenix-Side-Logo-Transparent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/Secretary20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/Secretary21.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/TDK_Vector_Pantone293_with_clear_zone.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/Treasurer20.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/Treasurer21.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/VR3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/VicePresident20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/West-System.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/ZT Logo 2020-12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/about_us_1.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/about_us_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/aerobody22.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/batterypack22.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/brakes22.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/bronze_beadbuster.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/bronze_bmrs.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/bronze_hakko.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/bronze_kevins.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/bronze_moss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/bronze_solarcat.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/bronze_stickermule.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/bronze_tdk.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/bronze_zevia.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/business.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/business19.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/businesscoordinator22.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/car_pics/Torch/DSC02580.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/car_pics/Torch/DSC02941.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/car_pics/car1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/car_pics/car2.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/car_pics/car3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/car_pics/car3_2023.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/car_pics/car3_finishline.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/car_pics/car3_finishline_crop.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/car_pics/car3_fl_gators.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/car_pics/car3_ontrack.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/contact_us_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/contact_us_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/daniel.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/electricalPM22.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/embeddedsystems22.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/event_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/event_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/fusionfilaments.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/highvoltage22.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/ic3-industries-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/img1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/img2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/img3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/integrationPM22.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/ipf.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/logo_rapidcut_small_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/mae.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/mechanicalPM22.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/merritt-trans-white-200-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/morgen.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/mu.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/new-molex-logo@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/new-teams.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/nordlock.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/people/old0.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/people/old1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/people/old2.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/people/old3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/people/old_team0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/people/old_team1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/people/outreach0.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/people/outreach1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/people/outreach2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/people/people_sunrider0.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/people/people_sunrider1.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/people/sponsorship0.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/people/sponsorship1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/people/team23/team0.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/people/team23/team1.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/people/team23/team2.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/people/team23/team3.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/people/team23/team4.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/people/team23/team5.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/people/team23/team6.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/people/team_sunrider0.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/people/team_sunrider1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/people/team_torch0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/people/team_torch1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/people/team_torch2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/people/team_torch3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/people/working0.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/people/working1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/powermanagement22.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/premium_altair.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/premium_eaton.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/premium_ece.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/premium_hwco.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/premium_siemens.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/premium_solar_impact.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/premium_solidworks.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/premium_sunpower.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/premium_ufmae.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/premium_universal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/president.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/president20.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/president22.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/rapid-harness.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/sainsmart.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/secretary.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/secretary19.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/secretary22.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/silver_accurate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/silver_bac.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/silver_brembo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/silver_fgci.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/silver_mirage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/silver_rohacell.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/silver_ufippd.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/silver_ufsg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/skf.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/sponsor_banner copy.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/sponsor_banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/sponsors.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/sponsors_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/sponsors_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/sponsorship-levels.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/team2023.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/team_1.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/team_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/treasurer.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/treasurer19.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/treasurer22.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/vicepresident.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/vicepresident19.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/vicepresident22.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/zenith-tecnica.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/styles/About.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/About.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/styles/Cars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Cars.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/styles/Contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Contact.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/styles/Donate.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Donate.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/styles/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/content/styles/Home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Home.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/styles/Sponsors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Sponsors.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/styles/Team.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Team.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/About.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Cars.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Cars.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Contact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Donate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Donate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Team.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Team.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -259,12 +76,17 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -284,8 +106,16 @@
       <workItem from="1683671385084" duration="60664000" />
       <workItem from="1684858360738" duration="19606000" />
       <workItem from="1686322868066" duration="172000" />
-      <workItem from="1690910126265" duration="747000" />
+      <workItem from="1690910126265" duration="7754000" />
     </task>
+    <task id="LOCAL-00001" summary="Organized image files. Updated pathes">
+      <created>1690910957798</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1690910957798</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,5 +134,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Organized image files. Updated pathes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Organized image files. Updated pathes" />
   </component>
 </project>

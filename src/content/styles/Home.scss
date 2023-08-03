@@ -6,7 +6,9 @@ $no-margin: 0;
 .home-header-img {
     width: 100%;
     height: 36vw;
-    background: linear-gradient(0deg, rgba(0, 32, 62, 0.25), rgba(0, 32, 62, 0.25)), url(../assets/images/car_pics/sunrider/2022/car3_fl_gators.JPG), no-repeat center center fixed;
+    background: linear-gradient(0deg, rgba(0, 32, 62, 0.25), rgba(0, 32, 62, 0.25)),
+    url(../assets/images/car_pics/sunrider/2022/car3_fl_gators.JPG),
+    no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -125,88 +127,6 @@ $animationSpeed: 50s;
     }
 }
 
-/* Container for Car Images */
-.car-cards {
-    justify-content: center;
-    margin-top: $content1-margin;
-    margin-bottom: $content1-margin - 10px;
-}
-
-/* Container for Individual Car Image */
-.car-card {
-    position: relative;
-    width: 26%;
-    height: 300px;
-    margin: 0 3%;
-    transition: 0.5s ease;
-
-    justify-content: center;
-    display: flex;
-    background-color: transparent;
-    border: 0px;
-
-    overflow: hidden;
-}
-
-/* Car Image */
-.car-card-img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    transition: 0.5s ease;
-    object-fit: cover;
-    background-position: center center;
-}
-
-.overlay {
-    position: absolute;
-    transition: 0.5s ease;
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    background-color: $dark_blue;
-}
-
-//Car Name
-.overlay-text-header {
-    color: $white;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    height: 40%;
-    top: 20%;
-    justify-content: center;
-}
-
-//Car Years
-.overlay-text-body {
-    color: $white;
-    font-size: 18px;
-    font-style: italic;
-    text-align: center;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    height: 50%;
-    margin: 0;
-    justify-content: center;
-}
-
-//when hovering over car card, adjusts overlay opacity
-.car-card:hover .overlay{
-    opacity: .75;
-}
-
-.car-card:hover {
-    box-shadow: 0 20px 20px 5px rgba(0, 0, 0, .25);
-    transition: 0.5s ease;
-    transform: translate(0, -1rem);
-}
-
-
 /* Resize for large tablet - scale down 25% */
 @media screen and (max-width: 768px) {
     .slider {
@@ -215,10 +135,6 @@ $animationSpeed: 50s;
             height: 240px;
         }
     }
-
-    .car-card {
-        height: 200px;
-    }
 }
 
 //Resize text for mobile
@@ -226,6 +142,7 @@ $animationSpeed: 50s;
     .home-header-img {
         height: 50vw;
     }
+
     .section {
         padding: 8vw 3vw 7vw;
     }
@@ -233,6 +150,7 @@ $animationSpeed: 50s;
     .mission-statement {
         width: 90vw;
     }
+
     .slider {
         margin-bottom: 10px;
         &::before,
@@ -245,19 +163,4 @@ $animationSpeed: 50s;
             margin-right: 32px;
         }
     }
-    .car-card {
-        width: 100%;
-        height: 35vw;
-        margin-bottom: 40px;
-    }
-
-    .overlay {
-        opacity: .75;
-        padding-top: 15px;
-    }
-
-    .overlay-text-body {
-        margin-top: 10px;
-    }
-
 }

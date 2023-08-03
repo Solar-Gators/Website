@@ -1,3 +1,16 @@
+:root {
+  /* Define global variables */
+  --color-dark_blue: #00203E;
+  --color-primary_blue: #00519C;
+  --color-primary_orange: #F37833;
+  --color-bright_blue: #0067c7;
+  --color-white: #F8F8F8;
+  --color-light-grey: #cdcdcd;
+  --color-grey: #B6BABE;
+  --color-black: #000000;
+
+}
+
 /*Define normal Inter font*/
 @font-face {
   font-family: 'Inter';
@@ -56,7 +69,7 @@
 @font-face {
   font-family: 'Inter';
   src: local("Inter-Variable"), url("./content/assets/fonts/Inter-VariableFont.woff2") format("woff2-variations");
-  font-weight: extra-bold;
+  font-weight: bold;
   font-style: italic;
   font-variation-settings: normal;
 }
