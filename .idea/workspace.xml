@@ -6,17 +6,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc4e1d2d-50d0-4b9c-91a0-44fd4e2a9b80" name="Changes" comment="Organized image files. Updated pathes">
-      <change afterPath="$PROJECT_DIR$/src/components/CarsSection/CarsSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CarsSection/CarsSection.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MissionStatements/MissionStatements.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MissionStatements/MissionStatements.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
+    <list default="true" id="cc4e1d2d-50d0-4b9c-91a0-44fd4e2a9b80" name="Changes" comment="Optimized Car &amp; Mission Statement sections to be reusable between pages.">
+      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/content/styles/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/styles/Home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Home.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/About.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +99,7 @@
       <workItem from="1683671385084" duration="60664000" />
       <workItem from="1684858360738" duration="19606000" />
       <workItem from="1686322868066" duration="172000" />
-      <workItem from="1690910126265" duration="7754000" />
+      <workItem from="1690910126265" duration="8854000" />
     </task>
     <task id="LOCAL-00001" summary="Organized image files. Updated pathes">
       <created>1690910957798</created>
@@ -115,7 +108,21 @@
       <option name="project" value="LOCAL" />
       <updated>1690910957798</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Optimized Car &amp; Mission Statement sections to be reusable between pages.">
+      <created>1691088944479</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1691088944479</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Optimized Car &amp; Mission Statement sections to be reusable between pages.">
+      <created>1691089106150</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1691089106150</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +142,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Organized image files. Updated pathes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Organized image files. Updated pathes" />
+    <MESSAGE value="Optimized Car &amp; Mission Statement sections to be reusable between pages." />
+    <option name="LAST_COMMIT_MESSAGE" value="Optimized Car &amp; Mission Statement sections to be reusable between pages." />
   </component>
 </project>

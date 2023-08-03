@@ -8,7 +8,6 @@
   --color-light-grey: #cdcdcd;
   --color-grey: #B6BABE;
   --color-black: #000000;
-
 }
 
 /*Define normal Inter font*/
@@ -72,13 +71,4 @@
   font-weight: bold;
   font-style: italic;
   font-variation-settings: normal;
-}
-
-body {
-  margin: 0;
-  font-family: 'Inter';
-  font-weight: normal;
-  font-style: normal;
-  /*-webkit-font-smoothing: antialiased;*/
-  /*-moz-osx-font-smoothing: grayscale;*/
 }

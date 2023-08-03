@@ -5,9 +5,6 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
-import "../content/styles/Header.scss";
-import "../content/styles/Home.scss";
-import "../content/styles/Button.scss";
 
 //Officer Pictures
 import president from '../content/assets/images/officers/2022/president22.JPG';
@@ -25,10 +22,6 @@ import brakes from '../content/assets/images/officers/2022/brakes22.JPG';
 import battery from '../content/assets/images/officers/2022/battery22.JPG';
 import aero from '../content/assets/images/officers/2022/aero22.JPG';
 
-//Car Pictures
-import car1 from '../content/assets/images/car_pics/torch/torch_team.JPG';
-import car2 from '../content/assets/images/car_pics/cielo/IMG_9219.JPG';
-import car3 from '../content/assets/images/car_pics/sunrider/2022/car3_zoom.jpg';
 import MAE from "../content/assets/images/sponsor_logos/MAE.png";
 import ZenithTecnica from "../content/assets/images/sponsor_logos/ZenithTecnica.png";
 import ECE from "../content/assets/images/sponsor_logos/ECE.png";
@@ -39,39 +32,6 @@ import MissionStatements from "../components/MissionStatements/MissionStatements
 //Car 3 Platinum Sponsors
 let platinum3 = [[MAE, "https://mae.ufl.edu/"], [ZenithTecnica, "https://www.zenithtecnica.com/"], [ECE, "https://www.ece.ufl.edu/"]];
 
-// function MissionStatements({on_mobile, accent1, blurb1, accent2, blurb2, accent3, blurb3, accent4, blurb4}) {
-//     if (on_mobile) {
-//         return (
-//             <Row className="no-margin-padding">
-//                 <Col className="no-margin-padding">
-//                         <p className={"body-text"} style={{paddingBottom: "16px"}}><b>{accent1}</b>{blurb1}</p>
-//                         <p className={"body-text"} style={{paddingBottom: "16px"}}><b>{accent2}</b>{blurb2}</p>
-//                         <p className={"body-text"} style={{paddingBottom: "16px"}}><b>{accent3}</b>{blurb3}</p>
-//                         <p className={"body-text"} style={{paddingBottom: "16px"}}><b>{accent4}</b>{blurb4}</p>
-//                 </Col>
-//             </Row>
-//         )
-//     }
-//     else {
-//         return (
-//             <Row className="no-margin-padding" style={{justifyContent: "center"}}>
-//                 <Col className={"mission-statement"} style={{marginLeft: "0"}}>
-//                     <p className={"body-text"}><b>{accent1}</b>{blurb1}</p>
-//                 </Col>
-//                 <Col className={"mission-statement"}>
-//                     <p className={"body-text"}><b>{accent2}</b>{blurb2}</p>
-//                 </Col>
-//                 <Col className={"mission-statement"}>
-//                     <p className={"body-text"}><b>{accent3}</b>{blurb3}</p>
-//                 </Col>
-//                 <Col className={"mission-statement"} style={{marginRight: "0"}}>
-//                     <p className={"body-text"}><b>{accent4}</b>{blurb4}</p>
-//                 </Col>
-//             </Row>
-//         )
-//     }
-// }
-
 function Officer({pic}) {
     //creates individual officer headshot container w image
     return (
@@ -80,56 +40,6 @@ function Officer({pic}) {
         </div>
     )
 }
-
-// function Car({car_img, car_name, car_year1, car_year2}) {
-//     //creates each car's container for image & hover description
-//     return (
-//         <Link className="car-card" to={"/cars"} onClick={() => {window.scroll(0,0);}} >
-//             <img className="car-card-img" src={car_img}/>
-//             <div className="overlay">
-//                 <div className="overlay-text-header">{car_name}</div>
-//                 <div className="overlay-text-body">{car_year1} - {car_year2}</div>
-//             </div>
-//         </Link>
-//     )
-// }
-
-// function CarTiles({on_mobile}) {
-//     //format for mobile
-//     if (on_mobile) {
-//         return (
-//             <Col>
-//                 <Row className={"car-cards"}>
-//                     <Car car_img={car1} car_name={"Torch"} car_year1={"2017"} car_year2={"2018"}></Car>
-//                 </Row>
-//                 <Row className={"car-cards"}>
-//                     <Car car_img={car2} car_name={"Cielo"} car_year1={"2018"} car_year2={"2019"}></Car>
-//                 </Row>
-//                 <Row className={"car-cards"}>
-//                     <Car car_img={car3} car_name={"Sunrider"} car_year1={"2020"} car_year2={"present"}></Car>
-//                 </Row>
-//             </Col>
-//         )
-//     }
-//     //format for desktop
-//     else {
-//         return (
-//             <Col>
-//                 <Row className={"car-cards"}>
-//                     <Car car_img={car1} car_name={"Torch"} car_year1={"2017"} car_year2={"2018"}></Car>
-//                     <Car car_img={car2} car_name={"Cielo"} car_year1={"2018"} car_year2={"2019"}></Car>
-//                     <Car car_img={car3} car_name={"Sunrider"} car_year1={"2020"} car_year2={"present"}></Car>
-//                 </Row>
-//                 <Row>
-//                     <Button className="btn-primary" as={Link} to={"/cars"}
-//                             onClick={() => {window.scroll(0,0);}}>
-//                         Learn More
-//                     </Button>
-//                 </Row>
-//             </Col>
-//         )
-//     }
-// }
 
 function SponsorSection ({on_mobile}) {
     let LogoImage = ({ src, link }) => {
@@ -231,7 +141,8 @@ export default function Home() {
     return (
       <React.Fragment>
           {/*  Page Header */}
-          <Header title={"Powered By Florida sunshine"} imgcss={"home-header-img"}/>
+          <Header title={"Powered By Florida sunshine"}
+                  imgcss={"home-header-img"}/>
 
           {/*  Mission Section */}
             <MissionStatements on_mobile={mobileView}
