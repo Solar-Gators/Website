@@ -5,9 +5,9 @@ import Col from 'react-bootstrap/Col'
 import Button from "react-bootstrap/Button";
 import {Link} from "react-router-dom";
 import Header from "../components/Header";
-import torch from "../content/assets/images/car_pics/torch/torch_team.JPG";
+import torch from "../content/assets/images/car_pics/torch/torch_ontrack_clean.jpg";
 import sunrider from "../content/assets/images/car_pics/sunrider/2021/car3.jpg";
-import cielo from "../content/assets/images/car_pics/cielo/IMG_9219.JPG";
+import cielo from "../content/assets/images/car_pics/cielo/IMG_9011_crop.JPG";
 
 
 function SplitSection ({name, year1, year2, blurb, img, pic_side, on_mobile}) {
