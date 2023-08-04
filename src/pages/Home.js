@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from "react-router-dom";
-
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -36,7 +35,7 @@ function Officer({pic}) {
     //creates individual officer headshot container w image
     return (
         <div className={"headshot"} >
-            <img className={"headshot-img"} src={pic}></img>
+            <img className={"headshot-img"} src={pic} alt={"headshot"}/>
         </div>
     )
 }
@@ -48,7 +47,7 @@ function SponsorSection ({on_mobile}) {
                 <Col className="logo-col">
                     <a href={link}>
                         <span className="align-center">
-                            <img src={src} className="sponsor-logo"/>
+                            <img src={src} className="sponsor-logo" alt={"logo"}/>
                         </span>
                     </a>
                 </Col>
@@ -59,7 +58,7 @@ function SponsorSection ({on_mobile}) {
                 <Col className="logo-col" style={{maxWidth: "18vw", margin: "2vw 0"}}>
                     <a href={link}>
                         <span className="align-center">
-                            <img src={src} className="sponsor-logo" style={{maxWidth: "18vw", padding: "0 2vw"}} />
+                            <img src={src} className="sponsor-logo" style={{maxWidth: "18vw", padding: "0 2vw"}} alt={"logo"}/>
                         </span>
                     </a>
                 </Col>

@@ -1,13 +1,4 @@
 //DEFINES BUTTON STYLES
-$primary_blue: #00519C;
-$primary_orange: #F37833;
-$dark_blue: #00203E;
-$bright_blue: #0067c7;
-$white: #F8F8F8;
-$light-grey: #cdcdcd;
-$grey: #B6BABE;
-$black: #000000;
-
 $margin-top: 7vw;
 $margin-bottom: 0;
 $curve: 40px;
@@ -31,21 +22,21 @@ $square-button-height-width: 40px;
   text-align: center;
   text-transform: capitalize;
 
-  color: $bright_blue;
+  color: var(--color-bright_blue);
   background-color: transparent;
-  border: 3px solid $bright_blue;
+  border: 3px solid var(--color-bright_blue);
   border-radius: $curve;
 
   display: flex;
   position: relative;
   justify-content: center;
-  top: 0px;
+  top: 0;
 }
 
 .btn-primary:hover {
-  color: $white;
-  background-color: $bright_blue;
-  border: 3px solid $bright_blue;
+  color: var(--color-white);
+  background-color: var(--color-bright_blue);
+  border: 3px solid var(--color-bright_blue);
 }
 
 .btn-secondary {
@@ -63,9 +54,9 @@ $square-button-height-width: 40px;
   text-align: center;
   text-transform: capitalize;
 
-  color: $grey;
+  color: var(--color-grey);
   background-color: transparent;
-  border: 3px solid $grey;
+  border: 3px solid var(--color-grey);
   border-radius: $curve;
 
   display: flex;
@@ -75,9 +66,9 @@ $square-button-height-width: 40px;
 }
 
 .btn-secondary:hover {
-  color: $white;
-  background-color: $grey;
-  border: 3px solid $grey;
+  color: var(--color-white);
+  background-color: var(--color-grey);
+  border: 3px solid var(--color-grey);
 }
 
 .btn-transparent {
@@ -92,7 +83,7 @@ $square-button-height-width: 40px;
   text-align: center;
   text-transform: capitalize;
 
-  color: $primary_orange;
+  color: var(--color-primary_orange);
   background-color: transparent;
   border: transparent;
   border-radius: $curve;
@@ -106,14 +97,14 @@ $square-button-height-width: 40px;
 }
 
 .btn-transparent:hover {
-  color: $bright_blue;
+  color: var(--color-bright_blue);
   background-color: transparent;
   border: transparent;
   transition: 5ms;
 }
 
 .btn-transparent:active {
-  color: $bright_blue;
+  color: var(--color-bright_blue);
   background-color: transparent;
   border: transparent;
   transition: 5ms;
@@ -133,16 +124,16 @@ $square-button-height-width: 40px;
   text-align: center;
   text-transform: capitalize;
 
-  color: $bright_blue;
+  color: var(--color-bright_blue);
   background-color: transparent;
-  border: 2.25px solid $bright_blue;
+  border: 2.25px solid var(--color-bright_blue);
   border-radius: $curve - (35/55);
 }
 
 .btn-primary-small:hover {
-  color: $white;
-  background-color: $bright_blue;
-  border: 2.5px solid $bright_blue;
+  color: var(--color-white);
+  background-color: var(--color-bright_blue);
+  border: 2.5px solid var(--color-bright_blue);
 }
 
 .btn-social-media-icon {
@@ -152,10 +143,7 @@ $square-button-height-width: 40px;
   left: 0;
   position: relative;
   display: flex;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 1vw;
-  margin-right: 1vw;
+  margin: 0 1vw;
 
   background: transparent;
   border: transparent;
@@ -175,18 +163,10 @@ $square-button-height-width: 40px;
   right: 0;
   top: 0;
 
-  //align-items: center;
-  //text-align: center;
-  //text-transform: capitalize;
-
-  color: $bright_blue;
+  color: var(--color-bright_blue);
   background-color: transparent;
-  border: 3px solid $bright_blue;
+  border: 3px solid var(--color-bright_blue);
   border-radius: 10px;
-
-  //display: flex;
-  //position: relative;
-  //justify-content: center;
 }
 
 /* Resize for shrunk desktop window
@@ -202,14 +182,12 @@ $square-button-height-width: 40px;
     font-size: 14px;
     width: 144px;
     height: 40px;
-
     left: calc(50% - 144px/2 + 2px);
   }
 
   .btn-social-media-icon {
     width: $square-button-height-width;
     height: $square-button-height-width;
-
     left: 0;
   }
 }

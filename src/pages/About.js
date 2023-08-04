@@ -2,17 +2,13 @@ import React from 'react'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import Button from "react-bootstrap/Button";
-import {Link} from "react-router-dom";
 import CarsSection from "../components/CarsSection/CarsSection";
+import MissionStatements from "../components/MissionStatements/MissionStatements";
+import Header from "../components/Header";
 
 import img1 from '../content/assets/images/people/team21/people_sunrider0.jpeg';
 import img2 from '../content/assets/images/people/team22/outreach1.jpeg';
 import img3 from '../content/assets/images/people/team21/working1.jpeg';
-import car1 from "../content/assets/images/car_pics/torch/torch_ontrack.jpg";
-import car2 from "../content/assets/images/car_pics/cielo/IMG_9219.JPG";
-import car3 from "../content/assets/images/car_pics/sunrider/2021/car3.jpg";
-import MissionStatements from "../components/MissionStatements/MissionStatements";
 
 //Blurb Section 1
 let p1 = "Solar Gators is a fully student-run engineering design team at " +
@@ -42,7 +38,7 @@ function DividedSection({img, blurb, blurb2, img_align}) {
     let ImageHalf = () => {
         return (
             <Col className="no-margin-padding">
-                <div className="image-half-container" style={{backgroundImage: "url(" + img + ")"}}></div>
+                <div className="image-half-container" style={{backgroundImage: "url(" + img + ")"}}/>
             </Col>
         )
     }
@@ -69,8 +65,8 @@ function DividedSection({img, blurb, blurb2, img_align}) {
     else {
         return (
             <Row style={{padding: "0", margin: "0"}}>
-                <TextHalf></TextHalf>
-                <ImageHalf></ImageHalf>
+                <TextHalf/>
+                <ImageHalf/>
             </Row>
         )
     }
@@ -168,17 +164,7 @@ export default function About() {
     return (
         <React.Fragment>
             {/*  Page Header */}
-            <Container fluid="true" className="header">
-            <Row>
-              <Col>
-                <div className="about-header-img">
-                  <h1 className={"title-text"}>
-                    About Us
-                  </h1>
-                </div>
-              </Col>
-            </Row>
-          </Container>
+            <Header title={"About Us"} imgcss={"about-header-img"}/>
 
             {/* Blurb & Picture */}
             <BlurbAndPicture img={img1} blurb={p1} img_align={false} on_mobile={mobileView} img_above={false}></BlurbAndPicture>

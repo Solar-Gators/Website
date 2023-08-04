@@ -1,5 +1,4 @@
 import React from 'react'
-
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -12,6 +11,13 @@ import cielo from "../content/assets/images/car_pics/cielo/IMG_9219.JPG";
 
 
 function SplitSection ({name, year1, year2, blurb, img, pic_side, on_mobile}) {
+    let ImageContent = () => {
+        return (
+            <Col className="no-margin-padding">
+                <div className="image-half-container" style={{backgroundImage: "url(" + img + ")"}}/>
+            </Col>
+        )
+    }
     let TextContent = ({textColor}) => {
         if (on_mobile) {
             return (
@@ -37,13 +43,7 @@ function SplitSection ({name, year1, year2, blurb, img, pic_side, on_mobile}) {
             )
         }
     }
-    let ImageContent = () => {
-        return (
-            <Col className="no-margin-padding">
-                <div className="image-half-container" style={{backgroundImage: "url(" + img + ")"}}></div>
-            </Col>
-        )
-    }
+
     if (on_mobile) {
         if (name === "Cielo") {
             return (

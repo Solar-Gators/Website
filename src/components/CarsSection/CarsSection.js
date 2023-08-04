@@ -1,7 +1,6 @@
 import React from 'react'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
 import Button from "react-bootstrap/Button";
 import {Link} from "react-router-dom";
 import car1 from "../../content/assets/images/car_pics/torch/torch_ontrack.jpg";
@@ -13,7 +12,7 @@ function Car({car_img, car_name, car_year1, car_year2}) {
     //creates each car's container for image & hover description
     return (
         <Link className="car-card" to={"/cars"} onClick={() => {window.scroll(0,0);}} >
-            <img className="car-card-img" src={car_img} />
+            <img className="car-card-img" src={car_img} alt={"car_img"}/>
             <div className="overlay">
                 <div className="overlay-text-header">{car_name}</div>
                 <div className="overlay-text-body">{car_year1} - {car_year2}</div>
@@ -37,7 +36,6 @@ function DonateButton ({on_mobile}) {
 }
 
 export default function CarsSection({mobileView}) {
-    {/* Car Section */}
     return (
         <Container fluid="true" className="section">
             <Row>
