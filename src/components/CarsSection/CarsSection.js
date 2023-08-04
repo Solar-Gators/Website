@@ -3,9 +3,9 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Button from "react-bootstrap/Button";
 import {Link} from "react-router-dom";
-import car1 from "../../content/assets/images/car_pics/torch/torch_ontrack.jpg";
+import car1 from "../../content/assets/images/car_pics/torch/torch_ontrack_clean.jpg";
 import car2 from "../../content/assets/images/car_pics/cielo/IMG_9219.JPG";
-import car3 from "../../content/assets/images/car_pics/sunrider/2021/car3.jpg";
+import car3 from "../../content/assets/images/car_pics/sunrider/2022/AND02053.JPG";
 import './CarsSection.scss'
 
 function Car({car_img, car_name, car_year1, car_year2}) {

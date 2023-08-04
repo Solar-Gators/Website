@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import CarsSection from "../components/CarsSection/CarsSection";
 import MissionStatements from "../components/MissionStatements/MissionStatements";
+import SplitSection from "../components/SplitSection/SplitSection";
 import Header from "../components/Header";
 
 import img1 from '../content/assets/images/people/team21/people_sunrider0.jpeg';
@@ -34,85 +35,85 @@ let p3 = "Inclusivity is one of our founding principles. We believe that everyon
     "resources they need to become better engineers and better people. Join us as we " +
     "push the limits of what's possible in solar racing and beyond."
 
-function DividedSection({img, blurb, blurb2, img_align}) {
-    let ImageHalf = () => {
-        return (
-            <Col className="no-margin-padding">
-                <div className="image-half-container" style={{backgroundImage: "url(" + img + ")"}}/>
-            </Col>
-        )
-    }
-    let TextHalf = () => {
-        return (
-            <Col className="no-margin-padding">
-                <div className="text-half-container">
-                    <p className={"body-text"}>{blurb}</p>
-                    {/* if there is a second paragraph */}
-                    { blurb2 ? <p className={"body-text"} style={{marginTop: "50px"}}>{blurb2}</p> : ""}
-                </div>
-            </Col>
-        )
-    }
-    // (img_align = true) => image on left side
-    if (img_align) {
-        return(
-            <Row style={{padding: "0", margin: "0"}}>
-                <ImageHalf/>
-                <TextHalf/>
-            </Row>
-        )
-    }
-    else {
-        return (
-            <Row style={{padding: "0", margin: "0"}}>
-                <TextHalf/>
-                <ImageHalf/>
-            </Row>
-        )
-    }
-}
-
-function BlurbAndPicture({on_mobile, img, blurb, blurb2, img_align, img_above}) {
-    let Image = () => {
-        return (
-            <Row className="image-half-container" style={{backgroundImage: "url(" + img + ")"}}/>
-        )
-    }
-    let Text = () => {
-        return (
-            <Row className={"no-margin-padding"}>
-                <div className="text-half-container">
-                    <p className={"body-text"}>{blurb}</p>
-                    {/* if there is a second paragraph */}
-                    { blurb2 ? <p className={"body-text"} style={{paddingTop: "10px"}}>{blurb2}</p> : ""}
-                </div>
-            </Row>
-        )
-    }
-    if (on_mobile) {
-        if (img_above) {
-            return (
-                <Col className={"no-margin-padding"}>
-                    <Image/>
-                    <Text/>
-                </Col>
-            )
-        }
-        else {
-            return (
-                <Col className={"no-margin-padding"}>
-                    <Text/>
-                    <Image/>
-                </Col>
-            )
-        }
-    }
-    else {
-        return (
-            <DividedSection img={img} blurb={blurb} blurb2={blurb2} img_align={img_align}/>
-        )
-    }
-}
+// function DividedSection({img, blurb, blurb2, img_align}) {
+//     let ImageHalf = () => {
+//         return (
+//             <Col className="no-margin-padding">
+//                 <div className="image-half-container" style={{backgroundImage: "url(" + img + ")"}}/>
+//             </Col>
+//         )
+//     }
+//     let TextHalf = () => {
+//         return (
+//             <Col className="no-margin-padding">
+//                 <div className="text-half-container">
+//                     <p className={"body-text"}>{blurb}</p>
+//                     {/* if there is a second paragraph */}
+//                     { blurb2 ? <p className={"body-text"} style={{marginTop: "50px"}}>{blurb2}</p> : ""}
+//                 </div>
+//             </Col>
+//         )
+//     }
+//     // (img_align = true) => image on left side
+//     if (img_align) {
+//         return(
+//             <Row style={{padding: "0", margin: "0"}}>
+//                 <ImageHalf/>
+//                 <TextHalf/>
+//             </Row>
+//         )
+//     }
+//     else {
+//         return (
+//             <Row style={{padding: "0", margin: "0"}}>
+//                 <TextHalf/>
+//                 <ImageHalf/>
+//             </Row>
+//         )
+//     }
+// }
+//
+// function BlurbAndPicture({on_mobile, img, blurb, blurb2, img_align, img_above}) {
+//     let Image = () => {
+//         return (
+//             <Row className="image-half-container" style={{backgroundImage: "url(" + img + ")"}}/>
+//         )
+//     }
+//     let Text = () => {
+//         return (
+//             <Row className={"no-margin-padding"}>
+//                 <div className="text-half-container">
+//                     <p className={"body-text"}>{blurb}</p>
+//                     {/* if there is a second paragraph */}
+//                     { blurb2 ? <p className={"body-text"} style={{paddingTop: "10px"}}>{blurb2}</p> : ""}
+//                 </div>
+//             </Row>
+//         )
+//     }
+//     if (on_mobile) {
+//         if (img_above) {
+//             return (
+//                 <Col className={"no-margin-padding"}>
+//                     <Image/>
+//                     <Text/>
+//                 </Col>
+//             )
+//         }
+//         else {
+//             return (
+//                 <Col className={"no-margin-padding"}>
+//                     <Text/>
+//                     <Image/>
+//                 </Col>
+//             )
+//         }
+//     }
+//     else {
+//         return (
+//             <DividedSection img={img} blurb={blurb} blurb2={blurb2} img_align={img_align}/>
+//         )
+//     }
+// }
 
 function TrackRecord({on_mobile, blurb1, blurb2, blurb3, blurb4}) {
     let Text = ({blurb}) => {
@@ -167,16 +168,16 @@ export default function About() {
             <Header title={"About Us"} imgcss={"about-header-img"}/>
 
             {/* Blurb & Picture */}
-            <BlurbAndPicture img={img1} blurb={p1} img_align={false} on_mobile={mobileView} img_above={false}></BlurbAndPicture>
+            <SplitSection img={img1} blurb={p1} img_left={false} on_mobile={mobileView} img_above={false}/>
 
             {/*  Mission Section */}
             <MissionStatements on_mobile={mobileView} white_background={false} button={false} />
 
             {/* Blurb 2 & Picture */}
-            <BlurbAndPicture img={img2} blurb={p2a} blurb2={p2b} img_align={true} on_mobile={mobileView} img_above={true}></BlurbAndPicture>
+            <SplitSection img={img2} blurb={p2a} blurb2={p2b} img_left={true} on_mobile={mobileView} img_above={true}/>
 
             {/* Blurb 3 & Picture */}
-            <BlurbAndPicture img={img3} blurb={p3} img_align={false} on_mobile={mobileView} img_above={true}></BlurbAndPicture>
+            <SplitSection img={img3} blurb={p3} img_left={false} on_mobile={mobileView} img_above={true}/>
 
             {/* Our Track Record */}
             <Container fluid="true" className="section" style={{background: "#00203E"}}>

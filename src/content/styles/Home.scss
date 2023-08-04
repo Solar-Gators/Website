@@ -32,6 +32,13 @@
     padding: 0;
 }
 
+.inbedded_img {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    margin: 2vw 0;
+}
+
 #sponsor_logos_half {
     padding: 0;
     display: inline;

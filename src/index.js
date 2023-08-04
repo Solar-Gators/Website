@@ -9,7 +9,7 @@ import './content/assets/fonts/Inter-VariableFont.ttf';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -7,11 +7,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc4e1d2d-50d0-4b9c-91a0-44fd4e2a9b80" name="Changes" comment="Cleaned Up Header.css file &amp; global variables">
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/Torch/torch_ontrack_clean.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SplitSection/SplitSection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SplitSection/SplitSection.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/sunrider/2022/AND02053.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/sunrider/2022/AND02065.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/sunrider/2022/AND02110.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/sunrider/2022/AND02158.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/sunrider/2022/AND02162.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/sunrider/2022/DSC_0199.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/sunrider/2022/DSC_0324.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/people/team22/about.JPG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/car_pics/Cielo/IMG_9011.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/Cielo/IMG_9011.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/styles/Cars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Cars.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Cars.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Cars.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CarsSection/CarsSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CarsSection/CarsSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/assets/images/car_pics/Cielo/IMG_9219.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/Cielo/IMG_9219.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/assets/images/people/team22/about us.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/styles/About.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/About.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/styles/Home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +95,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -100,7 +117,7 @@
       <workItem from="1683671385084" duration="60664000" />
       <workItem from="1684858360738" duration="19606000" />
       <workItem from="1686322868066" duration="172000" />
-      <workItem from="1690910126265" duration="15778000" />
+      <workItem from="1690910126265" duration="22011000" />
     </task>
     <task id="LOCAL-00001" summary="Organized image files. Updated pathes">
       <created>1690910957798</created>

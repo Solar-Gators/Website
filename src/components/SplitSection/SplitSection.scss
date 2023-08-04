@@ -1,0 +1,47 @@
+.second_blurb {
+  margin-top: 50px;
+}
+
+.text-half-container {
+  margin: 0;
+  padding: 10vw 7vw 8vw;
+}
+
+.image-half-container {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  right: 0;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  //Image adjustments
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+//Resize text for mobile
+@media screen and (max-width: 425px) {
+  .second_blurb {
+    margin-top: 10px;
+  }
+
+  .image-half-container {
+    padding: 0;
+    margin: 0;
+    height: 40vw;
+  }
+
+  .text-half-container {
+    padding: 9vw 4vw 8vw;
+  }
+}

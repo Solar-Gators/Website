@@ -27,6 +27,7 @@ import ECE from "../content/assets/images/sponsor_logos/ECE.png";
 import Header from "../components/Header";
 import CarsSection from "../components/CarsSection/CarsSection";
 import MissionStatements from "../components/MissionStatements/MissionStatements";
+import fsgp23 from "../content/assets/images/people/team22/victory0.JPG";
 
 //Car 3 Platinum Sponsors
 let platinum3 = [[MAE, "https://mae.ufl.edu/"], [ZenithTecnica, "https://www.zenithtecnica.com/"], [ECE, "https://www.ece.ufl.edu/"]];
@@ -142,6 +143,20 @@ export default function Home() {
           {/*  Page Header */}
           <Header title={"Powered By Florida sunshine"}
                   imgcss={"home-header-img"}/>
+
+          {/* FSGP 23 Champions */}
+          <Container fluid="true" className="section" style={{background: "#00203E"}}>
+              <Row style={{justifyContent: "center"}}>
+                  <h2 className="heading2-text">
+                      Solar Gators Victory
+                  </h2>
+                  <p className={"body-text-white"} style={{textAlign: "center"}}>
+                      Our team achieved an electrifying victory at this year's Formula Sun Grand Prix (FSGP), solidifying our position as pioneers in solar-powered endurance racing.
+                      Battling against formidable competitors from around the country, our team demonstrated their exceptional engineering prowess and unyielding determination, ultimately crossing the finish line in an awe-inspiring first place.
+                  </p>
+                  <img src={fsgp23} alt={""} className={"inbedded_img"}/>
+              </Row>
+          </Container>
 
           {/*  Mission Section */}
             <MissionStatements on_mobile={mobileView}
