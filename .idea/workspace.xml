@@ -6,25 +6,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc4e1d2d-50d0-4b9c-91a0-44fd4e2a9b80" name="Changes" comment="Cleaned Up Header.css file &amp; global variables">
-      <change afterPath="$PROJECT_DIR$/src/components/SplitSection/SplitSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SplitSection/SplitSection.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/sunrider/2022/AND02053.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/sunrider/2022/AND02065.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/sunrider/2022/AND02110.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/sunrider/2022/AND02158.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/sunrider/2022/AND02162.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/sunrider/2022/DSC_0199.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/sunrider/2022/DSC_0324.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/people/team22/about.JPG" afterDir="false" />
+    <list default="true" id="cc4e1d2d-50d0-4b9c-91a0-44fd4e2a9b80" name="Changes" comment="Component created for optimal reuse">
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/people/team22/victory0_crop.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/people/team22/victory0_crop_edit.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CarsSection/CarsSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CarsSection/CarsSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/car_pics/Cielo/IMG_9219.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/assets/images/car_pics/Cielo/IMG_9219.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/people/team22/about us.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/styles/About.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/About.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/content/styles/Home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Home.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/About.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,7 +103,7 @@
       <workItem from="1683671385084" duration="60664000" />
       <workItem from="1684858360738" duration="19606000" />
       <workItem from="1686322868066" duration="172000" />
-      <workItem from="1690910126265" duration="22011000" />
+      <workItem from="1690910126265" duration="26072000" />
     </task>
     <task id="LOCAL-00001" summary="Organized image files. Updated pathes">
       <created>1690910957798</created>
@@ -147,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691090007092</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Component created for optimal reuse">
+      <created>1691188120127</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1691188120127</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +162,7 @@
     <MESSAGE value="Organized image files. Updated pathes" />
     <MESSAGE value="Optimized Car &amp; Mission Statement sections to be reusable between pages." />
     <MESSAGE value="Cleaned Up Header.css file &amp; global variables" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaned Up Header.css file &amp; global variables" />
+    <MESSAGE value="Component created for optimal reuse" />
+    <option name="LAST_COMMIT_MESSAGE" value="Component created for optimal reuse" />
   </component>
 </project>

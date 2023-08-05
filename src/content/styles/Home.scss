@@ -32,11 +32,15 @@
     padding: 0;
 }
 
-.inbedded_img {
+.fsgp-row {
+    justify-content: center;
+}
+
+.fsgp-row  img {
     display: flex;
     flex-direction: row;
-    width: 80vw;
-    margin: 2vw 0;
+    width: 85vw;
+    margin: 3vw 0 0;
 }
 
 #sponsor_logos_half {
@@ -138,10 +142,14 @@ $animationSpeed: 50s;
         padding: 8vw 3vw 7vw;
     }
 
-    .mission-statement {
-        width: 90vw;
+    .fsgp-row {
+        margin: 0 4vw
     }
 
+    .fsgp-row img {
+        margin-top: 7vw;
+    }
+    
     .slider {
         margin-bottom: 10px;
         &::before,

@@ -13,3 +13,11 @@
    justify-content: center;
    width: 20vw;
  }
+
+//Resize for mobile
+@media screen and (max-width: 425px) {
+  .mission-statement {
+    width: 90vw;
+  }
+
+}
