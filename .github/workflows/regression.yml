@@ -1,12 +1,12 @@
-name: github pages
+name: Regression Testing
 
 on:
   push:
-    branches:
+    branches-ignore:
       - master
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -20,10 +20,3 @@ jobs:
         env:
           # prevents lint warnings from being errors
           CI: false
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
-          cname: ufsolargators.org
