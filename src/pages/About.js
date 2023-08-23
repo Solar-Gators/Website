@@ -2,15 +2,14 @@ import React from 'react'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import Button from "react-bootstrap/Button";
-import {Link} from "react-router-dom";
+import CarsSection from "../components/CarsSection/CarsSection";
+import MissionStatements from "../components/MissionStatements/MissionStatements";
+import SplitSection from "../components/SplitSection/SplitSection";
+import Header from "../components/Header";
 
-import img1 from '../content/assets/images/people/people_sunrider0.jpeg';
-import img2 from '../content/assets/images/people/outreach1.jpeg';
-import img3 from '../content/assets/images/people/working1.jpeg';
-import car1 from "../content/assets/images/car_pics/car1.jpg";
-import car2 from "../content/assets/images/car_pics/car2.JPG";
-import car3 from "../content/assets/images/car_pics/car3.jpg";
+import img1 from '../content/assets/images/people/team21/people_sunrider0.jpeg';
+import img2 from '../content/assets/images/people/team22/outreach1.jpeg';
+import img3 from '../content/assets/images/people/team21/working1.jpeg';
 
 //Blurb Section 1
 let p1 = "Solar Gators is a fully student-run engineering design team at " +
@@ -36,137 +35,85 @@ let p3 = "Inclusivity is one of our founding principles. We believe that everyon
     "resources they need to become better engineers and better people. Join us as we " +
     "push the limits of what's possible in solar racing and beyond."
 
-function Car({car_img, car_name, car_year1, car_year2}) {
-    //creates each car's container for image & hover description
-    return (
-        <Link className="car-card" to={"/cars"} onClick={() => {window.scroll(0,0);}} >
-            <img className="car-card-img" src={car_img} />
-            <div className="overlay">
-                <div className="overlay-text-header">{car_name}</div>
-                <div className="overlay-text-body">{car_year1} - {car_year2}</div>
-            </div>
-        </Link>
-    )
-}
-
-function DividedSection({img, blurb, blurb2, img_align}) {
-    let ImageHalf = () => {
-        return (
-            <Col className="no-margin-padding">
-                <div className="image-half-container" style={{backgroundImage: "url(" + img + ")"}}></div>
-            </Col>
-        )
-    }
-    let TextHalf = () => {
-        return (
-            <Col className="no-margin-padding">
-                <div className="text-half-container">
-                    <p className={"body-text"}>{blurb}</p>
-                    {/* if there is a second paragraph */}
-                    { blurb2 ? <p className={"body-text"} style={{marginTop: "50px"}}>{blurb2}</p> : ""}
-                </div>
-            </Col>
-        )
-    }
-    // (img_align = true) => image on left side
-    if (img_align) {
-        return(
-            <Row style={{padding: "0", margin: "0"}}>
-                <ImageHalf/>
-                <TextHalf/>
-            </Row>
-        )
-    }
-    else {
-        return (
-            <Row style={{padding: "0", margin: "0"}}>
-                <TextHalf></TextHalf>
-                <ImageHalf></ImageHalf>
-            </Row>
-        )
-    }
-}
-
-function BlurbAndPicture({on_mobile, img, blurb, blurb2, img_align, img_above}) {
-    let Image = () => {
-        return (
-            <Row className="image-half-container" style={{backgroundImage: "url(" + img + ")"}}/>
-        )
-    }
-    let Text = () => {
-        return (
-            <Row className={"no-margin-padding"}>
-                <div className="text-half-container">
-                    <p className={"body-text"}>{blurb}</p>
-                    {/* if there is a second paragraph */}
-                    { blurb2 ? <p className={"body-text"} style={{paddingTop: "10px"}}>{blurb2}</p> : ""}
-                </div>
-            </Row>
-        )
-    }
-    if (on_mobile) {
-        if (img_above) {
-            return (
-                <Col className={"no-margin-padding"}>
-                    <Image/>
-                    <Text/>
-                </Col>
-            )
-        }
-        else {
-            return (
-                <Col className={"no-margin-padding"}>
-                    <Text/>
-                    <Image/>
-                </Col>
-            )
-        }
-    }
-    else {
-        return (
-            <DividedSection img={img} blurb={blurb} blurb2={blurb2} img_align={img_align}/>
-        )
-    }
-}
-
-function MissionStatements({on_mobile, accent1, blurb1, accent2, blurb2, accent3, blurb3, accent4, blurb4}) {
-    let Text = ({accent, blurb}) => {
-        return (
-            <p className={"body-text-white"} style={{paddingBottom: "16px"}}><span style={{color: "#F37833", fontWeight: "bold", display: "inline"}}>{accent}</span>{blurb}</p>
-        )
-    }
-
-    if (on_mobile) {
-        return (
-            <Row className="no-margin-padding">
-                <Col >
-                    <Text accent={accent1} blurb={blurb1}/>
-                    <Text accent={accent2} blurb={blurb2}/>
-                    <Text accent={accent3} blurb={blurb3}/>
-                    <Text accent={accent4} blurb={blurb4}/>
-                </Col>
-            </Row>
-        )
-    }
-    else {
-        return (
-            <Row style={{justifyContent: "center"}}>
-                <Col className={"mission-statement"} style={{marginLeft: "0"}}>
-                    <Text accent={accent1} blurb={blurb1}/>
-                </Col>
-                <Col className={"mission-statement"}>
-                    <Text accent={accent2} blurb={blurb2}/>
-                </Col>
-                <Col className={"mission-statement"}>
-                    <Text accent={accent3} blurb={blurb3}/>
-                </Col>
-                <Col className={"mission-statement"} style={{marginRight: "0"}}>
-                    <Text accent={accent4} blurb={blurb4}/>
-                </Col>
-            </Row>
-        )
-    }
-}
+// function DividedSection({img, blurb, blurb2, img_align}) {
+//     let ImageHalf = () => {
+//         return (
+//             <Col className="no-margin-padding">
+//                 <div className="image-half-container" style={{backgroundImage: "url(" + img + ")"}}/>
+//             </Col>
+//         )
+//     }
+//     let TextHalf = () => {
+//         return (
+//             <Col className="no-margin-padding">
+//                 <div className="text-half-container">
+//                     <p className={"body-text"}>{blurb}</p>
+//                     {/* if there is a second paragraph */}
+//                     { blurb2 ? <p className={"body-text"} style={{marginTop: "50px"}}>{blurb2}</p> : ""}
+//                 </div>
+//             </Col>
+//         )
+//     }
+//     // (img_align = true) => image on left side
+//     if (img_align) {
+//         return(
+//             <Row style={{padding: "0", margin: "0"}}>
+//                 <ImageHalf/>
+//                 <TextHalf/>
+//             </Row>
+//         )
+//     }
+//     else {
+//         return (
+//             <Row style={{padding: "0", margin: "0"}}>
+//                 <TextHalf/>
+//                 <ImageHalf/>
+//             </Row>
+//         )
+//     }
+// }
+//
+// function BlurbAndPicture({on_mobile, img, blurb, blurb2, img_align, img_above}) {
+//     let Image = () => {
+//         return (
+//             <Row className="image-half-container" style={{backgroundImage: "url(" + img + ")"}}/>
+//         )
+//     }
+//     let Text = () => {
+//         return (
+//             <Row className={"no-margin-padding"}>
+//                 <div className="text-half-container">
+//                     <p className={"body-text"}>{blurb}</p>
+//                     {/* if there is a second paragraph */}
+//                     { blurb2 ? <p className={"body-text"} style={{paddingTop: "10px"}}>{blurb2}</p> : ""}
+//                 </div>
+//             </Row>
+//         )
+//     }
+//     if (on_mobile) {
+//         if (img_above) {
+//             return (
+//                 <Col className={"no-margin-padding"}>
+//                     <Image/>
+//                     <Text/>
+//                 </Col>
+//             )
+//         }
+//         else {
+//             return (
+//                 <Col className={"no-margin-padding"}>
+//                     <Text/>
+//                     <Image/>
+//                 </Col>
+//             )
+//         }
+//     }
+//     else {
+//         return (
+//             <DividedSection img={img} blurb={blurb} blurb2={blurb2} img_align={img_align}/>
+//         )
+//     }
+// }
 
 function TrackRecord({on_mobile, blurb1, blurb2, blurb3, blurb4}) {
     let Text = ({blurb}) => {
@@ -209,20 +156,6 @@ function TrackRecord({on_mobile, blurb1, blurb2, blurb3, blurb4}) {
     }
 }
 
-function DonateButton ({on_mobile}) {
-    if (!on_mobile) {
-        return (
-            <Button className="btn-primary" as={Link} to={"/donate"}
-                    onClick={() => {window.scroll(0,0);}}>
-                Donate
-            </Button>
-        )
-    }
-    else {
-        return ("")
-    }
-}
-
 
 export default function About() {
     /* mql = media query list (https://dev.to/yanns1/how-to-render-different-components-based-on-screen-size-2p35) */
@@ -232,46 +165,19 @@ export default function About() {
     return (
         <React.Fragment>
             {/*  Page Header */}
-            <Container fluid="true" className="header">
-            <Row>
-              <Col>
-                <div className="about-header-img">
-                  <h1 className={"title-text"}>
-                    About Us
-                  </h1>
-                </div>
-              </Col>
-            </Row>
-          </Container>
+            <Header title={"About Us"} imgcss={"about-header-img"}/>
 
             {/* Blurb & Picture */}
-            <BlurbAndPicture img={img1} blurb={p1} img_align={false} on_mobile={mobileView} img_above={false}></BlurbAndPicture>
+            <SplitSection img={img1} blurb={p1} img_left={false} on_mobile={mobileView} img_above={false}/>
 
             {/*  Mission Section */}
-            <Container fluid="true" className="section" style={{background: "#00203E"}}>
-                <Row>
-                  <h2 className="heading2-text">
-                    Our Mission
-                  </h2>
-                </Row>
-                <MissionStatements
-                    on_mobile={mobileView}
-                    accent1={"Accelerate"}
-                    blurb1={" the world's transition to sustainable energy"}
-                    accent2={"Develop"}
-                    blurb2={" gator engineers through hands-on design and manufacturing experience"}
-                    accent3={"Inspire"}
-                    blurb3={" students to explore their interests within STEM and become the next generation of innovators shaping the future"}
-                    accent4={"Build"}
-                    blurb4={" awareness within our community about the transformative potential of solar energy"}
-                />
-          </Container>
+            <MissionStatements on_mobile={mobileView} white_background={false} button={false} />
 
             {/* Blurb 2 & Picture */}
-            <BlurbAndPicture img={img2} blurb={p2a} blurb2={p2b} img_align={true} on_mobile={mobileView} img_above={true}></BlurbAndPicture>
+            <SplitSection img={img2} blurb={p2a} blurb2={p2b} img_left={true} on_mobile={mobileView} img_above={true}/>
 
             {/* Blurb 3 & Picture */}
-            <BlurbAndPicture img={img3} blurb={p3} img_align={false} on_mobile={mobileView} img_above={true}></BlurbAndPicture>
+            <SplitSection img={img3} blurb={p3} img_left={false} on_mobile={mobileView} img_above={true}/>
 
             {/* Our Track Record */}
             <Container fluid="true" className="section" style={{background: "#00203E"}}>
@@ -288,22 +194,7 @@ export default function About() {
             </Container>
 
             {/* Car Section */}
-            <Container fluid="true" className="section">
-                <Row>
-                    <h2 className="heading2-text">
-                        Our Cars
-                    </h2>
-                </Row>
-                <Row className={"car-cards"}>
-                    <Car car_img={car1} car_name={"Torch"} car_year1={"2017"} car_year2={"2018"}></Car>
-                    <Car car_img={car2} car_name={"Cielo"} car_year1={"2018"} car_year2={"2019"}></Car>
-                    <Car car_img={car3} car_name={"Sunrider"} car_year1={"2020"} car_year2={"present"}></Car>
-                </Row>
-                <Row>
-                    <DonateButton on_mobile={mobileView}/>
-                </Row>
-
-            </Container>
+            <CarsSection mobileView={mobileView}/>
 
         </React.Fragment>
     )

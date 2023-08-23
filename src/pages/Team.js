@@ -27,7 +27,7 @@ import vicepresident21  from "../content/assets/images/officers/2021/vp21.png";
 import treasurer21      from "../content/assets/images/officers/2021/treasurer21.jpg";
 import secretary21      from "../content/assets/images/officers/2021/secretary21.jpg";
 import business21       from "../content/assets/images/officers/2021/business21.png";
-import aerobody21       from "../content/assets/images/AB_body21.jpg";     //pierre
+import aerobody21       from "../content/assets/images/officers/2021/aero21.jpg";     //update to pierre
 import solararray21     from "../content/assets/images/officers/2021/solararray21.jpg";
 import auxiliary21      from "../content/assets/images/officers/2021/auxilary21.jpg";
 import bms21            from "../content/assets/images/officers/2021/bms21.jpg";

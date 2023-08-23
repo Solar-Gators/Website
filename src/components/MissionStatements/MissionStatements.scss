@@ -1,0 +1,23 @@
+.accent_word {
+  font-weight: bold;
+  display: inline;
+}
+
+#orange_accent {
+  color: #F37833;
+}
+
+.mission-statement {
+   margin: 0 2vw;
+   padding: 0;
+   justify-content: center;
+   width: 20vw;
+ }
+
+//Resize for mobile
+@media screen and (max-width: 425px) {
+  .mission-statement {
+    width: 90vw;
+  }
+
+}

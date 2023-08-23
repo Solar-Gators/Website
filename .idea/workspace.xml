@@ -6,30 +6,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc4e1d2d-50d0-4b9c-91a0-44fd4e2a9b80" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2021/aero21.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2021/auxilary21.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2021/bms21.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2021/chassis21.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2021/power21.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2021/solararray21.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2021/suspension21.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2021/telemetry21.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2021/vp21.png" afterDir="false" />
+    <list default="true" id="cc4e1d2d-50d0-4b9c-91a0-44fd4e2a9b80" name="Changes" comment="Component created for optimal reuse">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/car_pics/Torch/IMG_3458.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/officers/2021/vicepresident21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/officers/misc/AB_body21 copy.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/officers/misc/AUX21 copy.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/officers/misc/M_chassis copy.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/officers/misc/M_suspension copy.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/officers/misc/morgen copy.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/officers/misc/mu copy.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/About.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Cars.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Cars.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Donate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Donate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Team.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Team.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/styles/Home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Home.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,12 +67,20 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -113,7 +100,44 @@
       <workItem from="1683671385084" duration="60664000" />
       <workItem from="1684858360738" duration="19606000" />
       <workItem from="1686322868066" duration="172000" />
+      <workItem from="1690910126265" duration="26476000" />
     </task>
+    <task id="LOCAL-00001" summary="Organized image files. Updated pathes">
+      <created>1690910957798</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1690910957798</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Optimized Car &amp; Mission Statement sections to be reusable between pages.">
+      <created>1691088944479</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1691088944479</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Optimized Car &amp; Mission Statement sections to be reusable between pages.">
+      <created>1691089106150</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1691089106150</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Cleaned Up Header.css file &amp; global variables">
+      <created>1691090007092</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1691090007092</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Component created for optimal reuse">
+      <created>1691188120127</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1691188120127</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,5 +156,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Organized image files. Updated pathes" />
+    <MESSAGE value="Optimized Car &amp; Mission Statement sections to be reusable between pages." />
+    <MESSAGE value="Cleaned Up Header.css file &amp; global variables" />
+    <MESSAGE value="Component created for optimal reuse" />
+    <option name="LAST_COMMIT_MESSAGE" value="Component created for optimal reuse" />
   </component>
 </project>

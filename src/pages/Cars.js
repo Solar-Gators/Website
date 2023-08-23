@@ -1,18 +1,23 @@
 import React from 'react'
-
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import "../content/styles/Header.scss";
-import "../content/styles/Cars.scss";
-import "../content/styles/Button.scss";
-import torch from "../content/assets/images/car_pics/Torch/torch_team.JPG";
-import sunrider from "../content/assets/images/car_pics/car3.jpg";
-import cielo from "../content/assets/images/car_pics/car2.JPG";
 import Button from "react-bootstrap/Button";
 import {Link} from "react-router-dom";
+import Header from "../components/Header";
+import torch from "../content/assets/images/car_pics/torch/torch_ontrack_clean.jpg";
+import sunrider from "../content/assets/images/car_pics/sunrider/2021/car3.jpg";
+import cielo from "../content/assets/images/car_pics/cielo/IMG_9011_crop.JPG";
+
 
 function SplitSection ({name, year1, year2, blurb, img, pic_side, on_mobile}) {
+    let ImageContent = () => {
+        return (
+            <Col className="no-margin-padding">
+                <div className="image-half-container" style={{backgroundImage: "url(" + img + ")"}}/>
+            </Col>
+        )
+    }
     let TextContent = ({textColor}) => {
         if (on_mobile) {
             return (
@@ -38,13 +43,7 @@ function SplitSection ({name, year1, year2, blurb, img, pic_side, on_mobile}) {
             )
         }
     }
-    let ImageContent = () => {
-        return (
-            <Col className="no-margin-padding">
-                <div className="image-half-container" style={{backgroundImage: "url(" + img + ")"}}></div>
-            </Col>
-        )
-    }
+
     if (on_mobile) {
         if (name === "Cielo") {
             return (
@@ -90,21 +89,11 @@ export default function Cars() {
     return (
         <React.Fragment>
             {/*  Page Header */}
-            <Container fluid="true" className="header">
-                <Row>
-                    <Col>
-                        <div className="cars-header-img">
-                            <h1 className={"title-text"}>
-                                Our Cars
-                            </h1>
-                        </div>
-                    </Col>
-                </Row>
-            </Container>
+            <Header title={"Our Cars"} imgcss={"cars-header-img"}/>
 
             {/* Sunrider */}
             <SplitSection name={"Sunrider"} year1={"2020"} year2={"2023"} img={sunrider} pic_side={"right"}
-                          blurb={"Design for our third car, Sunrider, commenced in 2019. However, pandemic restrictions brought progress to a halt with limited in-person meetings and significant supply chain delays. Through this difficult time, the team banded together and worked relentlessly to complete Sunrider. Making its debut in the 2022 Formula Sun Grand Prix (FSGP), Sunrider set new team records in almost every aspect of the competition. Sunrider drove a total distance of over 187.5 miles and finished in tenth place."}
+                          blurb={"Design for our third car, Sunrider, commenced in 2019. However, pandemic restrictions brought progress to a halt with limited in-person meetings and significant supply chain delays. Through this difficult time, the team banded together and worked relentlessly to complete Sunrider. Making its debut in the 2022 Formula Sun Grand Prix (FSGP), Sunrider set new team records; accumulating a total distance of over 700 miles and winning the 2023 FSGP in its second competition."}
                           on_mobile={mobileView}/>
 
             {/* Cielo */}

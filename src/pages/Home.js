@@ -1,13 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from "react-router-dom";
-
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
-import "../content/styles/Header.scss";
-import "../content/styles/Home.scss";
-import "../content/styles/Button.scss";
 
 //Officer Pictures
 import president from '../content/assets/images/officers/2022/president22.JPG';
@@ -25,107 +21,24 @@ import brakes from '../content/assets/images/officers/2022/brakes22.JPG';
 import battery from '../content/assets/images/officers/2022/battery22.JPG';
 import aero from '../content/assets/images/officers/2022/aero22.JPG';
 
-//Car Pictures
-import car1 from '../content/assets/images/car_pics/Torch/torch_team.JPG';
-import car2 from '../content/assets/images/car_pics/car2.JPG';
-import car3 from '../content/assets/images/car_pics/car3.jpg';
 import MAE from "../content/assets/images/sponsor_logos/MAE.png";
 import ZenithTecnica from "../content/assets/images/sponsor_logos/ZenithTecnica.png";
 import ECE from "../content/assets/images/sponsor_logos/ECE.png";
+import Header from "../components/Header";
+import CarsSection from "../components/CarsSection/CarsSection";
+import MissionStatements from "../components/MissionStatements/MissionStatements";
+import fsgp23 from "../content/assets/images/people/team22/victory0_crop_edit.jpg";
 
 //Car 3 Platinum Sponsors
 let platinum3 = [[MAE, "https://mae.ufl.edu/"], [ZenithTecnica, "https://www.zenithtecnica.com/"], [ECE, "https://www.ece.ufl.edu/"]];
-
-function MissionStatements({on_mobile, accent1, blurb1, accent2, blurb2, accent3, blurb3, accent4, blurb4}) {
-    if (on_mobile) {
-        return (
-            <Row className="no-margin-padding">
-                <Col className="no-margin-padding">
-                        <p className={"body-text"} style={{paddingBottom: "16px"}}><b>{accent1}</b>{blurb1}</p>
-                        <p className={"body-text"} style={{paddingBottom: "16px"}}><b>{accent2}</b>{blurb2}</p>
-                        <p className={"body-text"} style={{paddingBottom: "16px"}}><b>{accent3}</b>{blurb3}</p>
-                        <p className={"body-text"} style={{paddingBottom: "16px"}}><b>{accent4}</b>{blurb4}</p>
-                </Col>
-            </Row>
-        )
-    }
-    else {
-        return (
-            <Row className="no-margin-padding" style={{justifyContent: "center"}}>
-                <Col className={"mission-statement"} style={{marginLeft: "0"}}>
-                    <p className={"body-text"}><b>{accent1}</b>{blurb1}</p>
-                </Col>
-                <Col className={"mission-statement"}>
-                    <p className={"body-text"}><b>{accent2}</b>{blurb2}</p>
-                </Col>
-                <Col className={"mission-statement"}>
-                    <p className={"body-text"}><b>{accent3}</b>{blurb3}</p>
-                </Col>
-                <Col className={"mission-statement"} style={{marginRight: "0"}}>
-                    <p className={"body-text"}><b>{accent4}</b>{blurb4}</p>
-                </Col>
-            </Row>
-        )
-    }
-}
 
 function Officer({pic}) {
     //creates individual officer headshot container w image
     return (
         <div className={"headshot"} >
-            <img className={"headshot-img"} src={pic}></img>
+            <img className={"headshot-img"} src={pic} alt={"headshot"}/>
         </div>
     )
-}
-
-function Car({car_img, car_name, car_year1, car_year2}) {
-    //creates each car's container for image & hover description
-    return (
-        <Link className="car-card" to={"/cars"} onClick={() => {window.scroll(0,0);}} >
-            <img className="car-card-img" src={car_img}/>
-            <div className="overlay">
-                <div className="overlay-text-header">{car_name}</div>
-                <div className="overlay-text-body">{car_year1} - {car_year2}</div>
-            </div>
-        </Link>
-    )
-}
-
-function CarTiles({on_mobile}) {
-    //format for mobile
-    if (on_mobile) {
-        return (
-            <Col>
-                <Row className={"car-cards"}>
-                    <Car car_img={car1} car_name={"Torch"} car_year1={"2017"} car_year2={"2018"}></Car>
-                </Row>
-                <Row className={"car-cards"}>
-                    <Car car_img={car2} car_name={"Cielo"} car_year1={"2018"} car_year2={"2019"}></Car>
-                </Row>
-                <Row className={"car-cards"}>
-                    <Car car_img={car3} car_name={"Sunrider"} car_year1={"2020"} car_year2={"present"}></Car>
-                </Row>
-            </Col>
-        )
-    }
-    //format for desktop
-    else {
-        return (
-            <Col>
-                <Row className={"car-cards"}>
-                    <Car car_img={car1} car_name={"Torch"} car_year1={"2017"} car_year2={"2018"}></Car>
-                    <Car car_img={car2} car_name={"Cielo"} car_year1={"2018"} car_year2={"2019"}></Car>
-                    <Car car_img={car3} car_name={"Sunrider"} car_year1={"2020"} car_year2={"present"}></Car>
-                </Row>
-                <Row>
-                    <Button className="btn-primary" as={Link} to={"/cars"}
-                            onClick={() => {window.scroll(0,0);}}>
-                        Learn More
-                    </Button>
-                </Row>
-            </Col>
-        )
-    }
 }
 
 function SponsorSection ({on_mobile}) {
@@ -135,7 +48,7 @@ function SponsorSection ({on_mobile}) {
                 <Col className="logo-col">
                     <a href={link}>
                         <span className="align-center">
-                            <img src={src} className="sponsor-logo"/>
+                            <img src={src} className="sponsor-logo" alt={"logo"}/>
                         </span>
                     </a>
                 </Col>
@@ -146,7 +59,7 @@ function SponsorSection ({on_mobile}) {
                 <Col className="logo-col" style={{maxWidth: "18vw", margin: "2vw 0"}}>
                     <a href={link}>
                         <span className="align-center">
-                            <img src={src} className="sponsor-logo" style={{maxWidth: "18vw", padding: "0 2vw"}} />
+                            <img src={src} className="sponsor-logo" style={{maxWidth: "18vw", padding: "0 2vw"}} alt={"logo"}/>
                         </span>
                     </a>
                 </Col>
@@ -228,45 +141,35 @@ export default function Home() {
     return (
       <React.Fragment>
           {/*  Page Header */}
-          <Container fluid="true" className="header">
-            <Row>
-                <Col>
-                    <div className="home-header-img">
-                        <h1 className={"title-text"}>
-                          Powered By Florida sunshine
-                        </h1>
-                    </div>
-                </Col>
-            </Row>
-        </Container>
+          <Header title={"Powered By Florida sunshine"}
+                  imgcss={"home-header-img"}/>
+
+          {/* FSGP 23 Champions */}
+          <Container fluid="true" className="section" style={{background: "#00203E"}}>
+              <Row className={"fsgp-row"}>
+                  <h2 className="heading2-text">
+                      Solar Gators Victory!
+                  </h2>
+                  <p className={"body-text-white"} style={{textAlign: "center"}}>
+                      Our team achieved an electrifying
+                      <span className={"accent_word"} id={"orange_accent"}> victory at this year's Formula Sun Grand Prix (FSGP)</span>
+                      , solidifying our position as pioneers in solar-powered endurance racing.
+                      Battling against formidable competitors from around the country, our team demonstrated their exceptional engineering prowess and unyielding determination, ultimately crossing the finish line in an awe-inspiring
+                      <span className={"accent_word"} id={"orange_accent"}> first place</span>
+                      . Additionally, our team received awards for
+                      <span className={"accent_word"} id={"orange_accent"}> Most Improved </span>
+                      and
+                      <span className={"accent_word"} id={"orange_accent"}> Aesthetics</span>
+                      .
+                  </p>
+                  <img src={fsgp23} alt={""}/>
+              </Row>
+          </Container>
 
           {/*  Mission Section */}
-          <Container fluid="true" className="section">
-            <Row>
-              <h2 className="heading2-text">
-                  Our Mission
-              </h2>
-            </Row>
-
-              <MissionStatements
-                  on_mobile={mobileView}
-                  accent1={"Accelerate"}
-                  blurb1={" the world's transition to sustainable energy"}
-                  accent2={"Develop"}
-                  blurb2={" gator engineers through hands-on design and manufacturing experience"}
-                  accent3={"Inspire"}
-                  blurb3={" students to explore their interests within STEM and become the next generation of innovators shaping the future"}
-                  accent4={"Build"}
-                  blurb4={" awareness within our community about the transformative potential of solar energy"}
-              />
-
-            <Row>
-                <Button className="btn-primary" as={Link} to={"/about"}
-                        onClick={() => {window.scroll(0,0);}}>
-                    About Us
-                </Button>
-            </Row>
-        </Container>
+            <MissionStatements on_mobile={mobileView}
+                               white_background={true}
+                               button={true}/>
 
           {/*  Team Section */}
           <Container fluid="true" className="section" style={{backgroundColor: '#00203E'}}>
@@ -303,17 +206,8 @@ export default function Home() {
               </Row>
           </Container>
 
-          {/*  Car Section */}
-          <Container fluid="true" className="section">
-              <Row>
-                  <h2 className="heading2-text">
-                      Our Cars
-                  </h2>
-              </Row>
-
-              <CarTiles on_mobile={mobileView}/>
-
-          </Container>
+          {/* Car Section */}
+          <CarsSection mobileView={mobileView}/>
 
           {/*  Sponsors Section */}
           <Container fluid="true" className="section">
