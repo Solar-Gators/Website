@@ -15,9 +15,8 @@ function DividedSection({img, blurb, blurb2, img_left}) {
         return (
             <Col className="no-margin-padding">
                 <div className="text-half-container">
-                    <p className={"body-text"}>{blurb}</p>
-                    {/* if there is a second paragraph */}
-                    { blurb2 ? <p className={"body-text"} style={{marginTop: "50px"}}>{blurb2}</p> : ""}
+                    { blurb ? <p style={{marginTop: "50px"}}>{blurb}</p> : ""}
+                    { blurb2 ? <p style={{marginTop: "50px"}}>{blurb2}</p> : ""}
                 </div>
             </Col>
         )
@@ -50,9 +49,9 @@ export default function SplitSection({on_mobile, img, blurb, blurb2, img_left, i
         return (
             <Row className={"no-margin-padding"}>
                 <div className="text-half-container">
-                    <p className={"body-text"}>{blurb}</p>
+                    <p>{blurb}</p>
                     {/* if there is a second paragraph */}
-                    { blurb2 ? <p className={"body-text"} style={{paddingTop: "10px"}}>{blurb2}</p> : ""}
+                    { blurb2 ? <p style={{paddingTop: "10px"}}>{blurb2}</p> : ""}
                 </div>
             </Row>
         )

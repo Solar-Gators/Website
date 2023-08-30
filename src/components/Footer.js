@@ -44,7 +44,7 @@ export default function Footer() {
                     </Row>
                     {/* Email */}
                     <Row className="row-container" style={{justifyContent: "center"}}>
-                        <Link className="body-text" style={{color: '#F37833', padding: "0", marginTop: "10px"}} to={"/contact"}>info@ufsolargators.org</Link>
+                        <Link style={{color: '#F37833', padding: "0", marginTop: "10px"}} to={"/contact"}>info@ufsolargators.org</Link>
                     </Row>
                 </Col>
             </Container>
@@ -76,12 +76,7 @@ export default function Footer() {
 
                     {/* Email & Mailing Addresses */}
                     <Col className={"column-container"} style={{justifyContent: "end"}}>
-                        {/*<p className="body-text-white" id="address">*/}
-                        {/*    Solar Gators<br/>*/}
-                        {/*    PO Box 116250<br/>*/}
-                        {/*    Gainesville, FL 32611<br/>*/}
-                        {/*</p>*/}
-                        <Link className="body-text" style={{color: '#F37833', alignSelf: "flex-end"}} to={"/contact"}>info@ufsolargators.org</Link>
+                        <Link style={{color: '#F37833', alignSelf: "flex-end"}} to={"/contact"}>info@ufsolargators.org</Link>
                     </Col>
                 </Row>
             </Container>

@@ -8,12 +8,19 @@
 @import "./content/styles/Button.scss";
 @import "./content/styles/Cars.scss";
 
-body {
+body, p, a {
   font-family: 'Inter';
-  font-size: 14px;
-  background: var(--color-white);
-  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+
+  text-align: left;
+  color: var(--color-black);
+  transition: 5ms ease;
+
   padding: 0;
+  margin: 0 0 1rem 0;
 }
 
 /* Title */
@@ -44,7 +51,7 @@ body {
 }
 
 /* Heading 1 */
-.heading1-text {
+h1 {
   font-family: 'Inter';
   font-style: normal;
   font-weight: bold;
@@ -68,7 +75,7 @@ body {
 }
 
 /* Heading 2 */
-.heading2-text {
+h2 {
   font-family: 'Inter';
   font-style: normal;
   font-weight: bold;
@@ -92,7 +99,7 @@ body {
 }
 
 /* Heading 3 */
-.heading3-text {
+h3 {
   font-family: 'Inter';
   font-style: normal;
   font-weight: bold;
@@ -116,7 +123,7 @@ body {
 }
 
 /* Heading 4 */
-.heading4-text {
+h4 {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
@@ -140,7 +147,7 @@ body {
 }
 
 /* Heading 5 */
-.heading5-text {
+h5 {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
@@ -164,7 +171,7 @@ body {
 }
 
 /* Heading 6 */
-.heading6-text {
+h6 {
   font-family: 'Inter';
   font-style: italic;
   font-weight: 300;
@@ -185,21 +192,6 @@ body {
   top: 0;
   padding-top: 20px;
   padding-bottom: 10px;
-}
-
-.body-text {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-
-  text-align: left;
-  color: var(--color-black);
-  transition: 5ms ease;
-
-  padding: 0;
-  margin: 0;
 }
 
 .body-text-white {
@@ -223,26 +215,26 @@ body {
   .title-text {
     font-size: 52px;
   }
-  .heading1-text {
+  h1 {
     font-size: 38px;
   }
-  .heading2-text {
+  h2 {
     font-size: 28px;
     padding-bottom: 28px;
   }
-  .heading3-text {
+  h3 {
     font-size: 24px;
   }
-  .heading4-text {
+  h4 {
     font-size: 20px;
   }
-  .heading5-text {
+  h5 {
     font-size: 14px;
   }
-  .heading6-text {
+  h6 {
     font-size: 12px;
   }
-  .body-text {
+  body, p {
     font-size: 12px;
   }
   .body-text-white {
@@ -255,29 +247,29 @@ body {
   .title-text {
     font-size: 42px;
   }
-  .heading1-text {
+  h1 {
     font-size: 28px;
   }
-  .heading2-text {
+  h2 {
     font-size: 24px;
     padding-bottom: 24px;
   }
-  .heading3-text {
+  h3 {
     font-size: 20px;
     padding-top: 75px;
   }
-  .heading4-text {
+  h4 {
     font-size: 16px;
   }
-  .heading5-text {
+  h5 {
     font-size: 12px;
   }
-  .heading6-text {
+  h6 {
     font-size: 12px;
     padding-top: 8px;
     padding-bottom: 10px;
   }
-  .body-text {
+  body, p {
     font-size: 12px;
   }
   .body-text-white {
@@ -291,7 +283,7 @@ body {
     font-size: 30px;
     line-height: 40px;
   }
-  .body-text {
+  body, p {
     line-height: 18px;
   }
   .body-text-white {

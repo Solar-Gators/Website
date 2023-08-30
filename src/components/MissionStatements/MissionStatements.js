@@ -22,7 +22,7 @@ export default function MissionStatements({on_mobile, white_background, button})
         let Text = ({accent, blurb}) => {
             if (white_background) {
                 return (
-                    <p className={"body-text"} style={{paddingBottom: "16px"}}>
+                    <p style={{paddingBottom: "16px"}}>
                     <span className={"accent_word"}>{accent}</span>
                         {blurb}
                     </p>
@@ -30,7 +30,7 @@ export default function MissionStatements({on_mobile, white_background, button})
             }
             else {
                 return (
-                    <p className={"body-text-white"} style={{paddingBottom: "16px"}}>
+                    <p style={{paddingBottom: "16px"}}>
                     <span className={"accent_word"} id={"orange_accent"}>{accent}</span>
                         {blurb}
                     </p>
@@ -91,7 +91,7 @@ export default function MissionStatements({on_mobile, white_background, button})
        return (
            <Container fluid="true" className="section">
                <Row>
-                   <h2 className="heading2-text">
+                   <h2>
                        Our Mission
                    </h2>
                </Row>
@@ -104,7 +104,7 @@ export default function MissionStatements({on_mobile, white_background, button})
        return (
            <Container fluid="true" className="section" style={{background: "#00203E"}}>
                <Row>
-                   <h2 className="heading2-text">
+                   <h2>
                        Our Mission
                    </h2>
                </Row>

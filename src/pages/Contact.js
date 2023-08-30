@@ -114,7 +114,7 @@ export default function Contact() {
 
                         <Form onSubmit={onSubmit} validated={validated} noValidate>
                             <Form.Group controlId="formBasicEmail" style={{paddingBottom: "1vw"}}>
-                                <Form.Label className="body-text" style={{paddingBottom: "10px"}}>Name</Form.Label>
+                                <Form.Label style={{paddingBottom: "10px"}}>Name</Form.Label>
                                 <Form.Control type="text" placeholder="Enter name" id="contact-name" required />
                                 <Form.Control.Feedback type="invalid">
                                     Please enter your name.
@@ -122,14 +122,14 @@ export default function Contact() {
                             </Form.Group>
 
                             <Form.Group controlId="formBasicPassword" style={{paddingBottom: "1vw"}}>
-                                <Form.Label className="body-text" style={{paddingBottom: "10px"}}>Email</Form.Label>
+                                <Form.Label style={{paddingBottom: "10px"}}>Email</Form.Label>
                                 <Form.Control type="email" placeholder="Enter email" id="contact-email" required />
                                 <Form.Control.Feedback type="invalid">
                                     Please enter your email.
                                 </Form.Control.Feedback>
                             </Form.Group>
                             <Form.Group controlId="formBasicCheckbox" style={{paddingBottom: "1vw"}}>
-                                <Form.Label className="body-text" style={{paddingBottom: "10px"}}>
+                                <Form.Label style={{paddingBottom: "10px"}}>
                                     Message
                                 </Form.Label>
                                 <Form.Control as="textarea" rows="3" placeholder="Hey Solar Gators..." id="contact-msg" required />

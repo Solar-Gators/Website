@@ -86,7 +86,7 @@ function SponsorSection ({on_mobile}) {
                     />
                 </Row>
 
-                <p className={"body-text"} >
+                <p>
                     Solar Gators relies on the support of sponsors to further our mission of showing the potential of solar energy. Sponsoring us means becoming an integral part of our team, and helping to inspire the next generation of engineers and innovators. Join us on our mission towards a brighter, more sustainable future.
                 </p>
 
@@ -110,7 +110,7 @@ function SponsorSection ({on_mobile}) {
                 <Col className={"no-margin-padding"}>
                     <Container >
                         <Row >
-                            <p className={"body-text"} >
+                            <p>
                                 Solar Gators relies on the support of sponsors to further our mission of showing the potential of solar energy. Sponsoring us means becoming an integral part of our team, and helping to inspire the next generation of engineers and innovators. Join us on our mission towards a brighter, more sustainable future.
                             </p>
                         </Row>
@@ -147,7 +147,7 @@ export default function Home() {
           {/* FSGP 23 Champions */}
           <Container fluid="true" className="section" style={{background: "#00203E"}}>
               <Row className={"fsgp-row"}>
-                  <h2 className="heading2-text">
+                  <h2>
                       Solar Gators Victory!
                   </h2>
                   <p className={"body-text-white"} style={{textAlign: "center"}}>
@@ -167,14 +167,30 @@ export default function Home() {
           </Container>
 
           {/*  Mission Section */}
-            <MissionStatements on_mobile={mobileView}
-                               white_background={true}
-                               button={true}/>
+          <MissionStatements on_mobile={mobileView} white_background={true} button={true}/>
+
+          {/*  Join Team  */}
+          <Container fluid={"true"} className={"section"} >
+              <h2>Join Our Team</h2>
+              <div className={"join-team"}>
+                  <p>
+                    Interested in joining our team on the road to solar success?
+                  </p>
+                  <div id={"schedule"}>
+                      <h5>Weekly Meeting Schedule</h5>
+                      <div className={"flex-rows-center"}>
+                          <p>MON & THURS</p>
+                          <p>6:00 PM</p>
+                          <p>Matherly Hall</p>
+                      </div>
+                  </div>
+              </div>
+          </Container>
 
           {/*  Team Section */}
           <Container fluid="true" className="section" style={{backgroundColor: '#00203E'}}>
               <Row>
-                  <h2 className="heading2-text">
+                  <h2>
                       Meet The Team
                   </h2>
               </Row>
@@ -212,7 +228,7 @@ export default function Home() {
           {/*  Sponsors Section */}
           <Container fluid="true" className="section">
               <Row>
-                  <h2 className="heading2-text">
+                  <h2>
                       Become A Sponsor
                   </h2>
               </Row>

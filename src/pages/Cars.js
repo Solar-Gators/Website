@@ -5,9 +5,9 @@ import Col from 'react-bootstrap/Col'
 import Button from "react-bootstrap/Button";
 import {Link} from "react-router-dom";
 import Header from "../components/Header";
-import torch from "../content/assets/images/car_pics/Torch/torch_ontrack_clean.jpg";
+import torch from "../content/assets/images/car_pics/torch/torch_ontrack_clean.jpg";
 import sunrider from "../content/assets/images/car_pics/sunrider/2021/car3.jpg";
-import cielo from "../content/assets/images/car_pics/Cielo/IMG_9011_crop.JPG";
+import cielo from "../content/assets/images/car_pics/cielo/IMG_9011_crop.JPG";
 
 
 function SplitSection ({name, year1, year2, blurb, img, pic_side, on_mobile}) {
@@ -23,10 +23,10 @@ function SplitSection ({name, year1, year2, blurb, img, pic_side, on_mobile}) {
             return (
                 <Col className={"no-margin-padding"}>
                     <div className="text-half-container">
-                        <h1 className="heading2-text" style={{paddingBottom: "0px"}}>{name}</h1>
-                        <h6 className="heading6-text" style={{paddingBottom: "15px"}}>{year1} - {year2}</h6>
+                        <h2 style={{paddingBottom: "0px"}}>{name}</h2>
+                        <h6 style={{paddingBottom: "15px"}}>{year1} - {year2}</h6>
                         <ImageContent/>
-                        <p className={"body-text"} style={{color: textColor, paddingTop: "20px"}}>{blurb}</p>
+                        <p style={{color: textColor, paddingTop: "20px"}}>{blurb}</p>
                     </div>
                 </Col>
             )
@@ -35,9 +35,9 @@ function SplitSection ({name, year1, year2, blurb, img, pic_side, on_mobile}) {
             return (
                 <Col className={"no-margin-padding"}>
                     <div className="text-half-container">
-                        <h1 className="heading2-text" style={{paddingBottom: "0px"}}>{name}</h1>
-                        <h6 className="heading6-text" style={{paddingBottom: "20px"}}>{year1} - {year2}</h6>
-                        <p className={"body-text"} style={{color: textColor}}>{blurb}</p>
+                        <h2 style={{paddingBottom: "0px"}}>{name}</h2>
+                        <h6 style={{paddingBottom: "20px"}}>{year1} - {year2}</h6>
+                        <p style={{color: textColor}}>{blurb}</p>
                     </div>
                 </Col>
             )
@@ -108,7 +108,7 @@ export default function Cars() {
 
             {/* Sponsorship */}
             <Container fluid="true" className="section">
-                <p className={"body-text"} style={{textAlign: "center"}}>
+                <p style={{textAlign: "center"}}>
                     Throughout our history, our sponsors have been at the center of everything we accomplish. As we continue to grow, we hope that you will join us in our mission to develop state of the art technologies and compete for championships.
                 </p>
                 <Button className="btn-primary" as={Link} to={"/donate"}

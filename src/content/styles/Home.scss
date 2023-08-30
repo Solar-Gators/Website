@@ -1,4 +1,3 @@
-
 .home-header-img {
     width: 100%;
     height: 36vw;
@@ -41,6 +40,41 @@
     flex-direction: row;
     width: 85vw;
     margin: 3vw 0 0;
+}
+
+.join-team {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#schedule {
+    width: 33rem;
+    height: 8.3rem;
+    background: var(--color-light-grey);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#schedule h5 {
+    color: #0067C7;
+}
+
+.flex-rows-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-rows-center p {
+    margin: 1rem;
 }
 
 #sponsor_logos_half {
