@@ -14,3 +14,4 @@ export {default as battery21       } from "../2022/mechPM22.JPG";
 export {default as brakes21        } from "../2022/vp22.JPG";
 export {default as chassis21       } from "./chassis21.jpg";
 export {default as suspension21    } from "./suspension21.JPG";
+export {default as aeroPM21        } from "./aeroPM21.JPG";

@@ -6,25 +6,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc4e1d2d-50d0-4b9c-91a0-44fd4e2a9b80" name="Changes" comment="Cleaned up headings and Teams officer img imports">
-      <change afterPath="$PROJECT_DIR$/src/content/assets/Solar Gators 2022-23 Sponsorship Packet.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/Solar Gators 2023-24 Sponsorship Packet.pdf" afterDir="false" />
+    <list default="true" id="cc4e1d2d-50d0-4b9c-91a0-44fd4e2a9b80" name="Changes" comment="Small tweaks &amp; improvements. Updated sponsorship package">
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2021/aeroPM21.JPG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CarsSection/CarsSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CarsSection/CarsSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MissionStatements/MissionStatements.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MissionStatements/MissionStatements.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SplitSection/SplitSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SplitSection/SplitSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SplitSection/SplitSection.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SplitSection/SplitSection.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/Solar Gators 2023 Sponsorship Packet.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/styles/Button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Button.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/styles/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/styles/Home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Home.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/styles/Team.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Team.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Donate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Donate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Team.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Team.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/assets/images/officers/2021/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2021/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/assets/images/officers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/assets/images/officers/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693432716496</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Small tweaks &amp; improvements. Updated sponsorship package">
+      <created>1693445861280</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1693445861280</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +178,7 @@
     <MESSAGE value="Cleaned Up Header.css file &amp; global variables" />
     <MESSAGE value="Component created for optimal reuse" />
     <MESSAGE value="Cleaned up headings and Teams officer img imports" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up headings and Teams officer img imports" />
+    <MESSAGE value="Small tweaks &amp; improvements. Updated sponsorship package" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small tweaks &amp; improvements. Updated sponsorship package" />
   </component>
 </project>

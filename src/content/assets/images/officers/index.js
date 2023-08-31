@@ -5,7 +5,7 @@ import {president22, vicepresident22, treasurer22, secretary22, business22, elec
         lowvoltage22, powermanagement22 } from './2022/index'
 // 2021-22
 import {president21, vicepresident21, treasurer21, secretary21, business21, aerobody21, solararray21, auxiliary21,
-bms21, motorcontroller21, powerboard21, telemetry21, battery21, brakes21, chassis21, suspension21} from './2021/index'
+bms21, motorcontroller21, powerboard21, telemetry21, battery21, brakes21, chassis21, suspension21, aeroPM21} from './2021/index'
 // 2020-21
 import {president20, vicepresident20, treasurer20, secretary20, business20} from "./2020/index";
 // 2019-20 Officers Pictures
@@ -32,8 +32,8 @@ let executive_board21 = [["Charles Stone", "President", president21],
     ["Jamie Van Der Veken", "Treasurer", treasurer21],
     ["Christian Michaelis", "Business Coordinator", business21]];
 let pms21 = [["Brenden Reiss", "Mechanical PM"],
-    ["Muhamed Hobi", "Electrical PM"],
-    ["Pierre Angibaud", "Aero PM"]];
+    ["Muhamed Hobi", "Electrical PM", telemetry21],
+    ["Pierre Angibaud", "Aero PM", aeroPM21]];
 //aerobody: Pierre Angibaud
 let mech_aero21 =[["Justin Nelson", "Aerobody", aerobody21],
     ["Morgen Anthony", "Solar Array", solararray21],
