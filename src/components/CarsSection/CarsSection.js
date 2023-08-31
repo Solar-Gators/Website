@@ -2,8 +2,8 @@ import React from 'react'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import {Link} from "react-router-dom";
-import car1 from "../../content/assets/images/car_pics/torch/torch_ontrack_clean.jpg";
-import car2 from "../../content/assets/images/car_pics/cielo/IMG_9219.JPG";
+import car1 from "../../content/assets/images/car_pics/Torch/torch_ontrack_clean.jpg";
+import car2 from "../../content/assets/images/car_pics/Cielo/IMG_9219.JPG";
 import car3 from "../../content/assets/images/car_pics/sunrider/2022/AND02053.JPG";
 import './CarsSection.scss'
 
