@@ -6,26 +6,24 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc4e1d2d-50d0-4b9c-91a0-44fd4e2a9b80" name="Changes" comment="Component created for optimal reuse">
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2019/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2020/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2021/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2022/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/index.js" afterDir="false" />
+    <list default="true" id="cc4e1d2d-50d0-4b9c-91a0-44fd4e2a9b80" name="Changes" comment="Cleaned up headings and Teams officer img imports">
+      <change afterPath="$PROJECT_DIR$/src/content/assets/Solar Gators 2022-23 Sponsorship Packet.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/assets/Solar Gators 2023-24 Sponsorship Packet.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CarsSection/CarsSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CarsSection/CarsSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MissionStatements/MissionStatements.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MissionStatements/MissionStatements.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SplitSection/SplitSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SplitSection/SplitSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SplitSection/SplitSection.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SplitSection/SplitSection.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/assets/Solar Gators 2023 Sponsorship Packet.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/styles/Button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/styles/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/content/styles/Home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Home.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/About.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Cars.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Cars.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/styles/Team.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Team.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Donate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Donate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/NotFound.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/NotFound.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Sponsor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Sponsor.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Team.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Team.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -156,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691188120127</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Cleaned up headings and Teams officer img imports">
+      <created>1693432716496</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1693432716496</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +184,7 @@
     <MESSAGE value="Optimized Car &amp; Mission Statement sections to be reusable between pages." />
     <MESSAGE value="Cleaned Up Header.css file &amp; global variables" />
     <MESSAGE value="Component created for optimal reuse" />
-    <option name="LAST_COMMIT_MESSAGE" value="Component created for optimal reuse" />
+    <MESSAGE value="Cleaned up headings and Teams officer img imports" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up headings and Teams officer img imports" />
   </component>
 </project>

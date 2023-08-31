@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button";
 import Collapse from 'react-bootstrap/Collapse';
 import {Link} from "react-router-dom";
 import sponsorshipTiers from '../content/assets/images/uncategorized/SponsorshipTiers.png'
-import sponsorshipPacket from '../content/assets/Solar Gators 2023 Sponsorship Packet.pdf'
+import sponsorshipPacket from '../content/assets/Solar Gators 2023-24 Sponsorship Packet.pdf'
 let donateLink = "https://www.uff.ufl.edu/giving-opportunities/027995-mae-solar-gators/"
 
 function CollapsableComponent({open, setOpen, label, text, emphasis, link}) {

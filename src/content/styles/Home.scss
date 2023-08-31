@@ -23,7 +23,7 @@
     height: auto;
 
     margin: 0;
-    padding: 10vw 8vw 8vw 8vw;
+    padding: 7rem 8vw 6rem;
 }
 
 .no-margin-padding {
@@ -51,15 +51,25 @@
     justify-content: center;
 }
 
+.join-team p {
+    margin-bottom: 3rem;
+}
+
+.accent_link {
+    font-weight: 500;
+    color: var(--color-bright_blue)
+}
+
 #schedule {
     width: 33rem;
     height: 8.3rem;
-    background: var(--color-light-grey);
+    background: #C8D9EA;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+
+    padding-bottom: 1rem;
 }
 
 #schedule h5 {
@@ -156,6 +166,12 @@ $animationSpeed: 50s;
     }
 }
 
+@media screen and (max-width: 1220px) {
+    .section {
+        padding: 8vw 8vw 6vw 8vw;
+    }
+}
+
 /* Resize for large tablet - scale down 25% */
 @media screen and (max-width: 768px) {
     .slider {
@@ -164,6 +180,8 @@ $animationSpeed: 50s;
             height: 240px;
         }
     }
+
+
 }
 
 //Resize text for mobile

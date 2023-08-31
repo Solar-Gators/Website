@@ -60,18 +60,23 @@
     position: absolute;
     width: 170px;
     left: 15px;
+
+
     justify-content: center;
     text-align: center;
 
     margin: 10px;
+    padding: 0;
 }
 
 .dropdown-row {
     display: flex;
     position: relative;
     align-items: center;
-    align-content: stretch;
     justify-content: center;
+
+    margin: .5rem 0;
+    padding:0;
 }
 
 .dropdown-row:hover {

@@ -5,29 +5,21 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
 
-//Officer Pictures
-import president from '../content/assets/images/officers/2022/president22.JPG';
-import vp from '../content/assets/images/officers/2022/vp22.JPG';
-import treasurer from '../content/assets/images/officers/2022/treasurer22.JPG';
-import secretary from '../content/assets/images/officers/2022/secretary22.JPG';
-import power from '../content/assets/images/officers/2022/power22.JPG';
-import mechPM from '../content/assets/images/officers/2022/mechPM22.JPG';
-import integPM from '../content/assets/images/officers/2022/integPM22.JPG';
-import highvoltPM from '../content/assets/images/officers/2022/integPM22.JPG';
-import embedsyst from '../content/assets/images/officers/2022/embedsyst22.JPG';
-import electricalPM from '../content/assets/images/officers/2022/electricalPM22.JPG';
-import business from '../content/assets/images/officers/2022/business22.JPG';
-import brakes from '../content/assets/images/officers/2022/brakes22.JPG';
-import battery from '../content/assets/images/officers/2022/battery22.JPG';
-import aero from '../content/assets/images/officers/2022/aero22.JPG';
-
-import MAE from "../content/assets/images/sponsor_logos/MAE.png";
-import ZenithTecnica from "../content/assets/images/sponsor_logos/ZenithTecnica.png";
-import ECE from "../content/assets/images/sponsor_logos/ECE.png";
 import Header from "../components/Header";
 import CarsSection from "../components/CarsSection/CarsSection";
 import MissionStatements from "../components/MissionStatements/MissionStatements";
+import { get_eboard, get_elec, get_mech, get_pms } from "../content/assets/images/officers";
+
 import fsgp23 from "../content/assets/images/people/team22/victory0_crop_edit.jpg";
+import MAE from "../content/assets/images/sponsor_logos/MAE.png";
+import ZenithTecnica from "../content/assets/images/sponsor_logos/ZenithTecnica.png";
+import ECE from "../content/assets/images/sponsor_logos/ECE.png";
+
+//2022-23 Officers: (Names, Positions, Headshot)
+let executive_board22 = get_eboard("2022");
+let pms22 = get_pms("2022");
+let mech_aero22 = get_mech("2022");
+let electrical22 =  get_elec("2022");
 
 //Car 3 Platinum Sponsors
 let platinum3 = [[MAE, "https://mae.ufl.edu/"], [ZenithTecnica, "https://www.zenithtecnica.com/"], [ECE, "https://www.ece.ufl.edu/"]];
@@ -166,20 +158,17 @@ export default function Home() {
               </Row>
           </Container>
 
-          {/*  Mission Section */}
-          <MissionStatements on_mobile={mobileView} white_background={true} button={true}/>
-
           {/*  Join Team  */}
-          <Container fluid={"true"} className={"section"} >
+          <Container fluid="true" className={"section"} >
               <h2>Join Our Team</h2>
               <div className={"join-team"}>
-                  <p>
-                    Interested in joining our team on the road to solar success?
+                  <p>Interested in joining us on the road to solar success? Fill out our <a href={"https://docs.google.com/forms/d/e/1FAIpQLSdxo60I7caWoVV9q_ASSbCC-DZLAxdsBqwobLBTsZWxY3mGhQ/viewform"}
+                  ><span className={"accent_link"}>new member interest form.</span></a>
                   </p>
                   <div id={"schedule"}>
                       <h5>Weekly Meeting Schedule</h5>
                       <div className={"flex-rows-center"}>
-                          <p>MON & THURS</p>
+                          <p className={"accent_word"}>MON & THURS</p>
                           <p>6:00 PM</p>
                           <p>Matherly Hall</p>
                       </div>
@@ -187,39 +176,34 @@ export default function Home() {
               </div>
           </Container>
 
+          {/*  Mission Section */}
+          <MissionStatements on_mobile={mobileView} white_background={true} button={true}/>
+
           {/*  Team Section */}
           <Container fluid="true" className="section" style={{backgroundColor: '#00203E'}}>
-              <Row>
-                  <h2>
-                      Meet The Team
-                  </h2>
-              </Row>
-              <Row>
-                  <div className={"slider"}>
-                      <div className={"slide-track"}>
-                          <Officer pic={president}></Officer>
-                          <Officer pic={vp}></Officer>
-                          <Officer pic={treasurer}></Officer>
-                          <Officer pic={secretary}></Officer>
-                          <Officer pic={business}></Officer>
-                          <Officer pic={electricalPM}></Officer>
-                          <Officer pic={mechPM}></Officer>
-                          <Officer pic={integPM}></Officer>
-                          <Officer pic={aero}></Officer>
-                          <Officer pic={battery}></Officer>
-                          <Officer pic={brakes}></Officer>
-                          <Officer pic={embedsyst}></Officer>
-                          <Officer pic={highvoltPM}></Officer>
-                          <Officer pic={power}></Officer>
-                      </div>
+              <h2>Meet The Team</h2>
+              <div className={"slider"}>
+                  <div className={"slide-track"}>
+                      <Officer pic={executive_board22[0][2]}/>
+                      <Officer pic={executive_board22[1][2]}/>
+                      <Officer pic={executive_board22[2][2]}/>
+                      <Officer pic={executive_board22[3][2]}/>
+                      <Officer pic={executive_board22[4][2]}/>
+                      <Officer pic={pms22[0][2]}/>
+                      <Officer pic={pms22[1][2]}/>
+                      <Officer pic={pms22[2][2]}/>
+                      <Officer pic={mech_aero22[0][2]}/>
+                      <Officer pic={mech_aero22[1][2]}/>
+                      <Officer pic={mech_aero22[2][2]}/>
+                      <Officer pic={electrical22[0][2]}/>
+                      <Officer pic={electrical22[1][2]}/>
+                      <Officer pic={electrical22[3][2]}/>
                   </div>
-              </Row>
-              <Row>
-                  <Button className="btn-primary" as={Link} to={"/team"}
-                          onClick={() => {window.scroll(0,0);}}>
-                      Team 2023
-                  </Button>
-              </Row>
+              </div>
+              <Button className="btn-primary" as={Link} to={"/team"}
+                      onClick={() => {window.scroll(0,0);}}>
+                  Team 2023
+              </Button>
           </Container>
 
           {/* Car Section */}
@@ -227,12 +211,7 @@ export default function Home() {
 
           {/*  Sponsors Section */}
           <Container fluid="true" className="section">
-              <Row>
-                  <h2>
-                      Become A Sponsor
-                  </h2>
-              </Row>
-
+              <h2>Become A Sponsor</h2>
               <SponsorSection on_mobile={mobileView}/>
           </Container>
 

@@ -30,7 +30,7 @@ export default function MissionStatements({on_mobile, white_background, button})
             }
             else {
                 return (
-                    <p style={{paddingBottom: "16px"}}>
+                    <p className={"body-text-white"} style={{paddingBottom: "16px"}}>
                     <span className={"accent_word"} id={"orange_accent"}>{accent}</span>
                         {blurb}
                     </p>

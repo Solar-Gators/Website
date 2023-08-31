@@ -4,6 +4,7 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Dropdown from "react-bootstrap/Dropdown";
 import { get_eboard, get_pms, get_mech, get_elec } from "../content/assets/images/officers/index";
+import Header from "../components/Header";
 
 //2022-23 Officers: (Names, Positions, Headshot)
 let executive_board22 = get_eboard("2022");
@@ -100,7 +101,7 @@ function OfficerTeam({ eventkey, executive_board, on_mobile }) {
     }
     else if (eventkey === "202122") {
         return (
-            <Col>
+            <Col className="no-margin-padding" style={{justifyContent: "center"}}>
                 <OfficersRow heading="Executive Board" officers={executive_board21}/>
                 <OfficersRow heading="Mechanical and Aerobody" officers={mech_aero21}/>
                 <OfficersRow heading="Electrical" officers={electrical21}/>
@@ -109,7 +110,7 @@ function OfficerTeam({ eventkey, executive_board, on_mobile }) {
     }
     else {
         return (
-            <Col>
+            <Col className="no-margin-padding" style={{justifyContent: "center"}}>
                 <OfficersRow heading="Executive Board" officers={executive_board}/>
             </Col>
         )
@@ -132,18 +133,9 @@ export default class Team extends React.Component {
 
         return (
             <React.Fragment >
-            {/*  Page Header    */}
-            <Container fluid="true" className="header">
-                <Row>
-                    <Col>
-                        <div className="team-header-img">
-                            <h1 className={"title-text"}>
-                              Our Team
-                            </h1>
-                        </div>
-                    </Col>
-                </Row>
-            </Container>
+
+            <Header title={"Our Team"}
+                    imgcss={"team-header-img"}/>
 
             {/*  Page Contents  */}
             <Container fluid="true" className="section" style={{background: "#00203E"}}>
@@ -173,7 +165,7 @@ export default class Team extends React.Component {
                             }
                         }}
                     >
-                        <Dropdown.Toggle className="btn-transparent" variant={"btn-transparent"} style={{justifyContent: "center"}}>
+                        <Dropdown.Toggle className="btn-transparent" variant={"btn-transparent"} style={{justifyContent: "center", alignItems: "center"}}>
                             <AcademicYear eventkey={this.state.eventkey} />
                         </Dropdown.Toggle>
 

@@ -42,7 +42,7 @@ function DividedSection({img, blurb, blurb2, img_left}) {
 export default function SplitSection({on_mobile, img, blurb, blurb2, img_left, img_above}) {
     let Image = () => {
         return (
-            <Row className="image-half-container" style={{backgroundImage: "url(" + img + ")"}}/>
+            <div className="image-half-container" style={{backgroundImage: "url(" + img + ")"}}/>
         )
     }
     let Text = () => {

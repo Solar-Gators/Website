@@ -26,21 +26,18 @@ export default function WebsiteNavbar() {
 
         if (on_mobile) {
             return (
-                <>
-                    <Nav style={{textAlign: "center"}}>
-                        <PageLink path="/about" tag="About"/>
-                        <PageLink path="/cars" tag="Cars"/>
-                        <PageLink path="/team" tag="Team"/>
-                        <PageLink path="/sponsors" tag="Sponsors"/>
-                        <PageLink path="/contact" tag="Contact"/>
-                        <div style={{alignContent: "center"}}>
-                            <button className="btn-primary-small" onClick={() => { window.location.href = "/donate" }}>
-                                Donate
-                            </button>
-                        </div>
-                    </Nav>
-
-                </>
+                <Nav style={{textAlign: "center", alignItems: "center"}}>
+                    <PageLink path="/about" tag="About"/>
+                    <PageLink path="/cars" tag="Cars"/>
+                    <PageLink path="/team" tag="Team"/>
+                    <PageLink path="/sponsors" tag="Sponsors"/>
+                    <PageLink path="/contact" tag="Contact"/>
+                    <div style={{alignContent: "center"}}>
+                        <button className="btn-primary-small" onClick={() => { window.location.href = "/donate" }}>
+                            Donate
+                        </button>
+                    </div>
+                </Nav>
             )
         }
         else {
@@ -70,8 +67,8 @@ export default function WebsiteNavbar() {
     if (mobileView) {
         return (
             <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
-                <Navbar.Brand as={Link} to="/">
-                    <img width={120} height={35} src={logoImage} alt="Logo" />
+                <Navbar.Brand as={Link} to="/" id={"nav-logo"}>
+                    <img src={logoImage} alt="Logo" />
                 </Navbar.Brand>
                 <Navbar.Toggle onClick={toggle} aria-controls="responsive-navbar-nav">
                     <i className="navbar-toggler-icon" style={{border: "none"}}/>
@@ -85,8 +82,8 @@ export default function WebsiteNavbar() {
     else {
         return (
             <Navbar class="navbar navbar-expand-lg top navbar-scroll" color="light">
-                <Navbar.Brand as={Link} to="/">
-                    <img width={120} height={35} src={logoImage} alt="Logo" />
+                <Navbar.Brand as={Link} to="/" id={"nav-logo"}>
+                    <img src={logoImage} alt="Logo" />
                 </Navbar.Brand>
                 <Navbar.Toggle onClick={toggle} />
                 <Navbar.Collapse isOpen={isOpen} navbar>
