@@ -6,14 +6,14 @@ import Button from "react-bootstrap/Button";
 import Collapse from 'react-bootstrap/Collapse';
 import {Link} from "react-router-dom";
 import sponsorshipTiers from '../content/assets/images/uncategorized/SponsorshipTiers.png'
-import sponsorshipPacket from '../content/assets/Solar Gators 2023 Sponsorship Packet.pdf'
+import sponsorshipPacket from '../content/assets/Solar Gators 2023-24 Sponsorship Packet.pdf'
 let donateLink = "https://www.uff.ufl.edu/giving-opportunities/027995-mae-solar-gators/"
 
 function CollapsableComponent({open, setOpen, label, text, emphasis, link}) {
     return (
         <Row className="no-margin-padding">
             <Col className="collapse-col">
-                <h5 className="heading5-text" id="collapse-heading">
+                <h5 id="collapse-heading">
                     <Button className="btn-collapsable-field"
                             onClick={() => setOpen(!open)}
                             aria-controls="online-collapse-text"
@@ -23,12 +23,12 @@ function CollapsableComponent({open, setOpen, label, text, emphasis, link}) {
                 </h5>
                 <Collapse in={open} id="collapse-content">
                     <div id="collapse-text">
-                        <p className="body-text" style={{marginBottom: "0px"}}>{text}
+                        <p style={{marginBottom: "0px"}}>{text}
                             {/* Orange Emphasis Text */}
                             <span style={{color: "#F37833", fontWeight: "500", display: "inline"}}>{emphasis}</span>
 
                             {/* Hyperlink if one */}
-                            { {link} ? <Link className="body-text" style={{color: '#F37833', display: 'inline'}}
+                            { {link} ? <Link style={{color: '#F37833', display: 'inline'}}
                                             to={"/contact"} onClick={() => {window.scroll(0,0);}}>{link}</Link> : ""}
                         </p>
                     </div>
@@ -62,13 +62,13 @@ export default function Donate() {
             {/*  About Donations  */}
             <Container fluid="true" className="section">
                 <Row>
-                    <h2 className="heading2-text">
+                    <h2>
                         About Donations
                     </h2>
                 </Row>
 
                 <Row className="no-margin-padding">
-                    <p className="body-text" style={{paddingBottom: "25px"}}>
+                    <p style={{paddingBottom: "25px"}}>
                         A project of this scale would not be possible without the generosity and support of our sponsors. Your support will not only help us build a lighter, faster and more efficient car, but will also provide a platform for the next generation of engineers to develop their skills.
                         We offer a variety of different donation options, but appreciate any contribution to our organization. For those who would like to play a larger role, find out more about our sponsorship opportunities below!
                     </p>
@@ -85,7 +85,7 @@ export default function Donate() {
                       link={"info@ufsolargators.org"}
                 />
 
-                <p className="body-text" style={{paddingTop: "25px"}}>
+                <p style={{paddingTop: "25px"}}>
                     Your generosity helps us to build our solar car and so much more. We are grateful that you are considering joining us on our mission towards a brighter, more sustainable future.
                 </p>
 
@@ -98,14 +98,14 @@ export default function Donate() {
 
 
                 </Row>
-                <p className="heading6-text" style={{paddingTop: "70px", paddingBottom: "0"}}>
+                <h6 style={{paddingTop: "70px", paddingBottom: "0"}}>
                     All donations are tax deductible. Solar Gators is a 501(c)(3) nonprofit organization. Tax forms available upon request.
-                </p>
+                </h6>
             </Container>
 
             {/* Sponsorship Opportunities */}
             <Container fluid="true" className="section" style={{background: "#00203E"}}>
-                <h2 className="heading2-text" style={{paddingTop: "0", paddingBottom: "50px"}}>
+                <h2 style={{paddingTop: "0", paddingBottom: "50px"}}>
                     Sponsorship Opportunities
                 </h2>
                 <Row>

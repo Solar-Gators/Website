@@ -116,26 +116,26 @@ function ShowSponsors({car_num}) {
     if (car_num === "3") {
         return (
             <Container fluid="true" className="section">
-                <h2 className="heading2-text" style={{paddingBottom: "10px"}}>Sunrider Sponsors</h2>
-                <h4 className="heading6-text">2020 - 2023</h4>
+                <h2 style={{paddingBottom: "10px"}}>Sunrider Sponsors</h2>
+                <h6>2020 - 2023</h6>
 
                 {/* PLATINUM */}
-                <h3 className="heading3-text" style={{paddingTop: "8vw"}}>Platinum Sponsors</h3>
+                <h3 style={{paddingTop: "8vw"}}>Platinum Sponsors</h3>
                 <SponsorRow img1={platinum3[0][0]} link1={platinum3[0][1]} img2={platinum3[1][0]} link2={platinum3[1][1]} img3={platinum3[2][0]} link3={platinum3[2][1]} />
 
                 {/* GOLD */}
-                <h3 className="heading3-text">Gold Sponsors</h3>
+                <h3>Gold Sponsors</h3>
                 <SponsorRow img1={gold3[0][0]} link1={gold3[0][1]} img2={gold3[1][0]} link2={gold3[1][1]} img3={gold3[2][0]} link3={gold3[2][1]} />
                 <SponsorRow img1={gold3[3][0]} link1={gold3[3][1]} img2={gold3[4][0]} link2={gold3[4][1]} />
 
                 {/* SILVER */}
-                <h3 className="heading3-text">Silver Sponsors</h3>
+                <h3>Silver Sponsors</h3>
                 <SponsorRow img1={silver3[0][0]} link1={silver3[0][1]} img2={silver3[1][0]} link2={silver3[1][1]} img3={silver3[2][0]} link3={silver3[2][1]} />
                 <SponsorRow img1={silver3[3][0]} link1={silver3[3][1]} img2={silver3[4][0]} link2={silver3[4][1]} img3={silver3[5][0]} link3={silver3[5][1]}/>
                 <SponsorRow img1={silver3[6][0]} link1={silver3[6][1]} img2={silver3[7][0]} link2={silver3[7][1]} img3={silver3[8][0]} link3={silver3[8][1]}/>
 
                 {/* BRONZE */}
-                <h3 className="heading3-text">Bronze Sponsors</h3>
+                <h3>Bronze Sponsors</h3>
                 <SponsorRow img1={bronze3[0][0]} link1={bronze3[0][1]} img2={bronze3[1][0]} link2={bronze3[1][1]} img3={bronze3[2][0]} link3={bronze3[2][1]} />
                 <SponsorRow img1={bronze3[3][0]} link1={bronze3[3][1]} img2={bronze3[4][0]} link2={bronze3[4][1]} img3={bronze3[5][0]} link3={bronze3[5][1]}/>
                 <SponsorRow img1={bronze3[6][0]} link1={bronze3[6][1]} img2={bronze3[7][0]} link2={bronze3[7][1]} img3={bronze3[8][0]} link3={bronze3[8][1]} />

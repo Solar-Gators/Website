@@ -1,7 +1,6 @@
 import React from 'react'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
-import Button from "react-bootstrap/Button";
 import {Link} from "react-router-dom";
 import car1 from "../../content/assets/images/car_pics/Torch/torch_ontrack_clean.jpg";
 import car2 from "../../content/assets/images/car_pics/Cielo/IMG_9219.JPG";
@@ -21,35 +20,16 @@ function Car({car_img, car_name, car_year1, car_year2}) {
     )
 }
 
-function DonateButton ({on_mobile}) {
-    if (!on_mobile) {
-        return (
-            <Button className="btn-primary" as={Link} to={"/donate"}
-                    onClick={() => {window.scroll(0,0);}}>
-                Donate
-            </Button>
-        )
-    }
-    else {
-        return ("")
-    }
-}
-
 export default function CarsSection({mobileView}) {
     return (
         <Container fluid="true" className="section">
             <Row>
-                <h2 className="heading2-text">
-                    Our Cars
-                </h2>
+                <h2>Our Cars</h2>
             </Row>
             <Row className={"car-cards"}>
                 <Car car_img={car1} car_name={"Torch"} car_year1={"2017"} car_year2={"2018"}/>
                 <Car car_img={car2} car_name={"Cielo"} car_year1={"2018"} car_year2={"2019"}/>
                 <Car car_img={car3} car_name={"Sunrider"} car_year1={"2020"} car_year2={"present"}/>
-            </Row>
-            <Row>
-                <DonateButton on_mobile={mobileView}/>
             </Row>
         </Container>
     )

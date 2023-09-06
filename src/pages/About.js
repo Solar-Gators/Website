@@ -35,86 +35,6 @@ let p3 = "Inclusivity is one of our founding principles. We believe that everyon
     "resources they need to become better engineers and better people. Join us as we " +
     "push the limits of what's possible in solar racing and beyond."
 
-// function DividedSection({img, blurb, blurb2, img_align}) {
-//     let ImageHalf = () => {
-//         return (
-//             <Col className="no-margin-padding">
-//                 <div className="image-half-container" style={{backgroundImage: "url(" + img + ")"}}/>
-//             </Col>
-//         )
-//     }
-//     let TextHalf = () => {
-//         return (
-//             <Col className="no-margin-padding">
-//                 <div className="text-half-container">
-//                     <p className={"body-text"}>{blurb}</p>
-//                     {/* if there is a second paragraph */}
-//                     { blurb2 ? <p className={"body-text"} style={{marginTop: "50px"}}>{blurb2}</p> : ""}
-//                 </div>
-//             </Col>
-//         )
-//     }
-//     // (img_align = true) => image on left side
-//     if (img_align) {
-//         return(
-//             <Row style={{padding: "0", margin: "0"}}>
-//                 <ImageHalf/>
-//                 <TextHalf/>
-//             </Row>
-//         )
-//     }
-//     else {
-//         return (
-//             <Row style={{padding: "0", margin: "0"}}>
-//                 <TextHalf/>
-//                 <ImageHalf/>
-//             </Row>
-//         )
-//     }
-// }
-//
-// function BlurbAndPicture({on_mobile, img, blurb, blurb2, img_align, img_above}) {
-//     let Image = () => {
-//         return (
-//             <Row className="image-half-container" style={{backgroundImage: "url(" + img + ")"}}/>
-//         )
-//     }
-//     let Text = () => {
-//         return (
-//             <Row className={"no-margin-padding"}>
-//                 <div className="text-half-container">
-//                     <p className={"body-text"}>{blurb}</p>
-//                     {/* if there is a second paragraph */}
-//                     { blurb2 ? <p className={"body-text"} style={{paddingTop: "10px"}}>{blurb2}</p> : ""}
-//                 </div>
-//             </Row>
-//         )
-//     }
-//     if (on_mobile) {
-//         if (img_above) {
-//             return (
-//                 <Col className={"no-margin-padding"}>
-//                     <Image/>
-//                     <Text/>
-//                 </Col>
-//             )
-//         }
-//         else {
-//             return (
-//                 <Col className={"no-margin-padding"}>
-//                     <Text/>
-//                     <Image/>
-//                 </Col>
-//             )
-//         }
-//     }
-//     else {
-//         return (
-//             <DividedSection img={img} blurb={blurb} blurb2={blurb2} img_align={img_align}/>
-//         )
-//     }
-// }
-
 function TrackRecord({on_mobile, blurb1, blurb2, blurb3, blurb4}) {
     let Text = ({blurb}) => {
         return (
@@ -181,7 +101,7 @@ export default function About() {
 
             {/* Our Track Record */}
             <Container fluid="true" className="section" style={{background: "#00203E"}}>
-            <h2 className="heading2-text">
+            <h2>
                 Our Track Record
             </h2>
                 <TrackRecord

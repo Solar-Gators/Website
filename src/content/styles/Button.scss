@@ -1,5 +1,5 @@
 //DEFINES BUTTON STYLES
-$margin-top: 7vw;
+$margin-top: 5rem;
 $margin-bottom: 0;
 $curve: 40px;
 
@@ -76,8 +76,7 @@ $square-button-height-width: 40px;
   height: $small-button-height;
 
   left: calc(50% - 180px/2 + 2px);
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 0;
 
   align-items: center;
   text-align: center;
@@ -92,8 +91,12 @@ $square-button-height-width: 40px;
   display: flex;
   position: relative;
   justify-content: center;
-  top: 0px;
+  top: 0;
+}
 
+.btn-transparent h5 {
+  padding: 0;
+  margin: 0;
 }
 
 .btn-transparent:hover {
