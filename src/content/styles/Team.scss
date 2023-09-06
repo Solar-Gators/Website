@@ -83,6 +83,31 @@
     background-color: var(--color-dark-grey);
 }
 
+.comp_team_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.comp_team_container p{
+    color: var(--color-white)
+}
+
+.comp_name_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#names {
+    //display: flex;
+    //flex-direction: row;
+    //overflow-wrap: normal;
+    //overflow: visible;
+}
+
 /* Resize for fit - scale down 25% */
 @media screen and (max-width: 1216px) {
     .officer-col {

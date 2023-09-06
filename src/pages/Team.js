@@ -3,28 +3,41 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Dropdown from "react-bootstrap/Dropdown";
-import { get_eboard, get_pms, get_mech, get_elec } from "../content/assets/images/officers/index";
+import {get_eboard, get_pms, get_mech, get_elec, get_comp_team} from "../content/assets/images/officers/index";
 import Header from "../components/Header";
+
+//2023-24 Officers: (Names, Positions, Headshot)
+let executive_board23 = get_eboard("2023");
+let pms23 = get_pms("2023");
+let mech_aero23 = get_mech("2023");
+let electrical23 =  get_elec("2023");
+
 
 //2022-23 Officers: (Names, Positions, Headshot)
 let executive_board22 = get_eboard("2022");
 let pms22 = get_pms("2022");
 let mech_aero22 = get_mech("2022");
 let electrical22 =  get_elec("2022");
+let competition_team22 = get_comp_team("2022");
+
 
 //2021-22 Officers
 let executive_board21 = get_eboard("2021");
 let pms21 = get_pms("2021"); //aerobody: Pierre Angibaud
 let mech_aero21 = get_mech("2021");
 let electrical21 = get_elec("2021");
+let competition_team21 = get_comp_team("2021");
+
 
 //2020-21 Officers
 let executive_board20 = get_eboard("2020");
 let pms20 = get_pms("2020");
 
+
 //2019-20 Officers
 let executive_board19 = get_eboard("2019");
 let pms19 = get_pms("2019");
+
 
 function AcademicYear({ eventkey }) {
     let year1;
@@ -42,6 +55,9 @@ function AcademicYear({ eventkey }) {
     } else if (eventkey === "202223") {
         year1 = 2022;
         year2 = 2023;
+    } else if (eventkey === "202324") {
+        year1 = 2023;
+        year2 = 2024;
     }
     return (
         <h5>{year1} - {year2}</h5>
@@ -88,14 +104,63 @@ function OfficerTeam({ eventkey, executive_board, on_mobile }) {
         )
     }
 
+    let CompList = ({list}) => {
+        let Loop = () => {
+            const allNames = [];    //array of div rows
+            let nameRow = [];       //array of names in row
+
+            for (let i = 0; i < list.length; i++) {
+                let names_per_row = 7
+                let z = i + names_per_row;
+                if ((list.length - i) < names_per_row) {
+                    z = list.length;
+                }
+
+                for (let j = i; j < z; i++) {
+                    let name;
+                    if (j === list.length - 1) {
+                        name = list[j];
+                    }
+                    name = list[j] + ", ";
+                    nameRow.push(<p>{name}</p>);
+                    j++;
+                }
+
+                allNames.push(<div className={"comp_name_row"}>{nameRow}</div>)
+                nameRow = [];
+            }
+
+            return <div id={"names"}>{allNames}</div>;
+        }
+
+        return (
+            <div className={"comp_team_container"}>
+                <Loop/>
+            </div>
+        )
+
+    }
+
     //Officer Year
-    if (eventkey === "202223") {
+    if (eventkey === "202324") {
+        return (
+            <Col className="no-margin-padding" style={{justifyContent: "center"}}>
+                <OfficersRow heading="Executive Board" officers={executive_board23}/>
+                <OfficersRow heading="Project Managers" officers={pms23}/>
+                <OfficersRow heading="Mechanical and Aerobody" officers={mech_aero23}/>
+                <OfficersRow heading="Electrical" officers={electrical23}/>
+                {/*<CompList list={competition_team23}/>*/}
+            </Col>
+        )
+    }
+    else if (eventkey === "202223") {
         return (
             <Col className="no-margin-padding" style={{justifyContent: "center"}}>
                 <OfficersRow heading="Executive Board" officers={executive_board22}/>
                 <OfficersRow heading="Project Managers" officers={pms22}/>
                 <OfficersRow heading="Mechanical and Aerobody" officers={mech_aero22}/>
                 <OfficersRow heading="Electrical" officers={electrical22}/>
+                <CompList list={competition_team22}/>
             </Col>
         )
     }
@@ -121,8 +186,8 @@ export default class Team extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            executive_board: executive_board22,
-            eventkey: "202223"
+            executive_board: executive_board23,
+            eventkey: "202324"
         }
     }
 
@@ -163,6 +228,11 @@ export default class Team extends React.Component {
                                     return { executive_board: executive_board22, eventkey: eventKey }
                                 });
                             }
+                            if (eventKey === "202324") {
+                                this.setState((state) => {
+                                    return { executive_board: executive_board23, eventkey: eventKey }
+                                });
+                            }
                         }}
                     >
                         <Dropdown.Toggle className="btn-transparent" variant={"btn-transparent"} style={{justifyContent: "center", alignItems: "center"}}>
@@ -174,6 +244,7 @@ export default class Team extends React.Component {
                             <Dropdown.Item className="dropdown-row" style={{color: "white"}} eventKey="202021">2020 - 2021</Dropdown.Item>
                             <Dropdown.Item className="dropdown-row" style={{color: "white"}} eventKey="202122">2021 - 2022</Dropdown.Item>
                             <Dropdown.Item className="dropdown-row" style={{color: "white"}} eventKey="202223">2022 - 2023</Dropdown.Item>
+                            <Dropdown.Item className="dropdown-row" style={{color: "white"}} eventKey="202324">2023 - 2024</Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
               </Col>
