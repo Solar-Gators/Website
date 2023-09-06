@@ -7,34 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc4e1d2d-50d0-4b9c-91a0-44fd4e2a9b80" name="Changes" comment="Fixed file path for cars">
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2023/AND02418.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2023/AND02425.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2023/AND02434.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2023/AND02445.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2023/AND02450.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2023/AND02463.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2023/aerobody23.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2023/batterypack23.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2023/brakes23.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2023/business23.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2023/chassis23.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2023/dynamicPM23.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2023/electricalPM23.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2023/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2023/integPM230.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2023/integPM231.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2023/integPM232.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2023/lowvolt23.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2023/president23.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2023/secretary23.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2023/staticPM23.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2023/suspension23.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2023/treasurer23.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/assets/images/officers/2023/vp23.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/assets/images/officers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/assets/images/officers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/styles/Team.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Team.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Team.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Team.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/styles/Home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Home.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +104,7 @@
       <workItem from="1684858360738" duration="19606000" />
       <workItem from="1686322868066" duration="172000" />
       <workItem from="1690910126265" duration="26476000" />
-      <workItem from="1693959832409" duration="2622000" />
+      <workItem from="1693959832409" duration="2958000" />
     </task>
     <task id="LOCAL-00001" summary="Organized image files. Updated pathes">
       <created>1690910957798</created>
