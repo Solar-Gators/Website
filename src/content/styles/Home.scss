@@ -185,7 +185,7 @@ $animationSpeed: 50s;
 }
 
 //Resize text for mobile
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 550px) {
     .home-header-img {
         height: 50vw;
     }
@@ -217,9 +217,26 @@ $animationSpeed: 50s;
 
     #schedule {
         width: 85vw;
+        height: max-content;
+        padding: 0 0 2rem;
+        margin: 0;
     }
 
     .join-team {
         margin: 0 5vw;
+
+        p, a {
+            margin-bottom: 2rem;
+        }
+
+        h5 {
+            font-size: .8rem;
+        }
+    }
+
+
+    .flex-rows-center p {
+        margin: 0;
+        padding: 0 1rem;
     }
 }
