@@ -80,7 +80,7 @@ function OfficerTeam({ eventkey, executive_board, on_mobile }) {
             <Col className="officer-col">
                 <div className={"officer-container"}>
                     <div className={"headshot"}>
-                        <img className={"headshot-img"} src={img}/>
+                        <img className={"headshot-img"} src={img} alt={"headshot"}/>
                     </div>
                     <h5 style={{paddingBottom: padding}}>{name}</h5>
                     <h6 style={{paddingTop: padding}}>{title}</h6>
@@ -107,36 +107,33 @@ function OfficerTeam({ eventkey, executive_board, on_mobile }) {
     let CompList = ({list}) => {
         let Loop = () => {
             const allNames = [];    //array of div rows
-            let nameRow = [];       //array of names in row
+            let name_col0 = [];
+            let name_col1 = [];
 
-            for (let i = 0; i < list.length; i++) {
-                let names_per_row = 7
-                let z = i + names_per_row;
-                if ((list.length - i) < names_per_row) {
-                    z = list.length;
+            let midpoint = Math.floor(list.length / 2);
+            list.forEach(printName);
+
+            function printName(value, index, array) {
+                if (index < midpoint) {
+                    name_col0.push(<p>{value}</p>);
                 }
-
-                for (let j = i; j < z; i++) {
-                    let name;
-                    if (j === list.length - 1) {
-                        name = list[j];
-                    }
-                    name = list[j] + ", ";
-                    nameRow.push(<p>{name}</p>);
-                    j++;
+                else {
+                    name_col1.push(<p>{value}</p>);
                 }
-
-                allNames.push(<div className={"comp_name_row"}>{nameRow}</div>)
-                nameRow = [];
             }
 
-            return <div id={"names"}>{allNames}</div>;
+            allNames.push(<div className={"comp_name_col"}>{name_col0}</div>)
+            allNames.push(<div className={"comp_name_col"}>{name_col1}</div>)
+            return <div id={"comp_names"}>{allNames}</div>;
         }
 
         return (
-            <div className={"comp_team_container"}>
-                <Loop/>
-            </div>
+            <>
+                <h3>Competition Team</h3>
+                <div className={"comp_team_container"}>
+                    <Loop/>
+                </div>
+            </>
         )
 
     }
@@ -168,8 +165,10 @@ function OfficerTeam({ eventkey, executive_board, on_mobile }) {
         return (
             <Col className="no-margin-padding" style={{justifyContent: "center"}}>
                 <OfficersRow heading="Executive Board" officers={executive_board21}/>
+                {/*<OfficersRow heading="Project Managers" officers={pms21}/>*/}
                 <OfficersRow heading="Mechanical and Aerobody" officers={mech_aero21}/>
                 <OfficersRow heading="Electrical" officers={electrical21}/>
+                <CompList list={competition_team21}/>
             </Col>
         )
     }
