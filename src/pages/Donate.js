@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container'
 import Button from "react-bootstrap/Button";
 import Collapse from 'react-bootstrap/Collapse';
 import {Link} from "react-router-dom";
+import Header from "../components/Header";
 import sponsorshipTiers from '../content/assets/images/uncategorized/SponsorshipTiers.png'
 import sponsorshipPacket from '../content/assets/Solar Gators 2023-24 Sponsorship Packet.pdf'
 let donateLink = "https://www.uff.ufl.edu/giving-opportunities/027995-mae-solar-gators/"
@@ -45,27 +46,27 @@ export default function Donate() {
 
     return (
         <React.Fragment>
-
             {/*  Page Header  */}
-            <Container fluid="true" className="header">
+            <Header title={"Donate"} imgcss={"donate-header-img"}/>
+            <Container fluid="true" className="section" style={{background: "#00203E"}}>
+                <h3 style={{paddingTop: "0", paddingBottom: "3rem"}}>Limited Time Donation Matching!</h3>
+                <p className={"body-text-white"}>
+                    During the Fall 2023 Semester, UF MAE will be
+                    <span className={"accent_word"} id={"orange_accent"}> one-to-one matching on all donations </span>
+                    made through our UF Foundation account! Join us on our mission towards a brighter, more sustainable future.
+                </p>
+                {/* Donate Button */}
                 <Row>
-                    <Col>
-                        <div className="donate-header-img">
-                            <h1 className={"title-text"}>
-                                Donate
-                            </h1>
-                        </div>
-                    </Col>
+                    <Button className="btn-primary" id="donation-btn"
+                            href={donateLink} target="_blank" >
+                        Donate Online
+                    </Button>
                 </Row>
             </Container>
-
             {/*  About Donations  */}
             <Container fluid="true" className="section">
-                <Row>
-                    <h2>
-                        About Donations
-                    </h2>
-                </Row>
+
+                <h2>About Donations</h2>
 
                 <Row className="no-margin-padding">
                     <p style={{paddingBottom: "25px"}}>
@@ -89,18 +90,11 @@ export default function Donate() {
                     Your generosity helps us to build our solar car and so much more. We are grateful that you are considering joining us on our mission towards a brighter, more sustainable future.
                 </p>
 
-                {/* Donate Button */}
-                <Row>
-                    <Button className="btn-primary" style={{width: "250px", left: "calc(50% - 250px/2 + 2px)"}}
-                            href={donateLink} target="_blank" >
-                        Donate Online
-                    </Button>
 
-
-                </Row>
                 <h6 style={{paddingTop: "70px", paddingBottom: "0"}}>
                     All donations are tax deductible. Solar Gators is a 501(c)(3) nonprofit organization. Tax forms available upon request.
                 </h6>
+
             </Container>
 
             {/* Sponsorship Opportunities */}

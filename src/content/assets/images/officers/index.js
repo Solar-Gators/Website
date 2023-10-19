@@ -29,7 +29,7 @@ let pms23 = [["Matthew Shen", "Electrical PM", electricalPM23],
     ["Lauren Shaw", "Static PM", staticPM23], ["Kurt Smith", "Dynamic PM", dynamicPM23],
     ["Samuel Breslin", "Integration PM", integrationPM230],
     ["Lacie Michaelis", "Integration PM", integrationPM231],
-    [ "Stanley Noel", "Integration PM", integrationPM232]];
+    ["Stanley Noel", "Integration PM", integrationPM232]];
 let mech_aero23 = [["William Tran", "Aerobody", aerobody23], ["Peyton Striblen", "Battery Pack", batterypack23], ["Ellie Alderman", "Brakes", brakes23],
     ["Oliver Tumbel", "Suspension", suspension23], ["Elijah Baluyot", "Chassis", chassis23]];
 let electrical23 =  [["Yashasvi Bhat", "Telemetry", telemetry23], ["Jackson Werner", "Low Voltage", lowvoltage23]];

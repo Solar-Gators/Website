@@ -172,6 +172,11 @@ $square-button-height-width: 40px;
   border-radius: 10px;
 }
 
+#donation-btn {
+  width: 250px;
+  left: calc(50% - 250px/2 + 2px);
+}
+
 /* Resize for shrunk desktop window
 @media screen and (max-width: 925px) {
   .btn-social-media-icon {
