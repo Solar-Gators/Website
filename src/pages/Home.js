@@ -16,10 +16,10 @@ import ZenithTecnica from "../content/assets/images/sponsor_logos/ZenithTecnica.
 import ECE from "../content/assets/images/sponsor_logos/ECE.png";
 
 //2022-23 Officers: (Names, Positions, Headshot)
-let executive_board22 = get_eboard("2022");
-let pms22 = get_pms("2022");
-let mech_aero22 = get_mech("2022");
-let electrical22 =  get_elec("2022");
+let executive_board = get_eboard("2023");
+let pms = get_pms("2023");
+let mech_aero = get_mech("2023");
+let electrical =  get_elec("2023");
 
 //Car 3 Platinum Sponsors
 let platinum3 = [[MAE, "https://mae.ufl.edu/"], [ZenithTecnica, "https://www.zenithtecnica.com/"], [ECE, "https://www.ece.ufl.edu/"]];
@@ -34,10 +34,22 @@ function Officer({pic}) {
 }
 
 function SponsorSection ({on_mobile}) {
+    let SponsorBlurb = () => (
+        <>
+            <p>Solar Gators relies on the support of sponsors to further our mission of showing the potential of solar energy.
+                Sponsoring us means becoming an integral part of our team, and helping to inspire the next generation of engineers and innovators.
+            </p>
+            <p>
+                During the Fall 2023 semester, UF Department of Mechanical and Aerospace Engineering (MAE) will be
+                <span className={"accent_word"} id={"orange_accent"}> one-to-one matching all donations </span>
+                made to our UF Foundation account! Join us on our mission towards a brighter, more sustainable future.
+            </p>
+        </>
+    )
+
     let LogoImage = ({ src, link }) => {
-        if (on_mobile) {
             return (
-                <Col className="logo-col">
+                <Col className="logo-col" id={"home-sponsors-logo-col"}>
                     <a href={link}>
                         <span className="align-center">
                             <img src={src} className="sponsor-logo" alt={"logo"}/>
@@ -45,43 +57,28 @@ function SponsorSection ({on_mobile}) {
                     </a>
                 </Col>
             )
-        }
-        else {
-            return (
-                <Col className="logo-col" style={{maxWidth: "18vw", margin: "2vw 0"}}>
-                    <a href={link}>
-                        <span className="align-center">
-                            <img src={src} className="sponsor-logo" style={{maxWidth: "18vw", padding: "0 2vw"}} alt={"logo"}/>
-                        </span>
-                    </a>
-                </Col>
-            )
-        }
     }
+
     let SponsorRow = ({link1, img1, link2, img2, link3, img3}) => {
         //creates Row with one (two or three) sponsor logos
         return (
-            <Row className="no-margin-padding" style={{justifyContent: "center", alignItems: "center", marginBottom: "15px"}}>
+            <Row style={{justifyContent:"center"}}>
                 { img1 ? <LogoImage src={img1} link={link1} /> : ""}
                 { img2 ? <LogoImage src={img2} link={link2} /> : ""}
                 { img3 ? <LogoImage src={img3} link={link3} /> : ""}
             </Row>
         )
     }
+
     if (on_mobile) {
         return (
             <Col>
                 <Row>
                     <SponsorRow img1={platinum3[0][0]} link1={platinum3[0][1]}
-                                 img2={platinum3[1][0]} link2={platinum3[1][1]}
-                                 img3={platinum3[2][0]} link3={platinum3[2][1]}
+                                 // img2={platinum3[2][0]} link2={platinum3[2][1]}
                     />
                 </Row>
-
-                <p>
-                    Solar Gators relies on the support of sponsors to further our mission of showing the potential of solar energy. Sponsoring us means becoming an integral part of our team, and helping to inspire the next generation of engineers and innovators. Join us on our mission towards a brighter, more sustainable future.
-                </p>
-
+                    <SponsorBlurb/>
                 <Row>
                     <Button className="btn-primary"
                             as={Link} to={"/donate"}
@@ -102,9 +99,7 @@ function SponsorSection ({on_mobile}) {
                 <Col className={"no-margin-padding"}>
                     <Container >
                         <Row >
-                            <p>
-                                Solar Gators relies on the support of sponsors to further our mission of showing the potential of solar energy. Sponsoring us means becoming an integral part of our team, and helping to inspire the next generation of engineers and innovators. Join us on our mission towards a brighter, more sustainable future.
-                            </p>
+                            <SponsorBlurb/>
                         </Row>
                         <Row style={{justifyContent: "center", alignContent: "center"}}>
                             <Button className="btn-secondary" style={{left: "0", marginRight: "3vw", marginTop: "5vw"}}
@@ -147,7 +142,7 @@ export default function Home() {
                       <span className={"accent_word"} id={"orange_accent"}> victory at this year's Formula Sun Grand Prix (FSGP)</span>
                       , solidifying our position as pioneers in solar-powered endurance racing.
                       Battling against formidable competitors from around the country, our team demonstrated their exceptional engineering prowess and unyielding determination, ultimately crossing the finish line in an awe-inspiring
-                      <span className={"accent_word"} id={"orange_accent"}> first place</span>
+                      <span className={"accent_word"} id={"orange_accent"}> 1st place</span>
                       . Additionally, our team received awards for
                       <span className={"accent_word"} id={"orange_accent"}> Most Improved </span>
                       and
@@ -162,11 +157,15 @@ export default function Home() {
           <Container fluid="true" className={"section"} >
               <h2>Join Our Team</h2>
               <div className={"join-team"}>
-                  <p>Interested in joining us on the road to solar success? Fill out our <a href={"https://docs.google.com/forms/d/e/1FAIpQLSdxo60I7caWoVV9q_ASSbCC-DZLAxdsBqwobLBTsZWxY3mGhQ/viewform"}
-                  ><span className={"accent_link"}>new member interest form.</span></a>
-                  </p>
+                  <div className={"join-text-half"}>
+                      <p>Interested in joining us on the road to solar success? We welcome gators of all majors, backgrounds, and experience levels.</p>
+                      <Button className="btn-primary" id="large-btn" href={"https://docs.google.com/forms/d/e/1FAIpQLSdxo60I7caWoVV9q_ASSbCC-DZLAxdsBqwobLBTsZWxY3mGhQ/viewform"} target="_blank">
+                          New Member Form
+                      </Button>
+                  </div>
+
                   <div id={"schedule"}>
-                      <h5>Weekly Meeting Schedule</h5>
+                      <h4>Weekly Meeting Schedule</h4>
                       <div className={"flex-rows-center"}>
                           <p className={"accent_word"}>MON & THURS</p>
                           <p>6:00 PM</p>
@@ -176,44 +175,45 @@ export default function Home() {
               </div>
           </Container>
 
-          {/*  Mission Section */}
-          <MissionStatements on_mobile={mobileView} white_background={true} button={true}/>
+          <div className={"horizontal-line"}/>
+
+          {/*  Sponsors Section */}
+          <Container fluid="true" className="section">
+              {/*<h2>Become A Sponsor</h2>*/}
+              <h2>MAE Donation Matching</h2>
+              <SponsorSection on_mobile={mobileView}/>
+          </Container>
 
           {/*  Team Section */}
           <Container fluid="true" className="section" style={{backgroundColor: '#00203E'}}>
               <h2>Meet The Team</h2>
               <div className={"slider"}>
                   <div className={"slide-track"}>
-                      <Officer pic={executive_board22[0][2]}/>
-                      <Officer pic={executive_board22[1][2]}/>
-                      <Officer pic={executive_board22[2][2]}/>
-                      <Officer pic={executive_board22[3][2]}/>
-                      <Officer pic={executive_board22[4][2]}/>
-                      <Officer pic={pms22[0][2]}/>
-                      <Officer pic={pms22[1][2]}/>
-                      <Officer pic={pms22[2][2]}/>
-                      <Officer pic={mech_aero22[0][2]}/>
-                      <Officer pic={mech_aero22[1][2]}/>
-                      <Officer pic={mech_aero22[2][2]}/>
-                      <Officer pic={electrical22[0][2]}/>
-                      <Officer pic={electrical22[1][2]}/>
-                      <Officer pic={electrical22[3][2]}/>
+                      <Officer pic={executive_board[4][2]}/>
+                      <Officer pic={executive_board[0][2]}/>
+                      <Officer pic={executive_board[1][2]}/>
+                      <Officer pic={executive_board[2][2]}/>
+                      <Officer pic={executive_board[3][2]}/>
+                      <Officer pic={pms[0][2]}/>
+                      <Officer pic={pms[3][2]}/>
+                      <Officer pic={pms[4][2]}/>
+                      <Officer pic={pms[2][2]}/>
+                      <Officer pic={mech_aero[0][2]}/>
+                      <Officer pic={pms[1][2]}/>
+                      <Officer pic={mech_aero[1][2]}/>
+                      <Officer pic={mech_aero[2][2]}/>
+                      <Officer pic={electrical[0][2]}/>
+                      <Officer pic={electrical[1][2]}/>
                   </div>
               </div>
-              <Button className="btn-primary" as={Link} to={"/team"}
-                      onClick={() => {window.scroll(0,0);}}>
-                  Team 2023
-              </Button>
+              {/*<Button className="btn-primary" as={Link} to={"/team"}*/}
+              {/*        onClick={() => {window.scroll(0,0);}}>*/}
+              {/*    Team 2023*/}
+              {/*</Button>*/}
           </Container>
 
           {/* Car Section */}
           <CarsSection mobileView={mobileView}/>
-
-          {/*  Sponsors Section */}
-          <Container fluid="true" className="section">
-              <h2>Become A Sponsor</h2>
-              <SponsorSection on_mobile={mobileView}/>
-          </Container>
 
       </React.Fragment>
     )

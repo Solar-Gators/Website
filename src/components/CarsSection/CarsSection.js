@@ -29,7 +29,7 @@ export default function CarsSection({mobileView}) {
             <Row className={"car-cards"}>
                 <Car car_img={car1} car_name={"Torch"} car_year1={"2017"} car_year2={"2018"}/>
                 <Car car_img={car2} car_name={"Cielo"} car_year1={"2018"} car_year2={"2019"}/>
-                <Car car_img={car3} car_name={"Sunrider"} car_year1={"2020"} car_year2={"present"}/>
+                <Car car_img={car3} car_name={"Sunrider"} car_year1={"2020"} car_year2={"2023"}/>
             </Row>
         </Container>
     )

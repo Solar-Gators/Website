@@ -12,16 +12,9 @@ export default function WebsiteNavbar() {
 
     function MenuItems ({on_mobile}) {
         let PageLink = ({path, tag}) => {
-            if (on_mobile) {
-                return (
-                    <Nav.Link as={Link} to={path} style={{margin: "5px 10px 20px", padding: "0"}}>{tag}</Nav.Link>
-                )
-            }
-            else {
-                return (
-                    <Nav.Link as={Link} to={path} style={{margin: "25px 10px 20px", padding: "0"}}>{tag}</Nav.Link>
-                )
-            }
+            return (
+                <Nav.Link as={Link} to={path} className={"nav-link"}>{tag}</Nav.Link>
+            )
         }
 
         if (on_mobile) {
@@ -33,7 +26,7 @@ export default function WebsiteNavbar() {
                     <PageLink path="/sponsors" tag="Sponsors"/>
                     <PageLink path="/contact" tag="Contact"/>
                     <div style={{alignContent: "center"}}>
-                        <button className="btn-primary-small" onClick={() => { window.location.href = "/donate" }}>
+                        <button className="btn-primary" id="small-btn" onClick={() => { window.location.href = "/donate" }}>
                             Donate
                         </button>
                     </div>
@@ -51,7 +44,7 @@ export default function WebsiteNavbar() {
                         <PageLink path="/contact" tag="Contact"/>
                     </Nav>
                     <div style={{justifySelf: "flex-end"}}>
-                        <button className="btn-primary-small" onClick={() => { window.location.href = "/donate" }}>
+                        <button className="btn-primary" id="small-btn" onClick={() => { window.location.href = "/donate" }}>
                             Donate
                         </button>
                     </div>
