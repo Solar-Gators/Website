@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://ufsolargators.org",
-
   "dependencies": {
     "@fullcalendar/daygrid": "^5.1.0",
     "@fullcalendar/google-calendar": "^5.1.0",
@@ -22,7 +21,7 @@
     "react-google-recaptcha": "^2.1.0",
     "react-mailchimp-subscribe": "^2.1.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^4.0.3",
+    "react-scripts": "^5.0.1",
     "sass": "^1.65.1"
   },
   "scripts": {
