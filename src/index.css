@@ -10,6 +10,29 @@
   --color-black: #000000;
 }
 
+.horizontal-line {
+  width: 80%;
+  height: 1px;
+  background: var(--color-light-grey);
+  margin: 0 10%;
+}
+
+.nav-link {
+  margin: 25px 10px 20px;
+  padding: 0;
+  font-size: 1.25rem;
+}
+
+/*Resize header & text for mobile*/
+@media screen and (max-width: 425px) {
+  .nav-link {
+    padding: 0;
+    margin: .5rem;
+    line-height: 18px;
+    font-size: 1rem;
+  }
+}
+
 /*Define normal Inter font*/
 @font-face {
   font-family: 'Inter';

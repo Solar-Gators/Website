@@ -49,16 +49,17 @@ export default function Donate() {
             {/*  Page Header  */}
             <Header title={"Donate"} imgcss={"donate-header-img"}/>
             <Container fluid="true" className="section" style={{background: "#00203E"}}>
-                <h3 style={{paddingTop: "0", paddingBottom: "3rem"}}>Limited Time Donation Matching!</h3>
+                <h3 style={{paddingTop: "0", paddingBottom: "3rem"}}>
+                    MAE Donation Matching
+                </h3>
                 <p className={"body-text-white"}>
-                    During the Fall 2023 Semester, UF MAE will be
-                    <span className={"accent_word"} id={"orange_accent"}> one-to-one matching on all donations </span>
-                    made through our UF Foundation account! Join us on our mission towards a brighter, more sustainable future.
+                    During the Fall 2023 semester, UF Department of Mechanical and Aerospace Engineering (MAE) will be
+                    <span className={"accent_word"} id={"orange_accent"}> one-to-one matching all donations </span>
+                    made through our UF Foundation account! We appreciate any contribution to our organization.
                 </p>
                 {/* Donate Button */}
                 <Row>
-                    <Button className="btn-primary" id="donation-btn"
-                            href={donateLink} target="_blank" >
+                    <Button className="btn-primary" id="large-btn" href={donateLink} target="_blank" >
                         Donate Online
                     </Button>
                 </Row>
@@ -77,8 +78,7 @@ export default function Donate() {
 
                 {/*  Collapsable fields  */}
                 <CollapsableComponent open={open0} setOpen={setOpen0} label={"Online Donations"}
-                      text={"Online contributions are made via the University of Florida MAE Solar Gators webpage. Please note that there is a 5% gift tax applied to all donations, as well as an additional 3% for donations made by credit."}
-                      emphasis={""}
+                      text={"Online contributions are made via the University of Florida MAE Solar Gators Foundation Account. Please note that there is a 5% gift tax applied to all donations, as well as an additional 3% for donations made by credit. We encourage sponsors to retain their receipts for tax deduction purposes."}
                       link=""
                 />
                 <CollapsableComponent open={open1} setOpen={setOpen1} label={"Other Options"}
