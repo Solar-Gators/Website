@@ -159,17 +159,22 @@ export default function Home() {
               <div className={"join-team"}>
                   <div className={"join-text-half"}>
                       <p>Interested in joining us on the road to solar success? We welcome gators of all majors, backgrounds, and experience levels.</p>
-                      <Button className="btn-primary" id="large-btn" href={"https://docs.google.com/forms/d/e/1FAIpQLSdxo60I7caWoVV9q_ASSbCC-DZLAxdsBqwobLBTsZWxY3mGhQ/viewform"} target="_blank">
-                          New Member Form
+                      <Button className="btn-primary" id="large-btn" href={"https://groupme.com/join_group/98294549/k7lmd3gR"} target="_blank">
+                          New Member GroupMe
                       </Button>
                   </div>
 
                   <div id={"schedule"}>
                       <h4>Weekly Meeting Schedule</h4>
                       <div className={"flex-rows-center"}>
-                          <p className={"accent_word"}>MON & THURS</p>
+                          <p className={"accent_word"}>MONDAY</p>
                           <p>6:00 PM</p>
                           <p>Matherly Hall</p>
+                      </div>
+                      <div className={"flex-rows-center"}>
+                          <p className={"accent_word"}>THURSDAY</p>
+                          <p>7:00 PM</p>
+                          <p>Weil Hall</p>
                       </div>
                   </div>
               </div>
