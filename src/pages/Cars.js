@@ -47,14 +47,14 @@ function SplitSection ({name, year1, year2, blurb, img, pic_side, on_mobile}) {
     if (on_mobile) {
         if (name === "Cielo") {
             return (
-                <Col className="no-margin-padding">
+                <Col className="no-margin-padding" id={name}>
                     <TextContent/>
                 </Col>
             )
         }
         else {
             return (
-                <Col className="no-margin-padding" style={{background: "#00203E"}}>
+                <Col className="no-margin-padding" id={name} style={{background: "#00203E"}}>
                     <TextContent textColor={"#cdcdcd"}/>
                 </Col>
             )
@@ -64,7 +64,7 @@ function SplitSection ({name, year1, year2, blurb, img, pic_side, on_mobile}) {
     else {
         if (pic_side === "right") {
             return (
-                <Row className="no-margin-padding" style={{background: "#00203E"}}>
+                <Row className="no-margin-padding" id={name} style={{background: "#00203E"}}>
                     <TextContent textColor={"#cdcdcd"}/>
                     <ImageContent/>
                 </Row>
@@ -72,7 +72,7 @@ function SplitSection ({name, year1, year2, blurb, img, pic_side, on_mobile}) {
         }
         else {
             return (
-                <Row className="no-margin-padding">
+                <Row className="no-margin-padding" id={name}>
                     <ImageContent/>
                     <TextContent/>
                 </Row>

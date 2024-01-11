@@ -48,22 +48,7 @@ export default function Donate() {
         <React.Fragment>
             {/*  Page Header  */}
             <Header title={"Donate"} imgcss={"donate-header-img"}/>
-            <Container fluid="true" className="section" style={{background: "#00203E"}}>
-                <h3 style={{paddingTop: "0", paddingBottom: "3rem"}}>
-                    MAE Donation Matching
-                </h3>
-                <p className={"body-text-white"}>
-                    During the Fall 2023 semester, UF Department of Mechanical and Aerospace Engineering (MAE) will be
-                    <span className={"accent_word"} id={"orange_accent"}> one-to-one matching all donations </span>
-                    made through our UF Foundation account! We appreciate any contribution to our organization.
-                </p>
-                {/* Donate Button */}
-                <Row>
-                    <Button className="btn-primary" id="large-btn" href={donateLink} target="_blank" >
-                        Donate Online
-                    </Button>
-                </Row>
-            </Container>
+
             {/*  About Donations  */}
             <Container fluid="true" className="section">
 
@@ -90,6 +75,12 @@ export default function Donate() {
                     Your generosity helps us to build our solar car and so much more. We are grateful that you are considering joining us on our mission towards a brighter, more sustainable future.
                 </p>
 
+                {/* Donate Button */}
+                <Row>
+                    <Button className="btn-primary" id="large-btn" href={donateLink} target="_blank" >
+                        Donate Online
+                    </Button>
+                </Row>
 
                 <h6 style={{paddingTop: "70px", paddingBottom: "0"}}>
                     All donations are tax deductible. Solar Gators is a 501(c)(3) nonprofit organization. Tax forms available upon request.
@@ -97,6 +88,18 @@ export default function Donate() {
 
             </Container>
 
+            {/*  MAE Donation Matching  */}
+            <Container fluid="true" className="section" style={{background: "#00203E"}}>
+                <h3 style={{paddingTop: "0", paddingBottom: "3rem"}}>
+                    MAE Donation Matching
+                </h3>
+                <p className={"body-text-white"}>
+                    During the Fall 2023 semester, UF Department of Mechanical and Aerospace Engineering (MAE)
+                    <span className={"accent_word"} id={"orange_accent"}> one-to-one matched all donations </span>
+                    made through our UF Foundation account! We appreciate your contribution to our organization.
+                </p>
+            </Container>
+            
             {/* Sponsorship Opportunities */}
             <Container fluid="true" className="section" style={{background: "#00203E"}}>
                 <h2 style={{paddingTop: "0", paddingBottom: "50px"}}>
