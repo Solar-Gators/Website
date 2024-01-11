@@ -57,18 +57,25 @@
 
     #schedule {
         width: 28rem;
-        height: 12rem;
+        //height: 12rem;
         background: #D8E9FA;
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
         margin-left: 3.5rem;
         box-shadow: var(--color-grey) 7px 7px 7px ;
 
+        #schedule-dates {
+            margin: 0.5rem 0 0;
+        }
 
         h4 {
             color: #0067C7;
+        }
+
+        p {
+            margin-bottom: 0.5rem;
         }
     }
 }
@@ -76,6 +83,13 @@
 .accent_link {
     font-weight: 500;
     color: var(--color-bright_blue)
+}
+
+.flex-cols-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .flex-rows-center {
@@ -86,7 +100,7 @@
 }
 
 .flex-rows-center p {
-    margin: 1rem;
+    margin: 0 1rem;
 }
 
 #home-sponsors-logo-col {
@@ -102,6 +116,13 @@
 #sponsor_logos_half {
     padding: 0;
     display: inline;
+}
+
+#sponsor_blurb_half {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /*  Officer Carousel Animation
@@ -192,8 +213,6 @@ $animationSpeed: 50s;
             height: 240px;
         }
     }
-
-
 }
 
 //Resize text for mobile
@@ -226,32 +245,6 @@ $animationSpeed: 50s;
         }
     }
 
-    /*
-    font-family: 'Inter';
-  font-weight: 525;
-  font-size: 18px;
-  width: 180px;
-  height: $button-height;
-
-  left: calc(50% - 180px/2 + 2px);
-  margin-top: $margin-top;
-  margin-bottom: $margin-bottom;
-
-  align-items: center;
-  text-align: center;
-  text-transform: capitalize;
-
-  color: var(--color-bright_blue);
-  background-color: transparent;
-  border: 3px solid var(--color-bright_blue);
-  border-radius: $curve;
-
-  display: flex;
-  position: relative;
-  justify-content: center;
-  top: 0;
-    */
-
     .join-team {
         margin: 0 5vw;
         flex-direction: column-reverse;
@@ -269,7 +262,7 @@ $animationSpeed: 50s;
             margin: 0 0 2.5rem;
 
             h4 {
-                padding: 2rem 0 2rem;
+                padding: 2rem 0 1rem;
             }
         }
 

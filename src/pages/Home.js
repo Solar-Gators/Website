@@ -38,12 +38,13 @@ function SponsorSection ({on_mobile}) {
         <>
             <p>Solar Gators relies on the support of sponsors to further our mission of showing the potential of solar energy.
                 Sponsoring us means becoming an integral part of our team, and helping to inspire the next generation of engineers and innovators.
+                Join us on our mission towards a brighter, more sustainable future.
             </p>
-            <p>
-                During the Fall 2023 semester, UF Department of Mechanical and Aerospace Engineering (MAE) will be
-                <span className={"accent_word"} id={"orange_accent"}> one-to-one matching all donations </span>
-                made to our UF Foundation account! Join us on our mission towards a brighter, more sustainable future.
-            </p>
+            {/*<p>*/}
+            {/*    During the Fall 2023 semester, UF Department of Mechanical and Aerospace Engineering (MAE)*/}
+            {/*    <span className={"accent_word"} id={"orange_accent"}> one-to-one matched all donations </span>*/}
+            {/*    made to our UF Foundation account.*/}
+            {/*</p>*/}
         </>
     )
 
@@ -93,12 +94,12 @@ function SponsorSection ({on_mobile}) {
         return (
             <Row>
                 <Col className={"no-margin-padding"} id="sponsor_logos_half">
-                    <SponsorRow img1={platinum3[0][0]} link1={platinum3[0][1]} img2={platinum3[2][0]} link2={platinum3[2][1]}></SponsorRow>
-                    <SponsorRow img1={platinum3[1][0]} link1={platinum3[1][1]}></SponsorRow>
+                    <SponsorRow img1={platinum3[0][0]} link1={platinum3[0][1]} img2={platinum3[2][0]} link2={platinum3[2][1]}/>
+                    <SponsorRow img1={platinum3[1][0]} link1={platinum3[1][1]}/>
                 </Col>
-                <Col className={"no-margin-padding"}>
+                <Col className={"no-margin-padding"} id="sponsor_blurb_half">
                     <Container >
-                        <Row >
+                        <Row>
                             <SponsorBlurb/>
                         </Row>
                         <Row style={{justifyContent: "center", alignContent: "center"}}>
@@ -139,7 +140,7 @@ export default function Home() {
                   </h2>
                   <p className={"body-text-white"} style={{textAlign: "center"}}>
                       Our team achieved an electrifying
-                      <span className={"accent_word"} id={"orange_accent"}> victory at this year's Formula Sun Grand Prix (FSGP)</span>
+                      <span className={"accent_word"} id={"orange_accent"}> victory at the 2023 Formula Sun Grand Prix (FSGP)</span>
                       , solidifying our position as pioneers in solar-powered endurance racing.
                       Battling against formidable competitors from around the country, our team demonstrated their exceptional engineering prowess and unyielding determination, ultimately crossing the finish line in an awe-inspiring
                       <span className={"accent_word"} id={"orange_accent"}> 1st place</span>
@@ -159,17 +160,28 @@ export default function Home() {
               <div className={"join-team"}>
                   <div className={"join-text-half"}>
                       <p>Interested in joining us on the road to solar success? We welcome gators of all majors, backgrounds, and experience levels.</p>
-                      <Button className="btn-primary" id="large-btn" href={"https://docs.google.com/forms/d/e/1FAIpQLSdxo60I7caWoVV9q_ASSbCC-DZLAxdsBqwobLBTsZWxY3mGhQ/viewform"} target="_blank">
-                          New Member Form
+                      <Button className="btn-primary" id="large-btn" href={"https://groupme.com/join_group/98294549/k7lmd3gR"} target="_blank">
+                          New Member GroupMe
                       </Button>
                   </div>
 
                   <div id={"schedule"}>
                       <h4>Weekly Meeting Schedule</h4>
-                      <div className={"flex-rows-center"}>
-                          <p className={"accent_word"}>MON & THURS</p>
-                          <p>6:00 PM</p>
-                          <p>Matherly Hall</p>
+                      <div id={"schedule-dates"}>
+                          <div className={"flex-rows-center"}>
+                              <div className={"flex-cols-center"}>
+                                  <p className={"accent_word"}>MONDAY</p>
+                                  <p className={"accent_word"}>THURSDAY</p>
+                              </div>
+                              <div className={"flex-cols-center"}>
+                                  <p>6:00 PM</p>
+                                  <p>7:00 PM</p>
+                              </div>
+                              <div className={"flex-cols-center"}>
+                                  <p>Matherly Hall</p>
+                                  <p>Weil Hall</p>
+                              </div>
+                          </div>
                       </div>
                   </div>
               </div>
@@ -179,37 +191,35 @@ export default function Home() {
 
           {/*  Sponsors Section */}
           <Container fluid="true" className="section">
-              {/*<h2>Become A Sponsor</h2>*/}
-              <h2>MAE Donation Matching</h2>
+              <h2>Become A Sponsor</h2>
+              {/*<h2>MAE Donation Matching</h2>*/}
               <SponsorSection on_mobile={mobileView}/>
           </Container>
 
           {/*  Team Section */}
           <Container fluid="true" className="section" style={{backgroundColor: '#00203E'}}>
-              <h2>Meet The Team</h2>
-              <div className={"slider"}>
-                  <div className={"slide-track"}>
-                      <Officer pic={executive_board[4][2]}/>
-                      <Officer pic={executive_board[0][2]}/>
-                      <Officer pic={executive_board[1][2]}/>
-                      <Officer pic={executive_board[2][2]}/>
-                      <Officer pic={executive_board[3][2]}/>
-                      <Officer pic={pms[0][2]}/>
-                      <Officer pic={pms[3][2]}/>
-                      <Officer pic={pms[4][2]}/>
-                      <Officer pic={pms[2][2]}/>
-                      <Officer pic={mech_aero[0][2]}/>
-                      <Officer pic={pms[1][2]}/>
-                      <Officer pic={mech_aero[1][2]}/>
-                      <Officer pic={mech_aero[2][2]}/>
-                      <Officer pic={electrical[0][2]}/>
-                      <Officer pic={electrical[1][2]}/>
+              <Link to={"/team"} onClick={() => {window.scroll(0,0);}} >
+                  <h2>Meet The Team</h2>
+                  <div className={"slider"}>
+                      <div className={"slide-track"}>
+                          <Officer pic={executive_board[4][2]}/>
+                          <Officer pic={executive_board[0][2]}/>
+                          <Officer pic={executive_board[1][2]}/>
+                          <Officer pic={executive_board[2][2]}/>
+                          <Officer pic={executive_board[3][2]}/>
+                          <Officer pic={pms[0][2]}/>
+                          <Officer pic={pms[3][2]}/>
+                          <Officer pic={pms[4][2]}/>
+                          <Officer pic={pms[2][2]}/>
+                          <Officer pic={mech_aero[0][2]}/>
+                          <Officer pic={pms[1][2]}/>
+                          <Officer pic={mech_aero[1][2]}/>
+                          <Officer pic={mech_aero[2][2]}/>
+                          <Officer pic={electrical[0][2]}/>
+                          <Officer pic={electrical[1][2]}/>
+                      </div>
                   </div>
-              </div>
-              {/*<Button className="btn-primary" as={Link} to={"/team"}*/}
-              {/*        onClick={() => {window.scroll(0,0);}}>*/}
-              {/*    Team 2023*/}
-              {/*</Button>*/}
+              </Link>
           </Container>
 
           {/* Car Section */}
