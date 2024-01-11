@@ -10,7 +10,7 @@ import './CarsSection.scss'
 function Car({car_img, car_name, car_year1, car_year2}) {
     //creates each car's container for image & hover description
     let scroll_pos = "/cars#" + car_name;
-    console.log("scroll pos " + scroll_pos);
+    // console.log("scroll pos " + scroll_pos);
     return (
         // <Link className="car-card" to={"/cars"} onClick={() => {window.scroll(0,0);}} >
         <a className="car-card" href={scroll_pos}>

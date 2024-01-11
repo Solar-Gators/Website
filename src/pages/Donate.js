@@ -99,7 +99,7 @@ export default function Donate() {
                     made through our UF Foundation account! We appreciate your contribution to our organization.
                 </p>
             </Container>
-            
+
             {/* Sponsorship Opportunities */}
             <Container fluid="true" className="section" style={{background: "#00203E"}}>
                 <h2 style={{paddingTop: "0", paddingBottom: "50px"}}>
