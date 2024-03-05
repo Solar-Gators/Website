@@ -6,7 +6,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc4e1d2d-50d0-4b9c-91a0-44fd4e2a9b80" name="Changes" comment="Fixed Competition Team formatting" />
+    <list default="true" id="cc4e1d2d-50d0-4b9c-91a0-44fd4e2a9b80" name="Changes" comment="Fixed Competition Team formatting">
+      <change afterPath="$PROJECT_DIR$/src/content/assets/images/sponsor_logos/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/styles/Sponsors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/styles/Sponsors.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Sponsor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Sponsor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Team.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Team.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,6 +111,7 @@
       <workItem from="1693959832409" duration="2958000" />
       <workItem from="1704915019150" duration="6664000" />
       <workItem from="1705374094605" duration="1000" />
+      <workItem from="1709673238452" duration="3429000" />
     </task>
     <task id="LOCAL-00001" summary="Organized image files. Updated pathes">
       <created>1690910957798</created>
