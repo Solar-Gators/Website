@@ -18,21 +18,58 @@
     color: #000000;
 }
 
-
-.logo-col {
-    max-width: 18vw;
-    //position: relative;
+#sponsor-row {
     justify-content: center;
-    align-content: center;
-    padding: 0;
-    margin: 1vw 3vw;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-wrap: normal;
+    gap: 2vw;
+    margin: 2rem;
 }
 
 .sponsor-logo{
-    width: 18vw;
+    max-width: 18vw;
+    width: auto;
     height: auto;
-    padding: 1vw;
+    padding: 0;
     justify-self: center;
+}
+
+#platinum {
+    margin: 0 2vw;
+    max-width: 18vw;
+    max-height: 7.5rem;
+}
+
+#gold {
+    margin: 0 1vw;
+    max-width: 12vw;
+    max-height: 6rem;
+}
+
+#silver {
+    max-width: 10vw;
+    max-height: 5rem;
+}
+
+#bronze {
+    max-width: 8vw;
+    max-height: 4.5rem;
+}
+
+#valued {
+    max-width: 6vw;
+    max-height: 4rem;
+}
+
+#patron {
+    width: auto;
+    color: var(--color-medium-grey);
+}
+
+#sponsor-h4 {
+    color: var(--color-primary_orange);
 }
 
 // Resize for large tablet
@@ -48,10 +85,34 @@
         height: 50vw;
     }
     .sponsor-logo {
-        width: 25vw;
-    }
-    .logo-col {
         max-width: 25vw;
-        margin: 3vw;
+        width: auto;
+        height: auto;
+    }
+
+    #platinum {
+        margin: 0;
+        max-width: 25vw;
+        max-height: 4rem;
+    }
+
+    #gold {
+        max-width: 20vw;
+        max-height: 3.5rem;
+    }
+
+    #silver {
+        max-width: 16vw;
+        max-height: 3rem;
+    }
+
+    #bronze {
+        max-width: 14vw;
+        max-height: 3rem;
+    }
+
+    #valued {
+        max-width: 12vw;
+        max-height: 4.5rem;
     }
 }

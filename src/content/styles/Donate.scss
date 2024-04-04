@@ -14,46 +14,9 @@
     align-items: center;
 }
 
-.collapse-col {
-    padding: 0;
-    padding-left: 8vw;
-    margin: 0;
-}
-
-#collapse-heading {
-    justify-content: left;
-    align-content: center;
-    padding: 1vw 0;
-    margin: 0;
-    color: black;
-}
-
-#collapse-content {
-    padding: 0;
-    margin: 0 0 0 50px;
-}
-
-#collapse-text {
-    padding-top: 20px;
-}
 //Resize text for mobile
 @media screen and (max-width: 425px) {
     .donate-header-img {
         height: 50vw;
-    }
-    #collapse-heading {
-        padding: 1vw 2vw;
-    }
-    #collapse-content {
-        padding-bottom: 4vw;
-        margin-top: 2vw;
-        margin-left: 7vw;
-    }
-    .collapse-col {
-        padding: 0;
-        justify-content: left;
-    }
-    #collapse-text {
-
     }
 }
