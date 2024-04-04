@@ -92,7 +92,7 @@ export default function Cars() {
             <Header title={"Our Cars"} imgcss={"cars-header-img"}/>
 
             {/* Sunrider */}
-            <SplitSection name={"Sunrider"} year1={"2020"} year2={"2023"} img={sunrider} pic_side={"right"}
+            <SplitSection name={"Sunrider"} year1={"2020"} year2={"2024"} img={sunrider} pic_side={"right"}
                           blurb={"Design for our third car, Sunrider, commenced in 2019. However, pandemic restrictions brought progress to a halt with limited in-person meetings and significant supply chain delays. Through this difficult time, the team banded together and worked relentlessly to complete Sunrider. Making its debut in the 2022 Formula Sun Grand Prix (FSGP), Sunrider set new team records; accumulating a total distance of over 700 miles and winning the 2023 FSGP in its second competition."}
                           on_mobile={mobileView}/>
 
@@ -113,7 +113,7 @@ export default function Cars() {
                 </p>
                 <Button className="btn-primary" as={Link} to={"/donate"}
                         onClick={() => {window.scroll(0,0);}}>
-                    Donate
+                    Learn More
                 </Button>
             </Container>
 

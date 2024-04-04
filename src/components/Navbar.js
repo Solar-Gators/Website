@@ -1,8 +1,7 @@
 import React, {useState} from 'react'
 import logoImage from '../content/assets/images/logo2.png'
 import { Link } from "react-router-dom";
-import {Nav, Navbar, NavDropdown, Container} from "react-bootstrap";
-import Button from 'react-bootstrap/Button'
+import {Nav, Navbar} from "react-bootstrap";
 import '../content/styles/Button.scss'
 
 
@@ -11,24 +10,38 @@ export default function WebsiteNavbar() {
     const toggle = () => setIsOpen(!isOpen);
 
     function MenuItems ({on_mobile}) {
+        let CTAbtn = () => {
+            return (
+                <button className="btn-primary" id="nav-btn" onClick={() => { window.location.href = "/donate" }}>
+                    Sponsor Us
+                </button>
+            )
+        }
+
         let PageLink = ({path, tag}) => {
             return (
                 <Nav.Link as={Link} to={path} className={"nav-link"}>{tag}</Nav.Link>
             )
         }
 
-        if (on_mobile) {
+        let PageTabs = () => {
             return (
-                <Nav style={{textAlign: "center", alignItems: "center"}}>
+                <>
                     <PageLink path="/about" tag="About"/>
                     <PageLink path="/cars" tag="Cars"/>
                     <PageLink path="/team" tag="Team"/>
                     <PageLink path="/sponsors" tag="Sponsors"/>
                     <PageLink path="/contact" tag="Contact"/>
+                </>
+            )
+        }
+
+        if (on_mobile) {
+            return (
+                <Nav style={{textAlign: "center", alignItems: "center"}}>
+                    <PageTabs/>
                     <div style={{alignContent: "center"}}>
-                        <button className="btn-primary" id="small-btn" onClick={() => { window.location.href = "/donate" }}>
-                            Donate
-                        </button>
+                        <CTAbtn/>
                     </div>
                 </Nav>
             )
@@ -37,16 +50,10 @@ export default function WebsiteNavbar() {
             return (
                 <>
                     <Nav className="mr-auto" navbar style={{textAlign: "center"}}>
-                        <PageLink path="/about" tag="About"/>
-                        <PageLink path="/cars" tag="Cars"/>
-                        <PageLink path="/team" tag="Team"/>
-                        <PageLink path="/sponsors" tag="Sponsors"/>
-                        <PageLink path="/contact" tag="Contact"/>
+                        <PageTabs/>
                     </Nav>
-                    <div style={{justifySelf: "flex-end"}}>
-                        <button className="btn-primary" id="small-btn" onClick={() => { window.location.href = "/donate" }}>
-                            Donate
-                        </button>
+                    <div style={{display: "flex", justifyContent: "flex-end", alignItems: "center"}}>
+                        <CTAbtn/>
                     </div>
                 </>
             )

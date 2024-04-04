@@ -1,180 +1,193 @@
 import React from 'react'
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
+import { useState } from 'react';
+import {get_platinum_sponsors, get_gold_sponsors, get_silver_sponsors, get_bronze_sponsors, get_valued_sponsors, get_patrons} from "../content/assets/images/sponsor_logos/index";
 
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import Button from 'react-bootstrap/Button'
+import Dropdown from "react-bootstrap/Dropdown";
+import Button from "react-bootstrap/Button";
+import Header from "../components/Header";
 
-//Car 3 Sponsor Logos:
-//Platinum
-import MAE from '../content/assets/images/sponsor_logos/MAE.png'
-import ZenithTecnica from '../content/assets/images/sponsor_logos/ZenithTecnica.png'
-import ECE from '../content/assets/images/sponsor_logos/ECE.png'
-//Gold
-import MatrixComposities from '../content/assets/images/sponsor_logos/Matrix.png'
-import ElektroAutomatik from '../content/assets/images/sponsor_logos/ElektroAutomatik.png'
-import WestSystems from '../content/assets/images/sponsor_logos/WestSystem.png'
-import Bridgestone from '../content/assets/images/sponsor_logos/Bridgestone.png'
-import Solidworks from '../content/assets/images/sponsor_logos/SolidWorks.png'
-//Silver
-import Mirage from '../content/assets/images/sponsor_logos/Mirage.png'
-import RapidCut from '../content/assets/images/sponsor_logos/RapidCut.png'
-import BMRS from '../content/assets/images/sponsor_logos/Bmrs.png'
-import Molex from '../content/assets/images/sponsor_logos/Molex.png'
-import TDK from '../content/assets/images/sponsor_logos/TDK.png'
-import Cytec from '../content/assets/images/sponsor_logos/CytecSolvay.png'
-import Signarama from '../content/assets/images/sponsor_logos/Signarama.webp'
-import Mathworks from '../content/assets/images/sponsor_logos/Mathworks.webp'
-import Lowes from '../content/assets/images/sponsor_logos/Lowes.png'
-//Bronze
-import MerritSupply from '../content/assets/images/sponsor_logos/MerritSupply.png'
-import SKF from '../content/assets/images/sponsor_logos/SKF.png'
-import _3A from '../content/assets/images/sponsor_logos/3A.png'
-import FGCI from '../content/assets/images/sponsor_logos/FGCI.png'
-import PhoenixThermalSupply from '../content/assets/images/sponsor_logos/PhoenixThermal.png'
-import Ansys from '../content/assets/images/sponsor_logos/Ansys.png'
-import VR3 from '../content/assets/images/sponsor_logos/VR3.png'
-import FusionFilaments from '../content/assets/images/sponsor_logos/FusionFilaments.png'
-import IC3D from '../content/assets/images/sponsor_logos/IC3D.png'
-import ProtoPasta from '../content/assets/images/sponsor_logos/Protopasta.webp'
-import SainSmart from '../content/assets/images/sponsor_logos/SainSmart.webp'
-import IPF from '../content/assets/images/sponsor_logos/IPF.png'
-import Spirpol from '../content/assets/images/sponsor_logos/Spirol.png'
-import CustomDynamics from '../content/assets/images/sponsor_logos/CustomDynamics.png'
-import ExtremeCanopy from '../content/assets/images/sponsor_logos/ExtremeCanopy.png'
+//Car 3 Sponsors - 2D Array [[logo, website link],...]
+let platinum3 = get_platinum_sponsors("3");
+let gold3 = get_gold_sponsors("3");
+let silver3 = get_silver_sponsors("3");
+let bronze3 = get_bronze_sponsors("3");
+let valued3 = get_valued_sponsors("3");
 
-//Past Sponsors - not displayed on website
-import RapidHarness from '../content/assets/images/sponsor_logos/RapidHarness.png'
-import Altair from '../content/assets/images/sponsor_logos/Altair.png'
-import NordLock from '../content/assets/images/sponsor_logos/NordLock.png'
-import BayArea from '../content/assets/images/sponsor_logos/BayArea.png'
-import Pellucere from '../content/assets/images/sponsor_logos/Pellucere.png'
+//Car 4 Sponsors - 2D Array [[logo, website link],...]
+let platinum4 = get_platinum_sponsors("4");
+let gold4 = get_gold_sponsors("4");
+let silver4 = get_silver_sponsors("4");
+let bronze4 = get_bronze_sponsors("4");
+let valued4 = get_valued_sponsors("4");
+let patron4 = get_patrons("4");
 
-//Car 2 Sponsor Logos
-// import Eaton from '../content/assets/images/sponsor_logos/Eaton.png'
-// import HWCE from '../content/assets/images/sponsor_logos/HWCE.png'
-// import Siemens from '../content/assets/images/sponsor_logos/Siemens.png'
-// import SolarImpact from '../content/assets/images/sponsor_logos/SolarImpact.png'
-// import SunPower from '../content/assets/images/sponsor_logos/SunPower.png'
-// import Universal from '../content/assets/images/sponsor_logos/Universal.png'
-// import IPPD from '../content/assets/images/sponsor_logos/IPPD.png'
-// import Rohacell from '../content/assets/images/sponsor_logos/Rohacell.png'
-// import Brembo from '../content/assets/images/sponsor_logos/Brembo.png'
-// import UFSG from '../content/assets/images/sponsor_logos/UFSG.png'
-// import Accurate from '../content/assets/images/sponsor_logos/Accurate.png'
-// import Zevia from '../content/assets/images/sponsor_logos/Zevia.png'
-// import Stickermule from '../content/assets/images/sponsor_logos/StickerMule.png'
-// import SolarCat from '../content/assets/images/sponsor_logos/SolarCat.png'
-// import Kevins from '../content/assets/images/sponsor_logos/Kevins.png'
-// import Hakko from '../content/assets/images/sponsor_logos/Hakko.png'
-// import MossSolar from '../content/assets/images/sponsor_logos/MossSolar.png'
-// import BeadBuster from '../content/assets/images/sponsor_logos/BeadBuster.png'
 
-//Car 3 Sponsors
-//Sorted by tier in array of pairs: [logo, website link]
-let platinum3 = [[MAE, "https://mae.ufl.edu/"], [ZenithTecnica, "https://www.zenithtecnica.com/"], [ECE, "https://www.ece.ufl.edu/"]];
-let gold3 = [[MatrixComposities, "https://matrixcomp.com"], [ElektroAutomatik, "https://elektroautomatik.com/"], [Molex, "https://www.molex.com"],
-            [Solidworks, "https://www.solidworks.com/"], [Bridgestone, "https://www.bridgestoneamericas.com/en/index"]];
-let silver3 = [[Mirage, "https://www.mirage-mfg.com/"], [RapidCut, "https://www.rapidcut.com/"], [BMRS, "https://www.bmrswired.com/"],
-    [Cytec, "https://www.solvay.com/en/"], [TDK, "https://www.tdk-lambda.com"], [SKF, "https://www.skf.com"],
-    [Signarama, "https://signarama.com/"], [Mathworks, "https://www.mathworks.com/"], [Lowes, "https://www.lowes.com/"]];
-let bronze3 = [[MerritSupply, "https://www.merrittsupply.com/"], [WestSystems, "https://www.westsystem.com/"],
-    [_3A, "https://3acompositesusa.com/"],[FGCI, "https://www.fgci.com/"],
-    [PhoenixThermalSupply, "https://www.phoenixthermalsupply.com/"], [Ansys, "https://www.ansys.com/"], [VR3, "https://vr3.ca/"],
-    [FusionFilaments, "https://fusionfilaments.com/"], [IC3D, "https://www.ic3dprinters.com/"], [ProtoPasta, "https://www.proto-pasta.com/"],
-    [SainSmart, "https://www.sainsmart.com/"], [IPF, "https://goo.gl/maps/a8tBJe2cCBKJWkzq5"], [Spirpol, "https://www.spirol.com/"],
-    [CustomDynamics, "https://www.customdynamics.com/"], [ExtremeCanopy, "https://www.extremecanopy.com/"]];
+function SponsorRow({ list, tier }) {
+    let Logo = ({sponsor}) => {
+        if (tier === "patron") {
+            return (
+                <h6 id={tier}>{sponsor}</h6>
+            )
 
-//Car 2 Sponsors
-// var platinum2 = [Solidworks, Eaton, Altair, ECE, HWCE, Siemens, SolarImpact, SunPower, MAE, Universal];
-// var silver2 = [BayArea, IPPD, Rohacell, Mirage, FGCI, UFSG, Brembo, Accurate];
-// var bronze2 = [TDK, Zevia, Stickermule, SolarCat, Kevins, MossSolar, BMRS, BeadBuster, Hakko];
-
-function SponsorRow({ img1, link1, img2, link2, img3, link3 }) {
-    let LogoImage = ({ src, link }) => {
-        return (
-            <Col className="logo-col">
-                <a href={link}>
+        }
+        else {
+            return (
+                <a href={sponsor[1]}>
                     <span className="align-center">
-                        <img src={src} className="sponsor-logo" />
+                        <img src={sponsor[0]} className="sponsor-logo" id={tier}/>
                     </span>
                 </a>
-            </Col>
+            )
+        }
+    }
+
+    let SponsorLoop = () => {
+        return (
+            list.map((sponsor, index) => (
+                <Logo key={index} sponsor={sponsor}/>
+            ))
         )
     }
-  return (
-    <Row className="no-margin-padding" style={{justifyContent: "center", alignItems: "center"}}>
-      { img1 ? <LogoImage src={img1} link={link1} /> : ""}
-      { img2 ? <LogoImage src={img2} link={link2} /> : ""}
-      { img3 ? <LogoImage src={img3} link={link3} /> : ""}
-    </Row>
-  )
+
+    return (
+        <Row className="no-margin-padding" id={"sponsor-row"}>
+            <SponsorLoop/>
+        </Row>
+    )
 }
 
 function ShowSponsors({car_num}) {
     if (car_num === "3") {
         return (
-            <Container fluid="true" className="section">
+            <div>
                 <h2 style={{paddingBottom: "10px"}}>Sunrider Sponsors</h2>
-                <h6>2020 - 2023</h6>
+                <h6>2020 - 2024</h6>
 
                 {/* PLATINUM */}
                 <h3 style={{paddingTop: "8vw"}}>Platinum Sponsors</h3>
-                <SponsorRow img1={platinum3[0][0]} link1={platinum3[0][1]} img2={platinum3[1][0]} link2={platinum3[1][1]} img3={platinum3[2][0]} link3={platinum3[2][1]} />
+                <SponsorRow list={platinum3} tier={"platinum"}/>
+
+                {/*/!* GOLD *!/*/}
+                <h3>Gold Sponsors</h3>
+                <SponsorRow list={gold3} tier={"gold"}/>
+
+                {/*/!* SILVER *!/*/}
+                <h3>Silver Sponsors</h3>
+                <SponsorRow list={silver3} tier={"silver"}/>
+
+                {/*/!* BRONZE *!/*/}
+                <h3>Bronze Sponsors</h3>
+                <SponsorRow list={bronze3} tier={"bronze"}/>
+
+                {/*/!* VALUED *!/*/}
+                <h3>Valued Sponsors</h3>
+                <SponsorRow list={valued3} tier={"valued"}/>
+            </div>
+        );
+    }
+    else {
+        return (
+            <div>
+                <h2 style={{paddingBottom: "10px"}}>Flare Sponsors</h2>
+                <h6>2024 - present</h6>
+
+                {/* PLATINUM */}
+                <h3 style={{paddingTop: "8vw"}}>Platinum Sponsors</h3>
+                <SponsorRow list={platinum4} tier={"platinum"}/>
 
                 {/* GOLD */}
                 <h3>Gold Sponsors</h3>
-                <SponsorRow img1={gold3[0][0]} link1={gold3[0][1]} img2={gold3[1][0]} link2={gold3[1][1]} img3={gold3[2][0]} link3={gold3[2][1]} />
-                <SponsorRow img1={gold3[3][0]} link1={gold3[3][1]} img2={gold3[4][0]} link2={gold3[4][1]} />
+                <SponsorRow list={gold4} tier={"gold"}/>
 
                 {/* SILVER */}
                 <h3>Silver Sponsors</h3>
-                <SponsorRow img1={silver3[0][0]} link1={silver3[0][1]} img2={silver3[1][0]} link2={silver3[1][1]} img3={silver3[2][0]} link3={silver3[2][1]} />
-                <SponsorRow img1={silver3[3][0]} link1={silver3[3][1]} img2={silver3[4][0]} link2={silver3[4][1]} img3={silver3[5][0]} link3={silver3[5][1]}/>
-                <SponsorRow img1={silver3[6][0]} link1={silver3[6][1]} img2={silver3[7][0]} link2={silver3[7][1]} img3={silver3[8][0]} link3={silver3[8][1]}/>
+                <SponsorRow list={silver4} tier={"silver"}/>
 
                 {/* BRONZE */}
                 <h3>Bronze Sponsors</h3>
-                <SponsorRow img1={bronze3[0][0]} link1={bronze3[0][1]} img2={bronze3[1][0]} link2={bronze3[1][1]} img3={bronze3[2][0]} link3={bronze3[2][1]} />
-                <SponsorRow img1={bronze3[3][0]} link1={bronze3[3][1]} img2={bronze3[4][0]} link2={bronze3[4][1]} img3={bronze3[5][0]} link3={bronze3[5][1]}/>
-                <SponsorRow img1={bronze3[6][0]} link1={bronze3[6][1]} img2={bronze3[7][0]} link2={bronze3[7][1]} img3={bronze3[8][0]} link3={bronze3[8][1]} />
-                <SponsorRow img1={bronze3[9][0]} link1={bronze3[9][1]} img2={bronze3[10][0]} link2={bronze3[10][1]} img3={bronze3[11][0]} link3={bronze3[11][1]}/>
-                <SponsorRow img1={bronze3[12][0]} link1={bronze3[12][1]}  img2={bronze3[13][0]} link2={bronze3[13][1]} img3={bronze3[14][0]} link3={bronze3[14][1]}/>
-            </Container>
+                <SponsorRow list={bronze4} tier={"bronze"}/>
+
+                {/* VALUED */}
+                <h3>Valued Sponsors</h3>
+                <SponsorRow list={valued4} tier={"valued"}/>
+
+                {/* SOLAR CELL PATRONS */}
+                <h3>Solar Cell Patrons</h3>
+                <SponsorRow list={patron4} tier={"patron"}/>
+
+            </div>
         );
     }
 }
 
 export default function Sponsor() {
-  return (
-    <React.Fragment>
-        {/*  Page Header */}
-        <Container fluid="true" className="header">
-            <Row>
-                <Col>
-                    <div className="sponsor-header-img">
-                        <h1 className={"title-text"}>
-                            Sponsors
-                        </h1>
-                    </div>
-                </Col>
-            </Row>
-        </Container>
+    const [carNum, setCarNum] = useState("3");
+    const [carName, setCarName] = useState("Sunrider");
 
-        {/*  Sponsorship Blurb */}
-        <Container fluid="true" className="section" style={{background: "#00203E"}}>
-            <Row className="no-margin-padding" style={{justifyContent: "center"}}>
-                <p className={"body-text-white"} style={{textAlign: "center"}}>
-                    Our mission to show the potential of solar energy is made possible by our wonderful sponsors.
-                    Their generosity and commitment to sustainability are instrumental in helping us
-                    design, build and test our solar cars. Thank you.
-                </p>
-            </Row>
-        </Container>
+    //react hook functions
+    function SetCar() {
+        if(carNum === "3") {
+            setCarNum("4");
+            setCarName("Flare");
+        }
+        else {
+            setCarNum("3");
+            setCarName("Sunrider");
+        }
+    }
 
-        <ShowSponsors car_num={"3"}/>
+    return (
+        <React.Fragment>
+            {/*  Page Header */}
+            <Header title={"Our Sponsors"} imgcss={"sponsor-header-img"}/>
 
-    </React.Fragment>
-  )
+            {/*  Sponsorship Blurb */}
+            <Container fluid="true" className="section" style={{background: "#00203E"}}>
+                <Row className="no-margin-padding" style={{justifyContent: "center"}}>
+                    <p className={"body-text-white"} style={{textAlign: "center"}}>
+                        Our mission to show the potential of solar energy is made possible by our wonderful sponsors.
+                        Their generosity and commitment to sustainability are instrumental in helping us
+                        design, build and test our solar cars. Thank you.
+                    </p>
+                </Row>
+            </Container>
+
+            {/*  Dropdown Menu  */}
+            <Container fluid="true" className="section">
+
+                {/* This is temporarily commented out.
+                    Uncomment out once Car 4 sponsors are completed */}
+                {/*<Col style={{justifyContent: "center", marginBottom: "10vw"}}>*/}
+                {/*    <Dropdown onSelect={(car) => SetCar()}>*/}
+                {/*        <Dropdown.Toggle className="btn-transparent" variant={"btn-transparent"} style={{justifyContent: "center", alignItems: "center"}}>*/}
+                {/*            <h5 id={"sponsor-dropdown-h5"}>Car {carNum} - {carName}</h5>*/}
+                {/*        </Dropdown.Toggle>*/}
+
+                {/*        <Dropdown.Menu className="dropdown-menu">*/}
+                {/*            <Dropdown.Item className="dropdown-row" style={{color: "white"}} car="3">Car 3 - Sunrider</Dropdown.Item>*/}
+                {/*            <Dropdown.Item className="dropdown-row" style={{color: "white"}} car="4">Car 4 - Flare</Dropdown.Item>*/}
+                {/*        </Dropdown.Menu>*/}
+                {/*    </Dropdown>*/}
+                {/*</Col>*/}
+
+                {/*Display Sponsor Logos*/}
+                <ShowSponsors car_num={carNum}/>
+
+                <Row style={{justifyContent: "center", alignContent: "center", marginTop: "8vw"}}>
+                    <h4 id={"sponsor-h4"}>Interested in becoming a sponsor?</h4>
+                    <Button className="btn-primary" style={{left: "0", marginTop: "2vw"}}
+                            as={Link} to={"/donate"}
+                            onClick={() => {window.scroll(0,0);}}>
+                        Learn More
+                    </Button>
+                </Row>
+            </Container>
+
+
+        </React.Fragment>
+    )
 }

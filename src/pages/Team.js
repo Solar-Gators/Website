@@ -104,6 +104,7 @@ function OfficerTeam({ eventkey, executive_board, on_mobile }) {
         )
     }
 
+    //Competition Team
     let CompList = ({list}) => {
         let Loop = () => {
             const allNames = [];    //array of div rows
@@ -138,7 +139,7 @@ function OfficerTeam({ eventkey, executive_board, on_mobile }) {
 
     }
 
-    //Officer Year
+    //Switch Academic Year
     if (eventkey === "202324") {
         return (
             <Col className="no-margin-padding" style={{justifyContent: "center"}}>
@@ -196,10 +197,8 @@ export default class Team extends React.Component {
         let mobileView = mql.matches;
 
         return (
-            <React.Fragment >
-
-            <Header title={"Our Team"}
-                    imgcss={"team-header-img"}/>
+            <React.Fragment>
+            <Header title={"Our Team"} imgcss={"team-header-img"}/>
 
             {/*  Page Contents  */}
             <Container fluid="true" className="section" style={{background: "#00203E"}}>

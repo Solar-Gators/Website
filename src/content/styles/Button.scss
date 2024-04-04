@@ -1,5 +1,5 @@
 //DEFINES BUTTON STYLES
-$margin-top: 5rem;
+$margin-top: 2rem;
 $margin-bottom: 0;
 $curve: 40px;
 
@@ -147,15 +147,13 @@ $square-button-height-width: 40px;
   border-radius: 10px;
 }
 
+#nav-btn {
+  margin: 0;
+}
+
 #large-btn {
   width: 250px;
   left: calc(50% - 250px/2 + 2px);
-}
-
-#small-btn {
-  margin-top: 0;
-  height: 40px;
-  width: 140px;
 }
 
 /* Resize for large tablet - scale down 25% */
@@ -193,7 +191,7 @@ $square-button-height-width: 40px;
     right: 0;
     top: 0;
   }
-  #small-btn {
+  #nav-btn {
     margin: 1rem 0 2rem;
   }
 }

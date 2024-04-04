@@ -7,7 +7,6 @@ import Button from 'react-bootstrap/Button'
 
 import Header from "../components/Header";
 import CarsSection from "../components/CarsSection/CarsSection";
-import MissionStatements from "../components/MissionStatements/MissionStatements";
 import { get_eboard, get_elec, get_mech, get_pms } from "../content/assets/images/officers";
 
 import fsgp23 from "../content/assets/images/people/team22/victory0_crop_edit.jpg";
@@ -34,19 +33,23 @@ function Officer({pic}) {
 }
 
 function SponsorSection ({on_mobile}) {
-    let SponsorBlurb = () => (
-        <>
-            <p>Solar Gators relies on the support of sponsors to further our mission of showing the potential of solar energy.
-                Sponsoring us means becoming an integral part of our team, and helping to inspire the next generation of engineers and innovators.
-                Join us on our mission towards a brighter, more sustainable future.
-            </p>
-            {/*<p>*/}
-            {/*    During the Fall 2023 semester, UF Department of Mechanical and Aerospace Engineering (MAE)*/}
-            {/*    <span className={"accent_word"} id={"orange_accent"}> one-to-one matched all donations </span>*/}
-            {/*    made to our UF Foundation account.*/}
-            {/*</p>*/}
-        </>
-    )
+    let SponsorBlurb = () => {
+        return (
+            <>
+                <p>Solar Gators relies on the support of sponsors to further our mission of showing the potential of
+                    solar energy.
+                    Sponsoring us means becoming an integral part of our team, and helping to inspire the next
+                    generation of engineers and innovators.
+                    Join us on our mission towards a brighter, more sustainable future.
+                </p>
+                {/*<p>*/}
+                {/*    During the Fall 2023 semester, UF Department of Mechanical and Aerospace Engineering (MAE)*/}
+                {/*    <span className={"accent_word"} id={"orange_accent"}> one-to-one matched all donations </span>*/}
+                {/*    made to our UF Foundation account.*/}
+                {/*</p>*/}
+            </>
+        )
+    }
 
     let LogoImage = ({ src, link }) => {
             return (
@@ -71,21 +74,25 @@ function SponsorSection ({on_mobile}) {
         )
     }
 
+    let CTAbtn = () => {
+        return (
+            <Button className="btn-primary" style={{left: "0", marginTop: "5vw"}}
+                    as={Link} to={"/donate"}
+                    onClick={() => {window.scroll(0,0);}}>
+                Learn More
+            </Button>
+        )
+    }
+
     if (on_mobile) {
         return (
             <Col>
                 <Row>
-                    <SponsorRow img1={platinum3[0][0]} link1={platinum3[0][1]}
-                                 // img2={platinum3[2][0]} link2={platinum3[2][1]}
-                    />
+                    <SponsorRow img1={platinum3[0][0]} link1={platinum3[0][1]}/>
                 </Row>
                     <SponsorBlurb/>
                 <Row>
-                    <Button className="btn-primary"
-                            as={Link} to={"/donate"}
-                            onClick={() => {window.scroll(0,0);}}>
-                        Donate
-                    </Button>
+                    <CTAbtn/>
                 </Row>
             </Col>
         )
@@ -108,11 +115,7 @@ function SponsorSection ({on_mobile}) {
                                     onClick={() => {window.scroll(0,0);}}>
                                 Our Sponsors
                             </Button>
-                            <Button className="btn-primary" style={{left: "0", marginTop: "5vw"}}
-                                    as={Link} to={"/donate"}
-                                    onClick={() => {window.scroll(0,0);}}>
-                                Donate
-                            </Button>
+                            <CTAbtn/>
                         </Row>
                     </Container>
                 </Col>
@@ -152,6 +155,36 @@ export default function Home() {
                   </p>
                   <img src={fsgp23} alt={""}/>
               </Row>
+          </Container>
+
+          {/* Car Section */}
+          <CarsSection mobileView={mobileView}/>
+
+          {/*  Team Section */}
+          <Container fluid="true" className="section" style={{backgroundColor: '#00203E'}}>
+              <Link id={"link"} to={"/team"} onClick={() => {window.scroll(0,0);}} >
+                  <h2>Meet The Team</h2>
+                  {/* Slide Animation */}
+                  <div className={"slider"}>
+                      <div className={"slide-track"}>
+                          <Officer pic={executive_board[4][2]}/>
+                          <Officer pic={executive_board[0][2]}/>
+                          <Officer pic={executive_board[1][2]}/>
+                          <Officer pic={executive_board[2][2]}/>
+                          <Officer pic={executive_board[3][2]}/>
+                          <Officer pic={pms[0][2]}/>
+                          <Officer pic={pms[3][2]}/>
+                          <Officer pic={pms[4][2]}/>
+                          <Officer pic={pms[2][2]}/>
+                          <Officer pic={mech_aero[0][2]}/>
+                          <Officer pic={pms[1][2]}/>
+                          <Officer pic={mech_aero[1][2]}/>
+                          <Officer pic={mech_aero[2][2]}/>
+                          <Officer pic={electrical[0][2]}/>
+                          <Officer pic={electrical[1][2]}/>
+                      </div>
+                  </div>
+              </Link>
           </Container>
 
           {/*  Join Team  */}
@@ -195,35 +228,6 @@ export default function Home() {
               {/*<h2>MAE Donation Matching</h2>*/}
               <SponsorSection on_mobile={mobileView}/>
           </Container>
-
-          {/*  Team Section */}
-          <Container fluid="true" className="section" style={{backgroundColor: '#00203E'}}>
-              <Link to={"/team"} onClick={() => {window.scroll(0,0);}} >
-                  <h2>Meet The Team</h2>
-                  <div className={"slider"}>
-                      <div className={"slide-track"}>
-                          <Officer pic={executive_board[4][2]}/>
-                          <Officer pic={executive_board[0][2]}/>
-                          <Officer pic={executive_board[1][2]}/>
-                          <Officer pic={executive_board[2][2]}/>
-                          <Officer pic={executive_board[3][2]}/>
-                          <Officer pic={pms[0][2]}/>
-                          <Officer pic={pms[3][2]}/>
-                          <Officer pic={pms[4][2]}/>
-                          <Officer pic={pms[2][2]}/>
-                          <Officer pic={mech_aero[0][2]}/>
-                          <Officer pic={pms[1][2]}/>
-                          <Officer pic={mech_aero[1][2]}/>
-                          <Officer pic={mech_aero[2][2]}/>
-                          <Officer pic={electrical[0][2]}/>
-                          <Officer pic={electrical[1][2]}/>
-                      </div>
-                  </div>
-              </Link>
-          </Container>
-
-          {/* Car Section */}
-          <CarsSection mobileView={mobileView}/>
 
       </React.Fragment>
     )
