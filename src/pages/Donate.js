@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container'
 import Button from "react-bootstrap/Button";
 import Header from "../components/Header";
 import sponsorshipTiers from '../content/assets/images/uncategorized/SponsorshipTiers.png'
-import sponsorshipPacket from '../content/assets/Solar Gators 2023-24 Sponsorship Packet.pdf'
+import sponsorshipPacket from '../content/assets/Solar Gators 2024-25 Sponsorship Packet.pdf'
 let donateLink = "https://www.uff.ufl.edu/giving-opportunities/027995-mae-solar-gators/"
 
 export default function Donate() {
