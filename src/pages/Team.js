@@ -231,6 +231,12 @@ export default class Team extends React.Component {
                                     return { executive_board: executive_board23, eventkey: eventKey }
                                 });
                             }
+                            // MARIA
+                            // if (eventKey === "202325") {
+                            //     this.setState((state) => {
+                            //         return { executive_board: executive_board24, eventkey: eventKey }
+                            //     });
+                            // }
                         }}
                     >
                         <Dropdown.Toggle className="btn-transparent" variant={"btn-transparent"} style={{justifyContent: "center", alignItems: "center"}}>
