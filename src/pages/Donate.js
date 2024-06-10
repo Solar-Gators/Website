@@ -17,20 +17,43 @@ export default function Donate() {
             {/*  About Donations  */}
             <Container fluid="true" className="section">
                 <Row className="no-margin-padding">
+
+                    <h4>Why Your Support Matters</h4>
                     <p style={{paddingBottom: "25px"}}>
-                        A project of this scale would not be possible without the generosity and support of our sponsors. Your support will not only help us build a lighter, faster and more efficient car, but will also provide a platform for the next generation of engineers to develop their skills.
+                        Your contributions are crucial to our mission of creating a brighter, more sustainable future 
+                        through innovative solar car technology. By supporting us, you not only help us build
+                        lighter, faster, and more efficient solar cars but will also provide a platform for the
+                        next generation of engineers to develop invaluable skills. Every donation, regardless of any 
+                        size, significantly impacts our project and brings us closer to our goals.Your generosity 
+                        fuels our progress and helps us push the boundaries of technology and sustainability, 
+                        benefitting both communities and the environment.
                     </p>
 
+
                     <h4>How to Contribute</h4>
-                    <p>We offer a variety of different sponsorship options, but appreciate any contribution to our organization.
-                        Online contributions are made via the University of Florida MAE Solar Gators Foundation Account.
-                        Please note that there is a 5% gift tax applied to all donations, as well as an additional 3% for donations made by credit.
-                        We encourage sponsors to retain their receipts for tax deduction purposes. If you would prefer to make a contribution by check or donate materials, please contact us at
-                        <span style={{color: "#F37833", fontWeight: "500", display: "inline"}}> info@ufsolargators.org</span></p>
+
+                    <p>We offer a variety of different sponsorship options and value all forms of support.
+                        Whether you are an individual, business, or community group, your generosity helps us move
+                        closer to our goals. Here's how you can make a difference:
+                    </p>
+
+                    <ul style={{paddingLeft: "2.5rem"}}>
+                        <li>Online Donations: Contribute through the University of Florida MAE Solar Gators Foundation Account.
+                            Please note that there is a 5% gift tax applied to all donations, as well as an additional 3% for donations made by credit.
+                            We encourage sponsors to retain their receipts for tax deduction purposes.
+                        </li>
+                        <li>Other Ways to Give: If you would prefer to make a contribution by check or donate materials, please contact us 
+                            at <a href='mailto:info@ufsolargators.org'><span style={{color: "#F37833", fontWeight: "500", display: "inline"}}>info@ufsolargators.org</span></a>. Every 
+                            little bit helps, and in-kind donations are just as valuable to us as financial contributions.
+                        </li> 
+                    </ul>
+                        
                 </Row>
 
                 <p style={{paddingTop: "25px"}}>
-                    Your generosity helps us to build our solar car and so much more. We are grateful that you are considering joining us on our mission towards a brighter, more sustainable future.
+                A project of this scale would not be possible without the generosity and support of our sponsors.
+                No matter the size of your donation, you play a crucial role in fostering innovation and sustainability.
+                We are grateful for your consideration and look forward to partnering with you on this exciting journey.
                 </p>
 
                 {/* Donate Button */}
@@ -59,19 +82,7 @@ export default function Donate() {
                 </h6>
             </Container>
 
-            <div className={"horizontal-line"}/>
 
-            {/*  MAE Donation Matching  */}
-            <Container fluid="true" className="section">
-                <h3 style={{paddingTop: "0", paddingBottom: "3rem"}}>
-                    MAE Donation Matching
-                </h3>
-                <p className={"body-text"}>
-                    During the Fall 2023 semester, UF Department of Mechanical and Aerospace Engineering (MAE)
-                    <span className={"accent_word"} id={"orange_accent"}> one-to-one matched all donations </span>
-                    made through our UF Foundation account! We appreciate your contribution to our organization.
-                </p>
-            </Container>
         </React.Fragment>
     )
 }
