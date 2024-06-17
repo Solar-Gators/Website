@@ -22,14 +22,22 @@ export default function Donate() {
                     <p style={{paddingBottom: "25px"}}>
                         Your contributions are crucial to our mission of creating a brighter, more sustainable future 
                         through innovative solar car technology. By supporting us, you not only help us build
-                        lighter, faster, and more efficient solar cars but will also provide a platform for the
+                        lighter, faster, and more efficient solar cars but also provide a platform for the
                         next generation of engineers to develop invaluable skills. Every donation, regardless of any 
-                        size, significantly impacts our project and brings us closer to our goals.Your generosity 
+                        size, significantly impacts our project and brings us closer to our goals. Your generosity 
                         fuels our progress and helps us push the boundaries of technology and sustainability, 
                         benefitting both communities and the environment.
                     </p>
+                </Row>
+                
+            
+                {/*  Embedded Youtube Video  */}
+                <div style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+                <iframe width="560"  height="315" src="https://www.youtube.com/embed/Sz-C6v9zVRY?si=qyF64xAKWlNyvmQ_&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
 
-
+                <Row className="no-margin-padding">
                     <h4>How to Contribute</h4>
 
                     <p>We offer a variety of different sponsorship options and value all forms of support.
