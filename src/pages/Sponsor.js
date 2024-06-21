@@ -159,7 +159,7 @@ export default function Sponsor() {
             {/*  Dropdown Menu  */}
             <Container fluid="true" className="section">
 
-                {/* This is temporarily commented out.
+                {/* MARIA This is temporarily commented out.
                     Uncomment out once Car 4 sponsors are completed */}
                 {/*<Col style={{justifyContent: "center", marginBottom: "10vw"}}>*/}
                 {/*    <Dropdown onSelect={(car) => SetCar()}>*/}
