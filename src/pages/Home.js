@@ -194,7 +194,7 @@ export default function Home() {
                   <div className={"join-text-half"}>
                       <p>We welcome gators of all majors, backgrounds, and experience levels. Interested in joining us on the road to solar success? </p>
                       <p> 1. Fill out the new member interest form.</p> 
-                      <Button style={{marginTop:"0px",marginBottom:"16px"}} className="btn-primary" id="large-btn" href={"https://forms.gle/Pab92hYcgVHA7pSd8"} target="_blank">
+                      <Button style={{marginTop:"0px",marginBottom:"16px"}} className="btn-primary" id="large-btn" href={"https://docs.google.com/forms/d/e/1FAIpQLSepfa2zVAQ2n_4dCnfsdVU_7X_KfplddlKjzHXWhawfBmzmxg/viewform"} target="_blank">
                           Interest Form
                       </Button>
                       <p> 2. Join the GroupMe for more information.</p>
