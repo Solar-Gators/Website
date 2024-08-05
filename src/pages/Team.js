@@ -6,6 +6,13 @@ import Dropdown from "react-bootstrap/Dropdown";
 import {get_eboard, get_pms, get_mech, get_elec, get_comp_team} from "../content/assets/images/officers/index";
 import Header from "../components/Header";
 
+//2024-25 Officers: (Names, Positions, Headshots)
+//let executive_board24= get_eboard("2024");
+//let pms24 = get_pms("2024");
+//let mech_aero24 = get_mech("2024");
+//let electrical24 =  get_elec("2024");
+
+
 //2023-24 Officers: (Names, Positions, Headshot)
 let executive_board23 = get_eboard("2023");
 let pms23 = get_pms("2023");
@@ -58,7 +65,11 @@ function AcademicYear({ eventkey }) {
     } else if (eventkey === "202324") {
         year1 = 2023;
         year2 = 2024;
-    }
+    } 
+    //else if (eventkey === "202425"){
+        //year1 = 2024
+        //year2 = 2025
+    //}
     return (
         <h5>{year1} - {year2}</h5>
     );

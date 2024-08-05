@@ -1,4 +1,11 @@
 // OFFICER PICTURES -----------------------------
+
+// 2024-25
+// import { president24, vicepresident24, treasurer24, secretary24, business24, staticPM24, dynamicPM24, electricalPM24,
+//     integrationPM240, integrationPM241, integrationPM242, aerobody24, batterypack24, brakes24, chassis24, telemetry24,
+//     suspension24, lowvoltage24} from './2024/index'
+
+
 // 2023-24
 import { president23, vicepresident23, treasurer23, secretary23, business23, staticPM23, dynamicPM23, electricalPM23,
         integrationPM230, integrationPM231, integrationPM232, aerobody23, batterypack23, brakes23, chassis23, telemetry23,
@@ -19,6 +26,23 @@ import {president19, vicepresident19, treasurer19, secretary19, business19} from
 
 
 // OFFICER LISTS -----------------------------
+
+//2024-25: (Names, Positions,Headshot)
+//2023-24: (Names, Positions, Headshot)
+//let executive_board24 = [["William Tran", "President", president24],
+    // [" ", "Vice President", vicepresident24],
+    // [" ", "Treasurer", treasurer24],
+    // [" ", "Secretary", secretary24],
+    // [" ", "Business Coordinator", business23]];
+// let pms24 = [[" ", "Electrical PM", electricalPM24],
+//     [" ", "Static PM", staticPM24], ["Kurt Smith", "Dynamic PM", dynamicPM24],
+//     [" ", "Integration PM", integrationPM240],
+//     [" ", "Integration PM", integrationPM241],
+//     [" ", "Integration PM", integrationPM242]];
+//let mech_aero24 = [[" ", "Aerobody", aerobody24], [" ", "Battery Pack", batterypack24], [" ", "Brakes", brakes24],
+//    [" ", "Suspension", suspension24], [" ", "Chassis", chassis24]];
+//let electrical24 =  [[" ", "Telemetry", telemetry24], [" ", "Low Voltage", lowvoltage24]];
+
 //2023-24: (Names, Positions, Headshot)
 let executive_board23 = [["Irene Chung", "President", president23],
     ["Remington Ewing", "Vice President", vicepresident23],
@@ -108,6 +132,7 @@ export const get_eboard = (year) => {
     else if (year === "2021") { return executive_board21; }
     else if (year === "2022") { return executive_board22; }
     else if (year === "2023") { return executive_board23; }
+    //else if (year === "2024") { return executive_board24; }
     else { return ""; }
 }
 
@@ -117,6 +142,7 @@ export const get_pms = (year) => {
     else if (year === "2021") { return pms21; }
     else if (year === "2022") { return pms22; }
     else if (year === "2023") { return pms23; }
+    //else if (year === "2024") { return pms24;}
     else { return ""; }
 }
 
@@ -124,6 +150,7 @@ export const get_mech = (year) => {
     if (year === "2021") { return mech_aero21; }
     else if (year === "2022") { return mech_aero22; }
     else if (year === "2023") { return mech_aero23; }
+    //else if (year === "2024") {return mech_aero24; }
     else { return ""; }
 }
 
@@ -131,6 +158,7 @@ export const get_elec = (year) => {
     if (year === "2021") { return electrical21; }
     else if (year === "2022") { return electrical22; }
     else if (year === "2023") { return electrical23; }
+    //else if (year === "2024") { return electrical24; }
     else { return ""; }
 }
 
