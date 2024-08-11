@@ -3,14 +3,16 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Dropdown from "react-bootstrap/Dropdown";
-import {get_eboard, get_pms, get_mech, get_elec, get_comp_team, get_webdev} from "../content/assets/images/officers/index";
+import {get_eboard, get_pms, get_mech, get_elec, get_comp_team, get_webdev, get_ces} from "../content/assets/images/officers/index";
 import Header from "../components/Header";
 
 //2024-25 Officers: (Names, Positions, Headshots)
-//let executive_board24= get_eboard("2024");
-//let pms24 = get_pms("2024");
+let executive_board24= get_eboard("2024");
+let pms24 = get_pms("2024");
+let ces24 = get_ces("2024")
 //let mech_aero24 = get_mech("2024");
 //let electrical24 =  get_elec("2024");
+//let webdev24 = get_webdev("2024");
 
 
 //2023-24 Officers: (Names, Positions, Headshot)
@@ -67,10 +69,10 @@ function AcademicYear({ eventkey }) {
         year1 = 2023;
         year2 = 2024;
     } 
-    //else if (eventkey === "202425"){
-        //year1 = 2024
-        //year2 = 2025
-    //}
+    else if (eventkey === "202425"){
+        year1 = 2024
+        year2 = 2025
+    }
     return (
         <h5>{year1} - {year2}</h5>
     );
@@ -152,7 +154,18 @@ function OfficerTeam({ eventkey, executive_board, on_mobile }) {
     }
 
     //Switch Academic Year
-    if (eventkey === "202324") {
+    if (eventkey === "202425") {
+        return (
+            <Col className="no-margin-padding" style={{justifyContent: "center"}}>
+                <OfficersRow heading="Executive Board" officers={executive_board24}/>
+                <OfficersRow heading="Chief Engineers" officers={ces24}/>
+                <OfficersRow heading="Project Managers" officers={pms24}/>
+                {/*<OfficersRow heading="Web Development" officers={webdev24}/>*/}
+                {/*<CompList list={competition_team23}/>*/}
+            </Col>
+        )
+    }
+    else if (eventkey === "202324") {
         return (
             <Col className="no-margin-padding" style={{justifyContent: "center"}}>
                 <OfficersRow heading="Executive Board" officers={executive_board23}/>
@@ -200,7 +213,7 @@ export default class Team extends React.Component {
         super(props)
         this.state = {
             executive_board: executive_board23,
-            eventkey: "202324"
+            eventkey: "202425"
         }
     }
 
@@ -244,12 +257,11 @@ export default class Team extends React.Component {
                                     return { executive_board: executive_board23, eventkey: eventKey }
                                 });
                             }
-                            // MARIA
-                            // if (eventKey === "202325") {
-                            //     this.setState((state) => {
-                            //         return { executive_board: executive_board24, eventkey: eventKey }
-                            //     });
-                            // }
+                            if (eventKey === "202425") {
+                                this.setState((state) => {
+                                    return { executive_board: executive_board24, eventkey: eventKey }
+                                });
+                            }
                         }}
                     >
                         <Dropdown.Toggle className="btn-transparent" variant={"btn-transparent"} style={{justifyContent: "center", alignItems: "center"}}>
@@ -262,6 +274,7 @@ export default class Team extends React.Component {
                             <Dropdown.Item className="dropdown-row" style={{color: "white"}} eventKey="202122">2021 - 2022</Dropdown.Item>
                             <Dropdown.Item className="dropdown-row" style={{color: "white"}} eventKey="202223">2022 - 2023</Dropdown.Item>
                             <Dropdown.Item className="dropdown-row" style={{color: "white"}} eventKey="202324">2023 - 2024</Dropdown.Item>
+                            <Dropdown.Item className="dropdown-row" style={{color: "white"}} eventKey="202425">2024 - 2025</Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
               </Col>

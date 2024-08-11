@@ -1,10 +1,8 @@
 // OFFICER PICTURES -----------------------------
 
 // 2024-25
-// import { president24, vicepresident24, treasurer24, secretary24, business24, staticPM24, dynamicPM24, electricalPM24,
-//     integrationPM240, integrationPM241, integrationPM242, aerobody24, batterypack24, brakes24, chassis24, telemetry24,
-//     suspension24, lowvoltage24} from './2024/index'
-
+import { president24, vicepresident24, treasurer24, secretary24, business24, mechPM240, mechPM241,  electricalPM24, 
+    integrationPM240, integrationPM241, integrationPM242, integrationPM243} from './2024/index'
 
 // 2023-24
 import { president23, vicepresident23, treasurer23, secretary23, business23, staticPM23, dynamicPM23, electricalPM23,
@@ -28,20 +26,20 @@ import {president19, vicepresident19, treasurer19, secretary19, business19} from
 // OFFICER LISTS -----------------------------
 
 //2024-25: (Names, Positions,Headshot)
-//2023-24: (Names, Positions, Headshot)
-//let executive_board24 = [["William Tran", "President", president24],
-    // [" ", "Vice President", vicepresident24],
-    // [" ", "Treasurer", treasurer24],
-    // [" ", "Secretary", secretary24],
-    // [" ", "Business Coordinator", business23]];
-// let pms24 = [[" ", "Electrical PM", electricalPM24],
-//     [" ", "Static PM", staticPM24], ["Kurt Smith", "Dynamic PM", dynamicPM24],
-//     [" ", "Integration PM", integrationPM240],
-//     [" ", "Integration PM", integrationPM241],
-//     [" ", "Integration PM", integrationPM242]];
-//let mech_aero24 = [[" ", "Aerobody", aerobody24], [" ", "Battery Pack", batterypack24], [" ", "Brakes", brakes24],
-//    [" ", "Suspension", suspension24], [" ", "Chassis", chassis24]];
-//let electrical24 =  [[" ", "Telemetry", telemetry24], [" ", "Low Voltage", lowvoltage24]];
+let executive_board24 = [["William Tran", "President", president24],
+    ["Isabella Lucarelli", "Vice President", vicepresident24],
+    ["Shreya Bhat", "Treasurer", treasurer24],
+    ["Aaron Magruder", "Secretary", secretary24],
+    ["Andrew Carter", "Business Coordinator", business24]];
+let ces24 = [["Oliver Tumbel", "Mechanical Chief Engineer", mechPM240],
+["Jack Britton", "Mechanical Chief Engineer", mechPM241],
+["Samuel Breslin", "Electrical Chief Engineer", electricalPM24]]
+let pms24 = [
+    ["Lacie Michaelis", "Mechanical Integration PM", integrationPM240],
+    ["Ellie Alderman", "Mechanical Integration PM", integrationPM241],
+    ["Adison Hynes", "Electrical Integration PM", integrationPM242],
+    ["Jackson Werner", "Electrical Integration PM", integrationPM243]];
+
 
 //2023-24: (Names, Positions, Headshot)
 let executive_board23 = [["Irene Chung", "President", president23],
@@ -133,7 +131,7 @@ export const get_eboard = (year) => {
     else if (year === "2021") { return executive_board21; }
     else if (year === "2022") { return executive_board22; }
     else if (year === "2023") { return executive_board23; }
-    //else if (year === "2024") { return executive_board24; }
+    else if (year === "2024") { return executive_board24; }
     else { return ""; }
 }
 
@@ -143,7 +141,12 @@ export const get_pms = (year) => {
     else if (year === "2021") { return pms21; }
     else if (year === "2022") { return pms22; }
     else if (year === "2023") { return pms23; }
-    //else if (year === "2024") { return pms24;}
+    else if (year === "2024") { return pms24;}
+    else { return ""; }
+}
+
+export const get_ces = (year) => {
+    if (year === "2024") { return ces24;}
     else { return ""; }
 }
 
@@ -151,7 +154,6 @@ export const get_mech = (year) => {
     if (year === "2021") { return mech_aero21; }
     else if (year === "2022") { return mech_aero22; }
     else if (year === "2023") { return mech_aero23; }
-    //else if (year === "2024") {return mech_aero24; }
     else { return ""; }
 }
 
@@ -159,7 +161,6 @@ export const get_elec = (year) => {
     if (year === "2021") { return electrical21; }
     else if (year === "2022") { return electrical22; }
     else if (year === "2023") { return electrical23; }
-    //else if (year === "2024") { return electrical24; }
     else { return ""; }
 }
 
