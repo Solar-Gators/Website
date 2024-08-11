@@ -3,7 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Dropdown from "react-bootstrap/Dropdown";
-import {get_eboard, get_pms, get_mech, get_elec, get_comp_team} from "../content/assets/images/officers/index";
+import {get_eboard, get_pms, get_mech, get_elec, get_comp_team, get_webdev} from "../content/assets/images/officers/index";
 import Header from "../components/Header";
 
 //2024-25 Officers: (Names, Positions, Headshots)
@@ -18,6 +18,7 @@ let executive_board23 = get_eboard("2023");
 let pms23 = get_pms("2023");
 let mech_aero23 = get_mech("2023");
 let electrical23 =  get_elec("2023");
+let webdev23 = get_webdev("2023");
 
 
 //2022-23 Officers: (Names, Positions, Headshot)
@@ -158,6 +159,7 @@ function OfficerTeam({ eventkey, executive_board, on_mobile }) {
                 <OfficersRow heading="Project Managers" officers={pms23}/>
                 <OfficersRow heading="Mechanical and Aerobody" officers={mech_aero23}/>
                 <OfficersRow heading="Electrical" officers={electrical23}/>
+                <OfficersRow heading="Web Development" officers={webdev23}/>
                 {/*<CompList list={competition_team23}/>*/}
             </Col>
         )
