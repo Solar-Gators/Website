@@ -1,4 +1,6 @@
 import fsgp23 from "../awards/victory0_crop_edit.jpg"
+import altair24 from "../awards/Altair24.jpg"
+import fsgp24 from "../awards/FSGP24.JPG"
 export const AwardList = [
     {
         id: "1",
@@ -10,19 +12,19 @@ export const AwardList = [
     },
     {
         id: "2",
-        award_image: fsgp23,
-        photo_credits: "Photo Credits to",
-        photo_credits_link:"",
+        award_image: altair24,
+        photo_credits: "Photo Credits to Cora Kennedy",
+        photo_credits_link:"https://www.instagram.com/theroguecora/",
         alt:"Altair 2024",
-        description: "Altair",
+        description: "Solar Gators won the <span class='accent_word' id='orange_accent'>Altair Challenge</span> and with it, the grand prize of <span class='accent_word' id='orange_accent'>$10,000</span>! Altair provides a suite of innovative software for design and simulation, and they are a sponsor for this year’s events. For 3 days, Altair hosted a lightweight optimization redesign challenge which was open to all teams to participate in. Solar Gators achieved an overall <span class='accent_word' id='orange_accent'>81% weight reduction</span>, and narrowly eked out a nail-biting win over second with only a 0.2-gram difference between the two designs!"
     },
     {
         id: "3",
-        award_image: fsgp23,
-        photo_credits: "Photo Credits to",
-        photo_credits_link:"",
+        award_image: fsgp24,
+        photo_credits: "Photo Credits to Cora Kennedy",
+        photo_credits_link:"https://www.instagram.com/theroguecora/",
         alt:"FGSP 2024",
-        description: "FGSP 2024",
+        description: "Through rain, clouds, and smoke, we showcased incredible resilience during the  <span class='accent_word' id='orange_accent'>2024 Formula Sun Grand Prix (FSGP)</span> and the <span class='accent_word' id='orange_accent'>American Solar Challenge (ASC)</span>. To secure our spot in the ASC, we raced Sunrider ~470 miles on the track. Sunrider then crossed nearly 1500 miles of the American countryside in the ASC, and on the last day, we covered <span class='accent_word' id='orange_accent'>198.3 miles</span> in under <span class='accent_word' id='orange_accent'>5.5 hours</span>—10 minutes faster than the overall first-place team!"
     },
 
 ]

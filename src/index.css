@@ -110,8 +110,8 @@
 
 .award-card-image{
   width: 100%;
-  min-height: 20rem;
-  object-fit: contain;
+  height: 30rem;
+  object-fit: cover;
 }
 
 .award-card-content{
