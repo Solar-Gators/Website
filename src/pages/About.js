@@ -35,7 +35,7 @@ let p3 = "Inclusivity is one of our founding principles. We believe that everyon
     "resources they need to become better engineers and better people. Join us as we " +
     "push the limits of what's possible in solar racing and beyond."
 
-function TrackRecord({on_mobile, blurb1, blurb2, blurb3, blurb4}) {
+function TrackRecord({on_mobile, blurb1, blurb2, blurb3, blurb4, blurb5, blurb6}) {
     let Text = ({blurb}) => {
         return (
             <ol className="no-margin-padding" style={{listStyleType: 'square', marginLeft: "5vw"}}>
@@ -52,6 +52,8 @@ function TrackRecord({on_mobile, blurb1, blurb2, blurb3, blurb4}) {
                     <Text blurb={blurb2}/>
                     <Text blurb={blurb3}/>
                     <Text blurb={blurb4}/>
+                    <Text blurb={blurb5}/>
+                    <Text blurb={blurb6}/>
                 </Col>
             </Row>
         )
@@ -63,12 +65,14 @@ function TrackRecord({on_mobile, blurb1, blurb2, blurb3, blurb4}) {
                     <Row>
                         <Text blurb={blurb1}/>
                         <Text blurb={blurb2}/>
+                        <Text blurb={blurb5}/>
                     </Row>
                 </Col>
                 <Col className={"mission-statement"}>
                     <Row>
                         <Text blurb={blurb3}/>
                         <Text blurb={blurb4}/>
+                        <Text blurb={blurb6}/>
                     </Row>
                 </Col>
             </Row>
@@ -110,6 +114,8 @@ export default function About() {
                     blurb2="Competed in Formula Sun Grand Prix (FSGP) every year since 2017"
                     blurb3="Designed and manufactured 3 solar cars from the ground up"
                     blurb4="100% student run"
+                    blurb5="Secured a spot in the 2024 American Solar Challenge (ASC)"
+                    blurb6="Won the 2024 Altair Challenge and a grand prize of $10,0000, by achieving an overall weight reduction of 81%."
                 />
             </Container>
 
