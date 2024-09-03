@@ -4,6 +4,10 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import {AwardList} from '../content/assets/images/awards/AwardList';
+
 
 import Header from "../components/Header";
 import CarsSection from "../components/CarsSection/CarsSection";
@@ -128,6 +132,12 @@ export default function Home() {
     /* mql = media query list (https://dev.to/yanns1/how-to-render-different-components-based-on-screen-size-2p35) */
     const mql = window.matchMedia('(max-width: 425px)');
     let mobileView = mql.matches;
+    const responsive = {
+        desktop_mobile:{
+            breakpoint: {max: 4000, min:0},
+            items:1,
+        },
+    };
 
     return (
       <React.Fragment>
@@ -135,27 +145,28 @@ export default function Home() {
           <Header title={"Powered By Florida sunshine"}
                   imgcss={"home-header-img"}/>
 
-          {/* FSGP 23 Champions */}
+          {/* Awards */}
           <Container fluid="true" className="section" style={{background: "#00203E"}}>
               <Row className={"fsgp-row"}>
                   <h2>
                       Solar Gators Victory!
                   </h2>
-                  <p className={"body-text-white"} style={{textAlign: "center"}}>
-                      Our team achieved an electrifying
-                      <span className={"accent_word"} id={"orange_accent"}> victory at the 2023 Formula Sun Grand Prix (FSGP)</span>
-                      , solidifying our position as pioneers in solar-powered endurance racing.
-                      Battling against formidable competitors from around the country, our team demonstrated their exceptional engineering prowess and unyielding determination, ultimately crossing the finish line in an awe-inspiring
-                      <span className={"accent_word"} id={"orange_accent"}> 1st place</span>
-                      . Additionally, our team received awards for
-                      <span className={"accent_word"} id={"orange_accent"}> Most Improved </span>
-                      and
-                      <span className={"accent_word"} id={"orange_accent"}> Aesthetics</span>
-                      .
-                  </p>
-                  <img src={fsgp23} alt={""}/>
               </Row>
+              <Carousel showDots={true} responsive={responsive} autoPlay={true}  autoPlaySpeed={3000}  infinite={true}  >
+                {AwardList.map((award) => (
+                    <div className='award-card' key={award.id}>
+                        <img className="award-card-image" src={award.award_image} alt={award.alt}/>
+                        <div className='award-card-content'>
+                        <p className={"body-text-white"} style={{textAlign: "center"}} dangerouslySetInnerHTML={{ __html: award.description }} />
+                        <a href={award.photo_credits_link} target='_blank'><h6>{award.photo_credits}</h6></a>
+                        </div>
+
+                    </div>
+
+                ))}
+              </Carousel>
           </Container>
+
 
           {/* Car Section */}
           <CarsSection mobileView={mobileView}/>
@@ -213,11 +224,11 @@ export default function Home() {
                               </div>
                               <div className={"flex-cols-center"}>
                                   <p>6:00 PM</p>
-                                  <p>7:00 PM</p>
+                                  <p>6:00 PM</p>
                               </div>
                               <div className={"flex-cols-center"}>
                                   <p>Matherly Hall</p>
-                                  <p>Weil Hall</p>
+                                  <p>Matherly Hall</p>
                               </div>
                           </div>
                       </div>
