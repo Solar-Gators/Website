@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5cd00b78.css",
-    "main.js": "/static/js/main.aa1c0771.js",
+    "main.css": "/static/css/main.4406c6cb.css",
+    "main.js": "/static/js/main.071fdd75.js",
     "static/media/Solar Gators 2024-25 Sponsorship Packet.pdf": "/static/media/Solar Gators 2024-25 Sponsorship Packet.6daeb6cd2862633cc52c.pdf",
     "static/media/aeroPM21.JPG": "/static/media/aeroPM21.d242a25ecf4c3b760eaf.JPG",
     "static/media/auxilary21.jpg": "/static/media/auxilary21.79c83b65572917d65823.jpg",
@@ -13,9 +13,11 @@
     "static/media/victory0_crop_edit.jpg": "/static/media/victory0_crop_edit.cf826fbd998ac8e8d912.jpg",
     "static/media/car3.jpg": "/static/media/car3.bba656c826254c5a925e.jpg",
     "static/media/IMG_9011_crop.JPG": "/static/media/IMG_9011_crop.32e037eb2376a6ab3f60.JPG",
+    "static/media/Altair24.jpg": "/static/media/Altair24.b731850f16a99010d5bf.jpg",
     "static/media/telemetry21.jpg": "/static/media/telemetry21.fa51d460943dc3e4a0cf.jpg",
     "static/media/secretary22.JPG": "/static/media/secretary22.152b234acaa243176fc9.JPG",
     "static/media/aero22.JPG": "/static/media/aero22.7cb66811cc3c0adc243a.JPG",
+    "static/media/FSGP24.JPG": "/static/media/FSGP24.a90c5b9a3a1279c5affe.JPG",
     "static/media/embedsyst22.JPG": "/static/media/embedsyst22.56196a0023b20f11a2e2.JPG",
     "static/media/car3_zoom.jpg": "/static/media/car3_zoom.175bdc1aa240feb56174.jpg",
     "static/media/brakes22.JPG": "/static/media/brakes22.1bc3a229bf26ca8d6e81.JPG",
@@ -107,19 +109,22 @@
     "static/media/FusionFilaments.png": "/static/media/FusionFilaments.39096fc3d17856822543.png",
     "static/media/MAE.png": "/static/media/MAE.b809e373461fa92c1b25.png",
     "static/media/Lowes.png": "/static/media/Lowes.bec583e10de06c5e5e63.png",
+    "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/FGCI.png": "/static/media/FGCI.4754a460a02cb28b654f.png",
     "static/media/Signarama.webp": "/static/media/Signarama.020e535eba5bdccad91f.webp",
     "static/media/SKF.png": "/static/media/SKF.82c2bb4f713eb8c8014b.png",
     "static/media/Bridgestone.png": "/static/media/Bridgestone.54d5e0e9b7aa5717fd62.png",
     "static/media/Ansys.png": "/static/media/Ansys.da5d81c06524e774f43d.png",
+    "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "static/media/Protopasta.webp": "/static/media/Protopasta.d988c00000f7fb746fcb.webp",
     "static/media/SainSmart.webp": "/static/media/SainSmart.085db8f7a4190f7aa3c6.webp",
     "index.html": "/index.html",
-    "main.5cd00b78.css.map": "/static/css/main.5cd00b78.css.map",
-    "main.aa1c0771.js.map": "/static/js/main.aa1c0771.js.map"
+    "main.4406c6cb.css.map": "/static/css/main.4406c6cb.css.map",
+    "main.071fdd75.js.map": "/static/js/main.071fdd75.js.map"
   },
   "entrypoints": [
-    "static/css/main.5cd00b78.css",
-    "static/js/main.aa1c0771.js"
+    "static/css/main.4406c6cb.css",
+    "static/js/main.071fdd75.js"
   ]
 }
