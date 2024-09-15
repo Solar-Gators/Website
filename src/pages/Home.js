@@ -224,11 +224,11 @@ export default function Home() {
                               </div>
                               <div className={"flex-cols-center"}>
                                   <p>6:00 PM</p>
-                                  <p>7:00 PM</p>
+                                  <p>6:00 PM</p>
                               </div>
                               <div className={"flex-cols-center"}>
                                   <p>Matherly Hall</p>
-                                  <p>Weil Hall</p>
+                                  <p>Matherly Hall</p>
                               </div>
                           </div>
                       </div>
