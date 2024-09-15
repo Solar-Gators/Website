@@ -2,7 +2,7 @@
 
 // 2024-25
 import { president24, vicepresident24, treasurer24, secretary24, business24, mechPM240, mechPM241,  electricalPM24, 
-    integrationPM240, integrationPM241, integrationPM242, integrationPM243} from './2024/index'
+    integrationPM240, integrationPM241, integrationPM242, integrationPM243, stratLead24} from './2024/index'
 
 // 2023-24
 import { president23, vicepresident23, treasurer23, secretary23, business23, staticPM23, dynamicPM23, electricalPM23,
@@ -39,6 +39,9 @@ let pms24 = [
     ["Ellie Alderman", "Mechanical Integration PM", integrationPM241],
     ["Adison Hynes", "Electrical Integration PM", integrationPM242],
     ["Jackson Werner", "Electrical Integration PM", integrationPM243]];
+// let leads24 = [
+//     ["Jack Schedel", "Strategy", stratLead24]
+// ];
 
 
 //2023-24: (Names, Positions, Headshot)
