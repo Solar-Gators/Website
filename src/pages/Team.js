@@ -33,7 +33,7 @@ let competition_team22 = get_comp_team("2022");
 
 //2021-22 Officers
 let executive_board21 = get_eboard("2021");
-let pms21 = get_pms("2021"); //aerobody: Pierre Angibaud
+//let pms21 = get_pms("2021"); //aerobody: Pierre Angibaud
 let mech_aero21 = get_mech("2021");
 let electrical21 = get_elec("2021");
 let competition_team21 = get_comp_team("2021");
@@ -41,12 +41,12 @@ let competition_team21 = get_comp_team("2021");
 
 //2020-21 Officers
 let executive_board20 = get_eboard("2020");
-let pms20 = get_pms("2020");
+//let pms20 = get_pms("2020");
 
 
 //2019-20 Officers
 let executive_board19 = get_eboard("2019");
-let pms19 = get_pms("2019");
+//let pms19 = get_pms("2019");
 
 
 function AcademicYear({ eventkey }) {
