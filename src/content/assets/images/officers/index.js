@@ -2,7 +2,8 @@
 
 // 2024-25
 import { president24, vicepresident24, treasurer24, secretary24, business24, mechPM240, mechPM241,  electricalPM24, 
-    integrationPM240, integrationPM241, integrationPM242, integrationPM243, stratLead24} from './2024/index'
+    integrationPM240, integrationPM241, integrationPM242, integrationPM243, stratLead24, aerobodyLead24, auxiliaryLead24, batteryPackLead24, bMSLead24, brakesLead24, firmwareLead24, solarArrayLead24, structuresLead24, suspensionLead24, telemetryLead24
+} from './2024/index'
 
 // 2023-24
 import { president23, vicepresident23, treasurer23, secretary23, business23, staticPM23, dynamicPM23, electricalPM23,
@@ -33,15 +34,27 @@ let executive_board24 = [["William Tran", "President", president24],
     ["Andrew Carter", "Business Coordinator", business24]];
 let ces24 = [["Oliver Tumbel", "Mechanical Chief Engineer", mechPM240],
 ["Jack Britton", "Mechanical Chief Engineer", mechPM241],
-["Samuel Breslin", "Electrical Chief Engineer", electricalPM24]]
-let pms24 = [
-    ["Lacie Michaelis", "Mechanical Integration PM", integrationPM240],
+["Samuel Breslin", "Electrical Chief Engineer", electricalPM24]];
+let pms24 = [["Lacie Michaelis", "Mechanical Integration PM", integrationPM240],
     ["Ellie Alderman", "Mechanical Integration PM", integrationPM241],
     ["Adison Hynes", "Electrical Integration PM", integrationPM242],
     ["Jackson Werner", "Electrical Integration PM", integrationPM243]];
-// let leads24 = [
-//     ["Jack Schedel", "Strategy", stratLead24]
-// ];
+let electrical24 = [
+    ["Jack Schedel", "Strategy", stratLead24],
+    ["Christian Vincente", "BMS", bMSLead24],
+    ["Matthew Shen", "Firmware", firmwareLead24],
+    ["Andrew Carter", "Hardware", business24],
+    ["Aaron Magruder", "Solar Array", solarArrayLead24],
+    ["Nathan Achinger", "Telemetry", telemetryLead24],];
+let mech_aero24= [
+    ["Connor Ellis", "Aerobody", aerobodyLead24],
+    ["Edward Lancaster", "Auxiliary", auxiliaryLead24],
+    ["Youssef Kamel", "Battery Pack", batteryPackLead24],
+    ["Ethan Wright", "Brakes", brakesLead24],
+    ["Bragg Farmer", "Structures", structuresLead24],
+    ["Quang Pham", "Suspension", suspensionLead24]
+
+];
 
 
 //2023-24: (Names, Positions, Headshot)
@@ -157,6 +170,7 @@ export const get_mech = (year) => {
     if (year === "2021") { return mech_aero21; }
     else if (year === "2022") { return mech_aero22; }
     else if (year === "2023") { return mech_aero23; }
+    else if (year === "2024") { return mech_aero24; }
     else { return ""; }
 }
 
@@ -164,6 +178,7 @@ export const get_elec = (year) => {
     if (year === "2021") { return electrical21; }
     else if (year === "2022") { return electrical22; }
     else if (year === "2023") { return electrical23; }
+    else if (year === "2024") { return electrical24; }
     else { return ""; }
 }
 

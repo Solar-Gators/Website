@@ -10,8 +10,8 @@ import Header from "../components/Header";
 let executive_board24= get_eboard("2024");
 let pms24 = get_pms("2024");
 let ces24 = get_ces("2024")
-//let mech_aero24 = get_mech("2024");
-//let electrical24 =  get_elec("2024");
+let mech_aero24 = get_mech("2024");
+let electrical24 =  get_elec("2024");
 //let webdev24 = get_webdev("2024");
 
 
@@ -160,6 +160,8 @@ function OfficerTeam({ eventkey, executive_board, on_mobile }) {
                 <OfficersRow heading="Executive Board" officers={executive_board24}/>
                 <OfficersRow heading="Chief Engineers" officers={ces24}/>
                 <OfficersRow heading="Project Managers" officers={pms24}/>
+                <OfficersRow heading="Mechanical and Aerobody" officers={mech_aero24}/>
+                <OfficersRow heading="Electrical" officers={electrical24}/>
                 {/*<OfficersRow heading="Web Development" officers={webdev24}/>*/}
                 {/*<CompList list={competition_team23}/>*/}
             </Col>
