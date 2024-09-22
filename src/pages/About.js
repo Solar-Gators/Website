@@ -110,12 +110,12 @@ export default function About() {
             </h2>
                 <TrackRecord
                     on_mobile={mobileView}
-                    blurb1="Won 1st place at the 2023 Formula Sun Grand Prix (FSGP) after completing 707.5 miles on track."
-                    blurb2="Competed in Formula Sun Grand Prix (FSGP) every year since 2017"
+                    blurb1="Won 1st place at the 2023 Formula Sun Grand Prix (FSGP) after completing 707.5 miles on track"
+                    blurb2="Competed in the Formula Sun Grand Prix six times since 2016"
                     blurb3="Designed and manufactured 3 solar cars from the ground up"
                     blurb4="100% student run"
                     blurb5="Secured a spot in the 2024 American Solar Challenge (ASC)"
-                    blurb6="Won the 2024 Altair Challenge and a grand prize of $10,0000, by achieving an overall weight reduction of 81%."
+                    blurb6="Won the 2024 Altair Challenge and a grand prize of $10,0000, by achieving an overall weight reduction of 81%"
                 />
             </Container>
 

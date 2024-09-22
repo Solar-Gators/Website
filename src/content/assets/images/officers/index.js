@@ -1,8 +1,14 @@
 // OFFICER PICTURES -----------------------------
+
+// 2024-25
+import { president24, vicepresident24, treasurer24, secretary24, business24, mechPM240, mechPM241,  electricalPM24, 
+    integrationPM240, integrationPM241, integrationPM242, integrationPM243, stratLead24, aerobodyLead24, auxiliaryLead24, batteryPackLead24, bMSLead24, brakesLead24, firmwareLead24, solarArrayLead24, structuresLead24, suspensionLead24, telemetryLead24
+} from './2024/index'
+
 // 2023-24
 import { president23, vicepresident23, treasurer23, secretary23, business23, staticPM23, dynamicPM23, electricalPM23,
         integrationPM230, integrationPM231, integrationPM232, aerobody23, batterypack23, brakes23, chassis23, telemetry23,
-        suspension23, lowvoltage23} from './2023/index'
+        suspension23, lowvoltage23, dev23} from './2023/index'
 
 // 2022-23
 import {president22, vicepresident22, treasurer22, secretary22, business22, electricalPM22, integrationPM22, mechanicalPM22,
@@ -19,6 +25,38 @@ import {president19, vicepresident19, treasurer19, secretary19, business19} from
 
 
 // OFFICER LISTS -----------------------------
+
+//2024-25: (Names, Positions,Headshot)
+let executive_board24 = [["William Tran", "President", president24],
+    ["Isabella Lucarelli", "Vice President", vicepresident24],
+    ["Shreya Bhat", "Treasurer", treasurer24],
+    ["Aaron Magruder", "Secretary", secretary24],
+    ["Andrew Carter", "Business Coordinator", business24]];
+let ces24 = [["Oliver Tumbel", "Mechanical Chief Engineer", mechPM240],
+["Jack Britton", "Mechanical Chief Engineer", mechPM241],
+["Samuel Breslin", "Electrical Chief Engineer", electricalPM24]];
+let pms24 = [["Lacie Michaelis", "Mechanical Integration PM", integrationPM240],
+    ["Ellie Alderman", "Mechanical Integration PM", integrationPM241],
+    ["Adison Hynes", "Electrical Integration PM", integrationPM242],
+    ["Jackson Werner", "Electrical Integration PM", integrationPM243]];
+let electrical24 = [
+    ["Jack Schedel", "Strategy", stratLead24],
+    ["Christian Vincente", "BMS", bMSLead24],
+    ["Matthew Shen", "Firmware", firmwareLead24],
+    ["Andrew Carter", "Hardware", business24],
+    ["Aaron Magruder", "Solar Array", solarArrayLead24],
+    ["Nathan Achinger", "Telemetry", telemetryLead24],];
+let mech_aero24= [
+    ["Connor Ellis", "Aerobody", aerobodyLead24],
+    ["Edward Lancaster", "Auxiliary", auxiliaryLead24],
+    ["Youssef Kamel", "Battery Pack", batteryPackLead24],
+    ["Ethan Wright", "Brakes", brakesLead24],
+    ["Bragg Farmer", "Structures", structuresLead24],
+    ["Quang Pham", "Suspension", suspensionLead24]
+
+];
+
+
 //2023-24: (Names, Positions, Headshot)
 let executive_board23 = [["Irene Chung", "President", president23],
     ["Remington Ewing", "Vice President", vicepresident23],
@@ -33,6 +71,7 @@ let pms23 = [["Matthew Shen", "Electrical PM", electricalPM23],
 let mech_aero23 = [["William Tran", "Aerobody", aerobody23], ["Peyton Striblen", "Battery Pack", batterypack23], ["Ellie Alderman", "Brakes", brakes23],
     ["Oliver Tumbel", "Suspension", suspension23], ["Elijah Baluyot", "Chassis", chassis23]];
 let electrical23 =  [["Yashasvi Bhat", "Telemetry", telemetry23], ["Jackson Werner", "Low Voltage", lowvoltage23]];
+let webdev23 = [["Natalie Sesodia", "Web Developer", dev23]]
 
 //2022-23: (Names, Positions, Headshot)
 let executive_board22 = [["Christian Michaelis", "President", president22], ["Lauren Shaw", "Vice President", vicepresident22], ["Andrew Carter", "Secretary", secretary22],
@@ -108,6 +147,7 @@ export const get_eboard = (year) => {
     else if (year === "2021") { return executive_board21; }
     else if (year === "2022") { return executive_board22; }
     else if (year === "2023") { return executive_board23; }
+    else if (year === "2024") { return executive_board24; }
     else { return ""; }
 }
 
@@ -117,6 +157,12 @@ export const get_pms = (year) => {
     else if (year === "2021") { return pms21; }
     else if (year === "2022") { return pms22; }
     else if (year === "2023") { return pms23; }
+    else if (year === "2024") { return pms24;}
+    else { return ""; }
+}
+
+export const get_ces = (year) => {
+    if (year === "2024") { return ces24;}
     else { return ""; }
 }
 
@@ -124,6 +170,7 @@ export const get_mech = (year) => {
     if (year === "2021") { return mech_aero21; }
     else if (year === "2022") { return mech_aero22; }
     else if (year === "2023") { return mech_aero23; }
+    else if (year === "2024") { return mech_aero24; }
     else { return ""; }
 }
 
@@ -131,11 +178,18 @@ export const get_elec = (year) => {
     if (year === "2021") { return electrical21; }
     else if (year === "2022") { return electrical22; }
     else if (year === "2023") { return electrical23; }
+    else if (year === "2024") { return electrical24; }
     else { return ""; }
 }
 
 export const get_comp_team = (year) => {
     if (year === "2021") { return competition_team21; }
     else if (year === "2022") { return competition_team22; }
+    else { return ""; }
+}
+
+export const get_webdev = (year) => {
+    if (year === "2023") { return webdev23; }
+    //else if (year === "2024") { return webdev24; }
     else { return ""; }
 }
