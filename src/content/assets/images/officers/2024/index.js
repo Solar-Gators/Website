@@ -9,7 +9,6 @@ export { default as mechPM241 }    from "./mechCE241.JPG";
 export { default as electricalPM24 }    from "./electricalCE.JPG";
 export { default as integrationPM240 }   from "./integPM240.JPG";
 export { default as integrationPM241 }   from "./integPM241.JPG";
-
 export { default as integrationPM242 }   from "./integPM242.jpg";
 export { default as integrationPM243 }   from "./integPM243.JPG";
 export { default as stratLead24 }   from "./stratLead24.JPG";
