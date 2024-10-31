@@ -115,7 +115,7 @@ export default function About() {
                     blurb3="Designed and manufactured 3 solar cars from the ground up"
                     blurb4="100% student run"
                     blurb5="Secured a spot in the 2024 American Solar Challenge (ASC)"
-                    blurb6="Won the 2024 Altair Challenge and a grand prize of $10,0000, by achieving an overall weight reduction of 81%"
+                    blurb6="Won the 2024 Altair Challenge and a grand prize of $10,000, by achieving an overall weight reduction of 81%"
                 />
             </Container>
 

@@ -11,18 +11,19 @@ import {AwardList} from '../content/assets/images/awards/AwardList';
 
 import Header from "../components/Header";
 import CarsSection from "../components/CarsSection/CarsSection";
-import { get_eboard, get_elec, get_mech, get_pms } from "../content/assets/images/officers";
+import { get_eboard, get_elec, get_mech, get_pms, get_ces } from "../content/assets/images/officers";
 
 import fsgp23 from "../content/assets/images/people/team22/victory0_crop_edit.jpg";
 import MAE from "../content/assets/images/sponsor_logos/MAE.png";
 import ZenithTecnica from "../content/assets/images/sponsor_logos/ZenithTecnica.png";
 import ECE from "../content/assets/images/sponsor_logos/ECE.png";
 
-//2022-23 Officers: (Names, Positions, Headshot)
-let executive_board = get_eboard("2023");
-let pms = get_pms("2023");
-let mech_aero = get_mech("2023");
-let electrical =  get_elec("2023");
+//2024-25 Officers: (Names, Positions, Headshot)
+let executive_board = get_eboard("2024");
+let pms = get_pms("2024");
+let mech_aero = get_mech("2024");
+let electrical =  get_elec("2024");
+let chief_engineers = get_ces("2024");
 
 //Car 3 Platinum Sponsors
 let platinum3 = [[MAE, "https://mae.ufl.edu/"], [ZenithTecnica, "https://www.zenithtecnica.com/"], [ECE, "https://www.ece.ufl.edu/"]];
@@ -114,7 +115,7 @@ function SponsorSection ({on_mobile}) {
                             <SponsorBlurb/>
                         </Row>
                         <Row style={{justifyContent: "center", alignContent: "center"}}>
-                            <Button className="btn-secondary" style={{left: "0", marginRight: "3vw", marginTop: "5vw"}}
+                            <Button className="btn-tertiary" style={{left: "0", marginRight: "3vw", marginTop: "5vw"}}
                                     as={Link} to={"/sponsors"}
                                     onClick={() => {window.scroll(0,0);}}>
                                 Our Sponsors
@@ -184,15 +185,24 @@ export default function Home() {
                           <Officer pic={executive_board[2][2]}/>
                           <Officer pic={executive_board[3][2]}/>
                           <Officer pic={pms[0][2]}/>
-                          <Officer pic={pms[3][2]}/>
-                          <Officer pic={pms[4][2]}/>
-                          <Officer pic={pms[2][2]}/>
-                          <Officer pic={mech_aero[0][2]}/>
                           <Officer pic={pms[1][2]}/>
+                          <Officer pic={pms[2][2]}/>
+                          <Officer pic={pms[3][2]}/>
+                          <Officer pic={mech_aero[0][2]}/>
                           <Officer pic={mech_aero[1][2]}/>
                           <Officer pic={mech_aero[2][2]}/>
+                          <Officer pic={mech_aero[3][2]}/>
+                          <Officer pic={mech_aero[4][2]}/>
+                          <Officer pic={mech_aero[5][2]}/>
                           <Officer pic={electrical[0][2]}/>
                           <Officer pic={electrical[1][2]}/>
+                          <Officer pic={electrical[2][2]}/>
+                          <Officer pic={electrical[3][2]}/>
+                          <Officer pic={electrical[4][2]}/>
+                          <Officer pic={electrical[5][2]}/>
+                          <Officer pic={chief_engineers[0][2]}/>
+                          <Officer pic={chief_engineers[1][2]}/>
+                          <Officer pic={chief_engineers[2][2]}/>
                       </div>
                   </div>
               </Link>
