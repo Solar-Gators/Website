@@ -64,7 +64,8 @@ let executive_board23 = [["Irene Chung", "President", president23],
     ["Isabella Lucarelli", "Secretary", secretary23],
     ["Ruben Gonzalez Vera", "Business Coordinator", business23]];
 let pms23 = [["Matthew Shen", "Electrical PM", electricalPM23],
-    ["Lauren Shaw", "Static PM", staticPM23], ["Kurt Smith", "Dynamic PM", dynamicPM23],
+    ["Lauren Shaw", "Static PM", staticPM23], 
+    ["Kurt Smith", "Dynamic PM", dynamicPM23],
     ["Samuel Breslin", "Integration PM", integrationPM230],
     ["Lacie Michaelis", "Integration PM", integrationPM231],
     ["Stanley Noel", "Integration PM", integrationPM232]];

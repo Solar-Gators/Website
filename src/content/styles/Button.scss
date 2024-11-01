@@ -71,6 +71,38 @@ $square-button-height-width: 40px;
   border: 3px solid var(--color-grey);
 }
 
+.btn-tertiary {
+  font-family: 'Inter';
+  font-weight: 525;
+  font-size: 18px;
+  width: 180px;
+  height: $button-height;
+
+  left: calc(50% - 180px/2 + 2px);
+  margin-top: $margin-top;
+  margin-bottom: $margin-bottom;
+
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: var(--color-primary_orange);
+  background-color: transparent;
+  border: 3px solid var(--color-primary_orange);
+  border-radius: $curve;
+
+  display: flex;
+  position: relative;
+  justify-content: center;
+  top: 0px;
+}
+
+.btn-tertiary:hover {
+  color: var(--color-white);
+  background-color: var(--color-primary_orange);
+  border: 3px solid var(--color-primary_orange);
+}
+
 .btn-transparent {
   width: 180px;
   height: $small-button-height;
